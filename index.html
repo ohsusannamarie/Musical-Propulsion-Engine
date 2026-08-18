@@ -8,6 +8,7 @@
 <style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 80% 10%,#102536 0,transparent 35%),radial-gradient(circle at 15% 80%,#321326 0,transparent 36%),#07080d;color:#f6f1e8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.boot{width:min(520px,86vw);text-align:center;padding:34px;border:1px solid #293247;border-radius:20px;background:#0d1019;box-shadow:0 25px 70px rgba(0,0,0,.45)}.mark{font-size:38px;margin-bottom:14px}.title{font-family:Georgia,serif;font-size:30px;color:#ffe2a0}.sub{margin-top:8px;color:#ff83aa;font-family:Georgia,serif;font-style:italic}.status{margin-top:24px;color:#aeb7c6;font-size:13px;line-height:1.6}.bar{height:5px;margin-top:18px;border-radius:999px;overflow:hidden;background:#1b2130}.bar:before{content:"";display:block;height:100%;width:42%;border-radius:999px;background:linear-gradient(90deg,#ff5f8f,#f6c35b,#54d9ff);animation:go 1.1s ease-in-out infinite alternate}@keyframes go{to{transform:translateX(140%)}}.error{color:#ff9cb9}button{margin-top:18px;border:1px solid #ff5f8f;border-radius:10px;background:#2c1020;color:#fff;padding:10px 14px;font:inherit}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
 <body>
 <div class="boot" id="boot">
@@ -21,23 +22,28 @@
 (async()=>{
   const status=document.getElementById('status');
   try{
-    if(typeof DecompressionStream==='undefined') throw new Error('This browser does not support the app loader. Open this page in current Safari, Chrome, or Edge.');
     const files=['payload01.b64','payload02.b64','payload03.b64','payload04.b64'];
-    const parts=await Promise.all(files.map(async name=>{
-      const r=await fetch('./app/'+name,{cache:'no-store'});
+    const parts=[];
+    for(const name of files){
+      const r=await fetch('./app/'+name+'?v=2212',{cache:'no-store'});
       if(!r.ok) throw new Error('Could not fetch '+name+' ('+r.status+').');
-      return r.text();
-    }));
+      parts.push(await r.text());
+    }
     status.textContent='Tuning the emotional amplification…';
     const b64=parts.join('').replace(/\s+/g,'');
     const bin=atob(b64);
     const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));
-    const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-    const html=await new Response(stream).text();
+    let html;
+    try{
+      if(!window.pako) throw new Error('pako unavailable');
+      html=window.pako.ungzip(bytes,{to:'string'});
+    }catch(pakoErr){
+      if(typeof DecompressionStream==='undefined') throw pakoErr;
+      const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+      html=await new Response(stream).text();
+    }
     if(!html.includes('Musical Propulsion Engine')) throw new Error('The app payload did not decode correctly.');
-    document.open();
-    document.write(html);
-    document.close();
+    document.open();document.write(html);document.close();
   }catch(err){
     console.error(err);
     document.querySelector('.bar')?.remove();
