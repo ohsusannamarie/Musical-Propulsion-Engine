@@ -1,0 +1,48 @@
+name: Expand catalog batch 1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/expand_catalog_batch1.py'
+      - '.github/workflows/expand-catalog-batch1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add 15 expansion titles
+        run: python3 .github/scripts/expand_catalog_batch1.py
+      - name: Validate expanded catalog
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/titles.json'))
+          ids={x['id'] for x in d}
+          required={'spirited','matilda','prom','cyrano','wonka','meangirls','newsies','comefromaway','shrek','rockofages','purplerain','hair','tommy','blinded','yesterday'}
+          missing=required-ids
+          assert not missing, f'Missing expansion titles: {missing}'
+          for x in d:
+              if x['id'] in required:
+                  assert len(x['vibe'])>=4
+                  assert len(x['dna'])>=3
+                  assert len(x['songs'])>=4
+                  assert len(x['links'])>=3
+                  assert len(x['enrichment']['gatewaySongs'])>=3
+                  assert all(k in x['scores'] for k in ['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks','afterglow','replay'])
+          print(f'Catalog validated at {len(d)} titles.')
+          PY
+      - name: Commit expansion
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Expand catalog with 15 new musical profiles' || exit 0
+          git push
