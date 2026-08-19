@@ -2,10 +2,10 @@
   "version": 1,
   "catalogSize": 81,
   "counts": {
-    "bundled": 66,
+    "bundled": 72,
     "remote": 0,
     "fallback": 0,
-    "missing": 15
+    "missing": 9
   },
   "entries": {
     "heights": {
@@ -604,42 +604,47 @@
     },
     "repo": {
       "title": "Repo! The Genetic Opera",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/repo.jpg",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/repo.jpg"
       }
     },
     "velvetgoldmine": {
       "title": "Velvet Goldmine",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/velvetgoldmine.jpg",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/velvetgoldmine.jpg"
       }
     },
     "priscilla": {
       "title": "The Adventures of Priscilla, Queen of the Desert",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/priscilla.jpg",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/priscilla.jpg"
       }
     },
     "annaapocalypse": {
       "title": "Anna and the Apocalypse",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/annaapocalypse.png",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/annaapocalypse.png"
       }
     },
     "dancerinthedark": {
       "title": "Dancer in the Dark",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/dancerinthedark.png",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/dancerinthedark.png"
       }
     },
     "hedwigstage": {
@@ -660,10 +665,11 @@
     },
     "reefer": {
       "title": "Reefer Madness: The Movie Musical",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/reefer.jpg",
       "provenance": {
-        "type": "none"
+        "type": "repository-asset",
+        "path": "assets/posters/reefer.jpg"
       }
     },
     "singininrain": {
@@ -725,36 +731,6 @@
   },
   "recoveryQueue": [
     {
-      "id": "repo",
-      "title": "Repo! The Genetic Opera",
-      "year": 2008,
-      "status": "needs-source"
-    },
-    {
-      "id": "velvetgoldmine",
-      "title": "Velvet Goldmine",
-      "year": 1998,
-      "status": "needs-source"
-    },
-    {
-      "id": "priscilla",
-      "title": "The Adventures of Priscilla, Queen of the Desert",
-      "year": 1994,
-      "status": "needs-source"
-    },
-    {
-      "id": "annaapocalypse",
-      "title": "Anna and the Apocalypse",
-      "year": 2017,
-      "status": "needs-source"
-    },
-    {
-      "id": "dancerinthedark",
-      "title": "Dancer in the Dark",
-      "year": 2000,
-      "status": "needs-source"
-    },
-    {
       "id": "hedwigstage",
       "title": "Hedwig and the Angry Inch: Broadway",
       "year": 2014,
@@ -764,12 +740,6 @@
       "id": "batboy",
       "title": "Bat Boy: The Musical",
       "year": 2004,
-      "status": "needs-source"
-    },
-    {
-      "id": "reefer",
-      "title": "Reefer Madness: The Movie Musical",
-      "year": 2005,
       "status": "needs-source"
     },
     {
