@@ -1,0 +1,49 @@
+name: Enrich Core Catalog v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/enrich_core_catalog.py'
+      - '.github/workflows/enrich-core-catalog.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enrich core catalog
+        run: python3 .github/scripts/enrich_core_catalog.py
+
+      - name: Verify enrichment batch
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/titles.json'))
+          ids={'moulin','hamilton','inside','ticktick','moana','heights','greatest','wicked','across','walkline','kpop','hairspray'}
+          rows={x['id']:x for x in d}
+          for i in ids:
+              e=rows[i].get('enrichment',{})
+              assert e.get('format')
+              assert e.get('musicalType')
+              assert e.get('vocalStyle')
+              assert e.get('gatewaySongs')
+              assert e.get('notes')
+              assert e.get('provenance')
+          print('verified',len(ids),'core enrichments')
+          PY
+
+      - name: Commit enriched catalog
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Enrich 12 core musical profiles' || exit 0
+          git push
