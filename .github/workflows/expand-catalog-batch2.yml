@@ -1,0 +1,40 @@
+name: Catalog Expansion Batch 2
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/expand_catalog_batch2.py'
+permissions:
+  contents: write
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add coverage gap titles
+        run: python3 .github/scripts/expand_catalog_batch2.py
+      - name: Validate expanded catalog
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/titles.json'))
+          ids={x['id'] for x in d}
+          expected={'chicago','mammamia','soundmusic','grease','burlesque','pitchperfect','coco','princessfrog','tangled','frozen','waitress','legallyblonde','falsettos','marypoppins','starsborn'}
+          assert expected <= ids, expected-ids
+          assert len(d) >= 66, len(d)
+          for x in d:
+            assert len(x['scores'])==10
+            if x['id'] in expected:
+              e=x.get('enrichment',{})
+              for k in ['format','musicalType','vocalStyle','lyricalDensity','musicDrivenPercent','catharsis','rewatchability','familiarityAdvantage','bestMood','friction','gatewaySongs','notes','provenance']:
+                assert k in e,(x['id'],k)
+          print('validated',len(d),'titles')
+          PY
+      - name: Commit expansion
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Expand catalog with coverage gap batch 2' || exit 0
+          git push
