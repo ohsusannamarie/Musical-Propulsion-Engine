@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Musical Propulsion Engine · v2.2</title>
+<title>The Musical Propulsion Engine · v2.2.4</title>
 <meta name="theme-color" content="#07080d" />
 <meta name="description" content="The Musical Propulsion Engine v2.2: an explainable, personalized musical discovery app built around propulsion, feeling, and musical DNA." />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -91,6 +91,19 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
   .rabbit-card-actions{gap:7px}
   .rabbit-card-actions a,.rabbit-card-actions button{padding:9px 10px;font-size:10px}
 }
+</style><style>
+/* v2.2.4 taste calibration */
+.profile-feedback{margin:14px 0 4px;padding:12px 13px;border:1px solid rgba(84,217,255,.18);border-radius:10px;background:linear-gradient(90deg,rgba(84,217,255,.055),rgba(255,95,143,.045));display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.profile-feedback-copy b{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.profile-feedback-copy span{display:block;margin-top:3px;color:#aeb8c7;font-size:10px;line-height:1.35}
+.profile-status{min-width:180px;background:#101522;color:#f6f1e8;border:1px solid #39445b;border-radius:8px;padding:9px 10px;font-size:11px}
+.profile-status:focus{outline:none;border-color:var(--cyan)}
+.actions .gateway-song{background:linear-gradient(90deg,#075b37,#0b4c38);border-color:#16835a}
+@media (max-width:700px){
+  .profile-feedback{align-items:stretch}
+  .profile-status{width:100%;min-width:0}
+  .actions a,.actions button{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+}
 </style></head>
 <body>
 <div class="app">
@@ -127,7 +140,7 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
     <section id="discover" class="section active">
 
       <div class="rabbit" id="rabbitHole">
-        <div class="rabbit-kicker">V2.2.3 · THE RABBIT HOLE</div>
+        <div class="rabbit-kicker">V2.2.4 · THE RABBIT HOLE</div>
         <h2>I loved <em style="color:#ff7fa5">___</em>. Give me more of <em style="color:#6fe2ff">that.</em></h2>
         <p class="rabbit-intro">Start with something that already moved you, then tell the engine which part you want to chase. Every result now exposes the bridge, its strongest shared traits, and a gateway song so you can audition the vibe before committing.</p>
         <div class="rabbit-controls">
@@ -380,7 +393,7 @@ function renderModes(){document.getElementById('modes').innerHTML=modes.map(m=>`
 function renderFeature(){const x=byId[selected]; const keys=['propulsion','belt','movement','emotion','comfort','maximalism']; const idx=D.indexOf(x)%palettes.length; document.getElementById('feature').innerHTML=`
 <div class="feature-grid"><div class="poster has-media" style="background:${palettes[idx]}">${posterMarkup(x)}<div class="p-year">${x.year} • ${x.rating}</div><div class="p-title">${x.title}</div><div class="p-tag">${x.tag}</div></div>
 <div class="detail"><h2>${x.title}</h2><div class="meta">${x.year} &nbsp;•&nbsp; ${x.runtime} &nbsp;•&nbsp; ${x.rating}</div><div class="label">Vibe</div><div class="chips">${x.vibe.map(v=>`<span class="chip">${v}</span>`).join('')}</div><div class="label">Musical DNA</div><div class="dna">${x.dna.join(' &nbsp;•&nbsp; ')}</div><div class="divider"></div><div class="scorewhy"><div class="scores">${keys.map(k=>`<div class="score-row"><span>${metricLabel(k)}</span>${scoreDots(x.scores[k])}<b>${x.scores[k].toFixed(1)}</b></div>`).join('')}</div><div class="why"><strong>WHY IT CONNECTS</strong><br>${x.why}<div class="risk"><strong>MOOD NOTE:</strong> ${x.risk}</div></div></div>
-<div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ HEAR SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div></div></div>`;
+<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Update how this title landed for you. Recommendations react instantly and this choice stays on this device.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select></div><div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="gateway-song" target="_blank" href="${searchUrl('spotify',x.title+' '+x.songs[0])}">♫ GATEWAY SONG: ${x.songs[0]}</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ FULL SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div></div></div>`;
 }
 function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>diff+=Math.abs(a.scores[k]-b.scores[k]));return Math.round(Math.max(52,96-diff*3+shared*2));}
 function renderConnections(){const x=byId[selected];const rel=(x.links||[]).map(id=>byId[id]).filter(Boolean).slice(0,5);document.getElementById('connectionsPanel').innerHTML=`<h3>If this moved you, you might also love…</h3>${rel.map((r,i)=>`<div class="connection" data-id="${r.id}"><div class="thumb has-media" style="background:${palettes[(D.indexOf(r))%palettes.length]}">${posterMarkup(r)}<span>${r.title}</span></div><div><b>${r.title.toUpperCase()}</b><small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,'all')}</small></div><div class="match">${sim(x,r)}%</div></div>`).join('')}<div class="gateway"><h4>Gateway Songs — press one</h4>${x.songs.map(s=>`<div class="song" data-song="${s}"><span>♫ ${s}</span><span>▶</span></div>`).join('')}</div>`}
@@ -394,7 +407,7 @@ function selectTitle(id){selected=id;document.getElementById('nowPlaying').textC
 function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.section===id));setSidebar(false);if(id==='connections')renderGraph()}
 document.addEventListener('click',e=>{const nav=e.target.closest('[data-section]');if(nav){showSection(nav.dataset.section);return}const go=e.target.closest('[data-goto]');if(go){showSection(go.dataset.goto);return}const mode=e.target.closest('[data-mode]');if(mode){activeMode=activeMode===mode.dataset.mode?null:mode.dataset.mode;if(activeMode==='surprise'){const unseen=D.filter(x=>stat(x)==='unseen');if(unseen.length)selectTitle(unseen[Math.floor(Math.random()*unseen.length)].id)}renderModes();renderCards();return}const tab=e.target.closest('[data-tab]');if(tab){activeTab=tab.dataset.tab;renderTabs();renderCards();return}const rt=e.target.closest('[data-rabbit-trait]');if(rt){rabbitTrait=rt.dataset.rabbitTrait;renderRabbit();return}const ro=e.target.closest('[data-rabbit-open]');if(ro){selectTitle(ro.dataset.rabbitOpen);showSection('discover');document.getElementById('feature')?.scrollIntoView({behavior:'smooth',block:'start'});return}const ts=e.target.closest('[data-tonight-key]');if(ts){tonightState[ts.dataset.tonightKey]=ts.dataset.tonightValue;renderTonight();return}const title=e.target.closest('[data-id]');if(title){selectTitle(title.dataset.id);showSection('discover');return}const song=e.target.closest('[data-song]');if(song){window.open(searchUrl('spotify',byId[selected].title+' '+song.dataset.song),'_blank');return}});
 document.getElementById('searchInput').addEventListener('input',()=>{renderCards();if(document.getElementById('searchInput').value.trim())activeTab='all';renderTabs()});
-document.addEventListener('change',e=>{if(e.target.id==='tonightLane'){tonightState.lane=e.target.value;renderTonight();return}if(e.target.id==='rabbitAnchor'){rabbitAnchor=e.target.value;renderRabbit();return}if(e.target.matches('[data-status-id]')){customStatuses[e.target.dataset.statusId]=e.target.value;try{localStorage.setItem('mpe-statuses',JSON.stringify(customStatuses))}catch(err){}renderCards();renderConnections();}});
+document.addEventListener('change',e=>{if(e.target.id==='tonightLane'){tonightState.lane=e.target.value;renderTonight();return}if(e.target.id==='rabbitAnchor'){rabbitAnchor=e.target.value;renderRabbit();return}if(e.target.matches('[data-status-id]')){customStatuses[e.target.dataset.statusId]=e.target.value;try{localStorage.setItem('mpe-statuses',JSON.stringify(customStatuses))}catch(err){}renderCards();renderConnections();renderRabbit();renderTonight();if(e.target.dataset.statusId===selected)renderFeature();}});
 document.getElementById('rerollTonight').onclick=()=>{tonightState.salt++;renderTonight()};
 const sidebar=document.getElementById('sidebar');
 const sidebarBackdrop=document.getElementById('sidebarBackdrop');
