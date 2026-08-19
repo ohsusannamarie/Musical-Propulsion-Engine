@@ -1,0 +1,172 @@
+{
+  "catalogSize": 81,
+  "method": "catalog-percentile-s-curve",
+  "range": [
+    2.0,
+    5.0
+  ],
+  "before": {
+    "propulsion": {
+      "mean": 4.42,
+      "median": 4.5,
+      "stdev": 0.47,
+      "min": 2.8,
+      "max": 5.0,
+      "high_4_5_plus": 47
+    },
+    "belt": {
+      "mean": 4.55,
+      "median": 4.7,
+      "stdev": 0.45,
+      "min": 3.1,
+      "max": 5.0,
+      "high_4_5_plus": 58
+    },
+    "movement": {
+      "mean": 4.3,
+      "median": 4.4,
+      "stdev": 0.6,
+      "min": 2.1,
+      "max": 5.0,
+      "high_4_5_plus": 37
+    },
+    "emotion": {
+      "mean": 4.47,
+      "median": 4.6,
+      "stdev": 0.52,
+      "min": 3.0,
+      "max": 5.0,
+      "high_4_5_plus": 46
+    },
+    "comfort": {
+      "mean": 3.79,
+      "median": 4.2,
+      "stdev": 1.0,
+      "min": 0.8,
+      "max": 5.0,
+      "high_4_5_plus": 26
+    },
+    "maximalism": {
+      "mean": 4.4,
+      "median": 4.6,
+      "stdev": 0.64,
+      "min": 1.8,
+      "max": 5.0,
+      "high_4_5_plus": 51
+    },
+    "narrative": {
+      "mean": 4.51,
+      "median": 4.7,
+      "stdev": 0.51,
+      "min": 3.2,
+      "max": 5.0,
+      "high_4_5_plus": 52
+    },
+    "hooks": {
+      "mean": 4.68,
+      "median": 4.8,
+      "stdev": 0.33,
+      "min": 3.4,
+      "max": 5.0,
+      "high_4_5_plus": 63
+    },
+    "afterglow": {
+      "mean": 4.69,
+      "median": 4.8,
+      "stdev": 0.3,
+      "min": 3.5,
+      "max": 5.0,
+      "high_4_5_plus": 65
+    },
+    "replay": {
+      "mean": 4.59,
+      "median": 4.7,
+      "stdev": 0.43,
+      "min": 2.8,
+      "max": 5.0,
+      "high_4_5_plus": 56
+    }
+  },
+  "after": {
+    "propulsion": {
+      "mean": 3.5,
+      "median": 3.34,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.93,
+      "high_4_5_plus": 19
+    },
+    "belt": {
+      "mean": 3.51,
+      "median": 3.6,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.75,
+      "high_4_5_plus": 23
+    },
+    "movement": {
+      "mean": 3.5,
+      "median": 3.55,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.89,
+      "high_4_5_plus": 23
+    },
+    "emotion": {
+      "mean": 3.51,
+      "median": 3.55,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.73,
+      "high_4_5_plus": 24
+    },
+    "comfort": {
+      "mean": 3.5,
+      "median": 3.55,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.94,
+      "high_4_5_plus": 17
+    },
+    "maximalism": {
+      "mean": 3.5,
+      "median": 3.5,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.84,
+      "high_4_5_plus": 17
+    },
+    "narrative": {
+      "mean": 3.51,
+      "median": 3.58,
+      "stdev": 0.99,
+      "min": 2.01,
+      "max": 4.72,
+      "high_4_5_plus": 25
+    },
+    "hooks": {
+      "mean": 3.51,
+      "median": 3.78,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.7,
+      "high_4_5_plus": 26
+    },
+    "afterglow": {
+      "mean": 3.51,
+      "median": 3.84,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.72,
+      "high_4_5_plus": 25
+    },
+    "replay": {
+      "mean": 3.51,
+      "median": 3.6,
+      "stdev": 0.99,
+      "min": 2.0,
+      "max": 4.72,
+      "high_4_5_plus": 25
+    }
+  }
+}

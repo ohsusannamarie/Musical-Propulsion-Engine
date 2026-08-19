@@ -22,16 +22,16 @@
       "Contemporary Musical Theater"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 4.5,
-      "movement": 5,
-      "emotion": 4.5,
-      "comfort": 3.5,
-      "maximalism": 4.5,
-      "narrative": 5,
-      "hooks": 4.5,
-      "afterglow": 4.5,
-      "replay": 4.5
+      "propulsion": 4.93,
+      "belt": 2.92,
+      "movement": 4.89,
+      "emotion": 3.32,
+      "comfort": 2.92,
+      "maximalism": 3.14,
+      "narrative": 4.72,
+      "hooks": 2.57,
+      "afterglow": 2.59,
+      "replay": 2.85
     },
     "why": "Hamilton’s lyrical propulsion meets neighborhood-scale longing, huge ensemble energy, rhythmic movement, and songs that keep turning ordinary speech into something bigger.",
     "risk": "Long runtime with a few quieter stretches.",
@@ -104,7 +104,25 @@
       "Latin",
       "Pop",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 4.5,
+      "movement": 5.0,
+      "emotion": 4.5,
+      "comfort": 3.5,
+      "maximalism": 4.5,
+      "narrative": 5.0,
+      "hooks": 4.5,
+      "afterglow": 4.5,
+      "replay": 4.5
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "inside",
@@ -129,16 +147,16 @@
       "Experimental"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.2,
-      "movement": 4.1,
-      "emotion": 5,
-      "comfort": 3.8,
-      "maximalism": 4.8,
-      "narrative": 5,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 3.81,
+      "belt": 2.44,
+      "movement": 2.57,
+      "emotion": 4.73,
+      "comfort": 3.19,
+      "maximalism": 4.39,
+      "narrative": 4.72,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "A performer turns interior experience into spectacle. Clever construction, escalating motifs, musical jokes that become emotional gut-punches, and songs that are impossible to experience passively.",
     "risk": "Existential material can hit differently depending on mood.",
@@ -209,7 +227,25 @@
       "Comedy",
       "Piano Ballad",
       "Experimental"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.2,
+      "movement": 4.1,
+      "emotion": 5.0,
+      "comfort": 3.8,
+      "maximalism": 4.8,
+      "narrative": 5.0,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "moulin",
@@ -234,16 +270,16 @@
       "Orchestral"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 4.8,
-      "emotion": 5,
-      "comfort": 5,
-      "maximalism": 5,
-      "narrative": 4.8,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 4.54,
+      "emotion": 4.73,
+      "comfort": 4.94,
+      "maximalism": 4.84,
+      "narrative": 3.96,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "The gold standard for emotional maximalism: familiar songs are transformed into narrative weapons, and the movie commits completely whenever emotion becomes too large for dialogue.",
     "risk": "Absolutely none if maximalism is what you came for.",
@@ -316,7 +352,25 @@
       "Rock",
       "Cabaret",
       "Orchestral"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 4.8,
+      "emotion": 5.0,
+      "comfort": 5.0,
+      "maximalism": 5.0,
+      "narrative": 4.8,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "moana",
@@ -340,16 +394,16 @@
       "Lin-Manuel Miranda"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 5,
-      "movement": 4.5,
-      "emotion": 4.8,
-      "comfort": 5,
-      "maximalism": 4.2,
-      "narrative": 5,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.66,
+      "belt": 4.75,
+      "movement": 3.81,
+      "emotion": 4.13,
+      "comfort": 4.94,
+      "maximalism": 2.61,
+      "narrative": 4.72,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "A near-perfect blend of comfort and propulsion: irresistible hooks, identity yearning, comic release, emotional reprises, and a soundtrack that still moves even when it feels like home.",
     "risk": "None. This is a core comfort anchor.",
@@ -420,7 +474,25 @@
       "World/Regional",
       "Musical Theater",
       "Lin-Manuel Miranda"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 5.0,
+      "movement": 4.5,
+      "emotion": 4.8,
+      "comfort": 5.0,
+      "maximalism": 4.2,
+      "narrative": 5.0,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "hamilton",
@@ -445,16 +517,16 @@
       "Rap"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 4.8,
-      "movement": 4.8,
-      "emotion": 5,
-      "comfort": 4.3,
-      "maximalism": 4.8,
-      "narrative": 5,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.08,
+      "movement": 4.54,
+      "emotion": 4.73,
+      "comfort": 3.86,
+      "maximalism": 4.39,
+      "narrative": 4.72,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Proof that lyrical complexity is not a barrier when momentum is high enough. Dense callbacks, overlapping vocals, motifs, escalation, and constant musical forward motion.",
     "risk": "Caption-heavy, but you already know the engine overcomes that.",
@@ -526,7 +598,25 @@
       "R&B",
       "Pop",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 4.8,
+      "movement": 4.8,
+      "emotion": 5.0,
+      "comfort": 4.3,
+      "maximalism": 4.8,
+      "narrative": 5.0,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "ticktick",
@@ -550,16 +640,16 @@
       "Piano"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 4.4,
-      "emotion": 5,
-      "comfort": 4.3,
-      "maximalism": 4.7,
-      "narrative": 5,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 3.55,
+      "emotion": 4.73,
+      "comfort": 3.86,
+      "maximalism": 3.93,
+      "narrative": 4.72,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Creative anxiety becomes rhythm. It turns time pressure, ambition, grief, friendship, and fear into music with an almost physical sense of countdown.",
     "risk": "Existential career panic may occasionally hit home.",
@@ -630,7 +720,25 @@
       "Pop",
       "Musical Theater",
       "Piano"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 4.4,
+      "emotion": 5.0,
+      "comfort": 4.3,
+      "maximalism": 4.7,
+      "narrative": 5.0,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "greatest",
@@ -653,16 +761,16 @@
       "Contemporary Musical Theater"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 4.9,
-      "emotion": 4.5,
-      "comfort": 4.5,
-      "maximalism": 5,
-      "narrative": 4.2,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 4.72,
+      "emotion": 3.32,
+      "comfort": 4.3,
+      "maximalism": 4.84,
+      "narrative": 2.5,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "A practically industrial-strength anthem machine. The plot is less important than the repeated experience of a song finding a runway and taking off.",
     "risk": "Subtlety has left the building.",
@@ -732,7 +840,25 @@
       "Pop",
       "Ballad",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 4.9,
+      "emotion": 4.5,
+      "comfort": 4.5,
+      "maximalism": 5.0,
+      "narrative": 4.2,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "wicked",
@@ -756,16 +882,16 @@
       "Ensemble"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 5,
-      "movement": 4.2,
-      "emotion": 5,
-      "comfort": 4.6,
-      "maximalism": 5,
-      "narrative": 5,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.66,
+      "belt": 4.75,
+      "movement": 2.92,
+      "emotion": 4.73,
+      "comfort": 4.48,
+      "maximalism": 4.84,
+      "narrative": 4.72,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Big melodic architecture, huge emotional builds, identity and belonging, and perhaps the purest possible example of a song escalating until participation becomes compulsory.",
     "risk": "Long, but the musical peaks earn it.",
@@ -836,7 +962,25 @@
       "Pop-influenced",
       "Ballad",
       "Ensemble"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 5.0,
+      "movement": 4.2,
+      "emotion": 5.0,
+      "comfort": 4.6,
+      "maximalism": 5.0,
+      "narrative": 5.0,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "phantom",
@@ -860,16 +1004,16 @@
       "Orchestral"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 5,
-      "movement": 3.8,
-      "emotion": 5,
-      "comfort": 4.5,
-      "maximalism": 5,
-      "narrative": 4.5,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 3.81,
+      "belt": 4.75,
+      "movement": 2.38,
+      "emotion": 4.73,
+      "comfort": 4.3,
+      "maximalism": 4.84,
+      "narrative": 3.04,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "A perfect example of belt instinct having nothing to do with lyric familiarity. The score is physically enormous and emotion is treated as an architectural material.",
     "risk": "Melodrama is the feature.",
@@ -939,7 +1083,25 @@
       "Gothic",
       "Musical Theater",
       "Orchestral"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 5.0,
+      "movement": 3.8,
+      "emotion": 5.0,
+      "comfort": 4.5,
+      "maximalism": 5.0,
+      "narrative": 4.5,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "deh",
@@ -962,16 +1124,16 @@
       "Piano Pop"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 5,
-      "movement": 3.7,
-      "emotion": 5,
-      "comfort": 3.6,
-      "maximalism": 4.2,
-      "narrative": 4.6,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 4.8
+      "propulsion": 2.99,
+      "belt": 4.75,
+      "movement": 2.3,
+      "emotion": 4.73,
+      "comfort": 3.02,
+      "maximalism": 2.61,
+      "narrative": 3.29,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.06
     },
     "why": "The emotional valence can be brutal, but the melodies build toward release. “Waving Through a Window” is the canonical example of sadness becoming physically singable.",
     "risk": "Suicide and grief themes.",
@@ -1039,7 +1201,25 @@
       "Pop",
       "Ballad",
       "Piano Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 5.0,
+      "movement": 3.7,
+      "emotion": 5.0,
+      "comfort": 3.6,
+      "maximalism": 4.2,
+      "narrative": 4.6,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "across",
@@ -1063,16 +1243,16 @@
       "Jukebox"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 4.8,
-      "movement": 4.2,
-      "emotion": 4.8,
-      "comfort": 4.7,
-      "maximalism": 4.7,
-      "narrative": 4.7,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 3.34,
+      "belt": 4.08,
+      "movement": 2.92,
+      "emotion": 4.13,
+      "comfort": 4.62,
+      "maximalism": 3.93,
+      "narrative": 3.58,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Songs you know are recontextualized until they feel newly attached to story and character. It satisfies both musical recognition and the deeper pleasure of seeing music become narrative.",
     "risk": "Some dreamier passages slow the pulse.",
@@ -1143,7 +1323,25 @@
       "Rock",
       "Psychedelic",
       "Jukebox"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 4.8,
+      "movement": 4.2,
+      "emotion": 4.8,
+      "comfort": 4.7,
+      "maximalism": 4.7,
+      "narrative": 4.7,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "annie",
@@ -1166,16 +1364,16 @@
       "Orchestral Pop"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 5,
-      "movement": 4.4,
-      "emotion": 4.6,
-      "comfort": 5,
-      "maximalism": 4.6,
-      "narrative": 4.8,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.3,
+      "belt": 4.75,
+      "movement": 3.55,
+      "emotion": 3.55,
+      "comfort": 4.94,
+      "maximalism": 3.5,
+      "narrative": 3.96,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "The childhood anchor proves “traditional Broadway” was never the problem. Hook density, emotional clarity, comic character songs, and irresistible escalation mattered from the beginning.",
     "risk": "None. The VHS already answered this question.",
@@ -1243,7 +1441,25 @@
       "Classic Broadway",
       "Cabaret",
       "Orchestral Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 5.0,
+      "movement": 4.4,
+      "emotion": 4.6,
+      "comfort": 5.0,
+      "maximalism": 4.6,
+      "narrative": 4.8,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "kpop",
@@ -1267,16 +1483,16 @@
       "Dance-pop"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 5,
-      "emotion": 4.7,
-      "comfort": 4.5,
-      "maximalism": 5,
-      "narrative": 4.7,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 4.89,
+      "emotion": 3.84,
+      "comfort": 4.3,
+      "maximalism": 4.84,
+      "narrative": 3.58,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "A clean modern example of propulsion engineering: relentless hooks, identity stakes, kinetic production, huge choruses, and emotional songs that still feel designed for bodily participation.",
     "risk": "May create involuntary replay loops.",
@@ -1347,7 +1563,25 @@
       "Electronic",
       "Ballad",
       "Dance-pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 5.0,
+      "emotion": 4.7,
+      "comfort": 4.5,
+      "maximalism": 5.0,
+      "narrative": 4.7,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "odessa",
@@ -1372,16 +1606,16 @@
       "Power Ballad"
     ],
     "scores": {
-      "propulsion": 4.9,
-      "belt": 4.8,
-      "movement": 4.7,
-      "emotion": 4.7,
-      "comfort": 3.3,
-      "maximalism": 5,
-      "narrative": 4.4,
-      "hooks": 4.7,
-      "afterglow": 4.8,
-      "replay": 4.7
+      "propulsion": 4.81,
+      "belt": 4.08,
+      "movement": 4.19,
+      "emotion": 3.84,
+      "comfort": 2.78,
+      "maximalism": 4.84,
+      "narrative": 2.85,
+      "hooks": 3.11,
+      "afterglow": 3.84,
+      "replay": 3.6
     },
     "why": "It commits. Rock-opera theatricality, neon maximalism, big emotions, and songs that act like the fuel source for the entire strange world.",
     "risk": "Deliberately weird and stylized.",
@@ -1452,7 +1686,25 @@
       "Synth Rock",
       "Rock Opera",
       "Ballad"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.9,
+      "belt": 4.8,
+      "movement": 4.7,
+      "emotion": 4.7,
+      "comfort": 3.3,
+      "maximalism": 5.0,
+      "narrative": 4.4,
+      "hooks": 4.7,
+      "afterglow": 4.8,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "walkline",
@@ -1476,16 +1728,16 @@
       "Biopic Performance"
     ],
     "scores": {
-      "propulsion": 4.2,
-      "belt": 4.2,
-      "movement": 4.1,
-      "emotion": 4.7,
-      "comfort": 4.3,
-      "maximalism": 3.4,
-      "narrative": 4.3,
-      "hooks": 4.6,
-      "afterglow": 4.7,
-      "replay": 4.5
+      "propulsion": 2.63,
+      "belt": 2.44,
+      "movement": 2.57,
+      "emotion": 3.84,
+      "comfort": 3.86,
+      "maximalism": 2.09,
+      "narrative": 2.7,
+      "hooks": 2.78,
+      "afterglow": 3.19,
+      "replay": 2.85
     },
     "why": "The music hits hardest because story, performance, desire, and character converge inside the songs. Less “musical,” but very strong music-as-emotional-language evidence.",
     "risk": "More performance-driven than reality-breaking musical.",
@@ -1555,7 +1807,25 @@
       "Rockabilly",
       "Roots",
       "Biopic Performance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.2,
+      "belt": 4.2,
+      "movement": 4.1,
+      "emotion": 4.7,
+      "comfort": 4.3,
+      "maximalism": 3.4,
+      "narrative": 4.3,
+      "hooks": 4.6,
+      "afterglow": 4.7,
+      "replay": 4.5
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "drhorrible",
@@ -1579,16 +1849,16 @@
       "Character Song"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 4.5,
-      "movement": 4.1,
-      "emotion": 4.6,
-      "comfort": 4.4,
-      "maximalism": 4.2,
-      "narrative": 5,
-      "hooks": 4.8,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.66,
+      "belt": 2.92,
+      "movement": 2.57,
+      "emotion": 3.55,
+      "comfort": 4.1,
+      "maximalism": 2.61,
+      "narrative": 4.72,
+      "hooks": 3.78,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "Short-form proof that cleverness and emotional propulsion can coexist. Songs are plot mechanisms, jokes, character psychology, and eventually knives.",
     "risk": "The tonal turn is part of the experience.",
@@ -1658,7 +1928,25 @@
       "Rock",
       "Web Musical",
       "Character Song"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 4.5,
+      "movement": 4.1,
+      "emotion": 4.6,
+      "comfort": 4.4,
+      "maximalism": 4.2,
+      "narrative": 5.0,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "once",
@@ -1681,16 +1969,16 @@
       "Singer-Songwriter"
     ],
     "scores": {
-      "propulsion": 2.8,
-      "belt": 3.8,
-      "movement": 2.1,
-      "emotion": 4.5,
-      "comfort": 4.2,
-      "maximalism": 1.8,
-      "narrative": 4.2,
-      "hooks": 4,
-      "afterglow": 4.4,
-      "replay": 4.1
+      "propulsion": 2.0,
+      "belt": 2.14,
+      "movement": 2.0,
+      "emotion": 3.32,
+      "comfort": 3.55,
+      "maximalism": 2.0,
+      "narrative": 2.5,
+      "hooks": 2.06,
+      "afterglow": 2.27,
+      "replay": 2.12
     },
     "why": "You appreciate it, but it establishes the lower boundary: beautiful music is not enough when you specifically want propulsion.",
     "risk": "Too slow for a propulsion night.",
@@ -1757,7 +2045,25 @@
     "dnaNormalized": [
       "Folk",
       "Singer-Songwriter"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 2.8,
+      "belt": 3.8,
+      "movement": 2.1,
+      "emotion": 4.5,
+      "comfort": 4.2,
+      "maximalism": 1.8,
+      "narrative": 4.2,
+      "hooks": 4.0,
+      "afterglow": 4.4,
+      "replay": 4.1
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "beginagain",
@@ -1780,16 +2086,16 @@
       "Acoustic Pop"
     ],
     "scores": {
-      "propulsion": 2.9,
-      "belt": 3.4,
-      "movement": 2.8,
-      "emotion": 3.8,
-      "comfort": 4.6,
-      "maximalism": 1.9,
-      "narrative": 3.8,
-      "hooks": 4,
-      "afterglow": 4.1,
-      "replay": 4.1
+      "propulsion": 2.02,
+      "belt": 2.03,
+      "movement": 2.02,
+      "emotion": 2.21,
+      "comfort": 4.48,
+      "maximalism": 2.02,
+      "narrative": 2.23,
+      "hooks": 2.06,
+      "afterglow": 2.07,
+      "replay": 2.12
     },
     "why": "A useful separate category: music-centered and genuinely enjoyable, but not what your brain reaches for when it wants to be musically propelled.",
     "risk": "Wrong lane if you want lift-off.",
@@ -1856,7 +2162,25 @@
       "Indie Pop",
       "Singer-Songwriter",
       "Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 2.9,
+      "belt": 3.4,
+      "movement": 2.8,
+      "emotion": 3.8,
+      "comfort": 4.6,
+      "maximalism": 1.9,
+      "narrative": 3.8,
+      "hooks": 4.0,
+      "afterglow": 4.1,
+      "replay": 4.1
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "lalaland",
@@ -1879,16 +2203,16 @@
       "Pop Ballad"
     ],
     "scores": {
-      "propulsion": 3.3,
-      "belt": 3.1,
-      "movement": 3.4,
-      "emotion": 4.1,
-      "comfort": 3.1,
-      "maximalism": 3.4,
-      "narrative": 4.3,
-      "hooks": 3.8,
-      "afterglow": 3.5,
-      "replay": 3.1
+      "propulsion": 2.06,
+      "belt": 2.0,
+      "movement": 2.17,
+      "emotion": 2.44,
+      "comfort": 2.54,
+      "maximalism": 2.09,
+      "narrative": 2.7,
+      "hooks": 2.02,
+      "afterglow": 2.0,
+      "replay": 2.02
     },
     "why": "A strategically useful negative signal: polished craft and musical prestige do not compensate for a lower level of visceral musical ignition.",
     "risk": "You already tried it; no need to force chemistry.",
@@ -1951,7 +2275,25 @@
       "Jazz",
       "Golden Age",
       "Pop Ballad"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.3,
+      "belt": 3.1,
+      "movement": 3.4,
+      "emotion": 4.1,
+      "comfort": 3.1,
+      "maximalism": 3.4,
+      "narrative": 4.3,
+      "hooks": 3.8,
+      "afterglow": 3.5,
+      "replay": 3.1
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "dreamgirls",
@@ -1975,16 +2317,16 @@
       "Power Ballad"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 5,
-      "movement": 4.1,
-      "emotion": 5,
-      "comfort": 1.8,
-      "maximalism": 4.8,
-      "narrative": 4.7,
-      "hooks": 4.8,
-      "afterglow": 4.8,
-      "replay": 3.9
+      "propulsion": 4.3,
+      "belt": 4.75,
+      "movement": 2.57,
+      "emotion": 4.73,
+      "comfort": 2.06,
+      "maximalism": 4.39,
+      "narrative": 3.58,
+      "hooks": 3.78,
+      "afterglow": 3.84,
+      "replay": 2.06
     },
     "why": "Musically a very strong fit, but personal emotional associations currently outweigh recommendation fit. The engine preserves that distinction.",
     "risk": "Currently connected to an emotional part of your upbringing you do not want to revisit.",
@@ -2049,7 +2391,25 @@
       "Soul",
       "R&B",
       "Ballad"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 5.0,
+      "movement": 4.1,
+      "emotion": 5.0,
+      "comfort": 1.8,
+      "maximalism": 4.8,
+      "narrative": 4.7,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 3.9
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "rocketman",
@@ -2073,16 +2433,16 @@
       "Fantasy Musical"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 5,
-      "movement": 4.3,
-      "emotion": 5,
-      "comfort": 4.2,
-      "maximalism": 4.8,
-      "narrative": 4.8,
-      "hooks": 5,
-      "afterglow": 4.7,
-      "replay": 4.8
+      "propulsion": 3.81,
+      "belt": 4.75,
+      "movement": 3.29,
+      "emotion": 4.73,
+      "comfort": 3.55,
+      "maximalism": 4.39,
+      "narrative": 3.96,
+      "hooks": 4.7,
+      "afterglow": 3.19,
+      "replay": 4.06
     },
     "why": "Unlike a conventional biopic, Elton’s songs repeatedly replace realism and become the storytelling language. Your first viewing conditions may have hidden a strong structural match.",
     "risk": "Addiction, family trauma, and darker emotional material.",
@@ -2153,7 +2513,25 @@
       "Rock",
       "Jukebox",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 5.0,
+      "movement": 4.3,
+      "emotion": 5.0,
+      "comfort": 4.2,
+      "maximalism": 4.8,
+      "narrative": 4.8,
+      "hooks": 5.0,
+      "afterglow": 4.7,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "bohemian",
@@ -2175,16 +2553,16 @@
       "Biopic Performance"
     ],
     "scores": {
-      "propulsion": 3.8,
-      "belt": 4.8,
-      "movement": 4.2,
-      "emotion": 4.1,
-      "comfort": 3.2,
-      "maximalism": 3.8,
-      "narrative": 3.4,
-      "hooks": 5,
-      "afterglow": 4.1,
-      "replay": 3.4
+      "propulsion": 2.16,
+      "belt": 4.08,
+      "movement": 2.92,
+      "emotion": 2.44,
+      "comfort": 2.65,
+      "maximalism": 2.31,
+      "narrative": 2.05,
+      "hooks": 4.7,
+      "afterglow": 2.07,
+      "replay": 2.04
     },
     "why": "The Live Aid climax delivers the arena-scale participation you love, but the surrounding movie does not consistently turn music into narrative propulsion.",
     "risk": "The teeth have historically competed for your attention.",
@@ -2251,7 +2629,25 @@
       "Queen",
       "Arena Rock",
       "Biopic Performance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.8,
+      "belt": 4.8,
+      "movement": 4.2,
+      "emotion": 4.1,
+      "comfort": 3.2,
+      "maximalism": 3.8,
+      "narrative": 3.4,
+      "hooks": 5.0,
+      "afterglow": 4.1,
+      "replay": 3.4
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "jamie",
@@ -2275,16 +2671,16 @@
       "Power Ballad"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.7,
-      "movement": 4.7,
-      "emotion": 4.5,
-      "comfort": 4.3,
-      "maximalism": 4.6,
-      "narrative": 4.6,
-      "hooks": 4.7,
-      "afterglow": 4.5,
-      "replay": 4.6
+      "propulsion": 3.81,
+      "belt": 3.6,
+      "movement": 4.19,
+      "emotion": 3.32,
+      "comfort": 3.86,
+      "maximalism": 3.5,
+      "narrative": 3.29,
+      "hooks": 3.11,
+      "afterglow": 2.59,
+      "replay": 3.16
     },
     "why": "Pop-forward songs, identity stakes, humor, emotional release, and a strong “spotlight” instinct make this a compelling bridge between modern musical theater and pure feel-it-in-your-body participation.",
     "risk": "Contains bullying and one heavier queer-history sequence.",
@@ -2351,7 +2747,25 @@
       "Electronic",
       "Musical Theater",
       "Ballad"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.7,
+      "movement": 4.7,
+      "emotion": 4.5,
+      "comfort": 4.3,
+      "maximalism": 4.6,
+      "narrative": 4.6,
+      "hooks": 4.7,
+      "afterglow": 4.5,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "hedwig",
@@ -2375,16 +2789,16 @@
       "Cabaret"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.7,
-      "movement": 4.4,
-      "emotion": 5,
-      "comfort": 3.3,
-      "maximalism": 4.6,
-      "narrative": 5,
-      "hooks": 4.7,
-      "afterglow": 5,
-      "replay": 4.8
+      "propulsion": 4.3,
+      "belt": 3.6,
+      "movement": 3.55,
+      "emotion": 4.73,
+      "comfort": 2.78,
+      "maximalism": 3.5,
+      "narrative": 4.72,
+      "hooks": 3.11,
+      "afterglow": 4.72,
+      "replay": 4.06
     },
     "why": "The Inside + O’Dessa + Moulin Rouge intersection: persona, performance, pain, rock theatricality, and music used to construct and deconstruct identity in real time.",
     "risk": "Sexual content, identity trauma, emotional rough edges.",
@@ -2450,7 +2864,25 @@
       "Rock",
       "Rock Musical",
       "Cabaret"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.7,
+      "movement": 4.4,
+      "emotion": 5.0,
+      "comfort": 3.3,
+      "maximalism": 4.6,
+      "narrative": 5.0,
+      "hooks": 4.7,
+      "afterglow": 5.0,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "rent",
@@ -2473,16 +2905,16 @@
       "Contemporary Broadway"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 5,
-      "movement": 4.3,
-      "emotion": 5,
-      "comfort": 3.2,
-      "maximalism": 4.6,
-      "narrative": 4.7,
-      "hooks": 4.8,
-      "afterglow": 4.8,
-      "replay": 4.7
+      "propulsion": 3.81,
+      "belt": 4.75,
+      "movement": 3.29,
+      "emotion": 4.73,
+      "comfort": 2.65,
+      "maximalism": 3.5,
+      "narrative": 3.58,
+      "hooks": 3.78,
+      "afterglow": 3.84,
+      "replay": 3.6
     },
     "why": "Rock-forward hooks, ensemble urgency, characters wanting things desperately, and emotional escalation. A strong fit if heavier subject matter is welcome.",
     "risk": "AIDS, death, addiction, grief.",
@@ -2550,7 +2982,25 @@
     "dnaNormalized": [
       "Rock",
       "Contemporary Broadway"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 5.0,
+      "movement": 4.3,
+      "emotion": 5.0,
+      "comfort": 3.2,
+      "maximalism": 4.6,
+      "narrative": 4.7,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "jcs",
@@ -2574,16 +3024,16 @@
       "Musical Theater"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 5,
-      "movement": 4.5,
-      "emotion": 5,
-      "comfort": 2.9,
-      "maximalism": 4.9,
-      "narrative": 4.9,
-      "hooks": 4.8,
-      "afterglow": 4.7,
-      "replay": 4.7
+      "propulsion": 4.66,
+      "belt": 4.75,
+      "movement": 3.81,
+      "emotion": 4.73,
+      "comfort": 2.44,
+      "maximalism": 4.59,
+      "narrative": 4.22,
+      "hooks": 3.78,
+      "afterglow": 3.19,
+      "replay": 3.6
     },
     "why": "It is basically continuous musical argument. Massive voices, riff-driven urgency, theological/existential conflict, and almost no conventional dialogue to interrupt the engine.",
     "risk": "Very 1970s visual language; spiritually intense subject matter.",
@@ -2653,7 +3103,25 @@
       "Rock",
       "Funk",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 5.0,
+      "movement": 4.5,
+      "emotion": 5.0,
+      "comfort": 2.9,
+      "maximalism": 4.9,
+      "narrative": 4.9,
+      "hooks": 4.8,
+      "afterglow": 4.7,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "sister2",
@@ -2677,16 +3145,16 @@
       "Pop"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 5,
-      "movement": 4.8,
-      "emotion": 4.4,
-      "comfort": 4.9,
-      "maximalism": 4.5,
-      "narrative": 4.1,
-      "hooks": 4.9,
-      "afterglow": 4.7,
-      "replay": 4.8
+      "propulsion": 4.3,
+      "belt": 4.75,
+      "movement": 4.54,
+      "emotion": 3.14,
+      "comfort": 4.85,
+      "maximalism": 3.14,
+      "narrative": 2.36,
+      "hooks": 4.19,
+      "afterglow": 3.19,
+      "replay": 4.06
     },
     "why": "Choir music is essentially engineered participation. Gospel call-and-response, huge ensemble lift, Lauryn Hill, and finales that refuse to let the body remain neutral.",
     "risk": "Low stakes, which may be exactly the point.",
@@ -2755,7 +3223,25 @@
       "R&B",
       "Soul",
       "Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 5.0,
+      "movement": 4.8,
+      "emotion": 4.4,
+      "comfort": 4.9,
+      "maximalism": 4.5,
+      "narrative": 4.1,
+      "hooks": 4.9,
+      "afterglow": 4.7,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "colorpurple",
@@ -2780,16 +3266,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 5,
-      "movement": 4,
-      "emotion": 5,
-      "comfort": 2.4,
-      "maximalism": 4.6,
-      "narrative": 5,
-      "hooks": 4.5,
-      "afterglow": 4.8,
-      "replay": 4.3
+      "propulsion": 3.34,
+      "belt": 4.75,
+      "movement": 2.44,
+      "emotion": 4.73,
+      "comfort": 2.19,
+      "maximalism": 3.5,
+      "narrative": 4.72,
+      "hooks": 2.57,
+      "afterglow": 3.84,
+      "replay": 2.48
     },
     "why": "The emotional amplitude is enormous and the score offers powerful release, especially if you want to be moved rather than kept emotionally safe.",
     "risk": "Abuse, trauma, racism, and heavy subject matter.",
@@ -2857,7 +3343,25 @@
       "Blues",
       "R&B",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 5.0,
+      "movement": 4.0,
+      "emotion": 5.0,
+      "comfort": 2.4,
+      "maximalism": 4.6,
+      "narrative": 5.0,
+      "hooks": 4.5,
+      "afterglow": 4.8,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "hairspray",
@@ -2881,16 +3385,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 5,
-      "emotion": 4.2,
-      "comfort": 4.8,
-      "maximalism": 4.8,
-      "narrative": 4.6,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 4.89,
+      "emotion": 2.65,
+      "comfort": 4.76,
+      "maximalism": 4.39,
+      "narrative": 3.29,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "Almost laboratory-perfect for musical propulsion: immediate hooks, movement, comic character songs, soul influence, and an ending engineered to make sitting still impossible.",
     "risk": "None if joy is the assignment.",
@@ -2962,7 +3466,25 @@
       "Soul",
       "R&B",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 5.0,
+      "emotion": 4.2,
+      "comfort": 4.8,
+      "maximalism": 4.8,
+      "narrative": 4.6,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "encanto",
@@ -2986,16 +3508,16 @@
       "Lin-Manuel Miranda"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 4.8,
-      "movement": 4.7,
-      "emotion": 4.8,
-      "comfort": 4.8,
-      "maximalism": 4.5,
-      "narrative": 5,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.66,
+      "belt": 4.08,
+      "movement": 4.19,
+      "emotion": 4.13,
+      "comfort": 4.76,
+      "maximalism": 3.14,
+      "narrative": 4.72,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "The Moana/Hamilton bridge in its purest form: layered lyrics, memorable hooks, family dynamics, rhythmic momentum, and songs that expose internal pressure rather than pause the story.",
     "risk": "Family dynamics may be more emotional than the bright palette suggests.",
@@ -3061,7 +3583,25 @@
       "Musical Theater",
       "World/Regional",
       "Lin-Manuel Miranda"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 4.8,
+      "movement": 4.7,
+      "emotion": 4.8,
+      "comfort": 4.8,
+      "maximalism": 4.5,
+      "narrative": 5.0,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "singstreet",
@@ -3084,16 +3624,16 @@
       "Indie Rock"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.2,
-      "movement": 4.3,
-      "emotion": 4.3,
-      "comfort": 4.4,
-      "maximalism": 3.2,
-      "narrative": 4.2,
-      "hooks": 4.7,
-      "afterglow": 4.6,
-      "replay": 4.6
+      "propulsion": 2.43,
+      "belt": 2.44,
+      "movement": 3.29,
+      "emotion": 2.92,
+      "comfort": 4.1,
+      "maximalism": 2.06,
+      "narrative": 2.5,
+      "hooks": 3.11,
+      "afterglow": 2.92,
+      "replay": 3.16
     },
     "why": "Less maximal than your core anchors, but stronger propulsion than Once or Begin Again. Original songs are catchy enough to become emotional shortcuts quickly.",
     "risk": "More music-centered coming-of-age film than full reality-breaking musical.",
@@ -3156,7 +3696,25 @@
     "dnaNormalized": [
       "New Wave",
       "Rock"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.2,
+      "movement": 4.3,
+      "emotion": 4.3,
+      "comfort": 4.4,
+      "maximalism": 3.2,
+      "narrative": 4.2,
+      "hooks": 4.7,
+      "afterglow": 4.6,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "westside",
@@ -3180,16 +3738,16 @@
       "Jazz"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.8,
-      "movement": 5,
-      "emotion": 5,
-      "comfort": 2.6,
-      "maximalism": 4.8,
-      "narrative": 5,
-      "hooks": 4.7,
-      "afterglow": 4.8,
-      "replay": 4.4
+      "propulsion": 3.81,
+      "belt": 4.08,
+      "movement": 4.89,
+      "emotion": 4.73,
+      "comfort": 2.24,
+      "maximalism": 4.39,
+      "narrative": 4.72,
+      "hooks": 3.11,
+      "afterglow": 3.84,
+      "replay": 2.68
     },
     "why": "Evidence that “traditional Broadway” is not disqualifying when cinematic momentum, movement, longing, and musical escalation are operating at full force.",
     "risk": "Tragic outcome and long runtime.",
@@ -3255,7 +3813,25 @@
       "Latin Influence",
       "Orchestral",
       "Jazz"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.8,
+      "movement": 5.0,
+      "emotion": 5.0,
+      "comfort": 2.6,
+      "maximalism": 4.8,
+      "narrative": 5.0,
+      "hooks": 4.7,
+      "afterglow": 4.8,
+      "replay": 4.4
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "littleShop",
@@ -3279,16 +3855,16 @@
       "Comedy Musical"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.7,
-      "movement": 4.6,
-      "emotion": 4.2,
-      "comfort": 4.2,
-      "maximalism": 4.7,
-      "narrative": 4.9,
-      "hooks": 5,
-      "afterglow": 4.5,
-      "replay": 4.8
+      "propulsion": 4.3,
+      "belt": 3.6,
+      "movement": 3.98,
+      "emotion": 2.65,
+      "comfort": 3.55,
+      "maximalism": 3.93,
+      "narrative": 4.22,
+      "hooks": 4.7,
+      "afterglow": 2.59,
+      "replay": 4.06
     },
     "why": "Character songs move plot at speed, the Motown/do-wop vocabulary is immediately hooky, and the tonal escalation is delightfully unhinged.",
     "risk": "Dark comedy and camp horror.",
@@ -3354,7 +3930,25 @@
       "R&B",
       "Rock",
       "Comedy Musical"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.7,
+      "movement": 4.6,
+      "emotion": 4.2,
+      "comfort": 4.2,
+      "maximalism": 4.7,
+      "narrative": 4.9,
+      "hooks": 5.0,
+      "afterglow": 4.5,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "rocky",
@@ -3378,16 +3972,16 @@
       "Sci-fi"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 4.8,
-      "movement": 5,
-      "emotion": 3.9,
-      "comfort": 4.1,
-      "maximalism": 5,
-      "narrative": 4.2,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.66,
+      "belt": 4.08,
+      "movement": 4.89,
+      "emotion": 2.3,
+      "comfort": 3.34,
+      "maximalism": 4.84,
+      "narrative": 2.5,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "Audience participation is embedded in its cultural DNA. Glam-rock hooks, camp maximalism, and unapologetic theatricality are very strong propulsion signals.",
     "risk": "1970s sexual politics and deliberate camp weirdness.",
@@ -3453,7 +4047,25 @@
       "Rock Musical",
       "Camp",
       "Sci-fi"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 4.8,
+      "movement": 5.0,
+      "emotion": 3.9,
+      "comfort": 4.1,
+      "maximalism": 5.0,
+      "narrative": 4.2,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "sweeney",
@@ -3477,16 +4089,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.3,
-      "belt": 4.5,
-      "movement": 3.2,
-      "emotion": 4.9,
-      "comfort": 2.1,
-      "maximalism": 4.7,
-      "narrative": 5,
-      "hooks": 4.2,
-      "afterglow": 4.6,
-      "replay": 4.2
+      "propulsion": 2.76,
+      "belt": 2.92,
+      "movement": 2.07,
+      "emotion": 4.28,
+      "comfort": 2.12,
+      "maximalism": 3.93,
+      "narrative": 4.72,
+      "hooks": 2.15,
+      "afterglow": 2.92,
+      "replay": 2.25
     },
     "why": "Not upbeat, but emotionally and structurally relentless. Motifs recur like intrusive thoughts and the score rarely stops functioning as narrative machinery.",
     "risk": "Graphic violence, murder, bleakness.",
@@ -3551,7 +4163,25 @@
       "Gothic",
       "Orchestral",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.3,
+      "belt": 4.5,
+      "movement": 3.2,
+      "emotion": 4.9,
+      "comfort": 2.1,
+      "maximalism": 4.7,
+      "narrative": 5.0,
+      "hooks": 4.2,
+      "afterglow": 4.6,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "lastfive",
@@ -3574,16 +4204,16 @@
       "Character Song"
     ],
     "scores": {
-      "propulsion": 3.9,
-      "belt": 4.7,
-      "movement": 2.9,
-      "emotion": 5,
-      "comfort": 2.7,
-      "maximalism": 3.6,
-      "narrative": 5,
-      "hooks": 4.3,
-      "afterglow": 4.5,
-      "replay": 4.2
+      "propulsion": 2.24,
+      "belt": 3.6,
+      "movement": 2.04,
+      "emotion": 4.73,
+      "comfort": 2.3,
+      "maximalism": 2.19,
+      "narrative": 4.72,
+      "hooks": 2.24,
+      "afterglow": 2.59,
+      "replay": 2.25
     },
     "why": "Less kinetic, but structurally clever and emotionally intense. Best when you want huge feelings and vocal catharsis more than movement.",
     "risk": "Relationship breakdown is the entire architecture.",
@@ -3647,7 +4277,25 @@
       "Musical Theater",
       "Piano Pop",
       "Character Song"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.9,
+      "belt": 4.7,
+      "movement": 2.9,
+      "emotion": 5.0,
+      "comfort": 2.7,
+      "maximalism": 3.6,
+      "narrative": 5.0,
+      "hooks": 4.3,
+      "afterglow": 4.5,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "spirited",
@@ -3671,16 +4319,16 @@
       "Holiday"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.8,
-      "movement": 5,
-      "emotion": 4.2,
-      "comfort": 4.2,
-      "maximalism": 5,
-      "narrative": 4.2,
-      "hooks": 4.6,
-      "afterglow": 4.5,
-      "replay": 4.6
+      "propulsion": 4.3,
+      "belt": 4.08,
+      "movement": 4.89,
+      "emotion": 2.65,
+      "comfort": 3.55,
+      "maximalism": 4.84,
+      "narrative": 2.5,
+      "hooks": 2.78,
+      "afterglow": 2.59,
+      "replay": 3.16
     },
     "why": "Huge choreography, aggressive commitment, comic escalation, and several songs built to become full-body events.",
     "risk": "Holiday framing and broad comedy may be mood-dependent.",
@@ -3748,7 +4396,25 @@
       "Musical Theater",
       "Comedy",
       "Holiday"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.8,
+      "movement": 5.0,
+      "emotion": 4.2,
+      "comfort": 4.2,
+      "maximalism": 5.0,
+      "narrative": 4.2,
+      "hooks": 4.6,
+      "afterglow": 4.5,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "matilda",
@@ -3772,16 +4438,16 @@
       "Dark Comedy"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.5,
-      "movement": 4.8,
-      "emotion": 4.7,
-      "comfort": 3.8,
-      "maximalism": 4.7,
-      "narrative": 5,
-      "hooks": 4.5,
-      "afterglow": 4.6,
-      "replay": 4.5
+      "propulsion": 4.3,
+      "belt": 2.92,
+      "movement": 4.54,
+      "emotion": 3.84,
+      "comfort": 3.19,
+      "maximalism": 3.93,
+      "narrative": 4.72,
+      "hooks": 2.57,
+      "afterglow": 2.92,
+      "replay": 2.85
     },
     "why": "Sharp lyrical storytelling, giant ensemble choreography, emotional cruelty-to-catharsis arcs, and a spectacular release valve in Revolting Children.",
     "risk": "Its deliberately grotesque adults and child-abuse themes make the comfort level deceptive.",
@@ -3848,7 +4514,25 @@
       "Musical Theater",
       "Pop",
       "Comedy"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 4.7,
+      "comfort": 3.8,
+      "maximalism": 4.7,
+      "narrative": 5.0,
+      "hooks": 4.5,
+      "afterglow": 4.6,
+      "replay": 4.5
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "prom",
@@ -3872,16 +4556,16 @@
       "Comedy"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4.8,
-      "movement": 4.8,
-      "emotion": 4.2,
-      "comfort": 4.4,
-      "maximalism": 5,
-      "narrative": 4,
-      "hooks": 4.3,
-      "afterglow": 4.4,
-      "replay": 4.2
+      "propulsion": 2.99,
+      "belt": 4.08,
+      "movement": 4.54,
+      "emotion": 2.65,
+      "comfort": 4.1,
+      "maximalism": 4.84,
+      "narrative": 2.3,
+      "hooks": 2.24,
+      "afterglow": 2.27,
+      "replay": 2.25
     },
     "why": "Unapologetically theatrical, belt-heavy, bright, campy, and built around large-scale musical release.",
     "risk": "The celebrity satire and tonal broadness can feel synthetic.",
@@ -3949,7 +4633,25 @@
       "Pop",
       "Dance",
       "Comedy"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.8,
+      "movement": 4.8,
+      "emotion": 4.2,
+      "comfort": 4.4,
+      "maximalism": 5.0,
+      "narrative": 4.0,
+      "hooks": 4.3,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "cyrano",
@@ -3973,16 +4675,16 @@
       "Ballad"
     ],
     "scores": {
-      "propulsion": 3.7,
-      "belt": 3.8,
-      "movement": 3.3,
-      "emotion": 5,
-      "comfort": 3.2,
-      "maximalism": 4.1,
-      "narrative": 4.8,
-      "hooks": 4,
-      "afterglow": 4.8,
-      "replay": 4
+      "propulsion": 2.09,
+      "belt": 2.14,
+      "movement": 2.11,
+      "emotion": 4.73,
+      "comfort": 2.65,
+      "maximalism": 2.43,
+      "narrative": 3.96,
+      "hooks": 2.06,
+      "afterglow": 3.84,
+      "replay": 2.08
     },
     "why": "Music functions as emotional confession, with aching repetition and a romantic-tragic arc that keeps tightening.",
     "risk": "Lower movement and a deliberately mournful register make it a mood-specific recommendation.",
@@ -4049,7 +4751,25 @@
       "Orchestral",
       "Musical Theater",
       "Ballad"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.7,
+      "belt": 3.8,
+      "movement": 3.3,
+      "emotion": 5.0,
+      "comfort": 3.2,
+      "maximalism": 4.1,
+      "narrative": 4.8,
+      "hooks": 4.0,
+      "afterglow": 4.8,
+      "replay": 4.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "wonka",
@@ -4073,16 +4793,16 @@
       "Family"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 3.8,
-      "movement": 4.3,
-      "emotion": 3.8,
-      "comfort": 4.8,
-      "maximalism": 4.3,
-      "narrative": 4.3,
-      "hooks": 4.2,
-      "afterglow": 4.5,
-      "replay": 4.2
+      "propulsion": 2.43,
+      "belt": 2.14,
+      "movement": 3.29,
+      "emotion": 2.21,
+      "comfort": 4.76,
+      "maximalism": 2.83,
+      "narrative": 2.7,
+      "hooks": 2.15,
+      "afterglow": 2.59,
+      "replay": 2.25
     },
     "why": "Buoyant melody, storybook momentum, visual invention, and a comfort-forward tone with enough musical movement to stay airborne.",
     "risk": "Lower emotional amplitude and belt intensity than the engine’s strongest anchors.",
@@ -4150,7 +4870,25 @@
       "Orchestral",
       "Golden Age",
       "Family"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 3.8,
+      "movement": 4.3,
+      "emotion": 3.8,
+      "comfort": 4.8,
+      "maximalism": 4.3,
+      "narrative": 4.3,
+      "hooks": 4.2,
+      "afterglow": 4.5,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "meangirls",
@@ -4174,16 +4912,16 @@
       "Comedy"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4.6,
-      "movement": 4.7,
-      "emotion": 3.6,
-      "comfort": 3.5,
-      "maximalism": 4.5,
-      "narrative": 4.2,
-      "hooks": 4.4,
-      "afterglow": 4,
-      "replay": 4.3
+      "propulsion": 2.99,
+      "belt": 3.32,
+      "movement": 4.19,
+      "emotion": 2.14,
+      "comfort": 2.92,
+      "maximalism": 3.14,
+      "narrative": 2.5,
+      "hooks": 2.38,
+      "afterglow": 2.03,
+      "replay": 2.48
     },
     "why": "Modern pop production, sharp character songs, choreography, and a pace that rarely lets the musical energy fully drop.",
     "risk": "Some adaptation choices flatten the stage score and emotional peaks.",
@@ -4250,7 +4988,25 @@
       "Musical Theater",
       "Dance",
       "Comedy"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.6,
+      "movement": 4.7,
+      "emotion": 3.6,
+      "comfort": 3.5,
+      "maximalism": 4.5,
+      "narrative": 4.2,
+      "hooks": 4.4,
+      "afterglow": 4.0,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "newsies",
@@ -4274,16 +5030,16 @@
       "Ensemble"
     ],
     "scores": {
-      "propulsion": 4.9,
-      "belt": 4.8,
-      "movement": 5,
-      "emotion": 4.4,
-      "comfort": 4.3,
-      "maximalism": 4.7,
-      "narrative": 4.8,
-      "hooks": 4.7,
-      "afterglow": 4.8,
-      "replay": 4.7
+      "propulsion": 4.81,
+      "belt": 4.08,
+      "movement": 4.89,
+      "emotion": 3.14,
+      "comfort": 3.86,
+      "maximalism": 3.93,
+      "narrative": 3.96,
+      "hooks": 3.11,
+      "afterglow": 3.84,
+      "replay": 3.6
     },
     "why": "Big ensemble vocals, athletic choreography, rally-song architecture, and constant communal forward motion.",
     "risk": "Stage-capture presentation may feel less cinematic.",
@@ -4350,7 +5106,25 @@
       "Dance",
       "Orchestral Pop",
       "Ensemble"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.9,
+      "belt": 4.8,
+      "movement": 5.0,
+      "emotion": 4.4,
+      "comfort": 4.3,
+      "maximalism": 4.7,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 4.8,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "comefromaway",
@@ -4374,16 +5148,16 @@
       "Ensemble"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 4.2,
-      "movement": 4.2,
-      "emotion": 5,
-      "comfort": 4.4,
-      "maximalism": 3.8,
-      "narrative": 5,
-      "hooks": 4.4,
-      "afterglow": 5,
-      "replay": 4.6
+      "propulsion": 4.66,
+      "belt": 2.44,
+      "movement": 2.92,
+      "emotion": 4.73,
+      "comfort": 4.1,
+      "maximalism": 2.31,
+      "narrative": 4.72,
+      "hooks": 2.38,
+      "afterglow": 4.72,
+      "replay": 3.16
     },
     "why": "Near-continuous ensemble storytelling turns logistical chaos into rhythmic propulsion, then lands enormous communal catharsis.",
     "risk": "Subject matter around 9/11 can make the emotional load heavier than the warmth suggests.",
@@ -4450,7 +5224,25 @@
       "Folk",
       "Musical Theater",
       "Ensemble"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 4.2,
+      "movement": 4.2,
+      "emotion": 5.0,
+      "comfort": 4.4,
+      "maximalism": 3.8,
+      "narrative": 5.0,
+      "hooks": 4.4,
+      "afterglow": 5.0,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "shrek",
@@ -4474,16 +5266,16 @@
       "Family"
     ],
     "scores": {
-      "propulsion": 4.2,
-      "belt": 4.6,
-      "movement": 4.2,
-      "emotion": 4.3,
-      "comfort": 4.4,
-      "maximalism": 4.5,
-      "narrative": 4.5,
-      "hooks": 4.3,
-      "afterglow": 4.4,
-      "replay": 4.2
+      "propulsion": 2.63,
+      "belt": 3.32,
+      "movement": 2.92,
+      "emotion": 2.92,
+      "comfort": 4.1,
+      "maximalism": 3.14,
+      "narrative": 3.04,
+      "hooks": 2.24,
+      "afterglow": 2.27,
+      "replay": 2.25
     },
     "why": "Broad comedy and theatrical excess hide a surprisingly sincere outsider story with strong belt moments and ensemble payoff.",
     "risk": "Some humor is intentionally juvenile and the filmed-stage aesthetic is broad.",
@@ -4551,7 +5343,25 @@
       "Comedy",
       "Rock",
       "Family"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.2,
+      "belt": 4.6,
+      "movement": 4.2,
+      "emotion": 4.3,
+      "comfort": 4.4,
+      "maximalism": 4.5,
+      "narrative": 4.5,
+      "hooks": 4.3,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "rockofages",
@@ -4575,16 +5385,16 @@
       "Arena Rock"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 5,
-      "movement": 4.5,
-      "emotion": 3.4,
-      "comfort": 4,
-      "maximalism": 5,
-      "narrative": 3.2,
-      "hooks": 5,
-      "afterglow": 4.2,
-      "replay": 4.6
+      "propulsion": 3.34,
+      "belt": 4.75,
+      "movement": 3.81,
+      "emotion": 2.06,
+      "comfort": 3.29,
+      "maximalism": 4.84,
+      "narrative": 2.01,
+      "hooks": 4.7,
+      "afterglow": 2.12,
+      "replay": 3.16
     },
     "why": "Familiar arena-rock hooks, huge vocals, shameless mashups, and maximalist commitment make narrative subtlety almost irrelevant.",
     "risk": "Thin story and deliberately trashy tone.",
@@ -4651,7 +5461,25 @@
       "Jukebox",
       "Rock",
       "Arena Rock"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 5.0,
+      "movement": 4.5,
+      "emotion": 3.4,
+      "comfort": 4.0,
+      "maximalism": 5.0,
+      "narrative": 3.2,
+      "hooks": 5.0,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "purplerain",
@@ -4676,16 +5504,16 @@
       "Music Drama"
     ],
     "scores": {
-      "propulsion": 4.3,
-      "belt": 4.6,
-      "movement": 4.7,
-      "emotion": 4.6,
-      "comfort": 3,
-      "maximalism": 4.5,
-      "narrative": 3.5,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 2.76,
+      "belt": 3.32,
+      "movement": 4.19,
+      "emotion": 3.55,
+      "comfort": 2.48,
+      "maximalism": 3.14,
+      "narrative": 2.11,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "The performance sequences are overwhelming musical events, with hooks and charisma doing more propulsion work than the dramatic connective tissue.",
     "risk": "The offstage relationship material is darker and rougher than the concert highs.",
@@ -4754,7 +5582,25 @@
       "Pop",
       "R&B",
       "Music Drama"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.3,
+      "belt": 4.6,
+      "movement": 4.7,
+      "emotion": 4.6,
+      "comfort": 3.0,
+      "maximalism": 4.5,
+      "narrative": 3.5,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "hair",
@@ -4778,16 +5624,16 @@
       "Ensemble"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.1,
-      "movement": 4.5,
-      "emotion": 4.2,
-      "comfort": 3.4,
-      "maximalism": 4.2,
-      "narrative": 3.8,
-      "hooks": 4.6,
-      "afterglow": 4.5,
-      "replay": 4.3
+      "propulsion": 2.43,
+      "belt": 2.33,
+      "movement": 3.81,
+      "emotion": 2.65,
+      "comfort": 2.85,
+      "maximalism": 2.61,
+      "narrative": 2.23,
+      "hooks": 2.78,
+      "afterglow": 2.59,
+      "replay": 2.48
     },
     "why": "Communal rock hooks, physical movement, and counterculture energy create a loose but infectious musical current.",
     "risk": "Loose episodic structure and period politics may create distance.",
@@ -4853,7 +5699,25 @@
     "dnaNormalized": [
       "Rock",
       "Ensemble"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.1,
+      "movement": 4.5,
+      "emotion": 4.2,
+      "comfort": 3.4,
+      "maximalism": 4.2,
+      "narrative": 3.8,
+      "hooks": 4.6,
+      "afterglow": 4.5,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "tommy",
@@ -4877,16 +5741,16 @@
       "Concept Album"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.5,
-      "movement": 4.3,
-      "emotion": 4.3,
-      "comfort": 2,
-      "maximalism": 5,
-      "narrative": 4.3,
-      "hooks": 4.8,
-      "afterglow": 4.6,
-      "replay": 4.3
+      "propulsion": 3.81,
+      "belt": 2.92,
+      "movement": 3.29,
+      "emotion": 2.92,
+      "comfort": 2.09,
+      "maximalism": 4.84,
+      "narrative": 2.7,
+      "hooks": 3.78,
+      "afterglow": 2.92,
+      "replay": 2.48
     },
     "why": "Almost continuous rock storytelling, iconic hooks, visual insanity, and total commitment to a concept-album universe.",
     "risk": "Disturbing material, grotesque imagery, and aggressively strange filmmaking.",
@@ -4954,7 +5818,25 @@
       "Rock Opera",
       "Rock",
       "Psychedelic"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.3,
+      "emotion": 4.3,
+      "comfort": 2.0,
+      "maximalism": 5.0,
+      "narrative": 4.3,
+      "hooks": 4.8,
+      "afterglow": 4.6,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "blinded",
@@ -4978,16 +5860,16 @@
       "Coming-of-Age"
     ],
     "scores": {
-      "propulsion": 4,
-      "belt": 3.7,
-      "movement": 3.8,
-      "emotion": 4.7,
-      "comfort": 4.5,
-      "maximalism": 3.6,
-      "narrative": 4.5,
-      "hooks": 4.8,
-      "afterglow": 4.8,
-      "replay": 4.4
+      "propulsion": 2.28,
+      "belt": 2.07,
+      "movement": 2.38,
+      "emotion": 3.84,
+      "comfort": 4.3,
+      "maximalism": 2.19,
+      "narrative": 3.04,
+      "hooks": 3.78,
+      "afterglow": 3.84,
+      "replay": 2.68
     },
     "why": "Songs become identity language and emotional release, with familiar rock lyrics externalizing what the protagonist cannot yet say.",
     "risk": "Less fully musical than the core catalog and more dependent on connection to Springsteen’s songs.",
@@ -5054,7 +5936,25 @@
       "Rock",
       "Springsteen",
       "Narrative Theme"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.0,
+      "belt": 3.7,
+      "movement": 3.8,
+      "emotion": 4.7,
+      "comfort": 4.5,
+      "maximalism": 3.6,
+      "narrative": 4.5,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 4.4
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "yesterday",
@@ -5078,16 +5978,16 @@
       "Music Drama"
     ],
     "scores": {
-      "propulsion": 3.7,
-      "belt": 3.4,
-      "movement": 3.4,
-      "emotion": 4,
-      "comfort": 4.6,
-      "maximalism": 3.1,
-      "narrative": 4,
-      "hooks": 5,
-      "afterglow": 4.4,
-      "replay": 4.3
+      "propulsion": 2.09,
+      "belt": 2.03,
+      "movement": 2.17,
+      "emotion": 2.34,
+      "comfort": 4.48,
+      "maximalism": 2.04,
+      "narrative": 2.3,
+      "hooks": 4.7,
+      "afterglow": 2.27,
+      "replay": 2.48
     },
     "why": "An absurdly strong songbook supplies instant hooks and comfort while the story uses musical recognition as its central emotional engine.",
     "risk": "More rom-com with performances than integrated musical.",
@@ -5155,7 +6055,25 @@
       "Jukebox",
       "Rock",
       "Music Drama"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.7,
+      "belt": 3.4,
+      "movement": 3.4,
+      "emotion": 4.0,
+      "comfort": 4.6,
+      "maximalism": 3.1,
+      "narrative": 4.0,
+      "hooks": 5.0,
+      "afterglow": 4.4,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "chicago",
@@ -5177,16 +6095,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 5,
-      "movement": 5,
-      "emotion": 4.2,
-      "comfort": 3.2,
-      "maximalism": 5,
-      "narrative": 4.7,
-      "hooks": 5,
-      "afterglow": 4.5,
-      "replay": 4.8
+      "propulsion": 4.66,
+      "belt": 4.75,
+      "movement": 4.89,
+      "emotion": 2.65,
+      "comfort": 2.65,
+      "maximalism": 4.84,
+      "narrative": 3.58,
+      "hooks": 4.7,
+      "afterglow": 2.59,
+      "replay": 4.06
     },
     "why": "A precision-engineered movie musical where choreography, editing, character psychology, and hooks all reinforce one another.",
     "risk": "Cynicism keeps it cooler than the warmest comfort titles.",
@@ -5244,7 +6162,25 @@
       "Jazz",
       "Cabaret",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 5.0,
+      "movement": 5.0,
+      "emotion": 4.2,
+      "comfort": 3.2,
+      "maximalism": 5.0,
+      "narrative": 4.7,
+      "hooks": 5.0,
+      "afterglow": 4.5,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "mammamia",
@@ -5266,16 +6202,16 @@
       "ABBA"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.5,
-      "movement": 4.8,
-      "emotion": 3.8,
-      "comfort": 5,
-      "maximalism": 4.7,
-      "narrative": 3.8,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 3.81,
+      "belt": 2.92,
+      "movement": 4.54,
+      "emotion": 2.21,
+      "comfort": 4.94,
+      "maximalism": 3.93,
+      "narrative": 2.23,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "Familiar hooks, communal singing, shameless joy, and almost no resistance to singing along.",
     "risk": "Narrative integration is intentionally loose.",
@@ -5332,7 +6268,25 @@
     "dnaNormalized": [
       "Jukebox",
       "Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.8,
+      "comfort": 5.0,
+      "maximalism": 4.7,
+      "narrative": 3.8,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "soundmusic",
@@ -5354,16 +6308,16 @@
       "Folk"
     ],
     "scores": {
-      "propulsion": 3.8,
-      "belt": 4,
-      "movement": 3.8,
-      "emotion": 4.6,
-      "comfort": 5,
-      "maximalism": 3.6,
-      "narrative": 4.8,
-      "hooks": 4.7,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 2.16,
+      "belt": 2.24,
+      "movement": 2.38,
+      "emotion": 3.55,
+      "comfort": 4.94,
+      "maximalism": 2.19,
+      "narrative": 3.96,
+      "hooks": 3.11,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "An enduring comfort anchor with melodies that become emotional geography.",
     "risk": "Long runtime and gentler propulsion.",
@@ -5422,7 +6376,25 @@
       "Golden Age",
       "Orchestral",
       "Folk"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.8,
+      "belt": 4.0,
+      "movement": 3.8,
+      "emotion": 4.6,
+      "comfort": 5.0,
+      "maximalism": 3.6,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "grease",
@@ -5444,16 +6416,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.4,
-      "movement": 5,
-      "emotion": 3.4,
-      "comfort": 4.7,
-      "maximalism": 4.5,
-      "narrative": 3.5,
-      "hooks": 5,
-      "afterglow": 4.4,
-      "replay": 5
+      "propulsion": 4.3,
+      "belt": 2.59,
+      "movement": 4.89,
+      "emotion": 2.06,
+      "comfort": 4.62,
+      "maximalism": 3.14,
+      "narrative": 2.11,
+      "hooks": 4.7,
+      "afterglow": 2.27,
+      "replay": 4.72
     },
     "why": "An almost absurd concentration of recognizable hooks and movement energy.",
     "risk": "Some character and gender dynamics have aged poorly.",
@@ -5511,7 +6483,25 @@
       "Rock",
       "Pop",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.4,
+      "movement": 5.0,
+      "emotion": 3.4,
+      "comfort": 4.7,
+      "maximalism": 4.5,
+      "narrative": 3.5,
+      "hooks": 5.0,
+      "afterglow": 4.4,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "burlesque",
@@ -5533,16 +6523,16 @@
       "Dance"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 5,
-      "movement": 4.8,
-      "emotion": 3.5,
-      "comfort": 3.8,
-      "maximalism": 5,
-      "narrative": 3.2,
-      "hooks": 4.8,
-      "afterglow": 4.2,
-      "replay": 4.6
+      "propulsion": 3.34,
+      "belt": 4.75,
+      "movement": 4.54,
+      "emotion": 2.1,
+      "comfort": 3.19,
+      "maximalism": 4.84,
+      "narrative": 2.01,
+      "hooks": 3.78,
+      "afterglow": 2.12,
+      "replay": 3.16
     },
     "why": "Big voices, stage spectacle, dance, and unapologetic performance energy.",
     "risk": "Story exists mostly to move between numbers.",
@@ -5600,7 +6590,25 @@
       "Pop",
       "Cabaret",
       "Dance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 5.0,
+      "movement": 4.8,
+      "emotion": 3.5,
+      "comfort": 3.8,
+      "maximalism": 5.0,
+      "narrative": 3.2,
+      "hooks": 4.8,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "pitchperfect",
@@ -5622,16 +6630,16 @@
       "Mashup"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.5,
-      "movement": 4.8,
-      "emotion": 3.4,
-      "comfort": 4.6,
-      "maximalism": 4.2,
-      "narrative": 3.5,
-      "hooks": 5,
-      "afterglow": 4.5,
-      "replay": 5
+      "propulsion": 3.81,
+      "belt": 2.92,
+      "movement": 4.54,
+      "emotion": 2.06,
+      "comfort": 4.48,
+      "maximalism": 2.61,
+      "narrative": 2.11,
+      "hooks": 4.7,
+      "afterglow": 2.59,
+      "replay": 4.72
     },
     "why": "Mashups, recognizable pop, ensemble chemistry, and performance stakes create musical propulsion without traditional musical storytelling.",
     "risk": "Songs are performances rather than narrative speech.",
@@ -5689,7 +6697,25 @@
       "Vocal Performance",
       "Pop",
       "Mashup"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.4,
+      "comfort": 4.6,
+      "maximalism": 4.2,
+      "narrative": 3.5,
+      "hooks": 5.0,
+      "afterglow": 4.5,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "coco",
@@ -5711,16 +6737,16 @@
       "Animation"
     ],
     "scores": {
-      "propulsion": 4.2,
-      "belt": 4,
-      "movement": 4.1,
-      "emotion": 5,
-      "comfort": 5,
-      "maximalism": 4.2,
-      "narrative": 5,
-      "hooks": 4.6,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 2.63,
+      "belt": 2.24,
+      "movement": 2.57,
+      "emotion": 4.73,
+      "comfort": 4.94,
+      "maximalism": 2.61,
+      "narrative": 4.72,
+      "hooks": 2.78,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Music is literally the mechanism of memory, family, identity, and emotional release.",
     "risk": "Less belt-driven than the strongest anchors.",
@@ -5778,7 +6804,25 @@
       "Mexican Folk",
       "Pop",
       "Animation"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.2,
+      "belt": 4.0,
+      "movement": 4.1,
+      "emotion": 5.0,
+      "comfort": 5.0,
+      "maximalism": 4.2,
+      "narrative": 5.0,
+      "hooks": 4.6,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "princessfrog",
@@ -5800,16 +6844,16 @@
       "Disney"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4.5,
-      "movement": 4.7,
-      "emotion": 4.4,
-      "comfort": 4.7,
-      "maximalism": 4.2,
-      "narrative": 4.8,
-      "hooks": 4.7,
-      "afterglow": 4.7,
-      "replay": 4.8
+      "propulsion": 2.99,
+      "belt": 2.92,
+      "movement": 4.19,
+      "emotion": 3.14,
+      "comfort": 4.62,
+      "maximalism": 2.61,
+      "narrative": 3.96,
+      "hooks": 3.11,
+      "afterglow": 3.19,
+      "replay": 4.06
     },
     "why": "A compact Disney musical with unusually strong rhythmic identity, aspiration songs, and gospel release.",
     "risk": "Smaller-scale spectacle than newer animation.",
@@ -5867,7 +6911,25 @@
       "Jazz",
       "Gospel",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.5,
+      "movement": 4.7,
+      "emotion": 4.4,
+      "comfort": 4.7,
+      "maximalism": 4.2,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 4.7,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "tangled",
@@ -5889,16 +6951,16 @@
       "Orchestral"
     ],
     "scores": {
-      "propulsion": 4.3,
-      "belt": 4.6,
-      "movement": 4.2,
-      "emotion": 4.7,
-      "comfort": 5,
-      "maximalism": 4.1,
-      "narrative": 4.8,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 5
+      "propulsion": 2.76,
+      "belt": 3.32,
+      "movement": 2.92,
+      "emotion": 3.84,
+      "comfort": 4.94,
+      "maximalism": 2.43,
+      "narrative": 3.96,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.72
     },
     "why": "Strong yearning songs, romantic payoff, comedy, and unusually high comfort rewatchability.",
     "risk": "Not relentlessly musical.",
@@ -5956,7 +7018,25 @@
       "Musical Theater",
       "Pop",
       "Orchestral"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.3,
+      "belt": 4.6,
+      "movement": 4.2,
+      "emotion": 4.7,
+      "comfort": 5.0,
+      "maximalism": 4.1,
+      "narrative": 4.8,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "frozen",
@@ -5978,16 +7058,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 5,
-      "movement": 4.4,
-      "emotion": 4.6,
-      "comfort": 4.8,
-      "maximalism": 4.6,
-      "narrative": 4.8,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 3.34,
+      "belt": 4.75,
+      "movement": 3.55,
+      "emotion": 3.55,
+      "comfort": 4.76,
+      "maximalism": 3.5,
+      "narrative": 3.96,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "Huge hooks and clear emotional song functions make the soundtrack almost frictionless.",
     "risk": "Cultural overexposure may reduce novelty.",
@@ -6044,7 +7124,25 @@
     "dnaNormalized": [
       "Musical Theater",
       "Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 5.0,
+      "movement": 4.4,
+      "emotion": 4.6,
+      "comfort": 4.8,
+      "maximalism": 4.6,
+      "narrative": 4.8,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "waitress",
@@ -6066,16 +7164,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.8,
-      "movement": 3.5,
-      "emotion": 5,
-      "comfort": 4.2,
-      "maximalism": 3.6,
-      "narrative": 5,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 4.8
+      "propulsion": 2.43,
+      "belt": 4.08,
+      "movement": 2.24,
+      "emotion": 4.73,
+      "comfort": 3.55,
+      "maximalism": 2.19,
+      "narrative": 4.72,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.06
     },
     "why": "Emotionally legible songwriting with enormous vocal payoff and intimate narrative integration.",
     "risk": "Stage capture and quieter pacing reduce visual propulsion.",
@@ -6133,7 +7231,25 @@
       "Pop",
       "Singer-Songwriter",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.8,
+      "movement": 3.5,
+      "emotion": 5.0,
+      "comfort": 4.2,
+      "maximalism": 3.6,
+      "narrative": 5.0,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "legallyblonde",
@@ -6155,16 +7271,16 @@
       "Dance"
     ],
     "scores": {
-      "propulsion": 5,
-      "belt": 5,
-      "movement": 5,
-      "emotion": 4.3,
-      "comfort": 4.6,
-      "maximalism": 4.8,
-      "narrative": 5,
-      "hooks": 5,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 4.93,
+      "belt": 4.75,
+      "movement": 4.89,
+      "emotion": 2.92,
+      "comfort": 4.48,
+      "maximalism": 4.39,
+      "narrative": 4.72,
+      "hooks": 4.7,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "A relentless contemporary musical-theater machine with hooks, choreography, comedy, and escalating character payoff.",
     "risk": "Stage capture aesthetics rather than cinematic polish.",
@@ -6222,7 +7338,25 @@
       "Pop",
       "Musical Theater",
       "Dance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 5.0,
+      "belt": 5.0,
+      "movement": 5.0,
+      "emotion": 4.3,
+      "comfort": 4.6,
+      "maximalism": 4.8,
+      "narrative": 5.0,
+      "hooks": 5.0,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "falsettos",
@@ -6244,16 +7378,16 @@
       "Chamber Pop"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.4,
-      "movement": 3.3,
-      "emotion": 5,
-      "comfort": 2.8,
-      "maximalism": 3.5,
-      "narrative": 5,
-      "hooks": 4.4,
-      "afterglow": 5,
-      "replay": 4.4
+      "propulsion": 2.43,
+      "belt": 2.59,
+      "movement": 2.11,
+      "emotion": 4.73,
+      "comfort": 2.38,
+      "maximalism": 2.12,
+      "narrative": 4.72,
+      "hooks": 2.38,
+      "afterglow": 4.72,
+      "replay": 2.68
     },
     "why": "Dense character writing and musical callbacks accumulate into severe emotional payoff.",
     "risk": "Low comfort and less body-movement energy.",
@@ -6312,7 +7446,25 @@
       "Musical Theater",
       "Sung-through",
       "Pop"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.4,
+      "movement": 3.3,
+      "emotion": 5.0,
+      "comfort": 2.8,
+      "maximalism": 3.5,
+      "narrative": 5.0,
+      "hooks": 4.4,
+      "afterglow": 5.0,
+      "replay": 4.4
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "marypoppins",
@@ -6334,16 +7486,16 @@
       "Orchestral"
     ],
     "scores": {
-      "propulsion": 3.9,
-      "belt": 4.2,
-      "movement": 4.4,
-      "emotion": 4.1,
-      "comfort": 4.8,
-      "maximalism": 4.3,
-      "narrative": 4.5,
-      "hooks": 4.2,
-      "afterglow": 4.4,
-      "replay": 4.2
+      "propulsion": 2.24,
+      "belt": 2.44,
+      "movement": 3.55,
+      "emotion": 2.44,
+      "comfort": 4.76,
+      "maximalism": 2.83,
+      "narrative": 3.04,
+      "hooks": 2.15,
+      "afterglow": 2.27,
+      "replay": 2.25
     },
     "why": "Traditional musical craft with elaborate production numbers and warm family stakes.",
     "risk": "Songs are less instantly sticky than the strongest Disney anchors.",
@@ -6401,7 +7553,25 @@
       "Musical Theater",
       "Golden Age",
       "Orchestral"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.9,
+      "belt": 4.2,
+      "movement": 4.4,
+      "emotion": 4.1,
+      "comfort": 4.8,
+      "maximalism": 4.3,
+      "narrative": 4.5,
+      "hooks": 4.2,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "starsborn",
@@ -6423,16 +7593,16 @@
       "Music Drama"
     ],
     "scores": {
-      "propulsion": 3.8,
-      "belt": 5,
-      "movement": 3.4,
-      "emotion": 5,
-      "comfort": 2.7,
-      "maximalism": 3.8,
-      "narrative": 4.7,
-      "hooks": 5,
-      "afterglow": 5,
-      "replay": 4.6
+      "propulsion": 2.16,
+      "belt": 4.75,
+      "movement": 2.17,
+      "emotion": 4.73,
+      "comfort": 2.3,
+      "maximalism": 2.31,
+      "narrative": 3.58,
+      "hooks": 4.7,
+      "afterglow": 4.72,
+      "replay": 3.16
     },
     "why": "Not a traditional musical, but songs carry identity, intimacy, fame, and devastating emotional payoff.",
     "risk": "Heavy subject matter and long dramatic stretches between songs.",
@@ -6491,7 +7661,25 @@
       "Pop",
       "Rock",
       "Music Drama"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.8,
+      "belt": 5.0,
+      "movement": 3.4,
+      "emotion": 5.0,
+      "comfort": 2.7,
+      "maximalism": 3.8,
+      "narrative": 4.7,
+      "hooks": 5.0,
+      "afterglow": 5.0,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "repo",
@@ -6513,16 +7701,16 @@
       "Goth"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.5,
-      "movement": 4.2,
-      "emotion": 4.1,
-      "comfort": 1.5,
-      "maximalism": 5,
-      "narrative": 4.4,
-      "hooks": 4.1,
-      "afterglow": 4.4,
-      "replay": 4.2
+      "propulsion": 3.81,
+      "belt": 2.92,
+      "movement": 2.92,
+      "emotion": 2.44,
+      "comfort": 2.02,
+      "maximalism": 4.84,
+      "narrative": 2.85,
+      "hooks": 2.1,
+      "afterglow": 2.27,
+      "replay": 2.25
     },
     "why": "A fully committed cult rock opera where excess is the organizing principle.",
     "risk": "Graphic violence and intentionally abrasive camp.",
@@ -6581,7 +7769,25 @@
       "Rock Opera",
       "Electronic",
       "Rock"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.2,
+      "emotion": 4.1,
+      "comfort": 1.5,
+      "maximalism": 5.0,
+      "narrative": 4.4,
+      "hooks": 4.1,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "velvetgoldmine",
@@ -6603,16 +7809,16 @@
       "Queer Cinema"
     ],
     "scores": {
-      "propulsion": 3.8,
-      "belt": 3.8,
-      "movement": 3.7,
-      "emotion": 4.3,
-      "comfort": 2.4,
-      "maximalism": 4.6,
-      "narrative": 4.1,
-      "hooks": 4.5,
-      "afterglow": 4.7,
-      "replay": 4.3
+      "propulsion": 2.16,
+      "belt": 2.14,
+      "movement": 2.3,
+      "emotion": 2.92,
+      "comfort": 2.19,
+      "maximalism": 3.5,
+      "narrative": 2.36,
+      "hooks": 2.57,
+      "afterglow": 3.19,
+      "replay": 2.48
     },
     "why": "Music, identity, desire, and performance collapse into one glitter-soaked mythology.",
     "risk": "More music drama than conventional musical.",
@@ -6669,7 +7875,25 @@
       "Rock",
       "Jukebox",
       "Queer"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.8,
+      "belt": 3.8,
+      "movement": 3.7,
+      "emotion": 4.3,
+      "comfort": 2.4,
+      "maximalism": 4.6,
+      "narrative": 4.1,
+      "hooks": 4.5,
+      "afterglow": 4.7,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "priscilla",
@@ -6691,16 +7915,16 @@
       "Drag"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4,
-      "movement": 4.6,
-      "emotion": 4.1,
-      "comfort": 4.2,
-      "maximalism": 4.8,
-      "narrative": 3.6,
-      "hooks": 4.8,
-      "afterglow": 4.7,
-      "replay": 4.7
+      "propulsion": 2.43,
+      "belt": 2.24,
+      "movement": 3.98,
+      "emotion": 2.44,
+      "comfort": 3.55,
+      "maximalism": 4.39,
+      "narrative": 2.17,
+      "hooks": 3.78,
+      "afterglow": 3.19,
+      "replay": 3.6
     },
     "why": "Familiar songs become vehicles for performance, identity, friendship, and spectacular camp.",
     "risk": "Not structured as a traditional musical.",
@@ -6758,7 +7982,25 @@
       "Disco",
       "Jukebox",
       "Performance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.0,
+      "movement": 4.6,
+      "emotion": 4.1,
+      "comfort": 4.2,
+      "maximalism": 4.8,
+      "narrative": 3.6,
+      "hooks": 4.8,
+      "afterglow": 4.7,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "annaapocalypse",
@@ -6780,16 +8022,16 @@
       "Christmas"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 4.4,
-      "movement": 4.5,
-      "emotion": 3.8,
-      "comfort": 2.8,
-      "maximalism": 4.7,
-      "narrative": 4.4,
-      "hooks": 4.8,
-      "afterglow": 4.4,
-      "replay": 4.5
+      "propulsion": 4.3,
+      "belt": 2.59,
+      "movement": 3.81,
+      "emotion": 2.21,
+      "comfort": 2.38,
+      "maximalism": 3.93,
+      "narrative": 2.85,
+      "hooks": 3.78,
+      "afterglow": 2.27,
+      "replay": 2.85
     },
     "why": "A genuine contemporary musical that happens to stage its hooks inside a zombie apocalypse.",
     "risk": "Gore and tonal whiplash.",
@@ -6847,7 +8089,25 @@
       "Pop",
       "Genre Hybrid",
       "Holiday"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 4.4,
+      "movement": 4.5,
+      "emotion": 3.8,
+      "comfort": 2.8,
+      "maximalism": 4.7,
+      "narrative": 4.4,
+      "hooks": 4.8,
+      "afterglow": 4.4,
+      "replay": 4.5
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "dancerinthedark",
@@ -6869,16 +8129,16 @@
       "Musical Drama"
     ],
     "scores": {
-      "propulsion": 3.1,
-      "belt": 3.7,
-      "movement": 3.2,
-      "emotion": 5,
-      "comfort": 0.8,
-      "maximalism": 3.8,
-      "narrative": 5,
-      "hooks": 3.4,
-      "afterglow": 5,
-      "replay": 2.8
+      "propulsion": 2.04,
+      "belt": 2.07,
+      "movement": 2.07,
+      "emotion": 4.73,
+      "comfort": 2.0,
+      "maximalism": 2.31,
+      "narrative": 4.72,
+      "hooks": 2.0,
+      "afterglow": 4.72,
+      "replay": 2.0
     },
     "why": "Uses musical fantasy as escape from an increasingly unbearable reality.",
     "risk": "Extremely bleak and emotionally punishing.",
@@ -6935,7 +8195,25 @@
       "Experimental",
       "Electronic",
       "Musical Drama"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 3.1,
+      "belt": 3.7,
+      "movement": 3.2,
+      "emotion": 5.0,
+      "comfort": 0.8,
+      "maximalism": 3.8,
+      "narrative": 5.0,
+      "hooks": 3.4,
+      "afterglow": 5.0,
+      "replay": 2.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "hedwigstage",
@@ -6957,16 +8235,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.7,
-      "belt": 5,
-      "movement": 4.2,
-      "emotion": 5,
-      "comfort": 2.6,
-      "maximalism": 4.7,
-      "narrative": 5,
-      "hooks": 4.8,
-      "afterglow": 5,
-      "replay": 4.8
+      "propulsion": 4.3,
+      "belt": 4.75,
+      "movement": 2.92,
+      "emotion": 4.73,
+      "comfort": 2.24,
+      "maximalism": 3.93,
+      "narrative": 4.72,
+      "hooks": 3.78,
+      "afterglow": 4.72,
+      "replay": 4.06
     },
     "why": "A stage-side complement to the film: direct-address rock performance turns identity into propulsion.",
     "risk": "Concert-like staging and abrasive emotional edges.",
@@ -7023,7 +8301,25 @@
     "dnaNormalized": [
       "Rock",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.7,
+      "belt": 5.0,
+      "movement": 4.2,
+      "emotion": 5.0,
+      "comfort": 2.6,
+      "maximalism": 4.7,
+      "narrative": 5.0,
+      "hooks": 4.8,
+      "afterglow": 5.0,
+      "replay": 4.8
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "batboy",
@@ -7045,16 +8341,16 @@
       "Off-Broadway"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 4.7,
-      "movement": 4.1,
-      "emotion": 4.3,
-      "comfort": 2,
-      "maximalism": 4.8,
-      "narrative": 4.6,
-      "hooks": 4.4,
-      "afterglow": 4.5,
-      "replay": 4.3
+      "propulsion": 3.34,
+      "belt": 3.6,
+      "movement": 2.57,
+      "emotion": 2.92,
+      "comfort": 2.09,
+      "maximalism": 4.39,
+      "narrative": 3.29,
+      "hooks": 2.38,
+      "afterglow": 2.59,
+      "replay": 2.48
     },
     "why": "Cult musical escalation: ridiculous premise, committed score, surprisingly sincere emotional stakes.",
     "risk": "Dark humor and intentionally bizarre material.",
@@ -7112,7 +8408,25 @@
       "Rock",
       "Camp",
       "Off-Broadway"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 4.7,
+      "movement": 4.1,
+      "emotion": 4.3,
+      "comfort": 2.0,
+      "maximalism": 4.8,
+      "narrative": 4.6,
+      "hooks": 4.4,
+      "afterglow": 4.5,
+      "replay": 4.3
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "reefer",
@@ -7134,16 +8448,16 @@
       "Camp"
     ],
     "scores": {
-      "propulsion": 4.8,
-      "belt": 4.7,
-      "movement": 4.8,
-      "emotion": 3.6,
-      "comfort": 2.8,
-      "maximalism": 5,
-      "narrative": 4.5,
-      "hooks": 4.7,
-      "afterglow": 4.5,
-      "replay": 4.7
+      "propulsion": 4.66,
+      "belt": 3.6,
+      "movement": 4.54,
+      "emotion": 2.14,
+      "comfort": 2.38,
+      "maximalism": 4.84,
+      "narrative": 3.04,
+      "hooks": 3.11,
+      "afterglow": 2.59,
+      "replay": 3.6
     },
     "why": "A deliberately ridiculous musical that understands escalation, hooks, choreography, and commitment.",
     "risk": "Broad satire and deliberately tasteless humor.",
@@ -7201,7 +8515,25 @@
       "Rock",
       "Satire",
       "Camp"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.8,
+      "belt": 4.7,
+      "movement": 4.8,
+      "emotion": 3.6,
+      "comfort": 2.8,
+      "maximalism": 5.0,
+      "narrative": 4.5,
+      "hooks": 4.7,
+      "afterglow": 4.5,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "singininrain",
@@ -7223,16 +8555,16 @@
       "Dance"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4,
-      "movement": 5,
-      "emotion": 3.9,
-      "comfort": 4.8,
-      "maximalism": 4.4,
-      "narrative": 4.6,
-      "hooks": 4.8,
-      "afterglow": 4.8,
-      "replay": 5
+      "propulsion": 2.99,
+      "belt": 2.24,
+      "movement": 4.89,
+      "emotion": 2.3,
+      "comfort": 4.76,
+      "maximalism": 2.92,
+      "narrative": 3.29,
+      "hooks": 3.78,
+      "afterglow": 3.84,
+      "replay": 4.72
     },
     "why": "A foundational demonstration that movement itself can be musical propulsion.",
     "risk": "Older pacing and performance conventions.",
@@ -7289,7 +8621,25 @@
       "Golden Age",
       "Jazz",
       "Dance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.0,
+      "movement": 5.0,
+      "emotion": 3.9,
+      "comfort": 4.8,
+      "maximalism": 4.4,
+      "narrative": 4.6,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 5.0
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "cabaret",
@@ -7311,16 +8661,16 @@
       "Broadway"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.5,
-      "movement": 4.2,
-      "emotion": 4.8,
-      "comfort": 1.7,
-      "maximalism": 4.7,
-      "narrative": 5,
-      "hooks": 4.4,
-      "afterglow": 5,
-      "replay": 4.5
+      "propulsion": 2.43,
+      "belt": 2.92,
+      "movement": 2.92,
+      "emotion": 4.13,
+      "comfort": 2.04,
+      "maximalism": 3.93,
+      "narrative": 4.72,
+      "hooks": 2.38,
+      "afterglow": 4.72,
+      "replay": 2.85
     },
     "why": "Performance numbers function as commentary while the surrounding world grows increasingly dangerous.",
     "risk": "Dark historical material and intentionally uneasy tone.",
@@ -7379,7 +8729,25 @@
       "Cabaret",
       "Jazz",
       "Musical Theater"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.5,
+      "movement": 4.2,
+      "emotion": 4.8,
+      "comfort": 1.7,
+      "maximalism": 4.7,
+      "narrative": 5.0,
+      "hooks": 4.4,
+      "afterglow": 5.0,
+      "replay": 4.5
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "rockyhorrorlive",
@@ -7401,16 +8769,16 @@
       "Cult"
     ],
     "scores": {
-      "propulsion": 4.5,
-      "belt": 4.5,
-      "movement": 4.8,
-      "emotion": 3.2,
-      "comfort": 3.6,
-      "maximalism": 5,
-      "narrative": 3.5,
-      "hooks": 5,
-      "afterglow": 4.2,
-      "replay": 4.6
+      "propulsion": 3.34,
+      "belt": 2.92,
+      "movement": 4.54,
+      "emotion": 2.02,
+      "comfort": 3.02,
+      "maximalism": 4.84,
+      "narrative": 2.11,
+      "hooks": 4.7,
+      "afterglow": 2.12,
+      "replay": 3.16
     },
     "why": "A useful remake/remix comparison for how familiarity and performance style alter propulsion.",
     "risk": "Less singular than the original.",
@@ -7468,7 +8836,25 @@
       "Rock",
       "Camp",
       "Cult"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.5,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.2,
+      "comfort": 3.6,
+      "maximalism": 5.0,
+      "narrative": 3.5,
+      "hooks": 5.0,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "billyelliot",
@@ -7490,16 +8876,16 @@
       "Dance"
     ],
     "scores": {
-      "propulsion": 4.6,
-      "belt": 4.5,
-      "movement": 5,
-      "emotion": 4.8,
-      "comfort": 3.7,
-      "maximalism": 4.4,
-      "narrative": 5,
-      "hooks": 4.5,
-      "afterglow": 5,
-      "replay": 4.7
+      "propulsion": 3.81,
+      "belt": 2.92,
+      "movement": 4.89,
+      "emotion": 4.13,
+      "comfort": 3.09,
+      "maximalism": 2.92,
+      "narrative": 4.72,
+      "hooks": 2.57,
+      "afterglow": 4.72,
+      "replay": 3.6
     },
     "why": "Dance, class conflict, family, and huge ensemble staging create propulsion through both body and score.",
     "risk": "Long stage-capture runtime.",
@@ -7556,7 +8942,25 @@
       "Musical Theater",
       "Pop-Rock",
       "Dance"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 5.0,
+      "emotion": 4.8,
+      "comfort": 3.7,
+      "maximalism": 4.4,
+      "narrative": 5.0,
+      "hooks": 4.5,
+      "afterglow": 5.0,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "tickstage",
@@ -7578,16 +8982,16 @@
       "Singer-Songwriter"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4.8,
-      "movement": 3.5,
-      "emotion": 5,
-      "comfort": 3.1,
-      "maximalism": 3.8,
-      "narrative": 5,
-      "hooks": 4.7,
-      "afterglow": 5,
-      "replay": 4.7
+      "propulsion": 2.99,
+      "belt": 4.08,
+      "movement": 2.24,
+      "emotion": 4.73,
+      "comfort": 2.54,
+      "maximalism": 2.31,
+      "narrative": 4.72,
+      "hooks": 3.11,
+      "afterglow": 4.72,
+      "replay": 3.6
     },
     "why": "A useful form comparison: the same core material with less cinematic propulsion and more direct theatrical intimacy.",
     "risk": "Harder to access visually than the film adaptation.",
@@ -7644,7 +9048,25 @@
       "Rock",
       "Musical Theater",
       "Singer-Songwriter"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.8,
+      "movement": 3.5,
+      "emotion": 5.0,
+      "comfort": 3.1,
+      "maximalism": 3.8,
+      "narrative": 5.0,
+      "hooks": 4.7,
+      "afterglow": 5.0,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "onceisland",
@@ -7666,16 +9088,16 @@
       "Folk"
     ],
     "scores": {
-      "propulsion": 4.4,
-      "belt": 4.7,
-      "movement": 4.7,
-      "emotion": 4.8,
-      "comfort": 4.2,
-      "maximalism": 4.2,
-      "narrative": 5,
-      "hooks": 4.5,
-      "afterglow": 5,
-      "replay": 4.7
+      "propulsion": 2.99,
+      "belt": 3.6,
+      "movement": 4.19,
+      "emotion": 4.13,
+      "comfort": 3.55,
+      "maximalism": 2.61,
+      "narrative": 4.72,
+      "hooks": 2.57,
+      "afterglow": 4.72,
+      "replay": 3.6
     },
     "why": "Rhythmic ensemble storytelling turns myth and community into near-continuous forward motion.",
     "risk": "Stage capture availability and theatrical abstraction.",
@@ -7733,7 +9155,25 @@
       "World/Regional",
       "Musical Theater",
       "Folk"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.4,
+      "belt": 4.7,
+      "movement": 4.7,
+      "emotion": 4.8,
+      "comfort": 4.2,
+      "maximalism": 4.2,
+      "narrative": 5.0,
+      "hooks": 4.5,
+      "afterglow": 5.0,
+      "replay": 4.7
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   },
   {
     "id": "shocktreatment",
@@ -7755,16 +9195,16 @@
       "Cult"
     ],
     "scores": {
-      "propulsion": 4.1,
-      "belt": 4.1,
-      "movement": 4.2,
-      "emotion": 3,
-      "comfort": 2.2,
-      "maximalism": 4.8,
-      "narrative": 3.4,
-      "hooks": 4.3,
-      "afterglow": 4,
-      "replay": 4.1
+      "propulsion": 2.43,
+      "belt": 2.33,
+      "movement": 2.92,
+      "emotion": 2.0,
+      "comfort": 2.15,
+      "maximalism": 4.39,
+      "narrative": 2.05,
+      "hooks": 2.24,
+      "afterglow": 2.03,
+      "replay": 2.12
     },
     "why": "A cult musical experiment built from television satire, new-wave hooks, and aggressive artificiality.",
     "risk": "Plot and tone are intentionally alienating.",
@@ -7822,6 +9262,24 @@
       "New Wave",
       "Rock",
       "Cult"
-    ]
+    ],
+    "scoresRaw": {
+      "propulsion": 4.1,
+      "belt": 4.1,
+      "movement": 4.2,
+      "emotion": 3.0,
+      "comfort": 2.2,
+      "maximalism": 4.8,
+      "narrative": 3.4,
+      "hooks": 4.3,
+      "afterglow": 4.0,
+      "replay": 4.1
+    },
+    "scoreCalibration": {
+      "version": "1.0",
+      "method": "catalog-percentile-s-curve",
+      "rawField": "scoresRaw",
+      "note": "Calibrated scores preserve editorial rank order while increasing separation across the curated catalog."
+    }
   }
 ]
