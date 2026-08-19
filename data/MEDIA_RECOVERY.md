@@ -1,28 +1,13 @@
 # Media Recovery Status
 
 - Catalog titles: **81**
-- Bundled: **51** (63.0%)
+- Bundled: **66** (81.5%)
 - Remote: **0** (0.0%)
 - Fallback: **0** (0.0%)
-- Missing: **30** (37.0%)
+- Missing: **15** (18.5%)
 
 ## Recovery queue
 
-- `newsies` — Newsies: The Broadway Musical (2017)
-- `comefromaway` — Come From Away (2021)
-- `shrek` — Shrek the Musical (2013)
-- `grease` — Grease (1978)
-- `burlesque` — Burlesque (2010)
-- `pitchperfect` — Pitch Perfect (2012)
-- `coco` — Coco (2017)
-- `princessfrog` — The Princess and the Frog (2009)
-- `tangled` — Tangled (2010)
-- `frozen` — Frozen (2013)
-- `waitress` — Waitress (2023)
-- `legallyblonde` — Legally Blonde: The Musical (2007)
-- `falsettos` — Falsettos (2017)
-- `marypoppins` — Mary Poppins Returns (2018)
-- `starsborn` — A Star Is Born (2018)
 - `repo` — Repo! The Genetic Opera (2008)
 - `velvetgoldmine` — Velvet Goldmine (1998)
 - `priscilla` — The Adventures of Priscilla, Queen of the Desert (1994)
