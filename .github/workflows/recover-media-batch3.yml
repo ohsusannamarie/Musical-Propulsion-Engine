@@ -1,0 +1,35 @@
+name: Media Recovery Batch 3 Final Tail
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/scripts/recover_media_batch3.py']
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record baseline
+        run: python3 -c "import json; print(json.load(open('data/media-manifest.json'))['counts'])"
+      - name: Recover final poster tail
+        run: python3 .github/scripts/recover_media_batch3.py
+      - name: Validate real progress
+        run: |
+          python3 - <<'PY'
+          import json
+          m=json.load(open('data/media-manifest.json'))
+          assert m['catalogSize']==81,m['catalogSize']
+          assert m['counts']['bundled']>66,m['counts']
+          assert m['counts']['missing']<15,m['counts']
+          assert m['counts']['bundled']+m['counts']['missing']==81,m['counts']
+          print('media recovery progress validated',m['counts'])
+          PY
+      - name: Commit recovered assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/posters data/media-manifest.json index.html app.html
+          git commit -m 'Recover final catalog poster batch' || exit 0
+          git push
