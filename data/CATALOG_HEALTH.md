@@ -1,31 +1,29 @@
 # Catalog Health Audit
 
 **Catalog size:** 81 titles  
-**Health score:** 64.8/100
+**Health score:** 77.5/100
 
 ## Highest-priority fixes
 
-1. Fix 3 broken relationship links.
-2. Strengthen 3 titles with fewer than 3 valid links.
-3. Add bundled poster/media assets for 45 titles.
+1. Add bundled poster/media assets for 45 titles.
 
 ## Connectivity
 
 - Orphans: **0**
-- Under 3 explicit links: **3**
-- Broken links: **3**
-- One-way relationship links: **171**
+- Under 3 explicit links: **0**
+- Broken links: **0**
+- One-way relationship links: **174**
 
 ### Top hubs
 
-- **Hedwig and the Angry Inch**: 23 combined inbound + outbound links
 - **Hairspray**: 23 combined inbound + outbound links
-- **The Rocky Horror Picture Show**: 18 combined inbound + outbound links
+- **Hedwig and the Angry Inch**: 23 combined inbound + outbound links
 - **Moana**: 18 combined inbound + outbound links
+- **The Rocky Horror Picture Show**: 18 combined inbound + outbound links
 - **Moulin Rouge!**: 17 combined inbound + outbound links
 - **The Greatest Showman**: 16 combined inbound + outbound links
-- **KPop Demon Hunters**: 15 combined inbound + outbound links
 - **In the Heights**: 15 combined inbound + outbound links
+- **KPop Demon Hunters**: 15 combined inbound + outbound links
 - **tick, tick…BOOM!**: 14 combined inbound + outbound links
 - **Annie**: 14 combined inbound + outbound links
 
@@ -72,16 +70,16 @@
 
 ## Score spread
 
-- **propulsion**: mean 4.42, stdev 0.47, range 2.8 to 5.0
-- **belt**: mean 4.55, stdev 0.45, range 3.1 to 5.0
-- **movement**: mean 4.3, stdev 0.6, range 2.1 to 5.0
-- **emotion**: mean 4.47, stdev 0.52, range 3.0 to 5.0
-- **comfort**: mean 3.79, stdev 1.0, range 0.8 to 5.0
-- **maximalism**: mean 4.4, stdev 0.64, range 1.8 to 5.0
-- **narrative**: mean 4.51, stdev 0.51, range 3.2 to 5.0
-- **hooks**: mean 4.68, stdev 0.33, range 3.4 to 5.0
-- **afterglow**: mean 4.69, stdev 0.3, range 3.5 to 5.0
-- **replay**: mean 4.59, stdev 0.43, range 2.8 to 5.0
+- **propulsion**: mean 3.5, stdev 0.99, range 2.0 to 4.93
+- **belt**: mean 3.51, stdev 0.99, range 2.0 to 4.75
+- **movement**: mean 3.5, stdev 0.99, range 2.0 to 4.89
+- **emotion**: mean 3.51, stdev 0.99, range 2.0 to 4.73
+- **comfort**: mean 3.5, stdev 0.99, range 2.0 to 4.94
+- **maximalism**: mean 3.5, stdev 0.99, range 2.0 to 4.84
+- **narrative**: mean 3.51, stdev 0.99, range 2.01 to 4.72
+- **hooks**: mean 3.51, stdev 0.99, range 2.0 to 4.7
+- **afterglow**: mean 3.51, stdev 0.99, range 2.0 to 4.72
+- **replay**: mean 3.51, stdev 0.99, range 2.0 to 4.72
 
 ## Media
 
