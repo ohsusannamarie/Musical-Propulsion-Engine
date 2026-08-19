@@ -1,0 +1,122 @@
+from pathlib import Path
+
+p = Path('index.html')
+html = p.read_text(encoding='utf-8')
+
+html = html.replace('The Musical Propulsion Engine · v2.2.4', 'The Musical Propulsion Engine · v2.2.5')
+html = html.replace('V2.2.4 · THE RABBIT HOLE', 'V2.2.5 · THE RABBIT HOLE')
+
+css_marker = '/* v2.2.5 adaptive taste learning */'
+if css_marker not in html:
+    css = '''<style>
+/* v2.2.5 adaptive taste learning */
+.calibration-reasons{width:100%;border-top:1px solid rgba(255,255,255,.07);padding-top:10px;margin-top:2px}
+.cal-row{display:grid;grid-template-columns:94px minmax(0,1fr);gap:8px;align-items:start;margin:7px 0}
+.cal-row>span{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#aeb7c5;padding-top:7px;font-weight:800}
+.cal-chips{display:flex;gap:6px;flex-wrap:wrap}
+.taste-chip{border:1px solid #344057;background:#111724;color:#b8c0ce;border-radius:999px;padding:6px 8px;font-size:9px;cursor:pointer;transition:.15s ease}
+.taste-chip:hover{border-color:#65728a;color:#fff}
+.taste-chip.more.active{background:rgba(114,224,155,.15);border-color:rgba(114,224,155,.62);color:#8ef0ad}
+.taste-chip.less.active{background:rgba(255,95,143,.14);border-color:rgba(255,95,143,.60);color:#ff8dad}
+.taste-model-readout{margin-top:9px;padding:9px 10px;border-radius:8px;background:rgba(7,8,13,.44);color:#aeb8c7;font-size:10px;line-height:1.45;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.taste-model-readout strong{color:var(--gold)}
+.taste-reset{border:0;background:transparent;color:#7f8999;font-size:9px;text-decoration:underline;cursor:pointer;padding:3px}
+.taste-reset:hover{color:#d6dce5}
+.learn-badge{display:inline-flex;align-items:center;gap:5px;color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+@media (max-width:700px){
+  .cal-row{grid-template-columns:1fr;gap:4px}
+  .cal-row>span{padding-top:0}
+  .taste-chip{padding:7px 9px;font-size:9px}
+  .taste-model-readout{align-items:flex-start}
+}
+</style>'''
+    html = html.replace('</head>', css + '</head>', 1)
+
+anchor = "let customStatuses={}; try{customStatuses=JSON.parse(localStorage.getItem('mpe-statuses')||'{}')}catch(e){customStatuses={}}"
+if 'function tasteWeights()' not in html:
+    if anchor not in html:
+        raise RuntimeError('Could not locate status persistence anchor')
+    learning = r'''
+const tasteMetrics=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks'];
+let tasteFeedback={}; try{tasteFeedback=JSON.parse(localStorage.getItem('mpe-taste-feedback-v1')||'{}')}catch(e){tasteFeedback={}}
+function feedbackFor(id){const f=tasteFeedback[id]||{};return {more:Array.isArray(f.more)?f.more:[],less:Array.isArray(f.less)?f.less:[]}}
+function saveTasteFeedback(){try{localStorage.setItem('mpe-taste-feedback-v1',JSON.stringify(tasteFeedback))}catch(e){}}
+function tasteWeights(){
+  const w=Object.fromEntries(tasteMetrics.map(k=>[k,1]));
+  const statusSignal={moved:.075,liked:.035,revisit:.025,miss:-.055};
+  D.forEach(x=>{const s=statusSignal[stat(x)]||0;if(!s)return;tasteMetrics.forEach(k=>{w[k]+=s*((x.scores[k]-3)/2)})});
+  Object.values(tasteFeedback).forEach(f=>{
+    (Array.isArray(f.more)?f.more:[]).forEach(k=>{if(k in w)w[k]+=.18});
+    (Array.isArray(f.less)?f.less:[]).forEach(k=>{if(k in w)w[k]-=.16});
+  });
+  tasteMetrics.forEach(k=>w[k]=Math.max(.58,Math.min(1.75,w[k])));
+  return w;
+}
+function tasteWeight(k){return tasteWeights()[k]||1}
+function tasteProfileText(){const w=tasteWeights();const top=[...tasteMetrics].sort((a,b)=>w[b]-w[a]).slice(0,3);return top.map(k=>`${metricLabel(k)} ${w[k].toFixed(2)}×`).join(' · ')}
+function tasteEvidenceCount(){return Object.keys(tasteFeedback).filter(id=>{const f=feedbackFor(id);return f.more.length||f.less.length}).length}
+function calibrationMarkup(x){
+  const f=feedbackFor(x.id);
+  const chips=(dir)=>tasteMetrics.map(k=>`<button type="button" class="taste-chip ${dir} ${f[dir].includes(k)?'active':''}" data-taste-id="${x.id}" data-taste-dir="${dir}" data-taste-metric="${k}">${metricLabel(k)}</button>`).join('');
+  return `<div class="calibration-reasons"><div class="cal-row"><span>More of this</span><div class="cal-chips">${chips('more')}</div></div><div class="cal-row"><span>Less of this</span><div class="cal-chips">${chips('less')}</div></div><div class="taste-model-readout"><span><span class="learn-badge">🧠 Live taste model</span><br><strong>${tasteProfileText()}</strong><br>${tasteEvidenceCount()} title${tasteEvidenceCount()===1?'':'s'} explicitly calibrated, plus your library reactions.</span><button type="button" class="taste-reset" data-taste-reset="${x.id}">Reset this title</button></div></div>`;
+}
+'''
+    html = html.replace(anchor, anchor + learning, 1)
+
+old_feedback = '''<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Update how this title landed for you. Recommendations react instantly and this choice stays on this device.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select></div>'''
+new_feedback = '''<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Tell it both <em>how</em> this landed and <em>why</em>. Your answers change Rabbit Hole, Connections, and Tonight immediately.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select>${calibrationMarkup(x)}</div>'''
+if old_feedback in html:
+    html = html.replace(old_feedback, new_feedback, 1)
+elif '${calibrationMarkup(x)}' not in html:
+    raise RuntimeError('Could not upgrade Teach the engine panel')
+
+old_rabbit = "core.forEach(k=>{let w=(trait!=='all'&&k===trait)?4:1; distance+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w;});"
+new_rabbit = "core.forEach(k=>{let w=tasteWeight(k)*((trait!=='all'&&k===trait)?4:1); distance+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w;});"
+if old_rabbit in html:
+    html = html.replace(old_rabbit, new_rabbit, 1)
+elif 'let w=tasteWeight(k)*' not in html:
+    raise RuntimeError('Could not calibrate Rabbit Hole similarity')
+
+old_sim = "function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>diff+=Math.abs(a.scores[k]-b.scores[k]));return Math.round(Math.max(52,96-diff*3+shared*2));}"
+new_sim = "function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0,weightSum=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>{const w=tasteWeight(k);diff+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w});diff*=7/Math.max(1,weightSum);return Math.round(Math.max(52,96-diff*3+shared*2));}"
+if old_sim in html:
+    html = html.replace(old_sim, new_sim, 1)
+elif 'diff*=7/Math.max(1,weightSum)' not in html:
+    raise RuntimeError('Could not calibrate Connections similarity')
+
+tonight_replacements = {
+    "let s=x.scores.propulsion*9+x.scores.hooks*6+x.scores.narrative*4+x.scores.afterglow*4;":"let s=x.scores.propulsion*9*tasteWeight('propulsion')+x.scores.hooks*6*tasteWeight('hooks')+x.scores.narrative*4*tasteWeight('narrative')+x.scores.afterglow*4;",
+    "if(tonightState.energy==='steady')s+=x.scores.comfort*4-x.scores.maximalism*1;":"if(tonightState.energy==='steady')s+=x.scores.comfort*4*tasteWeight('comfort')-x.scores.maximalism*1*tasteWeight('maximalism');",
+    "if(tonightState.energy==='high')s+=x.scores.movement*5+x.scores.belt*4;":"if(tonightState.energy==='high')s+=x.scores.movement*5*tasteWeight('movement')+x.scores.belt*4*tasteWeight('belt');",
+    "if(tonightState.energy==='feral')s+=x.scores.maximalism*8+x.scores.movement*4+x.scores.belt*3;":"if(tonightState.energy==='feral')s+=x.scores.maximalism*8*tasteWeight('maximalism')+x.scores.movement*4*tasteWeight('movement')+x.scores.belt*3*tasteWeight('belt');",
+    "if(tonightState.emotion==='safe')s+=x.scores.comfort*7-x.scores.emotion*2;":"if(tonightState.emotion==='safe')s+=x.scores.comfort*7*tasteWeight('comfort')-x.scores.emotion*2*tasteWeight('emotion');",
+    "if(tonightState.emotion==='balanced')s+=x.scores.emotion*3+x.scores.comfort*2;":"if(tonightState.emotion==='balanced')s+=x.scores.emotion*3*tasteWeight('emotion')+x.scores.comfort*2*tasteWeight('comfort');",
+    "if(tonightState.emotion==='wreck')s+=x.scores.emotion*9+x.scores.maximalism*2-x.scores.comfort;":"if(tonightState.emotion==='wreck')s+=x.scores.emotion*9*tasteWeight('emotion')+x.scores.maximalism*2*tasteWeight('maximalism')-x.scores.comfort*tasteWeight('comfort');"
+}
+for old, new in tonight_replacements.items():
+    if old in html:
+        html = html.replace(old, new, 1)
+
+click_anchor = "document.addEventListener('click',e=>{const nav=e.target.closest('[data-section]');"
+if "const taste=e.target.closest('[data-taste-metric]')" not in html:
+    if click_anchor not in html:
+        raise RuntimeError('Could not locate click dispatcher')
+    click_upgrade = "document.addEventListener('click',e=>{const taste=e.target.closest('[data-taste-metric]');if(taste){const id=taste.dataset.tasteId,dir=taste.dataset.tasteDir,metric=taste.dataset.tasteMetric;const f=feedbackFor(id),other=dir==='more'?'less':'more';f[other]=f[other].filter(k=>k!==metric);f[dir]=f[dir].includes(metric)?f[dir].filter(k=>k!==metric):[...f[dir],metric];tasteFeedback[id]=f;saveTasteFeedback();renderAll();return}const reset=e.target.closest('[data-taste-reset]');if(reset){delete tasteFeedback[reset.dataset.tasteReset];saveTasteFeedback();renderAll();return}const nav=e.target.closest('[data-section]');"
+    html = html.replace(click_anchor, click_upgrade, 1)
+
+required = [
+    'v2.2.5 adaptive taste learning',
+    'function tasteWeights()',
+    'data-taste-metric',
+    'Live taste model',
+    'tasteWeight(k)',
+    'mpe-taste-feedback-v1',
+    'The Musical Propulsion Engine · v2.2.5',
+]
+missing = [item for item in required if item not in html]
+if missing:
+    raise RuntimeError('Missing expected v2.2.5 markers: ' + ', '.join(missing))
+
+p.write_text(html, encoding='utf-8')
+Path('app.html').write_text(html, encoding='utf-8')
+print('v2.2.5 adaptive taste learning build complete')
