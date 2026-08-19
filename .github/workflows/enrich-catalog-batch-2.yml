@@ -1,0 +1,42 @@
+name: Enrich Catalog Batch 2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/enrich_catalog_batch_2.js'
+      - '.github/workflows/enrich-catalog-batch-2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply enrichment batch 2
+        run: node .github/scripts/enrich_catalog_batch_2.js
+      - name: Validate enrichment batch 2
+        run: |
+          node - <<'NODE'
+          const D=require('./data/titles.json');
+          const ids=['phantom','deh','annie','odessa','drhorrible','once','beginagain','rocketman','bohemian','rent','jcs','sister2'];
+          for(const id of ids){
+            const x=D.find(v=>v.id===id);
+            if(!x) throw new Error('Missing '+id);
+            const e=x.enrichment||{};
+            for(const k of ['format','musicalType','vocalStyle','lyricalDensity','musicDrivenPercent','catharsis','rewatchability','familiarityAdvantage','bestMood','friction','gatewaySongs','notes','provenance']){
+              if(e[k]===null||e[k]===undefined||(Array.isArray(e[k])&&e[k].length===0)) throw new Error(`${id} missing ${k}`);
+            }
+          }
+          console.log('Validated',ids.length,'batch 2 profiles');
+          NODE
+      - name: Commit enrichment batch 2
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Enrich catalog batch 2' || exit 0
+          git push
