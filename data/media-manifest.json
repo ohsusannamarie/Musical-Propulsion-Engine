@@ -2,10 +2,10 @@
   "version": 1,
   "catalogSize": 81,
   "counts": {
-    "bundled": 51,
+    "bundled": 66,
     "remote": 0,
     "fallback": 0,
-    "missing": 30
+    "missing": 15
   },
   "entries": {
     "heights": {
@@ -388,26 +388,32 @@
     },
     "newsies": {
       "title": "Newsies: The Broadway Musical",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/newsies.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Newsies_(musical)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/f/f7/Newsies_%28musical%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "comefromaway": {
       "title": "Come From Away",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/comefromaway.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Come_from_Away_(film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/a/a9/Come_from_Away.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "shrek": {
       "title": "Shrek the Musical",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/shrek.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Shrek_the_Musical",
+        "source": "https://upload.wikimedia.org/wikipedia/en/4/46/Shrekcovernew.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "rockofages": {
@@ -493,98 +499,122 @@
     },
     "grease": {
       "title": "Grease",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/grease.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Grease_(film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "burlesque": {
       "title": "Burlesque",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/burlesque.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Burlesque_(2010_American_film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/2/24/Burlesque_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "pitchperfect": {
       "title": "Pitch Perfect",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/pitchperfect.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Pitch_Perfect",
+        "source": "https://upload.wikimedia.org/wikipedia/en/b/b9/Pitch_Perfect_movie_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "coco": {
       "title": "Coco",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/coco.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Coco_(2017_film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "princessfrog": {
       "title": "The Princess and the Frog",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/princessfrog.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "The_Princess_and_the_Frog",
+        "source": "https://upload.wikimedia.org/wikipedia/en/8/81/The_Princess_and_the_Frog_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "tangled": {
       "title": "Tangled",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/tangled.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Tangled",
+        "source": "https://upload.wikimedia.org/wikipedia/en/a/a8/Tangled_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "frozen": {
       "title": "Frozen",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/frozen.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Frozen_(2013_film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "waitress": {
       "title": "Waitress",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/waitress.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Waitress:_The_Musical",
+        "source": "https://upload.wikimedia.org/wikipedia/en/2/29/Waitress_musical_film_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "legallyblonde": {
       "title": "Legally Blonde: The Musical",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/legallyblonde.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Legally_Blonde_(musical)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/5/55/LegallyBlondeTheMusical.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "falsettos": {
       "title": "Falsettos",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/falsettos.jpg",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Falsettos",
+        "source": "https://upload.wikimedia.org/wikipedia/en/5/5f/Falsettos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "marypoppins": {
       "title": "Mary Poppins Returns",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/marypoppins.png",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "Mary_Poppins_Returns",
+        "source": "https://upload.wikimedia.org/wikipedia/en/4/48/Mary_Poppins_Returns_%282018_film_poster%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "starsborn": {
       "title": "A Star Is Born",
-      "status": "missing",
-      "poster": null,
+      "status": "bundled",
+      "poster": "./assets/posters/starsborn.png",
       "provenance": {
-        "type": "none"
+        "type": "wikipedia-rest-summary",
+        "page": "A_Star_Is_Born_(2018_film)",
+        "source": "https://upload.wikimedia.org/wikipedia/en/3/39/A_Star_is_Born.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
       }
     },
     "repo": {
@@ -710,184 +740,104 @@
   },
   "recoveryQueue": [
     {
-      "id": "newsies",
-      "title": "Newsies: The Broadway Musical",
-      "year": 2017,
-      "status": "needs-source"
-    },
-    {
-      "id": "comefromaway",
-      "title": "Come From Away",
-      "year": 2021,
-      "status": "needs-source"
-    },
-    {
-      "id": "shrek",
-      "title": "Shrek the Musical",
-      "year": 2013,
-      "status": "needs-source"
-    },
-    {
-      "id": "grease",
-      "title": "Grease",
-      "year": 1978,
-      "status": "needs-source"
-    },
-    {
-      "id": "burlesque",
-      "title": "Burlesque",
-      "year": 2010,
-      "status": "needs-source"
-    },
-    {
-      "id": "pitchperfect",
-      "title": "Pitch Perfect",
-      "year": 2012,
-      "status": "needs-source"
-    },
-    {
-      "id": "coco",
-      "title": "Coco",
-      "year": 2017,
-      "status": "needs-source"
-    },
-    {
-      "id": "princessfrog",
-      "title": "The Princess and the Frog",
-      "year": 2009,
-      "status": "needs-source"
-    },
-    {
-      "id": "tangled",
-      "title": "Tangled",
-      "year": 2010,
-      "status": "needs-source"
-    },
-    {
-      "id": "frozen",
-      "title": "Frozen",
-      "year": 2013,
-      "status": "needs-source"
-    },
-    {
-      "id": "waitress",
-      "title": "Waitress",
-      "year": 2023,
-      "status": "needs-source"
-    },
-    {
-      "id": "legallyblonde",
-      "title": "Legally Blonde: The Musical",
-      "year": 2007,
-      "status": "needs-source"
-    },
-    {
-      "id": "falsettos",
-      "title": "Falsettos",
-      "year": 2017,
-      "status": "needs-source"
-    },
-    {
-      "id": "marypoppins",
-      "title": "Mary Poppins Returns",
-      "year": 2018,
-      "status": "needs-source"
-    },
-    {
-      "id": "starsborn",
-      "title": "A Star Is Born",
-      "year": 2018,
-      "status": "needs-source"
-    },
-    {
       "id": "repo",
       "title": "Repo! The Genetic Opera",
-      "year": 2008,
       "status": "needs-source"
     },
     {
       "id": "velvetgoldmine",
       "title": "Velvet Goldmine",
-      "year": 1998,
       "status": "needs-source"
     },
     {
       "id": "priscilla",
       "title": "The Adventures of Priscilla, Queen of the Desert",
-      "year": 1994,
       "status": "needs-source"
     },
     {
       "id": "annaapocalypse",
       "title": "Anna and the Apocalypse",
-      "year": 2017,
       "status": "needs-source"
     },
     {
       "id": "dancerinthedark",
       "title": "Dancer in the Dark",
-      "year": 2000,
       "status": "needs-source"
     },
     {
       "id": "hedwigstage",
       "title": "Hedwig and the Angry Inch: Broadway",
-      "year": 2014,
       "status": "needs-source"
     },
     {
       "id": "batboy",
       "title": "Bat Boy: The Musical",
-      "year": 2004,
       "status": "needs-source"
     },
     {
       "id": "reefer",
       "title": "Reefer Madness: The Movie Musical",
-      "year": 2005,
       "status": "needs-source"
     },
     {
       "id": "singininrain",
       "title": "Singin’ in the Rain",
-      "year": 1952,
       "status": "needs-source"
     },
     {
       "id": "cabaret",
       "title": "Cabaret",
-      "year": 1972,
       "status": "needs-source"
     },
     {
       "id": "rockyhorrorlive",
       "title": "The Rocky Horror Picture Show: Let’s Do the Time Warp Again",
-      "year": 2016,
       "status": "needs-source"
     },
     {
       "id": "billyelliot",
       "title": "Billy Elliot the Musical Live",
-      "year": 2014,
       "status": "needs-source"
     },
     {
       "id": "tickstage",
       "title": "tick, tick... BOOM! Off-Broadway Recording",
-      "year": 2001,
       "status": "needs-source"
     },
     {
       "id": "onceisland",
       "title": "Once on This Island",
-      "year": 2018,
       "status": "needs-source"
     },
     {
       "id": "shocktreatment",
       "title": "Shock Treatment",
-      "year": 1981,
       "status": "needs-source"
     }
-  ]
+  ],
+  "lastRecovery": {
+    "batch": 2,
+    "attempted": 15,
+    "recovered": [
+      "newsies",
+      "comefromaway",
+      "shrek",
+      "grease",
+      "burlesque",
+      "pitchperfect",
+      "coco",
+      "princessfrog",
+      "tangled",
+      "frozen",
+      "waitress",
+      "legallyblonde",
+      "falsettos",
+      "marypoppins",
+      "starsborn"
+    ],
+    "failed": [],
+    "skipped": [],
+    "beforeMissing": 30,
+    "afterMissing": 15
+  }
 }
