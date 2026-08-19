@@ -1,0 +1,968 @@
+{
+  "version": 1,
+  "catalogSize": 81,
+  "counts": {
+    "bundled": 36,
+    "remote": 0,
+    "fallback": 0,
+    "missing": 45
+  },
+  "entries": {
+    "heights": {
+      "title": "In the Heights",
+      "status": "bundled",
+      "poster": "./assets/posters/heights.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/heights.jpg"
+      }
+    },
+    "inside": {
+      "title": "Bo Burnham: Inside",
+      "status": "bundled",
+      "poster": "./assets/posters/inside.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/inside.jpg"
+      }
+    },
+    "moulin": {
+      "title": "Moulin Rouge!",
+      "status": "bundled",
+      "poster": "./assets/posters/moulin.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/moulin.jpg"
+      }
+    },
+    "moana": {
+      "title": "Moana",
+      "status": "bundled",
+      "poster": "./assets/posters/moana.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/moana.jpg"
+      }
+    },
+    "hamilton": {
+      "title": "Hamilton",
+      "status": "bundled",
+      "poster": "./assets/posters/hamilton.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/hamilton.jpg"
+      }
+    },
+    "ticktick": {
+      "title": "tick, tick…BOOM!",
+      "status": "bundled",
+      "poster": "./assets/posters/ticktick.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/ticktick.jpg"
+      }
+    },
+    "greatest": {
+      "title": "The Greatest Showman",
+      "status": "bundled",
+      "poster": "./assets/posters/greatest.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/greatest.jpg"
+      }
+    },
+    "wicked": {
+      "title": "Wicked",
+      "status": "bundled",
+      "poster": "./assets/posters/wicked.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/wicked.jpg"
+      }
+    },
+    "phantom": {
+      "title": "The Phantom of the Opera",
+      "status": "bundled",
+      "poster": "./assets/posters/phantom.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/phantom.jpg"
+      }
+    },
+    "deh": {
+      "title": "Dear Evan Hansen",
+      "status": "bundled",
+      "poster": "./assets/posters/deh.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/deh.jpg"
+      }
+    },
+    "across": {
+      "title": "Across the Universe",
+      "status": "bundled",
+      "poster": "./assets/posters/across.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/across.jpg"
+      }
+    },
+    "annie": {
+      "title": "Annie",
+      "status": "bundled",
+      "poster": "./assets/posters/annie.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/annie.jpg"
+      }
+    },
+    "kpop": {
+      "title": "KPop Demon Hunters",
+      "status": "bundled",
+      "poster": "./assets/posters/kpop.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/kpop.jpg"
+      }
+    },
+    "odessa": {
+      "title": "O’Dessa",
+      "status": "bundled",
+      "poster": "./assets/posters/odessa.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/odessa.jpg"
+      }
+    },
+    "walkline": {
+      "title": "Walk the Line",
+      "status": "bundled",
+      "poster": "./assets/posters/walkline.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/walkline.jpg"
+      }
+    },
+    "drhorrible": {
+      "title": "Dr. Horrible’s Sing-Along Blog",
+      "status": "bundled",
+      "poster": "./assets/posters/drhorrible.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/drhorrible.jpg"
+      }
+    },
+    "once": {
+      "title": "Once",
+      "status": "bundled",
+      "poster": "./assets/posters/once.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/once.jpg"
+      }
+    },
+    "beginagain": {
+      "title": "Begin Again",
+      "status": "bundled",
+      "poster": "./assets/posters/beginagain.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/beginagain.jpg"
+      }
+    },
+    "lalaland": {
+      "title": "La La Land",
+      "status": "bundled",
+      "poster": "./assets/posters/lalaland.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/lalaland.jpg"
+      }
+    },
+    "dreamgirls": {
+      "title": "Dreamgirls",
+      "status": "bundled",
+      "poster": "./assets/posters/dreamgirls.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/dreamgirls.jpg"
+      }
+    },
+    "rocketman": {
+      "title": "Rocketman",
+      "status": "bundled",
+      "poster": "./assets/posters/rocketman.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/rocketman.jpg"
+      }
+    },
+    "bohemian": {
+      "title": "Bohemian Rhapsody",
+      "status": "bundled",
+      "poster": "./assets/posters/bohemian.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/bohemian.jpg"
+      }
+    },
+    "jamie": {
+      "title": "Everybody’s Talking About Jamie",
+      "status": "bundled",
+      "poster": "./assets/posters/jamie.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/jamie.jpg"
+      }
+    },
+    "hedwig": {
+      "title": "Hedwig and the Angry Inch",
+      "status": "bundled",
+      "poster": "./assets/posters/hedwig.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/hedwig.jpg"
+      }
+    },
+    "rent": {
+      "title": "Rent",
+      "status": "bundled",
+      "poster": "./assets/posters/rent.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/rent.jpg"
+      }
+    },
+    "jcs": {
+      "title": "Jesus Christ Superstar",
+      "status": "bundled",
+      "poster": "./assets/posters/jcs.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/jcs.jpg"
+      }
+    },
+    "sister2": {
+      "title": "Sister Act 2: Back in the Habit",
+      "status": "bundled",
+      "poster": "./assets/posters/sister2.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/sister2.jpg"
+      }
+    },
+    "colorpurple": {
+      "title": "The Color Purple",
+      "status": "bundled",
+      "poster": "./assets/posters/colorpurple.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/colorpurple.jpg"
+      }
+    },
+    "hairspray": {
+      "title": "Hairspray",
+      "status": "bundled",
+      "poster": "./assets/posters/hairspray.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/hairspray.jpg"
+      }
+    },
+    "encanto": {
+      "title": "Encanto",
+      "status": "bundled",
+      "poster": "./assets/posters/encanto.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/encanto.jpg"
+      }
+    },
+    "singstreet": {
+      "title": "Sing Street",
+      "status": "bundled",
+      "poster": "./assets/posters/singstreet.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/singstreet.jpg"
+      }
+    },
+    "westside": {
+      "title": "West Side Story",
+      "status": "bundled",
+      "poster": "./assets/posters/westside.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/westside.jpg"
+      }
+    },
+    "littleShop": {
+      "title": "Little Shop of Horrors",
+      "status": "bundled",
+      "poster": "./assets/posters/littleShop.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/littleShop.jpg"
+      }
+    },
+    "rocky": {
+      "title": "The Rocky Horror Picture Show",
+      "status": "bundled",
+      "poster": "./assets/posters/rocky.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/rocky.jpg"
+      }
+    },
+    "sweeney": {
+      "title": "Sweeney Todd",
+      "status": "bundled",
+      "poster": "./assets/posters/sweeney.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/sweeney.jpg"
+      }
+    },
+    "lastfive": {
+      "title": "The Last Five Years",
+      "status": "bundled",
+      "poster": "./assets/posters/lastfive.jpg",
+      "provenance": {
+        "type": "repository-asset",
+        "path": "assets/posters/lastfive.jpg"
+      }
+    },
+    "spirited": {
+      "title": "Spirited",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "matilda": {
+      "title": "Matilda the Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "prom": {
+      "title": "The Prom",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "cyrano": {
+      "title": "Cyrano",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "wonka": {
+      "title": "Wonka",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "meangirls": {
+      "title": "Mean Girls",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "newsies": {
+      "title": "Newsies: The Broadway Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "comefromaway": {
+      "title": "Come From Away",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "shrek": {
+      "title": "Shrek the Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "rockofages": {
+      "title": "Rock of Ages",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "purplerain": {
+      "title": "Purple Rain",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "hair": {
+      "title": "Hair",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "tommy": {
+      "title": "Tommy",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "blinded": {
+      "title": "Blinded by the Light",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "yesterday": {
+      "title": "Yesterday",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "chicago": {
+      "title": "Chicago",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "mammamia": {
+      "title": "Mamma Mia!",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "soundmusic": {
+      "title": "The Sound of Music",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "grease": {
+      "title": "Grease",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "burlesque": {
+      "title": "Burlesque",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "pitchperfect": {
+      "title": "Pitch Perfect",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "coco": {
+      "title": "Coco",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "princessfrog": {
+      "title": "The Princess and the Frog",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "tangled": {
+      "title": "Tangled",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "frozen": {
+      "title": "Frozen",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "waitress": {
+      "title": "Waitress",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "legallyblonde": {
+      "title": "Legally Blonde: The Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "falsettos": {
+      "title": "Falsettos",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "marypoppins": {
+      "title": "Mary Poppins Returns",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "starsborn": {
+      "title": "A Star Is Born",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "repo": {
+      "title": "Repo! The Genetic Opera",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "velvetgoldmine": {
+      "title": "Velvet Goldmine",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "priscilla": {
+      "title": "The Adventures of Priscilla, Queen of the Desert",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "annaapocalypse": {
+      "title": "Anna and the Apocalypse",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "dancerinthedark": {
+      "title": "Dancer in the Dark",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "hedwigstage": {
+      "title": "Hedwig and the Angry Inch: Broadway",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "batboy": {
+      "title": "Bat Boy: The Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "reefer": {
+      "title": "Reefer Madness: The Movie Musical",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "singininrain": {
+      "title": "Singin’ in the Rain",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "cabaret": {
+      "title": "Cabaret",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "rockyhorrorlive": {
+      "title": "The Rocky Horror Picture Show: Let’s Do the Time Warp Again",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "billyelliot": {
+      "title": "Billy Elliot the Musical Live",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "tickstage": {
+      "title": "tick, tick... BOOM! Off-Broadway Recording",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "onceisland": {
+      "title": "Once on This Island",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    },
+    "shocktreatment": {
+      "title": "Shock Treatment",
+      "status": "missing",
+      "poster": null,
+      "provenance": {
+        "type": "none"
+      }
+    }
+  },
+  "recoveryQueue": [
+    {
+      "id": "spirited",
+      "title": "Spirited",
+      "year": 2022,
+      "status": "needs-source"
+    },
+    {
+      "id": "matilda",
+      "title": "Matilda the Musical",
+      "year": 2022,
+      "status": "needs-source"
+    },
+    {
+      "id": "prom",
+      "title": "The Prom",
+      "year": 2020,
+      "status": "needs-source"
+    },
+    {
+      "id": "cyrano",
+      "title": "Cyrano",
+      "year": 2021,
+      "status": "needs-source"
+    },
+    {
+      "id": "wonka",
+      "title": "Wonka",
+      "year": 2023,
+      "status": "needs-source"
+    },
+    {
+      "id": "meangirls",
+      "title": "Mean Girls",
+      "year": 2024,
+      "status": "needs-source"
+    },
+    {
+      "id": "newsies",
+      "title": "Newsies: The Broadway Musical",
+      "year": 2017,
+      "status": "needs-source"
+    },
+    {
+      "id": "comefromaway",
+      "title": "Come From Away",
+      "year": 2021,
+      "status": "needs-source"
+    },
+    {
+      "id": "shrek",
+      "title": "Shrek the Musical",
+      "year": 2013,
+      "status": "needs-source"
+    },
+    {
+      "id": "rockofages",
+      "title": "Rock of Ages",
+      "year": 2012,
+      "status": "needs-source"
+    },
+    {
+      "id": "purplerain",
+      "title": "Purple Rain",
+      "year": 1984,
+      "status": "needs-source"
+    },
+    {
+      "id": "hair",
+      "title": "Hair",
+      "year": 1979,
+      "status": "needs-source"
+    },
+    {
+      "id": "tommy",
+      "title": "Tommy",
+      "year": 1975,
+      "status": "needs-source"
+    },
+    {
+      "id": "blinded",
+      "title": "Blinded by the Light",
+      "year": 2019,
+      "status": "needs-source"
+    },
+    {
+      "id": "yesterday",
+      "title": "Yesterday",
+      "year": 2019,
+      "status": "needs-source"
+    },
+    {
+      "id": "chicago",
+      "title": "Chicago",
+      "year": 2002,
+      "status": "needs-source"
+    },
+    {
+      "id": "mammamia",
+      "title": "Mamma Mia!",
+      "year": 2008,
+      "status": "needs-source"
+    },
+    {
+      "id": "soundmusic",
+      "title": "The Sound of Music",
+      "year": 1965,
+      "status": "needs-source"
+    },
+    {
+      "id": "grease",
+      "title": "Grease",
+      "year": 1978,
+      "status": "needs-source"
+    },
+    {
+      "id": "burlesque",
+      "title": "Burlesque",
+      "year": 2010,
+      "status": "needs-source"
+    },
+    {
+      "id": "pitchperfect",
+      "title": "Pitch Perfect",
+      "year": 2012,
+      "status": "needs-source"
+    },
+    {
+      "id": "coco",
+      "title": "Coco",
+      "year": 2017,
+      "status": "needs-source"
+    },
+    {
+      "id": "princessfrog",
+      "title": "The Princess and the Frog",
+      "year": 2009,
+      "status": "needs-source"
+    },
+    {
+      "id": "tangled",
+      "title": "Tangled",
+      "year": 2010,
+      "status": "needs-source"
+    },
+    {
+      "id": "frozen",
+      "title": "Frozen",
+      "year": 2013,
+      "status": "needs-source"
+    },
+    {
+      "id": "waitress",
+      "title": "Waitress",
+      "year": 2023,
+      "status": "needs-source"
+    },
+    {
+      "id": "legallyblonde",
+      "title": "Legally Blonde: The Musical",
+      "year": 2007,
+      "status": "needs-source"
+    },
+    {
+      "id": "falsettos",
+      "title": "Falsettos",
+      "year": 2017,
+      "status": "needs-source"
+    },
+    {
+      "id": "marypoppins",
+      "title": "Mary Poppins Returns",
+      "year": 2018,
+      "status": "needs-source"
+    },
+    {
+      "id": "starsborn",
+      "title": "A Star Is Born",
+      "year": 2018,
+      "status": "needs-source"
+    },
+    {
+      "id": "repo",
+      "title": "Repo! The Genetic Opera",
+      "year": 2008,
+      "status": "needs-source"
+    },
+    {
+      "id": "velvetgoldmine",
+      "title": "Velvet Goldmine",
+      "year": 1998,
+      "status": "needs-source"
+    },
+    {
+      "id": "priscilla",
+      "title": "The Adventures of Priscilla, Queen of the Desert",
+      "year": 1994,
+      "status": "needs-source"
+    },
+    {
+      "id": "annaapocalypse",
+      "title": "Anna and the Apocalypse",
+      "year": 2017,
+      "status": "needs-source"
+    },
+    {
+      "id": "dancerinthedark",
+      "title": "Dancer in the Dark",
+      "year": 2000,
+      "status": "needs-source"
+    },
+    {
+      "id": "hedwigstage",
+      "title": "Hedwig and the Angry Inch: Broadway",
+      "year": 2014,
+      "status": "needs-source"
+    },
+    {
+      "id": "batboy",
+      "title": "Bat Boy: The Musical",
+      "year": 2004,
+      "status": "needs-source"
+    },
+    {
+      "id": "reefer",
+      "title": "Reefer Madness: The Movie Musical",
+      "year": 2005,
+      "status": "needs-source"
+    },
+    {
+      "id": "singininrain",
+      "title": "Singin’ in the Rain",
+      "year": 1952,
+      "status": "needs-source"
+    },
+    {
+      "id": "cabaret",
+      "title": "Cabaret",
+      "year": 1972,
+      "status": "needs-source"
+    },
+    {
+      "id": "rockyhorrorlive",
+      "title": "The Rocky Horror Picture Show: Let’s Do the Time Warp Again",
+      "year": 2016,
+      "status": "needs-source"
+    },
+    {
+      "id": "billyelliot",
+      "title": "Billy Elliot the Musical Live",
+      "year": 2014,
+      "status": "needs-source"
+    },
+    {
+      "id": "tickstage",
+      "title": "tick, tick... BOOM! Off-Broadway Recording",
+      "year": 2001,
+      "status": "needs-source"
+    },
+    {
+      "id": "onceisland",
+      "title": "Once on This Island",
+      "year": 2018,
+      "status": "needs-source"
+    },
+    {
+      "id": "shocktreatment",
+      "title": "Shock Treatment",
+      "year": 1981,
+      "status": "needs-source"
+    }
+  ]
+}
