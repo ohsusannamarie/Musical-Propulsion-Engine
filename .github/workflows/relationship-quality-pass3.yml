@@ -1,0 +1,45 @@
+name: Relationship Quality Pass 3
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/curate_relationships_pass3.py'
+permissions:
+  contents: write
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Curate reciprocal relatedness
+        run: python3 .github/scripts/curate_relationships_pass3.py
+      - name: Rebuild relationship architecture
+        run: python3 .github/scripts/build_relationship_architecture.py
+      - name: Validate curation
+        run: |
+          python3 - <<'PY'
+          import json
+          t=json.load(open('data/titles.json'))
+          r=json.load(open('data/relationships.json'))
+          c=json.load(open('data/relationship-curation.json'))
+          by={x['id']:x for x in t}
+          assert len(t)==81
+          assert r['version']==3
+          assert c['promotionCount']==26
+          for rec in c['promotions']:
+            a,b=rec['titles']
+            assert b in by[a]['links'],(a,b)
+            assert a in by[b]['links'],(a,b)
+          # We should reduce one-way edges and increase reciprocal edges from the v3 baseline.
+          assert r['summary']['oneWayEdges'] < 174,r['summary']
+          assert r['summary']['reciprocalEdges'] > 65,r['summary']
+          print(r['summary'])
+          PY
+      - name: Commit curated relationships
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json data/relationships.json data/RELATIONSHIP_ARCHITECTURE.md data/relationship-curation.json
+          git commit -m 'Curate reciprocal relationship candidates' || exit 0
+          git push
