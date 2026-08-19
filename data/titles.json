@@ -98,7 +98,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Hip-hop",
+      "Latin",
+      "Pop",
+      "Musical Theater"
+    ]
   },
   {
     "id": "inside",
@@ -197,7 +203,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Electronic",
+      "Comedy",
+      "Piano Ballad",
+      "Experimental"
+    ]
   },
   {
     "id": "moulin",
@@ -297,7 +309,14 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jukebox",
+      "Pop",
+      "Rock",
+      "Cabaret",
+      "Orchestral"
+    ]
   },
   {
     "id": "moana",
@@ -395,7 +414,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "World/Regional",
+      "Musical Theater",
+      "Lin-Manuel Miranda"
+    ]
   },
   {
     "id": "hamilton",
@@ -495,7 +520,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Hip-hop",
+      "R&B",
+      "Pop",
+      "Musical Theater"
+    ]
   },
   {
     "id": "ticktick",
@@ -593,7 +624,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Pop",
+      "Musical Theater",
+      "Piano"
+    ]
   },
   {
     "id": "greatest",
@@ -690,7 +727,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Ballad",
+      "Musical Theater"
+    ]
   },
   {
     "id": "wicked",
@@ -788,7 +830,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Contemporary Broadway",
+      "Pop-influenced",
+      "Ballad",
+      "Ensemble"
+    ]
   },
   {
     "id": "phantom",
@@ -885,7 +933,13 @@
           "note": "Interpretive profile of musical experience and likely fit."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Operatic Pop",
+      "Gothic",
+      "Musical Theater",
+      "Orchestral"
+    ]
   },
   {
     "id": "deh",
@@ -980,7 +1034,12 @@
           "note": "Interpretive profile; mood/friction notes reflect editorial judgment."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Ballad",
+      "Piano Pop"
+    ]
   },
   {
     "id": "across",
@@ -1078,7 +1137,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Beatles",
+      "Rock",
+      "Psychedelic",
+      "Jukebox"
+    ]
   },
   {
     "id": "annie",
@@ -1173,7 +1238,12 @@
           "note": "Interpretive profile; familiarity advantage includes known personal nostalgia context."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Classic Broadway",
+      "Cabaret",
+      "Orchestral Pop"
+    ]
   },
   {
     "id": "kpop",
@@ -1271,7 +1341,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "K-pop",
+      "Electronic",
+      "Ballad",
+      "Dance-pop"
+    ]
   },
   {
     "id": "odessa",
@@ -1370,7 +1446,13 @@
           "note": "Interpretive profile based on engine framing and catalog scoring."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Synth Rock",
+      "Rock Opera",
+      "Ballad"
+    ]
   },
   {
     "id": "walkline",
@@ -1467,7 +1549,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Country",
+      "Rockabilly",
+      "Roots",
+      "Biopic Performance"
+    ]
   },
   {
     "id": "drhorrible",
@@ -1564,7 +1652,13 @@
           "note": "Interpretive profile of structure and emotional arc."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Comedy Musical",
+      "Rock",
+      "Web Musical",
+      "Character Song"
+    ]
   },
   {
     "id": "once",
@@ -1659,7 +1753,11 @@
           "note": "Interpretive profile, especially useful as a low-propulsion contrast case."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Folk",
+      "Singer-Songwriter"
+    ]
   },
   {
     "id": "beginagain",
@@ -1753,7 +1851,12 @@
           "note": "Interpretive profile preserving the distinction between musical-adjacent and full musical."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Indie Pop",
+      "Singer-Songwriter",
+      "Pop"
+    ]
   },
   {
     "id": "lalaland",
@@ -1843,7 +1946,12 @@
           "titleId": "lalaland"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jazz",
+      "Golden Age",
+      "Pop Ballad"
+    ]
   },
   {
     "id": "dreamgirls",
@@ -1935,7 +2043,13 @@
           "titleId": "dreamgirls"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Motown-inspired",
+      "Soul",
+      "R&B",
+      "Ballad"
+    ]
   },
   {
     "id": "rocketman",
@@ -2033,7 +2147,13 @@
           "note": "Interpretive profile; familiarity advantage reflects known user affinity."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Rock",
+      "Jukebox",
+      "Musical Theater"
+    ]
   },
   {
     "id": "bohemian",
@@ -2126,7 +2246,12 @@
           "note": "Interpretive profile; friction includes previously stated viewing reaction."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Queen",
+      "Arena Rock",
+      "Biopic Performance"
+    ]
   },
   {
     "id": "jamie",
@@ -2220,7 +2345,13 @@
           "titleId": "jamie"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Dance-pop",
+      "Electronic",
+      "Musical Theater",
+      "Ballad"
+    ]
   },
   {
     "id": "hedwig",
@@ -2314,7 +2445,12 @@
           "titleId": "hedwig"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Rock Musical",
+      "Cabaret"
+    ]
   },
   {
     "id": "rent",
@@ -2410,7 +2546,11 @@
           "note": "Interpretive profile of musical and emotional mechanics."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Contemporary Broadway"
+    ]
   },
   {
     "id": "jcs",
@@ -2507,7 +2647,13 @@
           "note": "Interpretive profile; useful as a sung-through benchmark."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock Opera",
+      "Rock",
+      "Funk",
+      "Musical Theater"
+    ]
   },
   {
     "id": "sister2",
@@ -2603,7 +2749,13 @@
           "note": "Interpretive profile emphasizing performance-driven propulsion."
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Gospel",
+      "R&B",
+      "Soul",
+      "Pop"
+    ]
   },
   {
     "id": "colorpurple",
@@ -2698,7 +2850,14 @@
           "titleId": "colorpurple"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Gospel",
+      "Soul",
+      "Blues",
+      "R&B",
+      "Musical Theater"
+    ]
   },
   {
     "id": "hairspray",
@@ -2797,7 +2956,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Soul",
+      "R&B",
+      "Musical Theater"
+    ]
   },
   {
     "id": "encanto",
@@ -2890,7 +3055,13 @@
           "titleId": "encanto"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Latin Pop",
+      "Musical Theater",
+      "World/Regional",
+      "Lin-Manuel Miranda"
+    ]
   },
   {
     "id": "singstreet",
@@ -2981,7 +3152,11 @@
           "titleId": "singstreet"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "New Wave",
+      "Rock"
+    ]
   },
   {
     "id": "westside",
@@ -3074,7 +3249,13 @@
           "titleId": "westside"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Classic Broadway",
+      "Latin Influence",
+      "Orchestral",
+      "Jazz"
+    ]
   },
   {
     "id": "littleShop",
@@ -3167,7 +3348,13 @@
           "titleId": "littleShop"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Motown",
+      "R&B",
+      "Rock",
+      "Comedy Musical"
+    ]
   },
   {
     "id": "rocky",
@@ -3260,7 +3447,13 @@
           "titleId": "rocky"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Rock Musical",
+      "Camp",
+      "Sci-fi"
+    ]
   },
   {
     "id": "sweeney",
@@ -3352,7 +3545,13 @@
           "titleId": "sweeney"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Sondheim",
+      "Gothic",
+      "Orchestral",
+      "Musical Theater"
+    ]
   },
   {
     "id": "lastfive",
@@ -3443,7 +3642,12 @@
           "titleId": "lastfive"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Piano Pop",
+      "Character Song"
+    ]
   },
   {
     "id": "spirited",
@@ -3538,7 +3742,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Musical Theater",
+      "Comedy",
+      "Holiday"
+    ]
   },
   {
     "id": "matilda",
@@ -3633,7 +3843,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Pop",
+      "Comedy"
+    ]
   },
   {
     "id": "prom",
@@ -3728,7 +3943,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Pop",
+      "Dance",
+      "Comedy"
+    ]
   },
   {
     "id": "cyrano",
@@ -3822,7 +4043,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Orchestral",
+      "Musical Theater",
+      "Ballad"
+    ]
   },
   {
     "id": "wonka",
@@ -3917,7 +4144,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Orchestral",
+      "Golden Age",
+      "Family"
+    ]
   },
   {
     "id": "meangirls",
@@ -4011,7 +4244,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Musical Theater",
+      "Dance",
+      "Comedy"
+    ]
   },
   {
     "id": "newsies",
@@ -4105,7 +4344,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Dance",
+      "Orchestral Pop",
+      "Ensemble"
+    ]
   },
   {
     "id": "comefromaway",
@@ -4200,7 +4445,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Folk",
+      "Musical Theater",
+      "Ensemble"
+    ]
   },
   {
     "id": "shrek",
@@ -4295,7 +4545,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Comedy",
+      "Rock",
+      "Family"
+    ]
   },
   {
     "id": "rockofages",
@@ -4390,7 +4646,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jukebox",
+      "Rock",
+      "Arena Rock"
+    ]
   },
   {
     "id": "purplerain",
@@ -4486,7 +4747,14 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Funk",
+      "Pop",
+      "R&B",
+      "Music Drama"
+    ]
   },
   {
     "id": "hair",
@@ -4581,7 +4849,11 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Ensemble"
+    ]
   },
   {
     "id": "tommy",
@@ -4677,7 +4949,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock Opera",
+      "Rock",
+      "Psychedelic"
+    ]
   },
   {
     "id": "blinded",
@@ -4771,7 +5048,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jukebox",
+      "Rock",
+      "Springsteen",
+      "Narrative Theme"
+    ]
   },
   {
     "id": "yesterday",
@@ -4866,7 +5149,13 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Beatles",
+      "Jukebox",
+      "Rock",
+      "Music Drama"
+    ]
   },
   {
     "id": "chicago",
@@ -4950,7 +5239,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jazz",
+      "Cabaret",
+      "Musical Theater"
+    ]
   },
   {
     "id": "mammamia",
@@ -5034,7 +5328,11 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jukebox",
+      "Pop"
+    ]
   },
   {
     "id": "soundmusic",
@@ -5119,7 +5417,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Golden Age",
+      "Orchestral",
+      "Folk"
+    ]
   },
   {
     "id": "grease",
@@ -5203,7 +5506,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Pop",
+      "Musical Theater"
+    ]
   },
   {
     "id": "burlesque",
@@ -5287,7 +5595,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Cabaret",
+      "Dance"
+    ]
   },
   {
     "id": "pitchperfect",
@@ -5371,7 +5684,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Vocal Performance",
+      "Pop",
+      "Mashup"
+    ]
   },
   {
     "id": "coco",
@@ -5455,7 +5773,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Mexican Folk",
+      "Pop",
+      "Animation"
+    ]
   },
   {
     "id": "princessfrog",
@@ -5539,7 +5862,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Jazz",
+      "Gospel",
+      "Musical Theater"
+    ]
   },
   {
     "id": "tangled",
@@ -5623,7 +5951,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Pop",
+      "Orchestral"
+    ]
   },
   {
     "id": "frozen",
@@ -5707,7 +6040,11 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Pop"
+    ]
   },
   {
     "id": "waitress",
@@ -5791,7 +6128,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Singer-Songwriter",
+      "Musical Theater"
+    ]
   },
   {
     "id": "legallyblonde",
@@ -5833,7 +6175,7 @@
     ],
     "links": [
       "hairspray",
-      "meanGirls",
+      "meangirls",
       "newsies"
     ],
     "enrichment": {
@@ -5875,7 +6217,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Musical Theater",
+      "Dance"
+    ]
   },
   {
     "id": "falsettos",
@@ -5960,7 +6307,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Sung-through",
+      "Pop"
+    ]
   },
   {
     "id": "marypoppins",
@@ -6044,7 +6396,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Golden Age",
+      "Orchestral"
+    ]
   },
   {
     "id": "starsborn",
@@ -6129,7 +6486,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Rock",
+      "Music Drama"
+    ]
   },
   {
     "id": "repo",
@@ -6214,7 +6576,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock Opera",
+      "Electronic",
+      "Rock"
+    ]
   },
   {
     "id": "velvetgoldmine",
@@ -6257,7 +6624,7 @@
     "links": [
       "hedwig",
       "rocky",
-      "purpleRain"
+      "purplerain"
     ],
     "enrichment": {
       "format": "film",
@@ -6297,7 +6664,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Jukebox",
+      "Queer"
+    ]
   },
   {
     "id": "priscilla",
@@ -6381,7 +6753,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Disco",
+      "Jukebox",
+      "Performance"
+    ]
   },
   {
     "id": "annaapocalypse",
@@ -6465,7 +6842,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Pop",
+      "Genre Hybrid",
+      "Holiday"
+    ]
   },
   {
     "id": "dancerinthedark",
@@ -6548,7 +6930,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Experimental",
+      "Electronic",
+      "Musical Drama"
+    ]
   },
   {
     "id": "hedwigstage",
@@ -6632,7 +7019,11 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Musical Theater"
+    ]
   },
   {
     "id": "batboy",
@@ -6716,7 +7107,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Camp",
+      "Off-Broadway"
+    ]
   },
   {
     "id": "reefer",
@@ -6800,7 +7196,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Satire",
+      "Camp"
+    ]
   },
   {
     "id": "singininrain",
@@ -6883,7 +7284,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Golden Age",
+      "Jazz",
+      "Dance"
+    ]
   },
   {
     "id": "cabaret",
@@ -6968,7 +7374,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Cabaret",
+      "Jazz",
+      "Musical Theater"
+    ]
   },
   {
     "id": "rockyhorrorlive",
@@ -7052,7 +7463,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Camp",
+      "Cult"
+    ]
   },
   {
     "id": "billyelliot",
@@ -7135,7 +7551,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Musical Theater",
+      "Pop-Rock",
+      "Dance"
+    ]
   },
   {
     "id": "tickstage",
@@ -7218,7 +7639,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "Rock",
+      "Musical Theater",
+      "Singer-Songwriter"
+    ]
   },
   {
     "id": "onceisland",
@@ -7261,7 +7687,7 @@
     "links": [
       "heights",
       "colorpurple",
-      "comeFromAway"
+      "comefromaway"
     ],
     "enrichment": {
       "format": "stage-capture",
@@ -7302,7 +7728,12 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "World/Regional",
+      "Musical Theater",
+      "Folk"
+    ]
   },
   {
     "id": "shocktreatment",
@@ -7386,6 +7817,11 @@
           "scope": "interpretive scoring and fit analysis"
         }
       ]
-    }
+    },
+    "dnaNormalized": [
+      "New Wave",
+      "Rock",
+      "Cult"
+    ]
   }
 ]
