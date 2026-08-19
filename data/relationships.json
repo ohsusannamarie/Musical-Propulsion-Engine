@@ -3,11 +3,11 @@
   "summary": {
     "titleCount": 81,
     "edgeCount": 239,
-    "reciprocalEdges": 65,
-    "oneWayEdges": 174,
+    "reciprocalEdges": 91,
+    "oneWayEdges": 148,
     "edgesWithSharedNormalizedDNA": 173,
     "edgesWithCloseScoreProfile": 39,
-    "reciprocalCandidates": 42,
+    "reciprocalCandidates": 16,
     "qualityTiers": {
       "A": 13,
       "B": 51,
@@ -226,13 +226,14 @@
         "across",
         "rockofages"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "across->rockofages",
         "rockofages->across"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -321,13 +322,14 @@
         "across",
         "yesterday"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "across->yesterday",
         "yesterday->across"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Beatles",
@@ -1065,13 +1067,14 @@
         "billyelliot",
         "newsies"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "billyelliot->newsies"
+        "billyelliot->newsies",
+        "newsies->billyelliot"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -1419,13 +1422,14 @@
         "cabaret",
         "chicago"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "cabaret->chicago"
+        "cabaret->chicago",
+        "chicago->cabaret"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret",
@@ -2080,13 +2084,14 @@
         "comefromaway",
         "onceisland"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "comefromaway->onceisland",
         "onceisland->comefromaway"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Folk",
@@ -2116,13 +2121,14 @@
         "cyrano",
         "lastfive"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "cyrano->lastfive"
+        "cyrano->lastfive",
+        "lastfive->cyrano"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2177,13 +2183,14 @@
         "cyrano",
         "phantom"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "cyrano->phantom"
+        "cyrano->phantom",
+        "phantom->cyrano"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -2734,13 +2741,14 @@
         "encanto",
         "frozen"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "encanto->frozen",
         "frozen->encanto"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -3082,13 +3090,14 @@
         "frozen",
         "moana"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "frozen->moana"
+        "frozen->moana",
+        "moana->frozen"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3119,13 +3128,14 @@
         "frozen",
         "tangled"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "frozen->tangled"
+        "frozen->tangled",
+        "tangled->frozen"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3192,13 +3202,14 @@
         "grease",
         "mammamia"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "grease->mammamia"
+        "grease->mammamia",
+        "mammamia->grease"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -3740,13 +3751,14 @@
         "hairspray",
         "legallyblonde"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "hairspray->legallyblonde",
         "legallyblonde->hairspray"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -4303,13 +4315,14 @@
         "hedwig",
         "hedwigstage"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "hedwig->hedwigstage",
         "hedwigstage->hedwig"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4528,13 +4541,14 @@
         "hedwig",
         "rent"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "hedwig->rent",
         "rent->hedwig"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5193,13 +5207,14 @@
         "jamie",
         "meangirls"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "jamie->meangirls",
         "meangirls->jamie"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5390,13 +5405,14 @@
         "jcs",
         "rent"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "jcs->rent"
+        "jcs->rent",
+        "rent->jcs"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5667,13 +5683,14 @@
         "lalaland",
         "once"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "lalaland->once"
+        "lalaland->once",
+        "once->lalaland"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5855,13 +5872,14 @@
         "legallyblonde",
         "meangirls"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "legallyblonde->meangirls"
+        "legallyblonde->meangirls",
+        "meangirls->legallyblonde"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -5891,13 +5909,14 @@
         "legallyblonde",
         "newsies"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "legallyblonde->newsies"
+        "legallyblonde->newsies",
+        "newsies->legallyblonde"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -5995,13 +6014,14 @@
         "mammamia",
         "moulin"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "mammamia->moulin"
+        "mammamia->moulin",
+        "moulin->mammamia"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -6032,13 +6052,14 @@
         "mammamia",
         "pitchperfect"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "mammamia->pitchperfect",
         "pitchperfect->mammamia"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -6304,13 +6325,14 @@
         "meangirls",
         "prom"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "meangirls->prom"
+        "meangirls->prom",
+        "prom->meangirls"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy",
@@ -6403,13 +6425,14 @@
         "moana",
         "tangled"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "moana->tangled",
         "tangled->moana"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -7036,13 +7059,14 @@
         "reefer",
         "rocky"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "reefer->rocky"
+        "reefer->rocky",
+        "rocky->reefer"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Camp",
@@ -7361,13 +7385,14 @@
         "rocky",
         "rockyhorrorlive"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
+        "rocky->rockyhorrorlive",
         "rockyhorrorlive->rocky"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "B",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Camp",
@@ -7691,13 +7716,14 @@
         "tickstage",
         "waitress"
       ],
-      "authoredDirection": "one-way",
+      "authoredDirection": "reciprocal",
       "authoredLinks": [
-        "tickstage->waitress"
+        "tickstage->waitress",
+        "waitress->tickstage"
       ],
       "relationshipClass": "catalog-link",
       "qualityTier": "A",
-      "reciprocalCandidate": true,
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",

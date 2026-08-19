@@ -2,9 +2,9 @@
 
 Titles: **81**
 Canonical edges: **239**
-Reciprocal edges: **65**
-One-way edges: **174**
-Strong reciprocal candidates: **42**
+Reciprocal edges: **91**
+One-way edges: **148**
+Strong reciprocal candidates: **16**
 Quality tiers: **A 13 · B 51 · C 81 · D 94**
 
 ## Principle
@@ -13,48 +13,22 @@ Direction remains authored data. Quality tiers rank evidence for review and neve
 
 ## Strong reciprocal candidates
 
-- **Tier A** `tickstage->waitress` | distance 0.448 | DNA: Musical Theater, Singer-Songwriter | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type, close-score-profile
-- **Tier A** `frozen->moana` | distance 0.657 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type, close-score-profile
-- **Tier A** `meangirls->prom` | distance 0.736 | DNA: Comedy, Dance, Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type, close-score-profile
-- **Tier A** `legallyblonde->newsies` | distance 0.739 | DNA: Dance, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type, close-score-profile
-- **Tier A** `frozen->tangled` | distance 0.752 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier A** `billyelliot->newsies` | distance 0.811 | DNA: Dance, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier A** `cabaret->chicago` | distance 1.682 | DNA: Cabaret, Jazz, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `lalaland->once` | distance 0.445 | DNA: none | signals: same-format, same-musical-type, close-score-profile
-- **Tier B** `legallyblonde->hairspray` | distance 0.469 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, close-score-profile
-- **Tier B** `hedwigstage->hedwig` | distance 0.514 | DNA: Rock | signals: shared-normalized-dna, shared-raw-dna, close-score-profile
-- **Tier B** `jcs->rent` | distance 0.553 | DNA: Rock | signals: shared-normalized-dna, same-format, same-musical-type, close-score-profile
-- **Tier B** `pitchperfect->mammamia` | distance 0.596 | DNA: Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, close-score-profile
-- **Tier B** `frozen->encanto` | distance 0.604 | DNA: Musical Theater | signals: shared-normalized-dna, same-format, same-musical-type, close-score-profile
-- **Tier B** `grease->mammamia` | distance 0.608 | DNA: Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, close-score-profile
-- **Tier B** `rent->hedwig` | distance 0.662 | DNA: Rock | signals: shared-normalized-dna, same-format, same-musical-type, close-score-profile
-- **Tier B** `cyrano->lastfive` | distance 0.674 | DNA: Musical Theater | signals: shared-normalized-dna, same-format, same-musical-type, close-score-profile
-- **Tier B** `meangirls->jamie` | distance 0.713 | DNA: Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type, close-score-profile
 - **Tier B** `yesterday->singstreet` | distance 0.74 | DNA: Rock | signals: shared-normalized-dna, shared-raw-dna, same-format, close-score-profile
 - **Tier B** `jamie->heights` | distance 0.752 | DNA: Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `onceisland->comefromaway` | distance 0.82 | DNA: Folk, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `chicago->hairspray` | distance 0.825 | DNA: Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `reefer->rocky` | distance 0.833 | DNA: Camp, Rock | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `cabaret->hedwig` | distance 0.863 | DNA: Cabaret | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `tangled->moana` | distance 0.894 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `rockyhorrorlive->rocky` | distance 0.945 | DNA: Camp, Rock | signals: shared-normalized-dna, shared-raw-dna, same-format
 - **Tier B** `spirited->greatest` | distance 0.978 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `grease->hairspray` | distance 1.042 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `ticktick->greatest` | distance 1.045 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format
 - **Tier B** `moana->greatest` | distance 1.124 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-musical-type
 - **Tier B** `matilda->prom` | distance 1.135 | DNA: Comedy, Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `comefromaway->newsies` | distance 1.178 | DNA: Ensemble, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `mammamia->moulin` | distance 1.247 | DNA: Jukebox, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `billyelliot->legallyblonde` | distance 1.293 | DNA: Dance, Musical Theater | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `heights->ticktick` | distance 1.347 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `rocky->hedwig` | distance 1.372 | DNA: Rock, Rock Musical | signals: shared-normalized-dna, shared-raw-dna, same-format
-- **Tier B** `rockofages->across` | distance 1.406 | DNA: Jukebox, Rock | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `prom->hairspray` | distance 1.434 | DNA: Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 - **Tier B** `dreamgirls->hairspray` | distance 1.594 | DNA: R&B, Soul | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `yesterday->across` | distance 1.606 | DNA: Beatles, Jukebox, Rock | signals: shared-normalized-dna, shared-raw-dna, same-format
 - **Tier B** `rockofages->moulin` | distance 1.61 | DNA: Jukebox, Rock | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
-- **Tier B** `legallyblonde->meangirls` | distance 1.718 | DNA: Dance, Musical Theater, Pop | signals: shared-normalized-dna, shared-raw-dna
-- **Tier B** `cyrano->phantom` | distance 1.73 | DNA: Musical Theater, Orchestral | signals: shared-normalized-dna, shared-raw-dna, same-format, same-musical-type
 
 ## Lower-confidence one-way review queue
 

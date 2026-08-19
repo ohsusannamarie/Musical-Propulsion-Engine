@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "policy": "Curated promotions convert selected high-confidence one-way relatedness edges into reciprocal relatedness. This does not assert equal recommendation direction.",
+  "promotionCount": 26,
+  "changedCount": 26,
+  "promotions": [
+    {
+      "titles": [
+        "tickstage",
+        "waitress"
+      ],
+      "reason": "contemporary singer-songwriter stage storytelling"
+    },
+    {
+      "titles": [
+        "frozen",
+        "moana"
+      ],
+      "reason": "modern Disney musical anchors with major pop/Broadway hooks"
+    },
+    {
+      "titles": [
+        "meangirls",
+        "prom"
+      ],
+      "reason": "contemporary comedy-pop adaptations with ensemble dance energy"
+    },
+    {
+      "titles": [
+        "legallyblonde",
+        "newsies"
+      ],
+      "reason": "high-propulsion dance-forward Broadway captures"
+    },
+    {
+      "titles": [
+        "frozen",
+        "tangled"
+      ],
+      "reason": "closely related modern Disney musical language and comfort appeal"
+    },
+    {
+      "titles": [
+        "billyelliot",
+        "newsies"
+      ],
+      "reason": "dance-driven stage storytelling with youth and class stakes"
+    },
+    {
+      "titles": [
+        "cabaret",
+        "chicago"
+      ],
+      "reason": "jazz/cabaret lineage, theatrical cynicism, and Fosse-adjacent language"
+    },
+    {
+      "titles": [
+        "lalaland",
+        "once"
+      ],
+      "reason": "intimate music-centered romance with melancholy creative ambition"
+    },
+    {
+      "titles": [
+        "legallyblonde",
+        "hairspray"
+      ],
+      "reason": "bright pop-Broadway propulsion, comedy, dance, and cathartic belt energy"
+    },
+    {
+      "titles": [
+        "hedwigstage",
+        "hedwig"
+      ],
+      "reason": "same underlying musical work across stage and film forms"
+    },
+    {
+      "titles": [
+        "jcs",
+        "rent"
+      ],
+      "reason": "rock-driven sung theatrical storytelling with high emotional intensity"
+    },
+    {
+      "titles": [
+        "pitchperfect",
+        "mammamia"
+      ],
+      "reason": "familiar-pop communal sing-along energy and high replay value"
+    },
+    {
+      "titles": [
+        "frozen",
+        "encanto"
+      ],
+      "reason": "modern Disney ensemble musicals with family-centered emotional architecture"
+    },
+    {
+      "titles": [
+        "grease",
+        "mammamia"
+      ],
+      "reason": "familiar-pop sing-along comfort and communal performance energy"
+    },
+    {
+      "titles": [
+        "rent",
+        "hedwig"
+      ],
+      "reason": "queer rock musical lineage, direct emotional expression, and cult identity"
+    },
+    {
+      "titles": [
+        "cyrano",
+        "lastfive"
+      ],
+      "reason": "romantic yearning carried by contemporary musical storytelling"
+    },
+    {
+      "titles": [
+        "meangirls",
+        "jamie"
+      ],
+      "reason": "contemporary pop musical theater centered on identity and social belonging"
+    },
+    {
+      "titles": [
+        "onceisland",
+        "comefromaway"
+      ],
+      "reason": "ensemble-led communal storytelling with folk/rhythmic foundations"
+    },
+    {
+      "titles": [
+        "reefer",
+        "rocky"
+      ],
+      "reason": "cult camp rock musicals built around maximal commitment and satire"
+    },
+    {
+      "titles": [
+        "tangled",
+        "moana"
+      ],
+      "reason": "Disney yearning/adventure musicals with strong pop/Broadway songwriting"
+    },
+    {
+      "titles": [
+        "rockyhorrorlive",
+        "rocky"
+      ],
+      "reason": "same core work across original and remake/performance interpretation"
+    },
+    {
+      "titles": [
+        "mammamia",
+        "moulin"
+      ],
+      "reason": "jukebox spectacle, romance, maximalism, and familiar-pop propulsion"
+    },
+    {
+      "titles": [
+        "rockofages",
+        "across"
+      ],
+      "reason": "rock jukebox musicals using familiar songs as narrative architecture"
+    },
+    {
+      "titles": [
+        "yesterday",
+        "across"
+      ],
+      "reason": "Beatles-centered music storytelling from contrasting narrative forms"
+    },
+    {
+      "titles": [
+        "legallyblonde",
+        "meangirls"
+      ],
+      "reason": "female-led contemporary comedy musicals with pop score and dance propulsion"
+    },
+    {
+      "titles": [
+        "cyrano",
+        "phantom"
+      ],
+      "reason": "orchestral romantic maximalism, yearning, and theatrical melodrama"
+    }
+  ]
+}
