@@ -1,4 +1,7303 @@
 {
-  "version": 1,
-  "relationships": []
+  "version": 2,
+  "summary": {
+    "titleCount": 81,
+    "edgeCount": 239,
+    "reciprocalEdges": 65,
+    "oneWayEdges": 174,
+    "edgesWithSharedNormalizedDNA": 173,
+    "edgesWithCloseScoreProfile": 39
+  },
+  "relationshipSemantics": {
+    "catalog-link": "An explicit title-to-title link authored in titles.json.",
+    "reciprocal": "Both titles explicitly link to each other.",
+    "one-way": "Only one title explicitly links to the other. This is preserved, not automatically repaired.",
+    "evidence": "Computed descriptive signals used to understand why an edge may exist. They are not asserted causal explanations."
+  },
+  "relationships": [
+    {
+      "id": "across__bohemian",
+      "titles": [
+        "across",
+        "bohemian"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "bohemian->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.652,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__hair",
+      "titles": [
+        "across",
+        "hair"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hair->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 1.637,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__hedwig",
+      "titles": [
+        "across",
+        "hedwig"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "across->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.987,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__moulin",
+      "titles": [
+        "across",
+        "moulin"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "across->moulin",
+        "moulin->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "scoreDistance": 0.839,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__odessa",
+      "titles": [
+        "across",
+        "odessa"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "across->odessa"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.147,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__rocketman",
+      "titles": [
+        "across",
+        "rocketman"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "across->rocketman",
+        "rocketman->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 0.738,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__rockofages",
+      "titles": [
+        "across",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockofages->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "scoreDistance": 1.406,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__singstreet",
+      "titles": [
+        "across",
+        "singstreet"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "singstreet->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.351,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__walkline",
+      "titles": [
+        "across",
+        "walkline"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "across->walkline",
+        "walkline->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.329,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "across__yesterday",
+      "titles": [
+        "across",
+        "yesterday"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "yesterday->across"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Beatles",
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Beatles",
+          "Jukebox"
+        ],
+        "scoreDistance": 1.606,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annaapocalypse__drhorrible",
+      "titles": [
+        "annaapocalypse",
+        "drhorrible"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "annaapocalypse->drhorrible"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.332,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annaapocalypse__littleShop",
+      "titles": [
+        "annaapocalypse",
+        "littleShop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "annaapocalypse->littleShop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.831,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annaapocalypse__rocky",
+      "titles": [
+        "annaapocalypse",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "annaapocalypse->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.105,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__greatest",
+      "titles": [
+        "annie",
+        "greatest"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "annie->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.832,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__hairspray",
+      "titles": [
+        "annie",
+        "hairspray"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "annie->hairspray",
+        "hairspray->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.711,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__littleShop",
+      "titles": [
+        "annie",
+        "littleShop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "littleShop->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.973,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__marypoppins",
+      "titles": [
+        "annie",
+        "marypoppins"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "marypoppins->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.753,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__matilda",
+      "titles": [
+        "annie",
+        "matilda"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "matilda->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.397,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__moana",
+      "titles": [
+        "annie",
+        "moana"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "annie->moana",
+        "moana->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.436,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__shrek",
+      "titles": [
+        "annie",
+        "shrek"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shrek->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.596,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__sister2",
+      "titles": [
+        "annie",
+        "sister2"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "annie->sister2",
+        "sister2->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.83,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__soundmusic",
+      "titles": [
+        "annie",
+        "soundmusic"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "soundmusic->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.284,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__tangled",
+      "titles": [
+        "annie",
+        "tangled"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tangled->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.83,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "annie__wonka",
+      "titles": [
+        "annie",
+        "wonka"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "wonka->annie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.771,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "batboy__littleShop",
+      "titles": [
+        "batboy",
+        "littleShop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "batboy->littleShop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 1.186,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "batboy__repo",
+      "titles": [
+        "batboy",
+        "repo"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "batboy->repo"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.409,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "batboy__rocky",
+      "titles": [
+        "batboy",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "batboy->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Camp",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Camp"
+        ],
+        "scoreDistance": 1.486,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__blinded",
+      "titles": [
+        "beginagain",
+        "blinded"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "blinded->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.999,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__once",
+      "titles": [
+        "beginagain",
+        "once"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "beginagain->once",
+        "once->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Singer-Songwriter"
+        ],
+        "sharedRawDNA": [
+          "Singer-Songwriter"
+        ],
+        "scoreDistance": 0.472,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__singstreet",
+      "titles": [
+        "beginagain",
+        "singstreet"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "beginagain->singstreet",
+        "singstreet->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.747,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__starsborn",
+      "titles": [
+        "beginagain",
+        "starsborn"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "starsborn->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.885,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__walkline",
+      "titles": [
+        "beginagain",
+        "walkline"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "beginagain->walkline",
+        "walkline->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.801,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "beginagain__yesterday",
+      "titles": [
+        "beginagain",
+        "yesterday"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "yesterday->beginagain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.848,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "billyelliot__legallyblonde",
+      "titles": [
+        "billyelliot",
+        "legallyblonde"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "billyelliot->legallyblonde"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Dance",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Dance"
+        ],
+        "scoreDistance": 1.293,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "billyelliot__newsies",
+      "titles": [
+        "billyelliot",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "billyelliot->newsies"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Dance",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Dance"
+        ],
+        "scoreDistance": 0.811,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "billyelliot__waitress",
+      "titles": [
+        "billyelliot",
+        "waitress"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "billyelliot->waitress"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 1.142,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "blinded__singstreet",
+      "titles": [
+        "blinded",
+        "singstreet"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "blinded->singstreet"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.609,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "blinded__walkline",
+      "titles": [
+        "blinded",
+        "walkline"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "blinded->walkline"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.455,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "blinded__yesterday",
+      "titles": [
+        "blinded",
+        "yesterday"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "blinded->yesterday",
+        "yesterday->blinded"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 0.793,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "bohemian__purplerain",
+      "titles": [
+        "bohemian",
+        "purplerain"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "purplerain->bohemian"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.368,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "bohemian__rocketman",
+      "titles": [
+        "bohemian",
+        "rocketman"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "bohemian->rocketman",
+        "rocketman->bohemian"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.506,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "bohemian__walkline",
+      "titles": [
+        "bohemian",
+        "walkline"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "bohemian->walkline",
+        "walkline->bohemian"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Biopic Performance"
+        ],
+        "sharedRawDNA": [
+          "Biopic Performance"
+        ],
+        "scoreDistance": 1.119,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "burlesque__chicago",
+      "titles": [
+        "burlesque",
+        "chicago"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "burlesque->chicago"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.825,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "burlesque__dreamgirls",
+      "titles": [
+        "burlesque",
+        "dreamgirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "burlesque->dreamgirls"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.408,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "burlesque__moulin",
+      "titles": [
+        "burlesque",
+        "moulin"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "burlesque->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.623,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cabaret__chicago",
+      "titles": [
+        "cabaret",
+        "chicago"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cabaret->chicago"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret",
+          "Jazz",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Jazz"
+        ],
+        "scoreDistance": 1.682,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cabaret__hedwig",
+      "titles": [
+        "cabaret",
+        "hedwig"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cabaret->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret"
+        ],
+        "sharedRawDNA": [
+          "Cabaret"
+        ],
+        "scoreDistance": 0.863,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cabaret__moulin",
+      "titles": [
+        "cabaret",
+        "moulin"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cabaret->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret"
+        ],
+        "sharedRawDNA": [
+          "Cabaret"
+        ],
+        "scoreDistance": 1.769,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "chicago__dreamgirls",
+      "titles": [
+        "chicago",
+        "dreamgirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "chicago->dreamgirls"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.296,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "chicago__hairspray",
+      "titles": [
+        "chicago",
+        "hairspray"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "chicago->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 0.825,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "chicago__moulin",
+      "titles": [
+        "chicago",
+        "moulin"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "chicago->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.22,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "chicago__singininrain",
+      "titles": [
+        "chicago",
+        "singininrain"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "singininrain->chicago"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jazz"
+        ],
+        "sharedRawDNA": [
+          "Jazz"
+        ],
+        "scoreDistance": 1.424,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "coco__encanto",
+      "titles": [
+        "coco",
+        "encanto"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "coco->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.236,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "coco__kpop",
+      "titles": [
+        "coco",
+        "kpop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "coco->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.677,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "coco__moana",
+      "titles": [
+        "coco",
+        "moana"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "coco->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.265,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__deh",
+      "titles": [
+        "colorpurple",
+        "deh"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "colorpurple->deh",
+        "deh->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.034,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__dreamgirls",
+      "titles": [
+        "colorpurple",
+        "dreamgirls"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "colorpurple->dreamgirls",
+        "dreamgirls->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "sharedRawDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "scoreDistance": 0.685,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__onceisland",
+      "titles": [
+        "colorpurple",
+        "onceisland"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "onceisland->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 0.977,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__rent",
+      "titles": [
+        "colorpurple",
+        "rent"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rent->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.719,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__sister2",
+      "titles": [
+        "colorpurple",
+        "sister2"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "colorpurple->sister2",
+        "sister2->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Gospel",
+          "R&B",
+          "Soul"
+        ],
+        "sharedRawDNA": [
+          "Gospel",
+          "R&B",
+          "Soul"
+        ],
+        "scoreDistance": 1.618,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "colorpurple__wicked",
+      "titles": [
+        "colorpurple",
+        "wicked"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "colorpurple->wicked",
+        "wicked->colorpurple"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.275,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "comefromaway__hamilton",
+      "titles": [
+        "comefromaway",
+        "hamilton"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "comefromaway->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Musical Theater"
+        ],
+        "scoreDistance": 1.326,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "comefromaway__heights",
+      "titles": [
+        "comefromaway",
+        "heights"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "comefromaway->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.137,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "comefromaway__newsies",
+      "titles": [
+        "comefromaway",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "comefromaway->newsies"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ensemble",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Ensemble"
+        ],
+        "scoreDistance": 1.178,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "comefromaway__once",
+      "titles": [
+        "comefromaway",
+        "once"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "comefromaway->once"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Folk"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.5,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "comefromaway__onceisland",
+      "titles": [
+        "comefromaway",
+        "onceisland"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "onceisland->comefromaway"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Folk",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Folk"
+        ],
+        "scoreDistance": 0.82,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cyrano__lastfive",
+      "titles": [
+        "cyrano",
+        "lastfive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cyrano->lastfive"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.674,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cyrano__once",
+      "titles": [
+        "cyrano",
+        "once"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cyrano->once"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.872,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cyrano__phantom",
+      "titles": [
+        "cyrano",
+        "phantom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cyrano->phantom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Orchestral"
+        ],
+        "scoreDistance": 1.73,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "cyrano__westside",
+      "titles": [
+        "cyrano",
+        "westside"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "cyrano->westside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Orchestral"
+        ],
+        "scoreDistance": 1.432,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "dancerinthedark__inside",
+      "titles": [
+        "dancerinthedark",
+        "inside"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "dancerinthedark->inside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Electronic",
+          "Experimental"
+        ],
+        "sharedRawDNA": [
+          "Experimental"
+        ],
+        "scoreDistance": 1.548,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "dancerinthedark__lastfive",
+      "titles": [
+        "dancerinthedark",
+        "lastfive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "dancerinthedark->lastfive"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.845,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "dancerinthedark__sweeney",
+      "titles": [
+        "dancerinthedark",
+        "sweeney"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "dancerinthedark->sweeney"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.861,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "deh__falsettos",
+      "titles": [
+        "deh",
+        "falsettos"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "falsettos->deh"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.256,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "deh__jamie",
+      "titles": [
+        "deh",
+        "jamie"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "deh->jamie",
+        "jamie->deh"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad"
+        ],
+        "sharedRawDNA": [
+          "Power Ballad"
+        ],
+        "scoreDistance": 1.181,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "deh__lastfive",
+      "titles": [
+        "deh",
+        "lastfive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "lastfive->deh"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Piano Pop"
+        ],
+        "sharedRawDNA": [
+          "Piano Pop"
+        ],
+        "scoreDistance": 1.248,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "deh__rent",
+      "titles": [
+        "deh",
+        "rent"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "deh->rent",
+        "rent->deh"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.61,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "deh__ticktick",
+      "titles": [
+        "deh",
+        "ticktick"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "deh->ticktick",
+        "ticktick->deh"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.09,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "dreamgirls__hairspray",
+      "titles": [
+        "dreamgirls",
+        "hairspray"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "dreamgirls->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "sharedRawDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "scoreDistance": 1.594,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "dreamgirls__sister2",
+      "titles": [
+        "dreamgirls",
+        "sister2"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "dreamgirls->sister2",
+        "sister2->dreamgirls"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "sharedRawDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "scoreDistance": 1.478,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "drhorrible__hedwig",
+      "titles": [
+        "drhorrible",
+        "hedwig"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "drhorrible->hedwig",
+        "hedwig->drhorrible"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.845,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "drhorrible__inside",
+      "titles": [
+        "drhorrible",
+        "inside"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "drhorrible->inside",
+        "inside->drhorrible"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.892,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "drhorrible__littleShop",
+      "titles": [
+        "drhorrible",
+        "littleShop"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "drhorrible->littleShop",
+        "littleShop->drhorrible"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Comedy Musical",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Comedy Musical"
+        ],
+        "scoreDistance": 0.924,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "drhorrible__reefer",
+      "titles": [
+        "drhorrible",
+        "reefer"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "reefer->drhorrible"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.427,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "drhorrible__ticktick",
+      "titles": [
+        "drhorrible",
+        "ticktick"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "drhorrible->ticktick"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.914,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__frozen",
+      "titles": [
+        "encanto",
+        "frozen"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "frozen->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.604,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__hamilton",
+      "titles": [
+        "encanto",
+        "hamilton"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "encanto->hamilton",
+        "hamilton->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Musical Theater"
+        ],
+        "scoreDistance": 0.608,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__heights",
+      "titles": [
+        "encanto",
+        "heights"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "encanto->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.247,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__kpop",
+      "titles": [
+        "encanto",
+        "kpop"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "encanto->kpop",
+        "kpop->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.792,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__matilda",
+      "titles": [
+        "encanto",
+        "matilda"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "matilda->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Musical Theater"
+        ],
+        "scoreDistance": 1.168,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__moana",
+      "titles": [
+        "encanto",
+        "moana"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "encanto->moana",
+        "moana->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Lin-Manuel Miranda",
+          "Musical Theater",
+          "World/Regional"
+        ],
+        "sharedRawDNA": [
+          "Lin-Manuel Miranda"
+        ],
+        "scoreDistance": 0.41,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__princessfrog",
+      "titles": [
+        "encanto",
+        "princessfrog"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "princessfrog->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.968,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__tangled",
+      "titles": [
+        "encanto",
+        "tangled"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tangled->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.928,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "encanto__wonka",
+      "titles": [
+        "encanto",
+        "wonka"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "wonka->encanto"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.777,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "falsettos__lastfive",
+      "titles": [
+        "falsettos",
+        "lastfive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "falsettos->lastfive"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.762,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "falsettos__rent",
+      "titles": [
+        "falsettos",
+        "rent"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "falsettos->rent"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.217,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "frozen__moana",
+      "titles": [
+        "frozen",
+        "moana"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "frozen->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.657,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "frozen__tangled",
+      "titles": [
+        "frozen",
+        "tangled"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "frozen->tangled"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Disney",
+          "Pop"
+        ],
+        "scoreDistance": 0.752,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "grease__hairspray",
+      "titles": [
+        "grease",
+        "hairspray"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "grease->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 1.042,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "grease__mammamia",
+      "titles": [
+        "grease",
+        "mammamia"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "grease->mammamia"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.608,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "grease__rockofages",
+      "titles": [
+        "grease",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "grease->rockofages"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.178,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__hairspray",
+      "titles": [
+        "greatest",
+        "hairspray"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "greatest->hairspray",
+        "hairspray->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.389,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__jamie",
+      "titles": [
+        "greatest",
+        "jamie"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "greatest->jamie",
+        "jamie->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Power Ballad"
+        ],
+        "scoreDistance": 1.095,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__kpop",
+      "titles": [
+        "greatest",
+        "kpop"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "greatest->kpop",
+        "kpop->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad"
+        ],
+        "sharedRawDNA": [
+          "Power Ballad"
+        ],
+        "scoreDistance": 0.473,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__moana",
+      "titles": [
+        "greatest",
+        "moana"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "moana->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Pop"
+        ],
+        "scoreDistance": 1.124,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__moulin",
+      "titles": [
+        "greatest",
+        "moulin"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "greatest->moulin",
+        "moulin->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.73,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__phantom",
+      "titles": [
+        "greatest",
+        "phantom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "phantom->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.031,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__prom",
+      "titles": [
+        "greatest",
+        "prom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "prom->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.393,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__spirited",
+      "titles": [
+        "greatest",
+        "spirited"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "spirited->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Pop"
+        ],
+        "scoreDistance": 0.978,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__ticktick",
+      "titles": [
+        "greatest",
+        "ticktick"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "ticktick->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Pop"
+        ],
+        "scoreDistance": 1.045,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "greatest__wicked",
+      "titles": [
+        "greatest",
+        "wicked"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "greatest->wicked",
+        "wicked->greatest"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad"
+        ],
+        "sharedRawDNA": [
+          "Power Ballad"
+        ],
+        "scoreDistance": 1.09,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hair__jcs",
+      "titles": [
+        "hair",
+        "jcs"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hair->jcs"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.607,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hair__rocky",
+      "titles": [
+        "hair",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hair->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.577,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hair__tommy",
+      "titles": [
+        "hair",
+        "tommy"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hair->tommy",
+        "tommy->hair"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.973,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__heights",
+      "titles": [
+        "hairspray",
+        "heights"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hairspray->heights",
+        "heights->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.428,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__legallyblonde",
+      "titles": [
+        "hairspray",
+        "legallyblonde"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "legallyblonde->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 0.469,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__littleShop",
+      "titles": [
+        "hairspray",
+        "littleShop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "littleShop->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "R&B"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.842,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__mammamia",
+      "titles": [
+        "hairspray",
+        "mammamia"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "mammamia->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.793,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__matilda",
+      "titles": [
+        "hairspray",
+        "matilda"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "matilda->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.374,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__meangirls",
+      "titles": [
+        "hairspray",
+        "meangirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "meangirls->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.606,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__newsies",
+      "titles": [
+        "hairspray",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "newsies->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 0.772,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__prom",
+      "titles": [
+        "hairspray",
+        "prom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "prom->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 1.434,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__shrek",
+      "titles": [
+        "hairspray",
+        "shrek"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shrek->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway"
+        ],
+        "scoreDistance": 1.672,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__sister2",
+      "titles": [
+        "hairspray",
+        "sister2"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hairspray->sister2",
+        "sister2->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop",
+          "R&B",
+          "Soul"
+        ],
+        "sharedRawDNA": [
+          "R&B",
+          "Soul"
+        ],
+        "scoreDistance": 0.657,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__spirited",
+      "titles": [
+        "hairspray",
+        "spirited"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "spirited->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.04,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__westside",
+      "titles": [
+        "hairspray",
+        "westside"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "westside->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.453,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hairspray__wicked",
+      "titles": [
+        "hairspray",
+        "wicked"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hairspray->wicked",
+        "wicked->hairspray"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.106,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hamilton__heights",
+      "titles": [
+        "hamilton",
+        "heights"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hamilton->heights",
+        "heights->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Hip-hop",
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Hip-hop",
+          "Pop"
+        ],
+        "scoreDistance": 1.359,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hamilton__inside",
+      "titles": [
+        "hamilton",
+        "inside"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hamilton->inside",
+        "inside->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.91,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hamilton__moana",
+      "titles": [
+        "hamilton",
+        "moana"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hamilton->moana",
+        "moana->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.758,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hamilton__newsies",
+      "titles": [
+        "hamilton",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "newsies->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.895,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hamilton__ticktick",
+      "titles": [
+        "hamilton",
+        "ticktick"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hamilton->ticktick",
+        "ticktick->hamilton"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.499,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__hedwigstage",
+      "titles": [
+        "hedwig",
+        "hedwigstage"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hedwigstage->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock",
+          "Punk"
+        ],
+        "scoreDistance": 0.514,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__inside",
+      "titles": [
+        "hedwig",
+        "inside"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hedwig->inside",
+        "inside->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.804,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__jcs",
+      "titles": [
+        "hedwig",
+        "jcs"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "jcs->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.779,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__moulin",
+      "titles": [
+        "hedwig",
+        "moulin"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hedwig->moulin",
+        "moulin->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Cabaret",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Cabaret"
+        ],
+        "scoreDistance": 1.127,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__odessa",
+      "titles": [
+        "hedwig",
+        "odessa"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hedwig->odessa",
+        "odessa->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock",
+          "Punk"
+        ],
+        "scoreDistance": 0.893,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__priscilla",
+      "titles": [
+        "hedwig",
+        "priscilla"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "priscilla->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.472,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__purplerain",
+      "titles": [
+        "hedwig",
+        "purplerain"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "purplerain->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.194,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__rent",
+      "titles": [
+        "hedwig",
+        "rent"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rent->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.662,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__repo",
+      "titles": [
+        "hedwig",
+        "repo"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "repo->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.5,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__rocketman",
+      "titles": [
+        "hedwig",
+        "rocketman"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "hedwig->rocketman",
+        "rocketman->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.92,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__rockofages",
+      "titles": [
+        "hedwig",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockofages->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.701,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__rocky",
+      "titles": [
+        "hedwig",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rocky->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock",
+          "Rock Musical"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock",
+          "Rock Musical"
+        ],
+        "scoreDistance": 1.372,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__sweeney",
+      "titles": [
+        "hedwig",
+        "sweeney"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "sweeney->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.153,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__tommy",
+      "titles": [
+        "hedwig",
+        "tommy"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tommy->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.288,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwig__velvetgoldmine",
+      "titles": [
+        "hedwig",
+        "velvetgoldmine"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "velvetgoldmine->hedwig"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock"
+        ],
+        "scoreDistance": 1.503,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwigstage__rent",
+      "titles": [
+        "hedwigstage",
+        "rent"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hedwigstage->rent"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.549,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "hedwigstage__rocky",
+      "titles": [
+        "hedwigstage",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "hedwigstage->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock"
+        ],
+        "scoreDistance": 1.392,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__jamie",
+      "titles": [
+        "heights",
+        "jamie"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "jamie->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater"
+        ],
+        "scoreDistance": 0.752,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__kpop",
+      "titles": [
+        "heights",
+        "kpop"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "heights->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.493,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__moana",
+      "titles": [
+        "heights",
+        "moana"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "heights->moana",
+        "moana->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Pop"
+        ],
+        "scoreDistance": 1.489,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__newsies",
+      "titles": [
+        "heights",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "newsies->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.768,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__onceisland",
+      "titles": [
+        "heights",
+        "onceisland"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "onceisland->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.056,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__ticktick",
+      "titles": [
+        "heights",
+        "ticktick"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "heights->ticktick"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater",
+          "Pop"
+        ],
+        "scoreDistance": 1.347,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "heights__westside",
+      "titles": [
+        "heights",
+        "westside"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "heights->westside",
+        "westside->heights"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.922,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "inside__odessa",
+      "titles": [
+        "inside",
+        "odessa"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "inside->odessa",
+        "odessa->inside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.246,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "inside__shocktreatment",
+      "titles": [
+        "inside",
+        "shocktreatment"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shocktreatment->inside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.943,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "inside__ticktick",
+      "titles": [
+        "inside",
+        "ticktick"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "inside->ticktick",
+        "ticktick->inside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.952,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jamie__kpop",
+      "titles": [
+        "jamie",
+        "kpop"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "jamie->kpop",
+        "kpop->jamie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad",
+          "Dance-pop",
+          "Electronic"
+        ],
+        "sharedRawDNA": [
+          "Dance-pop",
+          "Power Ballad"
+        ],
+        "scoreDistance": 1.221,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jamie__meangirls",
+      "titles": [
+        "jamie",
+        "meangirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "meangirls->jamie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater"
+        ],
+        "scoreDistance": 0.713,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jamie__prom",
+      "titles": [
+        "jamie",
+        "prom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "prom->jamie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.774,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jamie__shrek",
+      "titles": [
+        "jamie",
+        "shrek"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shrek->jamie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.72,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jamie__wicked",
+      "titles": [
+        "jamie",
+        "wicked"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "jamie->wicked",
+        "wicked->jamie"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad"
+        ],
+        "sharedRawDNA": [
+          "Power Ballad"
+        ],
+        "scoreDistance": 1.315,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__newsies",
+      "titles": [
+        "jcs",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "newsies->jcs"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.869,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__phantom",
+      "titles": [
+        "jcs",
+        "phantom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "jcs->phantom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.062,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__rent",
+      "titles": [
+        "jcs",
+        "rent"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "jcs->rent"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.553,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__rocky",
+      "titles": [
+        "jcs",
+        "rocky"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "jcs->rocky",
+        "rocky->jcs"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.178,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__sweeney",
+      "titles": [
+        "jcs",
+        "sweeney"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "sweeney->jcs"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.246,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "jcs__tommy",
+      "titles": [
+        "jcs",
+        "tommy"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tommy->jcs"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock",
+          "Rock Opera"
+        ],
+        "sharedRawDNA": [
+          "Rock Opera"
+        ],
+        "scoreDistance": 1.07,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "kpop__meangirls",
+      "titles": [
+        "kpop",
+        "meangirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "meangirls->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.811,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "kpop__moana",
+      "titles": [
+        "kpop",
+        "moana"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "kpop->moana",
+        "moana->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.895,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "kpop__odessa",
+      "titles": [
+        "kpop",
+        "odessa"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "kpop->odessa",
+        "odessa->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Ballad"
+        ],
+        "sharedRawDNA": [
+          "Power Ballad"
+        ],
+        "scoreDistance": 0.914,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "kpop__pitchperfect",
+      "titles": [
+        "kpop",
+        "pitchperfect"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "pitchperfect->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.4,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "kpop__spirited",
+      "titles": [
+        "kpop",
+        "spirited"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "spirited->kpop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.21,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lalaland__once",
+      "titles": [
+        "lalaland",
+        "once"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "lalaland->once"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.445,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lalaland__singstreet",
+      "titles": [
+        "lalaland",
+        "singstreet"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "lalaland->singstreet"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.873,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lalaland__westside",
+      "titles": [
+        "lalaland",
+        "westside"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "lalaland->westside",
+        "westside->lalaland"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jazz"
+        ],
+        "sharedRawDNA": [
+          "Jazz"
+        ],
+        "scoreDistance": 1.857,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lastfive__once",
+      "titles": [
+        "lastfive",
+        "once"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "lastfive->once",
+        "once->lastfive"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.042,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lastfive__ticktick",
+      "titles": [
+        "lastfive",
+        "ticktick"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "lastfive->ticktick"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Contemporary Musical Theater"
+        ],
+        "scoreDistance": 1.712,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "lastfive__waitress",
+      "titles": [
+        "lastfive",
+        "waitress"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "waitress->lastfive"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.098,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "legallyblonde__meangirls",
+      "titles": [
+        "legallyblonde",
+        "meangirls"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "legallyblonde->meangirls"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Dance",
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Dance",
+          "Pop"
+        ],
+        "scoreDistance": 1.718,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "legallyblonde__newsies",
+      "titles": [
+        "legallyblonde",
+        "newsies"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "legallyblonde->newsies"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Dance",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Dance"
+        ],
+        "scoreDistance": 0.739,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "littleShop__reefer",
+      "titles": [
+        "littleShop",
+        "reefer"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "reefer->littleShop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 0.839,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "littleShop__rocky",
+      "titles": [
+        "littleShop",
+        "rocky"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "littleShop->rocky",
+        "rocky->littleShop"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.845,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "mammamia__moulin",
+      "titles": [
+        "mammamia",
+        "moulin"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "mammamia->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Jukebox",
+          "Pop"
+        ],
+        "scoreDistance": 1.247,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "mammamia__pitchperfect",
+      "titles": [
+        "mammamia",
+        "pitchperfect"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "pitchperfect->mammamia"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.596,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "mammamia__priscilla",
+      "titles": [
+        "mammamia",
+        "priscilla"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "priscilla->mammamia"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 0.86,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "mammamia__rockofages",
+      "titles": [
+        "mammamia",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "mammamia->rockofages"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 1.145,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "marypoppins__moana",
+      "titles": [
+        "marypoppins",
+        "moana"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "marypoppins->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.887,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "marypoppins__soundmusic",
+      "titles": [
+        "marypoppins",
+        "soundmusic"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "marypoppins->soundmusic"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Golden Age",
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Orchestral"
+        ],
+        "scoreDistance": 1.302,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "matilda__prom",
+      "titles": [
+        "matilda",
+        "prom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "matilda->prom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Comedy",
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.135,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "matilda__shrek",
+      "titles": [
+        "matilda",
+        "shrek"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shrek->matilda"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Comedy",
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.076,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "matilda__wonka",
+      "titles": [
+        "matilda",
+        "wonka"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "wonka->matilda"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.293,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "meangirls__prom",
+      "titles": [
+        "meangirls",
+        "prom"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "meangirls->prom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Comedy",
+          "Dance",
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Comedy",
+          "Dance",
+          "Pop"
+        ],
+        "scoreDistance": 0.736,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moana__princessfrog",
+      "titles": [
+        "moana",
+        "princessfrog"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "princessfrog->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.151,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moana__soundmusic",
+      "titles": [
+        "moana",
+        "soundmusic"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "soundmusic->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.35,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moana__tangled",
+      "titles": [
+        "moana",
+        "tangled"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tangled->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.894,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moana__wonka",
+      "titles": [
+        "moana",
+        "wonka"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "wonka->moana"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.925,
+        "sameFormat": false,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moulin__odessa",
+      "titles": [
+        "moulin",
+        "odessa"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "moulin->odessa",
+        "odessa->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.088,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moulin__phantom",
+      "titles": [
+        "moulin",
+        "phantom"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "moulin->phantom",
+        "phantom->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Orchestral"
+        ],
+        "scoreDistance": 0.896,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moulin__rocketman",
+      "titles": [
+        "moulin",
+        "rocketman"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "moulin->rocketman",
+        "rocketman->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Pop",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 0.879,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "moulin__rockofages",
+      "titles": [
+        "moulin",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockofages->moulin"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "scoreDistance": 1.61,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "odessa__rocky",
+      "titles": [
+        "odessa",
+        "rocky"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "odessa->rocky",
+        "rocky->odessa"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock"
+        ],
+        "scoreDistance": 0.843,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "once__singstreet",
+      "titles": [
+        "once",
+        "singstreet"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "once->singstreet",
+        "singstreet->once"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.708,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "once__waitress",
+      "titles": [
+        "once",
+        "waitress"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "waitress->once"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Singer-Songwriter"
+        ],
+        "sharedRawDNA": [
+          "Singer-Songwriter"
+        ],
+        "scoreDistance": 1.539,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "phantom__sweeney",
+      "titles": [
+        "phantom",
+        "sweeney"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "phantom->sweeney",
+        "sweeney->phantom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Gothic",
+          "Musical Theater",
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Gothic",
+          "Orchestral"
+        ],
+        "scoreDistance": 1.586,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "phantom__wicked",
+      "titles": [
+        "phantom",
+        "wicked"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "phantom->wicked",
+        "wicked->phantom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.622,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "pitchperfect__sister2",
+      "titles": [
+        "pitchperfect",
+        "sister2"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "pitchperfect->sister2"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 0.793,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "princessfrog__sister2",
+      "titles": [
+        "princessfrog",
+        "sister2"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "princessfrog->sister2"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Gospel"
+        ],
+        "sharedRawDNA": [
+          "Gospel"
+        ],
+        "scoreDistance": 0.962,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "priscilla__rocky",
+      "titles": [
+        "priscilla",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "priscilla->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.099,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "priscilla__rockyhorrorlive",
+      "titles": [
+        "priscilla",
+        "rockyhorrorlive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockyhorrorlive->priscilla"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.667,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "prom__spirited",
+      "titles": [
+        "prom",
+        "spirited"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "prom->spirited",
+        "spirited->prom"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Comedy",
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Comedy",
+          "Pop"
+        ],
+        "scoreDistance": 0.583,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "purplerain__rocketman",
+      "titles": [
+        "purplerain",
+        "rocketman"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "purplerain->rocketman"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop",
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.194,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "purplerain__velvetgoldmine",
+      "titles": [
+        "purplerain",
+        "velvetgoldmine"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "velvetgoldmine->purplerain"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.338,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "purplerain__walkline",
+      "titles": [
+        "purplerain",
+        "walkline"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "purplerain->walkline"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.28,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "reefer__rocky",
+      "titles": [
+        "reefer",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "reefer->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Camp",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Camp"
+        ],
+        "scoreDistance": 0.833,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "reefer__shocktreatment",
+      "titles": [
+        "reefer",
+        "shocktreatment"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shocktreatment->reefer"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 1.172,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rent__tickstage",
+      "titles": [
+        "rent",
+        "tickstage"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tickstage->rent"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 0.786,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rent__ticktick",
+      "titles": [
+        "rent",
+        "ticktick"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "rent->ticktick",
+        "ticktick->rent"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 0.794,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "repo__rocky",
+      "titles": [
+        "repo",
+        "rocky"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "repo->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.522,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "repo__rockyhorrorlive",
+      "titles": [
+        "repo",
+        "rockyhorrorlive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockyhorrorlive->repo"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.104,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "repo__sweeney",
+      "titles": [
+        "repo",
+        "sweeney"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "repo->sweeney"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 0.999,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocketman__rockofages",
+      "titles": [
+        "rocketman",
+        "rockofages"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockofages->rocketman"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jukebox",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Jukebox"
+        ],
+        "scoreDistance": 1.168,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocketman__starsborn",
+      "titles": [
+        "rocketman",
+        "starsborn"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "starsborn->rocketman"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Pop",
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.147,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocketman__walkline",
+      "titles": [
+        "rocketman",
+        "walkline"
+      ],
+      "authoredDirection": "reciprocal",
+      "authoredLinks": [
+        "rocketman->walkline",
+        "walkline->rocketman"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.42,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocky__rockyhorrorlive",
+      "titles": [
+        "rocky",
+        "rockyhorrorlive"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "rockyhorrorlive->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Camp",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Camp"
+        ],
+        "scoreDistance": 0.945,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocky__shocktreatment",
+      "titles": [
+        "rocky",
+        "shocktreatment"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "shocktreatment->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.73,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocky__tommy",
+      "titles": [
+        "rocky",
+        "tommy"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tommy->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.154,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "rocky__velvetgoldmine",
+      "titles": [
+        "rocky",
+        "velvetgoldmine"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "velvetgoldmine->rocky"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Glam Rock"
+        ],
+        "scoreDistance": 1.738,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "singininrain__soundmusic",
+      "titles": [
+        "singininrain",
+        "soundmusic"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "singininrain->soundmusic"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Golden Age"
+        ],
+        "sharedRawDNA": [
+          "Golden Age"
+        ],
+        "scoreDistance": 1.039,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "singininrain__westside",
+      "titles": [
+        "singininrain",
+        "westside"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "singininrain->westside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Jazz"
+        ],
+        "sharedRawDNA": [
+          "Jazz"
+        ],
+        "scoreDistance": 1.585,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "singstreet__yesterday",
+      "titles": [
+        "singstreet",
+        "yesterday"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "yesterday->singstreet"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Pop Rock"
+        ],
+        "scoreDistance": 0.74,
+        "sameFormat": true,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "soundmusic__westside",
+      "titles": [
+        "soundmusic",
+        "westside"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "soundmusic->westside"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Orchestral"
+        ],
+        "sharedRawDNA": [
+          "Orchestral"
+        ],
+        "scoreDistance": 1.773,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "starsborn__walkline",
+      "titles": [
+        "starsborn",
+        "walkline"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "starsborn->walkline"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.261,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "tickstage__ticktick",
+      "titles": [
+        "tickstage",
+        "ticktick"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tickstage->ticktick"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Rock"
+        ],
+        "sharedRawDNA": [
+          "Rock"
+        ],
+        "scoreDistance": 1.095,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "tickstage__waitress",
+      "titles": [
+        "tickstage",
+        "waitress"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "tickstage->waitress"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Singer-Songwriter"
+        ],
+        "sharedRawDNA": [
+          "Broadway",
+          "Singer-Songwriter"
+        ],
+        "scoreDistance": 0.448,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna",
+        "same-format",
+        "same-musical-type",
+        "close-score-profile"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "ticktick__waitress",
+      "titles": [
+        "ticktick",
+        "waitress"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "waitress->ticktick"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [
+          "Musical Theater",
+          "Pop"
+        ],
+        "sharedRawDNA": [
+          "Pop"
+        ],
+        "scoreDistance": 1.094,
+        "sameFormat": false,
+        "sameMusicalType": false
+      },
+      "signals": [
+        "shared-normalized-dna",
+        "shared-raw-dna"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    },
+    {
+      "id": "westside__wicked",
+      "titles": [
+        "westside",
+        "wicked"
+      ],
+      "authoredDirection": "one-way",
+      "authoredLinks": [
+        "westside->wicked"
+      ],
+      "relationshipClass": "catalog-link",
+      "evidence": {
+        "sharedNormalizedDNA": [],
+        "sharedRawDNA": [],
+        "scoreDistance": 1.251,
+        "sameFormat": true,
+        "sameMusicalType": true
+      },
+      "signals": [
+        "same-format",
+        "same-musical-type"
+      ],
+      "provenance": {
+        "type": "derived-from-authored-links",
+        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+      }
+    }
+  ]
 }
