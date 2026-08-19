@@ -4867,5 +4867,1268 @@
         }
       ]
     }
+  },
+  {
+    "id": "chicago",
+    "title": "Chicago",
+    "year": 2002,
+    "runtime": "1h 53m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Murder, jazz, razzle-dazzle",
+    "vibe": [
+      "Slick",
+      "Sexy",
+      "Cynical",
+      "Maximalist"
+    ],
+    "dna": [
+      "Jazz",
+      "Vaudeville",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.8,
+      "belt": 5,
+      "movement": 5,
+      "emotion": 4.2,
+      "comfort": 3.2,
+      "maximalism": 5,
+      "narrative": 4.7,
+      "hooks": 5,
+      "afterglow": 4.5,
+      "replay": 4.8
+    },
+    "why": "A precision-engineered movie musical where choreography, editing, character psychology, and hooks all reinforce one another.",
+    "risk": "Cynicism keeps it cooler than the warmest comfort titles.",
+    "songs": [
+      "Cell Block Tango",
+      "All That Jazz",
+      "Roxie"
+    ],
+    "links": [
+      "moulin",
+      "hairspray",
+      "dreamgirls"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "jazz belt",
+        "ensemble",
+        "vaudeville"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 88,
+      "catharsis": 4.5,
+      "rewatchability": 4.8,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "maximalist",
+        "dance",
+        "darkly funny"
+      ],
+      "friction": [
+        "cooler emotional temperature"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Cell Block Tango",
+          "purpose": "ensemble bite"
+        },
+        {
+          "song": "All That Jazz",
+          "purpose": "instant style thesis"
+        }
+      ],
+      "notes": "A foundational high-propulsion benchmark missing from the original catalog.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mammamia",
+    "title": "Mamma Mia!",
+    "year": 2008,
+    "runtime": "1h 48m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "ABBA sunshine cannon",
+    "vibe": [
+      "Joyful",
+      "Campy",
+      "Sunny",
+      "Romantic"
+    ],
+    "dna": [
+      "Jukebox",
+      "Pop",
+      "ABBA"
+    ],
+    "scores": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.8,
+      "comfort": 5,
+      "maximalism": 4.7,
+      "narrative": 3.8,
+      "hooks": 5,
+      "afterglow": 4.8,
+      "replay": 5
+    },
+    "why": "Familiar hooks, communal singing, shameless joy, and almost no resistance to singing along.",
+    "risk": "Narrative integration is intentionally loose.",
+    "songs": [
+      "Dancing Queen",
+      "Mamma Mia",
+      "The Winner Takes It All"
+    ],
+    "links": [
+      "moulin",
+      "hairspray",
+      "rockofages"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "jukebox",
+      "vocalStyle": [
+        "pop",
+        "ensemble",
+        "character belt"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 82,
+      "catharsis": 4.5,
+      "rewatchability": 5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "comfort",
+        "sunshine",
+        "sing-along"
+      ],
+      "friction": [
+        "loose narrative integration"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Dancing Queen",
+          "purpose": "pure communal lift"
+        },
+        {
+          "song": "The Winner Takes It All",
+          "purpose": "emotional belt"
+        }
+      ],
+      "notes": "Essential comfort-plus-hooks reference point.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soundmusic",
+    "title": "The Sound of Music",
+    "year": 1965,
+    "runtime": "2h 52m",
+    "rating": "G",
+    "status": "unseen",
+    "tag": "Warmth with a spine",
+    "vibe": [
+      "Warm",
+      "Expansive",
+      "Tender",
+      "Triumphant"
+    ],
+    "dna": [
+      "Golden Age",
+      "Orchestral",
+      "Folk"
+    ],
+    "scores": {
+      "propulsion": 3.8,
+      "belt": 4,
+      "movement": 3.8,
+      "emotion": 4.6,
+      "comfort": 5,
+      "maximalism": 3.6,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 5,
+      "replay": 5
+    },
+    "why": "An enduring comfort anchor with melodies that become emotional geography.",
+    "risk": "Long runtime and gentler propulsion.",
+    "songs": [
+      "Do-Re-Mi",
+      "My Favorite Things",
+      "Climb Ev’ry Mountain"
+    ],
+    "links": [
+      "annie",
+      "westside",
+      "moana"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "legit",
+        "ensemble",
+        "orchestral"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 70,
+      "catharsis": 4.8,
+      "rewatchability": 5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "comfort",
+        "nostalgia",
+        "warmth"
+      ],
+      "friction": [
+        "long runtime",
+        "gentle pacing"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "My Favorite Things",
+          "purpose": "comfort hook"
+        },
+        {
+          "song": "Climb Ev’ry Mountain",
+          "purpose": "cathartic payoff"
+        }
+      ],
+      "notes": "Adds classic comfort without maximalist dependence.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "grease",
+    "title": "Grease",
+    "year": 1978,
+    "runtime": "1h 50m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Hooks in a leather jacket",
+    "vibe": [
+      "Playful",
+      "Nostalgic",
+      "Flirty",
+      "Energetic"
+    ],
+    "dna": [
+      "Rock and Roll",
+      "Pop",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.7,
+      "belt": 4.4,
+      "movement": 5,
+      "emotion": 3.4,
+      "comfort": 4.7,
+      "maximalism": 4.5,
+      "narrative": 3.5,
+      "hooks": 5,
+      "afterglow": 4.4,
+      "replay": 5
+    },
+    "why": "An almost absurd concentration of recognizable hooks and movement energy.",
+    "risk": "Some character and gender dynamics have aged poorly.",
+    "songs": [
+      "Summer Nights",
+      "Hopelessly Devoted to You",
+      "You’re the One That I Want"
+    ],
+    "links": [
+      "hairspray",
+      "mammamia",
+      "rockofages"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "pop",
+        "rock and roll",
+        "ensemble"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 80,
+      "catharsis": 4,
+      "rewatchability": 5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "sing-along",
+        "nostalgia",
+        "movement"
+      ],
+      "friction": [
+        "dated gender dynamics"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "You’re the One That I Want",
+          "purpose": "duet propulsion"
+        },
+        {
+          "song": "Summer Nights",
+          "purpose": "ensemble hook density"
+        }
+      ],
+      "notes": "Important familiarity-driven sing-along benchmark.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "burlesque",
+    "title": "Burlesque",
+    "year": 2010,
+    "runtime": "1h 59m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Vocals first, subtlety never",
+    "vibe": [
+      "Glossy",
+      "Sexy",
+      "Belty",
+      "Campy"
+    ],
+    "dna": [
+      "Pop",
+      "Burlesque",
+      "Dance"
+    ],
+    "scores": {
+      "propulsion": 4.5,
+      "belt": 5,
+      "movement": 4.8,
+      "emotion": 3.5,
+      "comfort": 3.8,
+      "maximalism": 5,
+      "narrative": 3.2,
+      "hooks": 4.8,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "why": "Big voices, stage spectacle, dance, and unapologetic performance energy.",
+    "risk": "Story exists mostly to move between numbers.",
+    "songs": [
+      "Show Me How You Burlesque",
+      "Bound to You",
+      "Express"
+    ],
+    "links": [
+      "moulin",
+      "chicago",
+      "dreamgirls"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "power belt",
+        "pop",
+        "diva vocal"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 72,
+      "catharsis": 4.1,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "belt-along",
+        "glamour",
+        "performance"
+      ],
+      "friction": [
+        "thin narrative"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Show Me How You Burlesque",
+          "purpose": "maximum stage energy"
+        },
+        {
+          "song": "Bound to You",
+          "purpose": "vocal catharsis"
+        }
+      ],
+      "notes": "Useful test of whether vocal spectacle can outweigh narrative weakness.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pitchperfect",
+    "title": "Pitch Perfect",
+    "year": 2012,
+    "runtime": "1h 52m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Competitive harmony dopamine",
+    "vibe": [
+      "Funny",
+      "Hooky",
+      "Competitive",
+      "Communal"
+    ],
+    "dna": [
+      "A cappella",
+      "Pop",
+      "Mashup"
+    ],
+    "scores": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.4,
+      "comfort": 4.6,
+      "maximalism": 4.2,
+      "narrative": 3.5,
+      "hooks": 5,
+      "afterglow": 4.5,
+      "replay": 5
+    },
+    "why": "Mashups, recognizable pop, ensemble chemistry, and performance stakes create musical propulsion without traditional musical storytelling.",
+    "risk": "Songs are performances rather than narrative speech.",
+    "songs": [
+      "Cups",
+      "Bellas Finals",
+      "Riff Off"
+    ],
+    "links": [
+      "kpop",
+      "sister2",
+      "mammamia"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "music-performance",
+      "vocalStyle": [
+        "a cappella",
+        "pop",
+        "ensemble"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 62,
+      "catharsis": 3.8,
+      "rewatchability": 5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "funny",
+        "communal",
+        "easy replay"
+      ],
+      "friction": [
+        "not a traditional musical"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Bellas Finals",
+          "purpose": "mashup payoff"
+        },
+        {
+          "song": "Riff Off",
+          "purpose": "competitive propulsion"
+        }
+      ],
+      "notes": "Expands musical-adjacent performance territory.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coco",
+    "title": "Coco",
+    "year": 2017,
+    "runtime": "1h 45m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Family memory detonator",
+    "vibe": [
+      "Warm",
+      "Colorful",
+      "Tender",
+      "Cathartic"
+    ],
+    "dna": [
+      "Mexican Folk",
+      "Pop",
+      "Animation"
+    ],
+    "scores": {
+      "propulsion": 4.2,
+      "belt": 4,
+      "movement": 4.1,
+      "emotion": 5,
+      "comfort": 5,
+      "maximalism": 4.2,
+      "narrative": 5,
+      "hooks": 4.6,
+      "afterglow": 5,
+      "replay": 5
+    },
+    "why": "Music is literally the mechanism of memory, family, identity, and emotional release.",
+    "risk": "Less belt-driven than the strongest anchors.",
+    "songs": [
+      "Remember Me",
+      "Un Poco Loco",
+      "Proud Corazón"
+    ],
+    "links": [
+      "moana",
+      "encanto",
+      "kpop"
+    ],
+    "enrichment": {
+      "format": "animated",
+      "musicalType": "original",
+      "vocalStyle": [
+        "folk-pop",
+        "character vocal",
+        "ensemble"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 62,
+      "catharsis": 5,
+      "rewatchability": 5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "comfort",
+        "family",
+        "crying in a good way"
+      ],
+      "friction": [
+        "lower belt intensity"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Remember Me",
+          "purpose": "emotional architecture"
+        },
+        {
+          "song": "Un Poco Loco",
+          "purpose": "movement and play"
+        }
+      ],
+      "notes": "Strengthens animation as a serious emotional-musical category.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "princessfrog",
+    "title": "The Princess and the Frog",
+    "year": 2009,
+    "runtime": "1h 37m",
+    "rating": "G",
+    "status": "unseen",
+    "tag": "New Orleans groove + yearning",
+    "vibe": [
+      "Warm",
+      "Playful",
+      "Romantic",
+      "Driven"
+    ],
+    "dna": [
+      "Jazz",
+      "Gospel",
+      "Disney"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4.5,
+      "movement": 4.7,
+      "emotion": 4.4,
+      "comfort": 4.7,
+      "maximalism": 4.2,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 4.7,
+      "replay": 4.8
+    },
+    "why": "A compact Disney musical with unusually strong rhythmic identity, aspiration songs, and gospel release.",
+    "risk": "Smaller-scale spectacle than newer animation.",
+    "songs": [
+      "Almost There",
+      "Friends on the Other Side",
+      "Dig a Little Deeper"
+    ],
+    "links": [
+      "moana",
+      "encanto",
+      "sister2"
+    ],
+    "enrichment": {
+      "format": "animated",
+      "musicalType": "original",
+      "vocalStyle": [
+        "jazz",
+        "gospel",
+        "character belt"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 68,
+      "catharsis": 4.6,
+      "rewatchability": 4.8,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "comfort",
+        "groove",
+        "yearning"
+      ],
+      "friction": [
+        "less maximalist"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Almost There",
+          "purpose": "aspiration belt"
+        },
+        {
+          "song": "Dig a Little Deeper",
+          "purpose": "gospel lift"
+        }
+      ],
+      "notes": "Adds jazz and gospel texture to animation coverage.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tangled",
+    "title": "Tangled",
+    "year": 2010,
+    "runtime": "1h 40m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Yearning with lanterns",
+    "vibe": [
+      "Romantic",
+      "Warm",
+      "Funny",
+      "Yearning"
+    ],
+    "dna": [
+      "Disney",
+      "Pop",
+      "Orchestral"
+    ],
+    "scores": {
+      "propulsion": 4.3,
+      "belt": 4.6,
+      "movement": 4.2,
+      "emotion": 4.7,
+      "comfort": 5,
+      "maximalism": 4.1,
+      "narrative": 4.8,
+      "hooks": 4.8,
+      "afterglow": 5,
+      "replay": 5
+    },
+    "why": "Strong yearning songs, romantic payoff, comedy, and unusually high comfort rewatchability.",
+    "risk": "Not relentlessly musical.",
+    "songs": [
+      "When Will My Life Begin?",
+      "I See the Light",
+      "Mother Knows Best"
+    ],
+    "links": [
+      "moana",
+      "encanto",
+      "annie"
+    ],
+    "enrichment": {
+      "format": "animated",
+      "musicalType": "original",
+      "vocalStyle": [
+        "pop belt",
+        "duet",
+        "character song"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 64,
+      "catharsis": 4.8,
+      "rewatchability": 5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "comfort",
+        "romance",
+        "yearning"
+      ],
+      "friction": [
+        "music occupies less runtime"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "When Will My Life Begin?",
+          "purpose": "yearning propulsion"
+        },
+        {
+          "song": "I See the Light",
+          "purpose": "romantic payoff"
+        }
+      ],
+      "notes": "Adds a high-comfort Disney reference with moderate musical density.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "frozen",
+    "title": "Frozen",
+    "year": 2013,
+    "runtime": "1h 42m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "The belt heard around the world",
+    "vibe": [
+      "Triumphant",
+      "Warm",
+      "Funny",
+      "Emotional"
+    ],
+    "dna": [
+      "Disney",
+      "Pop",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.5,
+      "belt": 5,
+      "movement": 4.4,
+      "emotion": 4.6,
+      "comfort": 4.8,
+      "maximalism": 4.6,
+      "narrative": 4.8,
+      "hooks": 5,
+      "afterglow": 4.8,
+      "replay": 5
+    },
+    "why": "Huge hooks and clear emotional song functions make the soundtrack almost frictionless.",
+    "risk": "Cultural overexposure may reduce novelty.",
+    "songs": [
+      "Let It Go",
+      "For the First Time in Forever",
+      "Love Is an Open Door"
+    ],
+    "links": [
+      "moana",
+      "encanto",
+      "tangled"
+    ],
+    "enrichment": {
+      "format": "animated",
+      "musicalType": "original",
+      "vocalStyle": [
+        "power belt",
+        "pop",
+        "duet"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 70,
+      "catharsis": 4.7,
+      "rewatchability": 5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "belt-along",
+        "comfort",
+        "big hooks"
+      ],
+      "friction": [
+        "possible overfamiliarity"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Let It Go",
+          "purpose": "maximum belt release"
+        },
+        {
+          "song": "For the First Time in Forever",
+          "purpose": "narrative duet propulsion"
+        }
+      ],
+      "notes": "Useful extreme case for familiarity plus hook density.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "waitress",
+    "title": "Waitress",
+    "year": 2023,
+    "runtime": "2h 24m",
+    "rating": "Not Rated",
+    "status": "unseen",
+    "tag": "Pie, yearning, Sara Bareilles",
+    "vibe": [
+      "Tender",
+      "Funny",
+      "Yearning",
+      "Cathartic"
+    ],
+    "dna": [
+      "Pop",
+      "Singer-Songwriter",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4.8,
+      "movement": 3.5,
+      "emotion": 5,
+      "comfort": 4.2,
+      "maximalism": 3.6,
+      "narrative": 5,
+      "hooks": 4.8,
+      "afterglow": 5,
+      "replay": 4.8
+    },
+    "why": "Emotionally legible songwriting with enormous vocal payoff and intimate narrative integration.",
+    "risk": "Stage capture and quieter pacing reduce visual propulsion.",
+    "songs": [
+      "She Used to Be Mine",
+      "Opening Up",
+      "What Baking Can Do"
+    ],
+    "links": [
+      "lastfive",
+      "ticktick",
+      "once"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "pop belt",
+        "singer-songwriter",
+        "ensemble"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 90,
+      "catharsis": 5,
+      "rewatchability": 4.8,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "yearning",
+        "catharsis",
+        "lyrics"
+      ],
+      "friction": [
+        "quieter staging"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "She Used to Be Mine",
+          "purpose": "devastating belt payoff"
+        },
+        {
+          "song": "Opening Up",
+          "purpose": "ensemble momentum"
+        }
+      ],
+      "notes": "Fills the contemporary stage-capture singer-songwriter gap.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "legallyblonde",
+    "title": "Legally Blonde: The Musical",
+    "year": 2007,
+    "runtime": "2h 2m",
+    "rating": "TV-PG",
+    "status": "unseen",
+    "tag": "Pink, precise, propulsive",
+    "vibe": [
+      "Joyful",
+      "Belty",
+      "Funny",
+      "Triumphant"
+    ],
+    "dna": [
+      "Pop",
+      "Broadway",
+      "Dance"
+    ],
+    "scores": {
+      "propulsion": 5,
+      "belt": 5,
+      "movement": 5,
+      "emotion": 4.3,
+      "comfort": 4.6,
+      "maximalism": 4.8,
+      "narrative": 5,
+      "hooks": 5,
+      "afterglow": 4.8,
+      "replay": 5
+    },
+    "why": "A relentless contemporary musical-theater machine with hooks, choreography, comedy, and escalating character payoff.",
+    "risk": "Stage capture aesthetics rather than cinematic polish.",
+    "songs": [
+      "So Much Better",
+      "Omigod You Guys",
+      "Legally Blonde Remix"
+    ],
+    "links": [
+      "hairspray",
+      "meanGirls",
+      "newsies"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "pop belt",
+        "ensemble",
+        "comedy patter"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 96,
+      "catharsis": 4.8,
+      "rewatchability": 5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "high energy",
+        "belt-along",
+        "confidence"
+      ],
+      "friction": [
+        "stage capture visuals"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "So Much Better",
+          "purpose": "pure belt propulsion"
+        },
+        {
+          "song": "Legally Blonde Remix",
+          "purpose": "late-show escalation"
+        }
+      ],
+      "notes": "Likely high-value unseen title because it hits nearly every core dimension.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "falsettos",
+    "title": "Falsettos",
+    "year": 2017,
+    "runtime": "2h 24m",
+    "rating": "TV-14",
+    "status": "unseen",
+    "tag": "Neurosis becomes harmony",
+    "vibe": [
+      "Witty",
+      "Intimate",
+      "Devastating",
+      "Dense"
+    ],
+    "dna": [
+      "Broadway",
+      "Sung-through",
+      "Chamber Pop"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4.4,
+      "movement": 3.3,
+      "emotion": 5,
+      "comfort": 2.8,
+      "maximalism": 3.5,
+      "narrative": 5,
+      "hooks": 4.4,
+      "afterglow": 5,
+      "replay": 4.4
+    },
+    "why": "Dense character writing and musical callbacks accumulate into severe emotional payoff.",
+    "risk": "Low comfort and less body-movement energy.",
+    "songs": [
+      "Four Jews in a Room Bitching",
+      "I’m Breaking Down",
+      "What Would I Do?"
+    ],
+    "links": [
+      "lastfive",
+      "rent",
+      "deh"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "ensemble",
+        "character belt",
+        "patter"
+      ],
+      "lyricalDensity": 5,
+      "musicDrivenPercent": 98,
+      "catharsis": 5,
+      "rewatchability": 4.3,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "lyric hungry",
+        "emotionally brave",
+        "character study"
+      ],
+      "friction": [
+        "low comfort",
+        "devastating ending"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "I’m Breaking Down",
+          "purpose": "comic vocal escalation"
+        },
+        {
+          "song": "What Would I Do?",
+          "purpose": "emotional payoff"
+        }
+      ],
+      "notes": "Adds high-density intimate stage storytelling.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "marypoppins",
+    "title": "Mary Poppins Returns",
+    "year": 2018,
+    "runtime": "2h 10m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Old-school craft, modern polish",
+    "vibe": [
+      "Whimsical",
+      "Warm",
+      "Theatrical",
+      "Comforting"
+    ],
+    "dna": [
+      "Disney",
+      "Golden Age Revival",
+      "Orchestral"
+    ],
+    "scores": {
+      "propulsion": 3.9,
+      "belt": 4.2,
+      "movement": 4.4,
+      "emotion": 4.1,
+      "comfort": 4.8,
+      "maximalism": 4.3,
+      "narrative": 4.5,
+      "hooks": 4.2,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "why": "Traditional musical craft with elaborate production numbers and warm family stakes.",
+    "risk": "Songs are less instantly sticky than the strongest Disney anchors.",
+    "songs": [
+      "Trip a Little Light Fantastic",
+      "A Cover Is Not the Book",
+      "The Place Where Lost Things Go"
+    ],
+    "links": [
+      "annie",
+      "soundmusic",
+      "moana"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "legit",
+        "ensemble",
+        "character vocal"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 68,
+      "catharsis": 4.3,
+      "rewatchability": 4.2,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "comfort",
+        "whimsy",
+        "family"
+      ],
+      "friction": [
+        "lower hook density"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Trip a Little Light Fantastic",
+          "purpose": "production-number propulsion"
+        },
+        {
+          "song": "The Place Where Lost Things Go",
+          "purpose": "tender emotional core"
+        }
+      ],
+      "notes": "Adds polished traditional-family-musical coverage.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "starsborn",
+    "title": "A Star Is Born",
+    "year": 2018,
+    "runtime": "2h 16m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Performance becomes heartbreak",
+    "vibe": [
+      "Romantic",
+      "Raw",
+      "Tragic",
+      "Cathartic"
+    ],
+    "dna": [
+      "Pop",
+      "Rock",
+      "Music Drama"
+    ],
+    "scores": {
+      "propulsion": 3.8,
+      "belt": 5,
+      "movement": 3.4,
+      "emotion": 5,
+      "comfort": 2.7,
+      "maximalism": 3.8,
+      "narrative": 4.7,
+      "hooks": 5,
+      "afterglow": 5,
+      "replay": 4.6
+    },
+    "why": "Not a traditional musical, but songs carry identity, intimacy, fame, and devastating emotional payoff.",
+    "risk": "Heavy subject matter and long dramatic stretches between songs.",
+    "songs": [
+      "Shallow",
+      "Always Remember Us This Way",
+      "I’ll Never Love Again"
+    ],
+    "links": [
+      "walkline",
+      "beginagain",
+      "rocketman"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "music-drama",
+      "vocalStyle": [
+        "power belt",
+        "rock",
+        "pop ballad"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 48,
+      "catharsis": 5,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "cry",
+        "belt",
+        "romantic tragedy"
+      ],
+      "friction": [
+        "heavy themes",
+        "lower music density"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Shallow",
+          "purpose": "performance-to-intimacy bridge"
+        },
+        {
+          "song": "I’ll Never Love Again",
+          "purpose": "maximum catharsis"
+        }
+      ],
+      "notes": "Expands the music-drama boundary with very high vocal and emotional amplitude.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 2",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
   }
 ]
