@@ -839,19 +839,52 @@
       "greatest"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Legit musical theater",
+        "Operatic pop",
+        "Power ballad"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 88,
+      "catharsis": 5,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "gothic",
+        "yearning",
+        "maximalist",
+        "romantic tragedy"
+      ],
+      "friction": [
+        "Long dramatic passages",
+        "Operatic vocal style can feel formal",
+        "Very high melodrama"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "The Phantom of the Opera",
+          "purpose": "maximum theatrical propulsion"
+        },
+        {
+          "song": "Music of the Night",
+          "purpose": "lush yearning"
+        },
+        {
+          "song": "All I Ask of You",
+          "purpose": "romantic release"
+        }
+      ],
+      "notes": "A maximalist gothic bridge between spectacle and emotional surrender. The score is nearly continuous, which makes it feel propelled even when the plot slows.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile of musical experience and likely fit."
+        }
+      ]
     }
   },
   {
@@ -902,19 +935,51 @@
       "colorpurple"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Contemporary musical theater",
+        "Pop ballad",
+        "Belt"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 68,
+      "catharsis": 4.5,
+      "rewatchability": 3.5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "emotionally open",
+        "lyric-focused",
+        "cathartic"
+      ],
+      "friction": [
+        "Heavy suicide and grief themes",
+        "Story discomfort may compete with soundtrack appeal",
+        "Several quieter stretches"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Waving Through a Window",
+          "purpose": "immediate propulsion-through-yearning"
+        },
+        {
+          "song": "You Will Be Found",
+          "purpose": "maximum communal catharsis"
+        },
+        {
+          "song": "For Forever",
+          "purpose": "story-forward emotional lift"
+        }
+      ],
+      "notes": "The songs often outrun the movie in replay value. Strong belt instinct and emotional amplitude make the soundtrack more propulsive than the narrative itself.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile; mood/friction notes reflect editorial judgment."
+        }
+      ]
     }
   },
   {
@@ -1063,19 +1128,51 @@
       "sister2"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Golden age musical theater",
+        "Child ensemble",
+        "Character song"
+      ],
+      "lyricalDensity": 2.5,
+      "musicDrivenPercent": 72,
+      "catharsis": 4,
+      "rewatchability": 5,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "comfort",
+        "nostalgia",
+        "bright",
+        "sing-along"
+      ],
+      "friction": [
+        "Old-fashioned pacing",
+        "Broad comic tone"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Tomorrow",
+          "purpose": "comfort anthem"
+        },
+        {
+          "song": "Maybe",
+          "purpose": "yearning and tenderness"
+        },
+        {
+          "song": "I Think I’m Gonna Like It Here",
+          "purpose": "movement and ensemble joy"
+        }
+      ],
+      "notes": "Comfort-forward rather than feral, but the melody density, familiarity, and repeated ensemble payoffs make it unusually replayable.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile; familiarity advantage includes known personal nostalgia context."
+        }
+      ]
     }
   },
   {
@@ -1227,19 +1324,52 @@
       "rocky"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "Rock",
+        "Art-pop",
+        "Dreamy belt"
+      ],
+      "lyricalDensity": 3.5,
+      "musicDrivenPercent": 78,
+      "catharsis": 4.5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "feral",
+        "psychedelic",
+        "melodramatic",
+        "stylized"
+      ],
+      "friction": [
+        "Surreal narrative logic",
+        "Genre shifts",
+        "May feel intentionally strange"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "The Song (Love Is All)",
+          "purpose": "big emotional audition song"
+        },
+        {
+          "song": "Ramblin’",
+          "purpose": "rock-forward propulsion"
+        },
+        {
+          "song": "O’Dessa",
+          "purpose": "world-building tone-setter"
+        }
+      ],
+      "notes": "Its value is less conventional musical-theater structure and more total aesthetic commitment: rock mythology, heightened emotion, and stylized momentum.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile based on engine framing and catalog scoring."
+        }
+      ]
     }
   },
   {
@@ -1388,19 +1518,52 @@
       "littleShop"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "stage-capture",
+      "musicalType": "original",
+      "vocalStyle": [
+        "Comedy musical theater",
+        "Character song",
+        "Pop-rock"
+      ],
+      "lyricalDensity": 4.5,
+      "musicDrivenPercent": 82,
+      "catharsis": 4,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 1.5,
+      "bestMood": [
+        "clever",
+        "darkly funny",
+        "compact",
+        "lyric-focused"
+      ],
+      "friction": [
+        "Low-budget web aesthetic",
+        "Dark ending",
+        "Comedy tone may mask emotional turn"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "My Freeze Ray",
+          "purpose": "comic hook density"
+        },
+        {
+          "song": "Brand New Day",
+          "purpose": "propulsion spike"
+        },
+        {
+          "song": "Everything You Ever",
+          "purpose": "emotional payoff"
+        }
+      ],
+      "notes": "Extremely efficient musical storytelling. Dense callbacks, short runtime, and escalating motif reuse create high propulsion with very little dead space.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile of structure and emotional arc."
+        }
+      ]
     }
   },
   {
@@ -1450,19 +1613,52 @@
       "lastfive"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "Indie folk",
+        "Singer-songwriter",
+        "Intimate duet"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 62,
+      "catharsis": 4,
+      "rewatchability": 3.5,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "quiet",
+        "wistful",
+        "intimate",
+        "late-night"
+      ],
+      "friction": [
+        "Low kinetic energy",
+        "Understated pacing",
+        "Emotion stays restrained"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Falling Slowly",
+          "purpose": "instant emotional access"
+        },
+        {
+          "song": "When Your Mind’s Made Up",
+          "purpose": "strongest propulsion"
+        },
+        {
+          "song": "If You Want Me",
+          "purpose": "intimate chemistry"
+        }
+      ],
+      "notes": "A useful counterexample in the engine: musically sincere and emotionally resonant without relying on maximalism or body movement.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile, especially useful as a low-propulsion contrast case."
+        }
+      ]
     }
   },
   {
@@ -1511,19 +1707,52 @@
       "walkline"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "musical-adjacent",
+      "musicalType": "original",
+      "vocalStyle": [
+        "Indie pop",
+        "Singer-songwriter",
+        "Soft pop"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 48,
+      "catharsis": 3.5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "laid-back",
+        "creative",
+        "warm",
+        "background-friendly"
+      ],
+      "friction": [
+        "Not musically continuous",
+        "Low maximalism",
+        "More movie than musical"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Lost Stars",
+          "purpose": "emotional centerpiece"
+        },
+        {
+          "song": "Tell Me If You Wanna Go Home",
+          "purpose": "gentle lift"
+        },
+        {
+          "song": "A Step You Can’t Take Back",
+          "purpose": "character intimacy"
+        }
+      ],
+      "notes": "Musical-adjacent by design. Best treated as a relaxed creativity-and-connection film, not a propulsion-first musical.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile preserving the distinction between musical-adjacent and full musical."
+        }
+      ]
     }
   },
   {
@@ -1700,19 +1929,52 @@
       "bohemian"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "biopic",
+      "musicalType": "biographical",
+      "vocalStyle": [
+        "Pop-rock",
+        "Power ballad",
+        "Theatrical pop"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 74,
+      "catharsis": 4.5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "anthemic",
+        "emotional",
+        "Elton-heavy",
+        "stylized"
+      ],
+      "friction": [
+        "Biopic darkness",
+        "Addiction themes",
+        "Narrative framing may interrupt sing-along flow"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Saturday Night’s Alright for Fighting",
+          "purpose": "body movement and propulsion"
+        },
+        {
+          "song": "Your Song",
+          "purpose": "familiar comfort"
+        },
+        {
+          "song": "I’m Still Standing",
+          "purpose": "cathartic payoff"
+        }
+      ],
+      "notes": "Works best when treated as fantasy-musical biography rather than literal biography. Existing attachment to Elton John substantially raises familiarity advantage.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile; familiarity advantage reflects known user affinity."
+        }
+      ]
     }
   },
   {
@@ -1761,19 +2023,51 @@
       "across"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "biopic",
+      "musicalType": "biographical",
+      "vocalStyle": [
+        "Arena rock",
+        "Rock belt",
+        "Anthemic"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 55,
+      "catharsis": 4.5,
+      "rewatchability": 3.5,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "arena anthem",
+        "rock nostalgia",
+        "climactic"
+      ],
+      "friction": [
+        "Long non-musical biopic stretches",
+        "Momentum concentrated near performances",
+        "Visual casting details may distract"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Bohemian Rhapsody",
+          "purpose": "familiarity and maximalism"
+        },
+        {
+          "song": "We Will Rock You",
+          "purpose": "body movement"
+        },
+        {
+          "song": "Live Aid sequence",
+          "purpose": "maximum arena payoff"
+        }
+      ],
+      "notes": "The strongest engine fit is concentrated in performance sequences rather than the whole film. Excellent example of a title whose climax scores much higher than its average runtime.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile; friction includes previously stated viewing reaction."
+        }
+      ]
     }
   },
   {
@@ -1954,19 +2248,52 @@
       "colorpurple"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Rock musical theater",
+        "Ensemble belt",
+        "Pop-rock"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 86,
+      "catharsis": 5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 2.5,
+      "bestMood": [
+        "big feelings",
+        "ensemble",
+        "grief-release",
+        "rock musical"
+      ],
+      "friction": [
+        "Heavy illness and death themes",
+        "Mid-2000s film adaptation style",
+        "Emotionally intense"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "La Vie Bohème",
+          "purpose": "maximum ensemble propulsion"
+        },
+        {
+          "song": "Take Me or Leave Me",
+          "purpose": "belt instinct"
+        },
+        {
+          "song": "Seasons of Love",
+          "purpose": "communal catharsis"
+        }
+      ],
+      "notes": "High narrative integration and emotional amplitude. It should connect strongly to tick, tick…BOOM! while feeling more ensemble-driven and less tightly paced.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile of musical and emotional mechanics."
+        }
+      ]
     }
   },
   {
@@ -2018,19 +2345,52 @@
       "rocky"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Rock opera",
+        "High tenor",
+        "Soul-rock"
+      ],
+      "lyricalDensity": 4.5,
+      "musicDrivenPercent": 96,
+      "catharsis": 5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "rock opera",
+        "dramatic",
+        "vocal fireworks",
+        "intense"
+      ],
+      "friction": [
+        "Nearly sung-through",
+        "Religious subject matter",
+        "Very theatrical 1970s aesthetic"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Heaven on Their Minds",
+          "purpose": "immediate rock propulsion"
+        },
+        {
+          "song": "Gethsemane",
+          "purpose": "maximum vocal/emotional amplitude"
+        },
+        {
+          "song": "Superstar",
+          "purpose": "hook and movement payoff"
+        }
+      ],
+      "notes": "One of the purest propulsion cases in the catalog because almost nothing is outside the score. High lyrical density plus rock-opera continuity creates relentless forward motion.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile; useful as a sung-through benchmark."
+        }
+      ]
     }
   },
   {
@@ -2081,19 +2441,52 @@
       "colorpurple"
     ],
     "enrichment": {
-      "format": null,
-      "musicalType": null,
-      "vocalStyle": [],
-      "lyricalDensity": null,
-      "musicDrivenPercent": null,
-      "catharsis": null,
-      "rewatchability": null,
-      "familiarityAdvantage": null,
-      "bestMood": [],
-      "friction": [],
-      "gatewaySongs": [],
-      "notes": null,
-      "provenance": []
+      "format": "film",
+      "musicalType": "hybrid",
+      "vocalStyle": [
+        "Gospel",
+        "R&B",
+        "Choir",
+        "Pop-soul"
+      ],
+      "lyricalDensity": 2.5,
+      "musicDrivenPercent": 52,
+      "catharsis": 5,
+      "rewatchability": 5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "joyful",
+        "communal",
+        "choir",
+        "triumphant"
+      ],
+      "friction": [
+        "Music clustered around rehearsal/performance sections",
+        "Broad 1990s comedy"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Joyful, Joyful",
+          "purpose": "maximum communal propulsion"
+        },
+        {
+          "song": "Oh Happy Day",
+          "purpose": "vocal catharsis"
+        },
+        {
+          "song": "Ain’t No Mountain High Enough",
+          "purpose": "feel-good finale"
+        }
+      ],
+      "notes": "Not continuous-musical storytelling, but performance peaks are extraordinary on belt, body movement, communal joy, and catharsis.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine",
+          "asOf": "2026-08-19",
+          "note": "Interpretive profile emphasizing performance-driven propulsion."
+        }
+      ]
     }
   },
   {
