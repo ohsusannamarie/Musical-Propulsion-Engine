@@ -1,18 +1,27 @@
 {
-  "version": 2,
+  "version": 3,
   "summary": {
     "titleCount": 81,
     "edgeCount": 239,
     "reciprocalEdges": 65,
     "oneWayEdges": 174,
     "edgesWithSharedNormalizedDNA": 173,
-    "edgesWithCloseScoreProfile": 39
+    "edgesWithCloseScoreProfile": 39,
+    "reciprocalCandidates": 42,
+    "qualityTiers": {
+      "A": 13,
+      "B": 51,
+      "C": 81,
+      "D": 94
+    }
   },
   "relationshipSemantics": {
     "catalog-link": "An explicit title-to-title link authored in titles.json.",
     "reciprocal": "Both titles explicitly link to each other.",
     "one-way": "Only one title explicitly links to the other. This is preserved, not automatically repaired.",
-    "evidence": "Computed descriptive signals used to understand why an edge may exist. They are not asserted causal explanations."
+    "evidence": "Computed descriptive signals used to understand why an edge may exist. They are not asserted causal explanations.",
+    "qualityTier": "Computed evidence-strength review tier. A/B are strong candidates for human review, not automatic truth.",
+    "reciprocalCandidate": "A one-way edge with A/B evidence strength. Candidate status never mutates titles.json automatically."
   },
   "relationships": [
     {
@@ -26,6 +35,8 @@
         "bohemian->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -36,7 +47,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -50,6 +61,8 @@
         "hair->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -68,7 +81,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -82,6 +95,8 @@
         "across->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -97,7 +112,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -112,6 +127,8 @@
         "moulin->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -133,7 +150,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -147,6 +164,8 @@
         "across->odessa"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -162,7 +181,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -177,6 +196,8 @@
         "rocketman->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -196,7 +217,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -210,6 +231,8 @@
         "rockofages->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -231,7 +254,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -245,6 +268,8 @@
         "singstreet->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -260,7 +285,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -275,6 +300,8 @@
         "walkline->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -285,7 +312,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -299,6 +326,8 @@
         "yesterday->across"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Beatles",
@@ -320,7 +349,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -334,6 +363,8 @@
         "annaapocalypse->drhorrible"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -346,7 +377,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -360,6 +391,8 @@
         "annaapocalypse->littleShop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -372,7 +405,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -386,6 +419,8 @@
         "annaapocalypse->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -399,7 +434,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -413,6 +448,8 @@
         "annie->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -425,7 +462,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -440,6 +477,8 @@
         "hairspray->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -454,7 +493,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -468,6 +507,8 @@
         "littleShop->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -481,7 +522,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -495,6 +536,8 @@
         "marypoppins->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -507,7 +550,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -521,6 +564,8 @@
         "matilda->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -534,7 +579,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -549,6 +594,8 @@
         "moana->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -561,7 +608,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -575,6 +622,8 @@
         "shrek->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -585,7 +634,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -600,6 +649,8 @@
         "sister2->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -612,7 +663,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -626,6 +677,8 @@
         "soundmusic->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -639,7 +692,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -653,6 +706,8 @@
         "tangled->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -663,7 +718,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -677,6 +732,8 @@
         "wonka->annie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -689,7 +746,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -703,6 +760,8 @@
         "batboy->littleShop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -720,7 +779,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -734,6 +793,8 @@
         "batboy->repo"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -749,7 +810,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -763,6 +824,8 @@
         "batboy->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Camp",
@@ -781,7 +844,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -795,6 +858,8 @@
         "blinded->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -805,7 +870,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -820,6 +885,8 @@
         "once->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Singer-Songwriter"
@@ -839,7 +906,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -854,6 +921,8 @@
         "singstreet->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -867,7 +936,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -881,6 +950,8 @@
         "starsborn->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -895,7 +966,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -910,6 +981,8 @@
         "walkline->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -920,7 +993,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -934,6 +1007,8 @@
         "yesterday->beginagain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -944,7 +1019,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -958,6 +1033,8 @@
         "billyelliot->legallyblonde"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -979,7 +1056,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -993,6 +1070,8 @@
         "billyelliot->newsies"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -1014,7 +1093,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1028,6 +1107,8 @@
         "billyelliot->waitress"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1047,7 +1128,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1061,6 +1142,8 @@
         "blinded->singstreet"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -1077,7 +1160,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1091,6 +1174,8 @@
         "blinded->walkline"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1103,7 +1188,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1118,6 +1203,8 @@
         "yesterday->blinded"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -1137,7 +1224,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1151,6 +1238,8 @@
         "purplerain->bohemian"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1161,7 +1250,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1176,6 +1265,8 @@
         "rocketman->bohemian"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1189,7 +1280,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1204,6 +1295,8 @@
         "walkline->bohemian"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Biopic Performance"
@@ -1223,7 +1316,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1237,6 +1330,8 @@
         "burlesque->chicago"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret"
@@ -1252,7 +1347,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1266,6 +1361,8 @@
         "burlesque->dreamgirls"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1278,7 +1375,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1292,6 +1389,8 @@
         "burlesque->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret",
@@ -1311,7 +1410,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1325,6 +1424,8 @@
         "cabaret->chicago"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret",
@@ -1347,7 +1448,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1361,6 +1462,8 @@
         "cabaret->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret"
@@ -1380,7 +1483,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1394,6 +1497,8 @@
         "cabaret->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret"
@@ -1412,7 +1517,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1426,6 +1531,8 @@
         "chicago->dreamgirls"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1439,7 +1546,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1453,6 +1560,8 @@
         "chicago->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1472,7 +1581,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1486,6 +1595,8 @@
         "chicago->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret"
@@ -1501,7 +1612,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1515,6 +1626,8 @@
         "singininrain->chicago"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jazz"
@@ -1533,7 +1646,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1547,6 +1660,8 @@
         "coco->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1560,7 +1675,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1574,6 +1689,8 @@
         "coco->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1587,7 +1704,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1601,6 +1718,8 @@
         "coco->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -1620,7 +1739,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1635,6 +1754,8 @@
         "deh->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1648,7 +1769,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1663,6 +1784,8 @@
         "dreamgirls->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "R&B",
@@ -1685,7 +1808,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1699,6 +1822,8 @@
         "onceisland->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1716,7 +1841,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1730,6 +1855,8 @@
         "rent->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1744,7 +1871,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1759,6 +1886,8 @@
         "sister2->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Gospel",
@@ -1781,7 +1910,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1796,6 +1925,8 @@
         "wicked->colorpurple"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -1809,7 +1940,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1823,6 +1954,8 @@
         "comefromaway->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1842,7 +1975,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1856,6 +1989,8 @@
         "comefromaway->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1870,7 +2005,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1884,6 +2019,8 @@
         "comefromaway->newsies"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ensemble",
@@ -1904,7 +2041,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1918,6 +2055,8 @@
         "comefromaway->once"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Folk"
@@ -1932,7 +2071,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1946,6 +2085,8 @@
         "onceisland->comefromaway"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Folk",
@@ -1966,7 +2107,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -1980,6 +2121,8 @@
         "cyrano->lastfive"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -1997,7 +2140,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2011,6 +2154,8 @@
         "cyrano->once"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2023,7 +2168,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2037,6 +2182,8 @@
         "cyrano->phantom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -2057,7 +2204,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2071,6 +2218,8 @@
         "cyrano->westside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Orchestral"
@@ -2090,7 +2239,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2104,6 +2253,8 @@
         "dancerinthedark->inside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Electronic",
@@ -2123,7 +2274,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2137,6 +2288,8 @@
         "dancerinthedark->lastfive"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2149,7 +2302,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2163,6 +2316,8 @@
         "dancerinthedark->sweeney"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2175,7 +2330,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2189,6 +2344,8 @@
         "falsettos->deh"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -2203,7 +2360,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2218,6 +2375,8 @@
         "jamie->deh"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad"
@@ -2237,7 +2396,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2251,6 +2410,8 @@
         "lastfive->deh"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Piano Pop"
@@ -2270,7 +2431,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2285,6 +2446,8 @@
         "rent->deh"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2299,7 +2462,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2314,6 +2477,8 @@
         "ticktick->deh"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -2330,7 +2495,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2344,6 +2509,8 @@
         "dreamgirls->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "R&B",
@@ -2365,7 +2532,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2380,6 +2547,8 @@
         "sister2->dreamgirls"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "R&B",
@@ -2400,7 +2569,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2415,6 +2584,8 @@
         "hedwig->drhorrible"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -2429,7 +2600,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2444,6 +2615,8 @@
         "inside->drhorrible"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2456,7 +2629,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2471,6 +2644,8 @@
         "littleShop->drhorrible"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy Musical",
@@ -2489,7 +2664,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2503,6 +2678,8 @@
         "reefer->drhorrible"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -2518,7 +2695,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2532,6 +2709,8 @@
         "drhorrible->ticktick"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -2546,7 +2725,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2560,6 +2739,8 @@
         "frozen->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2577,7 +2758,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2592,6 +2773,8 @@
         "hamilton->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2610,7 +2793,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2624,6 +2807,8 @@
         "encanto->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2638,7 +2823,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2653,6 +2838,8 @@
         "kpop->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2666,7 +2853,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2680,6 +2867,8 @@
         "matilda->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2697,7 +2886,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2712,6 +2901,8 @@
         "moana->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Lin-Manuel Miranda",
@@ -2734,7 +2925,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2748,6 +2939,8 @@
         "princessfrog->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2764,7 +2957,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2778,6 +2971,8 @@
         "tangled->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2794,7 +2989,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2808,6 +3003,8 @@
         "wonka->encanto"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2820,7 +3017,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2834,6 +3031,8 @@
         "falsettos->lastfive"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -2848,7 +3047,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2862,6 +3061,8 @@
         "falsettos->rent"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -2872,7 +3073,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2886,6 +3087,8 @@
         "frozen->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -2907,7 +3110,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2921,6 +3124,8 @@
         "frozen->tangled"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -2942,7 +3147,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2956,6 +3161,8 @@
         "grease->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -2976,7 +3183,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -2990,6 +3197,8 @@
         "grease->mammamia"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -3009,7 +3218,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3023,6 +3232,8 @@
         "grease->rockofages"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -3038,7 +3249,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3053,6 +3264,8 @@
         "hairspray->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3070,7 +3283,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3085,6 +3298,8 @@
         "jamie->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad",
@@ -3105,7 +3320,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3120,6 +3335,8 @@
         "kpop->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad"
@@ -3139,7 +3356,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3153,6 +3370,8 @@
         "moana->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3173,7 +3392,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3188,6 +3407,8 @@
         "moulin->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -3207,7 +3428,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3221,6 +3442,8 @@
         "phantom->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -3236,7 +3459,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3250,6 +3473,8 @@
         "prom->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3269,7 +3494,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3283,6 +3508,8 @@
         "spirited->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3304,7 +3531,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3318,6 +3545,8 @@
         "ticktick->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3338,7 +3567,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3353,6 +3582,8 @@
         "wicked->greatest"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad"
@@ -3371,7 +3602,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3385,6 +3616,8 @@
         "hair->jcs"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -3401,7 +3634,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3415,6 +3648,8 @@
         "hair->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -3430,7 +3665,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3445,6 +3680,8 @@
         "tommy->hair"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -3460,7 +3697,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3475,6 +3712,8 @@
         "heights->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3492,7 +3731,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3506,6 +3745,8 @@
         "legallyblonde->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3525,7 +3766,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3539,6 +3780,8 @@
         "littleShop->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "R&B"
@@ -3555,7 +3798,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3569,6 +3812,8 @@
         "mammamia->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -3584,7 +3829,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3598,6 +3843,8 @@
         "matilda->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3615,7 +3862,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3629,6 +3876,8 @@
         "meangirls->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3646,7 +3895,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3660,6 +3909,8 @@
         "newsies->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -3677,7 +3928,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3691,6 +3942,8 @@
         "prom->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3711,7 +3964,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3725,6 +3978,8 @@
         "shrek->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -3742,7 +3997,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3757,6 +4012,8 @@
         "sister2->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop",
@@ -3779,7 +4036,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3793,6 +4050,8 @@
         "spirited->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3809,7 +4068,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3823,6 +4082,8 @@
         "westside->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -3836,7 +4097,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3851,6 +4112,8 @@
         "wicked->hairspray"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -3864,7 +4127,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3879,6 +4142,8 @@
         "heights->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Hip-hop",
@@ -3899,7 +4164,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3914,6 +4179,8 @@
         "inside->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -3924,7 +4191,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3939,6 +4206,8 @@
         "moana->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -3957,7 +4226,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -3971,6 +4240,8 @@
         "newsies->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -3987,7 +4258,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4002,6 +4273,8 @@
         "ticktick->hamilton"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -4021,7 +4294,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4035,6 +4308,8 @@
         "hedwigstage->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4054,7 +4329,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4069,6 +4344,8 @@
         "inside->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4079,7 +4356,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4093,6 +4370,8 @@
         "jcs->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4109,7 +4388,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4124,6 +4403,8 @@
         "moulin->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Cabaret",
@@ -4143,7 +4424,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4158,6 +4439,8 @@
         "odessa->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4177,7 +4460,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4191,6 +4474,8 @@
         "priscilla->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4203,7 +4488,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4217,6 +4502,8 @@
         "purplerain->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4232,7 +4519,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4246,6 +4533,8 @@
         "rent->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4263,7 +4552,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4277,6 +4566,8 @@
         "repo->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4292,7 +4583,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4307,6 +4598,8 @@
         "rocketman->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4321,7 +4614,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4335,6 +4628,8 @@
         "rockofages->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4350,7 +4645,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4364,6 +4659,8 @@
         "rocky->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock",
@@ -4384,7 +4681,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4398,6 +4695,8 @@
         "sweeney->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4411,7 +4710,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4425,6 +4724,8 @@
         "tommy->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4440,7 +4741,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4454,6 +4755,8 @@
         "velvetgoldmine->hedwig"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4472,7 +4775,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4486,6 +4789,8 @@
         "hedwigstage->rent"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4501,7 +4806,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4515,6 +4820,8 @@
         "hedwigstage->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -4532,7 +4839,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4546,6 +4853,8 @@
         "jamie->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4565,7 +4874,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4579,6 +4888,8 @@
         "heights->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4589,7 +4900,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4604,6 +4915,8 @@
         "moana->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -4623,7 +4936,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4637,6 +4950,8 @@
         "newsies->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4651,7 +4966,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4665,6 +4980,8 @@
         "onceisland->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4679,7 +4996,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4693,6 +5010,8 @@
         "heights->ticktick"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -4714,7 +5033,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4729,6 +5048,8 @@
         "westside->heights"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4742,7 +5063,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4757,6 +5078,8 @@
         "odessa->inside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4769,7 +5092,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4783,6 +5106,8 @@
         "shocktreatment->inside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4795,7 +5120,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4810,6 +5135,8 @@
         "ticktick->inside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -4820,7 +5147,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4835,6 +5162,8 @@
         "kpop->jamie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad",
@@ -4855,7 +5184,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4869,6 +5198,8 @@
         "meangirls->jamie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4889,7 +5220,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4903,6 +5234,8 @@
         "prom->jamie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4919,7 +5252,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4933,6 +5266,8 @@
         "shrek->jamie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -4948,7 +5283,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4963,6 +5298,8 @@
         "wicked->jamie"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad"
@@ -4982,7 +5319,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -4996,6 +5333,8 @@
         "newsies->jcs"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5010,7 +5349,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5024,6 +5363,8 @@
         "jcs->phantom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5040,7 +5381,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5054,6 +5395,8 @@
         "jcs->rent"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5071,7 +5414,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5086,6 +5429,8 @@
         "rocky->jcs"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5101,7 +5446,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5115,6 +5460,8 @@
         "sweeney->jcs"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5131,7 +5478,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5145,6 +5492,8 @@
         "tommy->jcs"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock",
@@ -5164,7 +5513,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5178,6 +5527,8 @@
         "meangirls->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5188,7 +5539,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5203,6 +5554,8 @@
         "moana->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5216,7 +5569,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5231,6 +5584,8 @@
         "odessa->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Ballad"
@@ -5249,7 +5604,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5263,6 +5618,8 @@
         "pitchperfect->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5273,7 +5630,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5287,6 +5644,8 @@
         "spirited->kpop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5299,7 +5658,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5313,6 +5672,8 @@
         "lalaland->once"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5327,7 +5688,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5341,6 +5702,8 @@
         "lalaland->singstreet"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5354,7 +5717,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5369,6 +5732,8 @@
         "westside->lalaland"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jazz"
@@ -5387,7 +5752,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5402,6 +5767,8 @@
         "once->lastfive"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5414,7 +5781,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5428,6 +5795,8 @@
         "lastfive->ticktick"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5447,7 +5816,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5461,6 +5830,8 @@
         "waitress->lastfive"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5475,7 +5846,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5489,6 +5860,8 @@
         "legallyblonde->meangirls"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -5509,7 +5882,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5523,6 +5896,8 @@
         "legallyblonde->newsies"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Dance",
@@ -5545,7 +5920,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5559,6 +5934,8 @@
         "reefer->littleShop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5577,7 +5954,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5592,6 +5969,8 @@
         "rocky->littleShop"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -5607,7 +5986,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5621,6 +6000,8 @@
         "mammamia->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -5642,7 +6023,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5656,6 +6037,8 @@
         "pitchperfect->mammamia"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -5675,7 +6058,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5689,6 +6072,8 @@
         "priscilla->mammamia"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox"
@@ -5707,7 +6092,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5721,6 +6106,8 @@
         "mammamia->rockofages"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox"
@@ -5740,7 +6127,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5754,6 +6141,8 @@
         "marypoppins->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5769,7 +6158,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5783,6 +6172,8 @@
         "marypoppins->soundmusic"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Golden Age",
@@ -5802,7 +6193,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5816,6 +6207,8 @@
         "matilda->prom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy",
@@ -5837,7 +6230,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5851,6 +6244,8 @@
         "shrek->matilda"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy",
@@ -5866,7 +6261,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5880,6 +6275,8 @@
         "wonka->matilda"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -5898,7 +6295,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5912,6 +6309,8 @@
         "meangirls->prom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy",
@@ -5937,7 +6336,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5951,6 +6350,8 @@
         "princessfrog->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater"
@@ -5967,7 +6368,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -5981,6 +6382,8 @@
         "soundmusic->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -5991,7 +6394,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6005,6 +6408,8 @@
         "tangled->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -6025,7 +6430,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6039,6 +6444,8 @@
         "wonka->moana"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -6057,7 +6464,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6072,6 +6479,8 @@
         "odessa->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6087,7 +6496,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6102,6 +6511,8 @@
         "phantom->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Orchestral"
@@ -6120,7 +6531,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6135,6 +6546,8 @@
         "rocketman->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -6154,7 +6567,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6168,6 +6581,8 @@
         "rockofages->moulin"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -6189,7 +6604,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6204,6 +6619,8 @@
         "rocky->odessa"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6223,7 +6640,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6238,6 +6655,8 @@
         "singstreet->once"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6252,7 +6671,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6266,6 +6685,8 @@
         "waitress->once"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Singer-Songwriter"
@@ -6283,7 +6704,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6298,6 +6719,8 @@
         "sweeney->phantom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Gothic",
@@ -6321,7 +6744,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6336,6 +6759,8 @@
         "wicked->phantom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6350,7 +6775,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6364,6 +6789,8 @@
         "pitchperfect->sister2"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop"
@@ -6382,7 +6809,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6396,6 +6823,8 @@
         "princessfrog->sister2"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Gospel"
@@ -6413,7 +6842,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6427,6 +6856,8 @@
         "priscilla->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6439,7 +6870,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6453,6 +6884,8 @@
         "rockyhorrorlive->priscilla"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6466,7 +6899,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6481,6 +6914,8 @@
         "spirited->prom"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Comedy",
@@ -6503,7 +6938,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6517,6 +6952,8 @@
         "purplerain->rocketman"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop",
@@ -6532,7 +6969,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6546,6 +6983,8 @@
         "velvetgoldmine->purplerain"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6562,7 +7001,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6576,6 +7015,8 @@
         "purplerain->walkline"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6586,7 +7027,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6600,6 +7041,8 @@
         "reefer->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Camp",
@@ -6620,7 +7063,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6634,6 +7077,8 @@
         "shocktreatment->reefer"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6653,7 +7098,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6667,6 +7112,8 @@
         "tickstage->rent"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6684,7 +7131,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6699,6 +7146,8 @@
         "ticktick->rent"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6718,7 +7167,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6732,6 +7181,8 @@
         "repo->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6747,7 +7198,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6761,6 +7212,8 @@
         "rockyhorrorlive->repo"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6776,7 +7229,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6790,6 +7243,8 @@
         "repo->sweeney"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6802,7 +7257,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6816,6 +7271,8 @@
         "rockofages->rocketman"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jukebox",
@@ -6834,7 +7291,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6848,6 +7305,8 @@
         "starsborn->rocketman"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Pop",
@@ -6863,7 +7322,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6878,6 +7337,8 @@
         "walkline->rocketman"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -6891,7 +7352,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6905,6 +7366,8 @@
         "rockyhorrorlive->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Camp",
@@ -6924,7 +7387,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6938,6 +7401,8 @@
         "shocktreatment->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6954,7 +7419,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6968,6 +7433,8 @@
         "tommy->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -6983,7 +7450,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -6997,6 +7464,8 @@
         "velvetgoldmine->rocky"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -7015,7 +7484,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7029,6 +7498,8 @@
         "singininrain->soundmusic"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Golden Age"
@@ -7047,7 +7518,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7061,6 +7532,8 @@
         "singininrain->westside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Jazz"
@@ -7079,7 +7552,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7093,6 +7566,8 @@
         "yesterday->singstreet"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "B",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Rock"
@@ -7112,7 +7587,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7126,6 +7601,8 @@
         "soundmusic->westside"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Orchestral"
@@ -7145,7 +7622,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7159,6 +7636,8 @@
         "starsborn->walkline"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -7169,7 +7648,7 @@
       "signals": [],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7183,6 +7662,8 @@
         "tickstage->ticktick"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -7201,7 +7682,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7215,6 +7696,8 @@
         "tickstage->waitress"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "A",
+      "reciprocalCandidate": true,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -7237,7 +7720,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7251,6 +7734,8 @@
         "waitress->ticktick"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "C",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [
           "Musical Theater",
@@ -7269,7 +7754,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     },
     {
@@ -7283,6 +7768,8 @@
         "westside->wicked"
       ],
       "relationshipClass": "catalog-link",
+      "qualityTier": "D",
+      "reciprocalCandidate": false,
       "evidence": {
         "sharedNormalizedDNA": [],
         "sharedRawDNA": [],
@@ -7296,7 +7783,7 @@
       ],
       "provenance": {
         "type": "derived-from-authored-links",
-        "note": "Direction is preserved from titles.json; evidence fields are computed, not editorial claims."
+        "note": "Direction is preserved from titles.json; evidence and quality tiers are computed review aids, not editorial claims."
       }
     }
   ]
