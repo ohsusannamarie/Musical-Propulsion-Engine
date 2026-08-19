@@ -1,0 +1,36 @@
+name: Explain my match v2.2.6
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build explainable recommendations
+        run: python3 .github/scripts/build_explain_match.py
+
+      - name: Verify v2.2.6
+        shell: bash
+        run: |
+          test -s index.html
+          test -s app.html
+          grep -q "v2.2.6 explain my match" app.html
+          grep -q "function explainMatch(" app.html
+          grep -q "function matchExplanationMarkup(" app.html
+          grep -q "Why this for you" app.html
+          grep -q "The Musical Propulsion Engine · v2.2.6" app.html
+
+      - name: Commit v2.2.6
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Add Explain My Match for v2.2.6' || exit 0
+          git push
