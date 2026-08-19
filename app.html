@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Musical Propulsion Engine · v2.3.1</title>
+<title>The Musical Propulsion Engine · v2.3.2</title>
 <meta name="theme-color" content="#07080d" />
 <meta name="description" content="The Musical Propulsion Engine v2.2: an explainable, personalized musical discovery app built around propulsion, feeling, and musical DNA." />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -174,6 +174,12 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
 .discovery-pill.stretch{border-color:rgba(246,195,91,.55);color:#f6c35b;background:rgba(246,195,91,.08)}
 .discovery-pill.wild{border-color:rgba(173,125,255,.55);color:#c8a8ff;background:rgba(173,125,255,.08)}
 .discovery-explain{margin-top:6px;color:#9da8b8;font-size:9px;line-height:1.4}
+</style><style>
+/* v2.3.2 discovery mix */
+.discovery-mix{margin:0 0 16px;border:1px solid #30384b;border-radius:16px;padding:16px;background:radial-gradient(circle at 92% 0%,rgba(173,125,255,.09),transparent 30%),linear-gradient(135deg,rgba(15,24,34,.96),rgba(8,10,16,.98));box-shadow:var(--shadow)}
+.discovery-mix-head{display:flex;gap:12px;align-items:end;justify-content:space-between;flex-wrap:wrap;margin-bottom:12px}.discovery-mix-head h3{font-family:Georgia,serif;font-size:24px;font-weight:500;margin:0}.discovery-mix-head p{font-size:10px;color:#9da8b8;margin:3px 0 0;line-height:1.45;max-width:680px}.discovery-mix-anchor{font-size:9px;color:#7f8999}.discovery-mix-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.discovery-pick{border:1px solid #293246;border-radius:12px;overflow:hidden;background:#0d121c;cursor:pointer;transition:.16s ease}.discovery-pick:hover{transform:translateY(-2px);border-color:#536078}.discovery-poster{height:190px;position:relative;overflow:hidden;background:#121827}.discovery-poster img{width:100%;height:100%;object-fit:cover;display:block}.discovery-poster:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 42%,rgba(7,8,13,.86))}.discovery-rank{position:absolute;z-index:2;left:9px;top:9px}.discovery-score{position:absolute;z-index:2;right:9px;top:9px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--pink);background:rgba(7,8,13,.82);color:#ff82a7;font-size:10px;font-weight:800}.discovery-title{position:absolute;z-index:2;left:10px;right:10px;bottom:10px;font-family:Georgia,serif;font-size:20px;line-height:1;color:#fff;text-shadow:0 2px 15px #000}.discovery-copy{padding:11px}.discovery-copy p{font-size:9px;color:#aeb8c7;line-height:1.45;margin:0 0 8px}.discovery-gateway{font-size:9px;color:#79e59f;font-weight:750}.discovery-pick.safe .discovery-rank{color:#8ef0ad}.discovery-pick.stretch .discovery-rank{color:#f6c35b}.discovery-pick.wild .discovery-rank{color:#c8a8ff}
+@media(max-width:900px){.discovery-mix-grid{grid-template-columns:1fr 1fr}.discovery-pick:last-child{grid-column:1/-1}.discovery-pick:last-child .discovery-poster{height:220px}}
+@media(max-width:700px){.discovery-mix{padding:12px}.discovery-mix-grid{grid-template-columns:1fr}.discovery-pick:last-child{grid-column:auto}.discovery-poster,.discovery-pick:last-child .discovery-poster{height:210px}.discovery-mix-head h3{font-size:22px}}
 </style></head>
 <body>
 <div class="app">
@@ -209,6 +215,7 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
     </div>
 
     <section id="discover" class="section active">
+<div id="discoveryMix"></div>
 
       <div class="rabbit" id="rabbitHole">
         <div class="rabbit-kicker">V2.3.0 · THE RABBIT HOLE</div>
@@ -385,6 +392,22 @@ function discoveryScore(a,b){const raw=rawTraitMatch(a,b),fit=personalFit(b),nov
 function discoveryClass(a,b){const raw=rawTraitMatch(a,b),novel=discoveryValue(a,b),fit=personalFit(b);if(raw>=78&&fit>=72)return 'safe';if(raw>=62&&fit>=62&&novel>=55)return 'stretch';return 'wild'}
 function discoveryLabel(a,b){const c=discoveryClass(a,b);return c==='safe'?'Safe bet':c==='stretch'?'Smart stretch':'Wild card'}
 function discoveryReason(a,b){const c=discoveryClass(a,b),fit=Math.round(personalFit(b)),nov=Math.round(discoveryValue(a,b));if(c==='safe')return `Strong musical-DNA bridge with ${fit}% personal fit.`;if(c==='stretch')return `Enough familiar DNA to trust the bridge, plus ${nov}% discovery value.`;return `Higher uncertainty, but useful new evidence for the taste model.`}
+
+function discoveryMixPicks(){
+  const a=byId[selected]||D[0];
+  const pool=D.filter(x=>x.id!==a.id&&stat(x)!=='miss'&&stat(x)!=='later');
+  const bestFor=(kind)=>pool.filter(x=>discoveryClass(a,x)===kind).sort((x,y)=>discoveryScore(a,y)-discoveryScore(a,x)||personalFit(y)-personalFit(x))[0];
+  const used=new Set();
+  const picks=[];
+  ['safe','stretch','wild'].forEach(kind=>{let x=bestFor(kind);if(!x)x=pool.filter(z=>!used.has(z.id)).sort((u,v)=>discoveryScore(a,v)-discoveryScore(a,u))[0];if(x){used.add(x.id);picks.push({kind,x})}});
+  return {a,picks};
+}
+function renderDiscoveryMix(){
+  const host=document.getElementById('discoveryMix');if(!host)return;
+  const {a,picks}=discoveryMixPicks();
+  const labels={safe:'Safe bet',stretch:'Smart stretch',wild:'Wild card'};
+  host.innerHTML=`<div class="discovery-mix"><div class="discovery-mix-head"><div><h3>Your discovery mix</h3><p>Three different bets from the same taste model: one highly trusted match, one adjacent surprise, and one useful leap.</p></div><div class="discovery-mix-anchor">Built from ${a.title}</div></div><div class="discovery-mix-grid">${picks.map(({kind,x})=>`<article class="discovery-pick ${kind}" data-id="${x.id}"><div class="discovery-poster has-media">${posterMarkup(x)}<span class="discovery-rank">${labels[kind]}</span><span class="discovery-score">${discoveryScore(a,x)}%</span><div class="discovery-title">${x.title}</div></div><div class="discovery-copy"><p>${discoveryReason(a,x)}</p><div class="discovery-gateway">Gateway song: ${x.songs?.[0]||'Open profile to explore'}</div></div></article>`).join('')}</div></div>`;
+}
 
 let tasteHistory=[]; try{tasteHistory=JSON.parse(localStorage.getItem('mpe-taste-history-v1')||'[]')}catch(e){tasteHistory=[]}
 function saveTasteHistory(){try{localStorage.setItem('mpe-taste-history-v1',JSON.stringify(tasteHistory.slice(-60)))}catch(e){}}
@@ -582,7 +605,7 @@ function renderGraph(){
   const detail=`<div class="graph-explain-panel"><div class="graph-hint">Tap another node to inspect a different relationship.</div><span class="learn-badge">🕸 WHY THIS CONNECTS</span><h3>${focus.title} ↔ ${x.title}</h3><p class="shared-dna"><strong>The bridge:</strong> ${bridge}</p>${sharedDna.length?`<p><strong>Shared musical DNA:</strong> ${sharedDna.join(' · ')}</p>`:''}${sharedVibe.length?`<p><strong>Shared vibe:</strong> ${sharedVibe.join(' · ')}</p>`:''}${matchExplanationMarkup(focus,sim(x,focus))}<button class="graph-open" type="button" data-id="${focus.id}">Open ${focus.title} profile →</button></div>`;
   document.getElementById('graph').innerHTML=`<div class="graph-stage"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Connection map for ${x.title}">${lines}${nodes}</svg></div>${detail}`;
 }
-function renderAll(){renderRabbit();renderModes();renderFeature();renderConnections();renderTabs();renderCards();renderLibrary();renderGraph();renderTonight();renderTasteProfile();}
+function renderAll(){renderDiscoveryMix();renderRabbit();renderModes();renderFeature();renderConnections();renderTabs();renderCards();renderLibrary();renderGraph();renderTonight();renderTasteProfile();}
 function selectTitle(id){selected=id;document.getElementById('nowPlaying').textContent=byId[id].title;renderFeature();renderConnections();renderGraph();window.scrollTo({top:0,behavior:'smooth'})}
 function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.section===id));setSidebar(false);if(id==='connections')renderGraph()}
 document.addEventListener('click',e=>{const taste=e.target.closest('[data-taste-metric]');if(taste){const id=taste.dataset.tasteId,dir=taste.dataset.tasteDir,metric=taste.dataset.tasteMetric;const f=feedbackFor(id),other=dir==='more'?'less':'more';f[other]=f[other].filter(k=>k!==metric);f[dir]=f[dir].includes(metric)?f[dir].filter(k=>k!==metric):[...f[dir],metric];tasteFeedback[id]=f;saveTasteFeedback();recordTasteSnapshot('calibration');renderAll();return}const reset=e.target.closest('[data-taste-reset]');if(reset){delete tasteFeedback[reset.dataset.tasteReset];saveTasteFeedback();recordTasteSnapshot('reset');renderAll();return}const graphNode=e.target.closest('[data-connection-id]');if(graphNode){graphFocus=graphNode.dataset.connectionId;renderGraph();return}const nav=e.target.closest('[data-section]');if(nav){showSection(nav.dataset.section);return}const go=e.target.closest('[data-goto]');if(go){showSection(go.dataset.goto);return}const mode=e.target.closest('[data-mode]');if(mode){activeMode=activeMode===mode.dataset.mode?null:mode.dataset.mode;if(activeMode==='surprise'){const unseen=D.filter(x=>stat(x)==='unseen');if(unseen.length)selectTitle(unseen[Math.floor(Math.random()*unseen.length)].id)}renderModes();renderCards();return}const tab=e.target.closest('[data-tab]');if(tab){activeTab=tab.dataset.tab;renderTabs();renderCards();return}const rt=e.target.closest('[data-rabbit-trait]');if(rt){rabbitTrait=rt.dataset.rabbitTrait;renderRabbit();return}const ro=e.target.closest('[data-rabbit-open]');if(ro){selectTitle(ro.dataset.rabbitOpen);showSection('discover');document.getElementById('feature')?.scrollIntoView({behavior:'smooth',block:'start'});return}const ts=e.target.closest('[data-tonight-key]');if(ts){tonightState[ts.dataset.tonightKey]=ts.dataset.tonightValue;renderTonight();return}const title=e.target.closest('[data-id]');if(title){selectTitle(title.dataset.id);showSection('discover');return}const song=e.target.closest('[data-song]');if(song){window.open(searchUrl('spotify',byId[selected].title+' '+song.dataset.song),'_blank');return}});
