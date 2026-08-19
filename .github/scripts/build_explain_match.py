@@ -45,29 +45,15 @@ function matchExplanationMarkup(x,base){
 '''
     html = html[:end] + helpers + html[end:]
 
-# Connections recommendation rows: add causal explanation under the existing bridge copy.
-old = '<small><b style="color:var(--cyan)">the bridge →</b> ${bridge(x,y)}</small>'
-new = '<small><b style="color:var(--cyan)">the bridge →</b> ${bridge(x,y)}</small>${matchExplanationMarkup(y,sim(x,y))}'
+# Current Connections renderer in v2.2.5.
+old = '<small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,\'all\')}</small>'
+new = '<small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,\'all\')}</small>${matchExplanationMarkup(r,sim(x,r))}'
 if old in html:
-    html = html.replace(old, new)
-elif 'matchExplanationMarkup(y,sim(x,y))' not in html:
+    html = html.replace(old, new, 1)
+elif 'matchExplanationMarkup(r,sim(x,r))' not in html:
     raise RuntimeError('Could not attach explanations to Connections')
 
-# Rabbit Hole cards have their own recommendation renderer. Attach an explanation wherever the match score badge is built.
-rabbit_needles = [
-    '<span class="rabbit-match">${r.match}%</span>',
-    '<div class="rabbit-match">${r.match}%</div>',
-    '<span class="match">${r.match}%</span>'
-]
-attached = False
-for needle in rabbit_needles:
-    if needle in html:
-        html = html.replace(needle, needle + '${matchExplanationMarkup(r.x||r.item||r,r.match)}')
-        attached = True
-        break
-# Do not fail if the Rabbit Hole markup uses a different badge shape. Connections remains fully explainable.
-
-required=['v2.2.6 explain my match','function explainMatch(','function matchExplanationMarkup(','Why this for you','The Musical Propulsion Engine · v2.2.6']
+required=['v2.2.6 explain my match','function explainMatch(','function matchExplanationMarkup(','Why this for you','matchExplanationMarkup(r,sim(x,r))','The Musical Propulsion Engine · v2.2.6']
 missing=[x for x in required if x not in html]
 if missing:
     raise RuntimeError('Missing v2.2.6 markers: '+', '.join(missing))
