@@ -1,0 +1,85 @@
+name: Taste calibration polish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/taste-calibration.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add profile feedback controls and gateway song action
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+
+          p = Path('index.html')
+          html = p.read_text(encoding='utf-8')
+
+          # Version bump, idempotent.
+          html = html.replace('V2.2.3 · THE RABBIT HOLE', 'V2.2.4 · THE RABBIT HOLE')
+          html = html.replace('The Musical Propulsion Engine · v2.2', 'The Musical Propulsion Engine · v2.2.4')
+
+          marker = '/* v2.2.4 taste calibration */'
+          if marker not in html:
+              css = '''<style>
+          /* v2.2.4 taste calibration */
+          .profile-feedback{margin:14px 0 4px;padding:12px 13px;border:1px solid rgba(84,217,255,.18);border-radius:10px;background:linear-gradient(90deg,rgba(84,217,255,.055),rgba(255,95,143,.045));display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+          .profile-feedback-copy b{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+          .profile-feedback-copy span{display:block;margin-top:3px;color:#aeb8c7;font-size:10px;line-height:1.35}
+          .profile-status{min-width:180px;background:#101522;color:#f6f1e8;border:1px solid #39445b;border-radius:8px;padding:9px 10px;font-size:11px}
+          .profile-status:focus{outline:none;border-color:var(--cyan)}
+          .actions .gateway-song{background:linear-gradient(90deg,#075b37,#0b4c38);border-color:#16835a}
+          @media (max-width:700px){
+            .profile-feedback{align-items:stretch}
+            .profile-status{width:100%;min-width:0}
+            .actions a,.actions button{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+          }
+          </style>'''
+              html = html.replace('</head>', css + '</head>')
+
+          old = '''<div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ HEAR SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div>'''
+          new = '''<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Update how this title landed for you. Recommendations react instantly and this choice stays on this device.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select></div><div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="gateway-song" target="_blank" href="${searchUrl('spotify',x.title+' '+x.songs[0])}">♫ GATEWAY SONG: ${x.songs[0]}</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ FULL SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div>'''
+          if old in html:
+              html = html.replace(old, new, 1)
+          elif 'Teach the engine' not in html:
+              raise RuntimeError('Could not find feature action block to upgrade')
+
+          old_change = '''if(e.target.matches('[data-status-id]')){customStatuses[e.target.dataset.statusId]=e.target.value;try{localStorage.setItem('mpe-statuses',JSON.stringify(customStatuses))}catch(err){}renderCards();renderConnections();}});'''
+          new_change = '''if(e.target.matches('[data-status-id]')){customStatuses[e.target.dataset.statusId]=e.target.value;try{localStorage.setItem('mpe-statuses',JSON.stringify(customStatuses))}catch(err){}renderCards();renderConnections();renderRabbit();renderTonight();if(e.target.dataset.statusId===selected)renderFeature();}});'''
+          if old_change in html:
+              html = html.replace(old_change, new_change, 1)
+          elif 'renderRabbit();renderTonight();if(e.target.dataset.statusId===selected)renderFeature();' not in html:
+              raise RuntimeError('Could not upgrade status reactivity handler')
+
+          p.write_text(html, encoding='utf-8')
+          Path('app.html').write_text(html, encoding='utf-8')
+          PY
+
+      - name: Verify v2.2.4
+        shell: bash
+        run: |
+          test -s index.html
+          test -s app.html
+          grep -q "v2.2.4 taste calibration" app.html
+          grep -q "Teach the engine" app.html
+          grep -q "GATEWAY SONG:" app.html
+          grep -q "renderRabbit();renderTonight()" app.html
+
+      - name: Commit v2.2.4
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Add taste calibration and gateway song controls for v2.2.4' || exit 0
+          git push
