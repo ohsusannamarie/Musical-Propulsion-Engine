@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Musical Propulsion Engine · v2.2.5</title>
+<title>The Musical Propulsion Engine · v2.2.6</title>
 <meta name="theme-color" content="#07080d" />
 <meta name="description" content="The Musical Propulsion Engine v2.2: an explainable, personalized musical discovery app built around propulsion, feeling, and musical DNA." />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -125,6 +125,14 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
   .taste-chip{padding:7px 9px;font-size:9px}
   .taste-model-readout{align-items:flex-start}
 }
+</style><style>
+/* v2.2.6 explain my match */
+.match-explain{margin-top:6px;padding:7px 9px;border-radius:8px;background:rgba(84,217,255,.055);border:1px solid rgba(84,217,255,.13);font-size:9px;line-height:1.45;color:#aeb8c7}
+.match-explain b{color:#72dfff;text-transform:uppercase;letter-spacing:.05em;font-size:8px}
+.match-explain strong{color:#f5f0e8;font-weight:750}
+.match-explain .friction{color:#dba5b6}
+.match-explain .confidence{color:#f6c35b}
+@media(max-width:700px){.match-explain{font-size:9px;padding:8px 9px}}
 </style></head>
 <body>
 <div class="app">
@@ -161,7 +169,7 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
     <section id="discover" class="section active">
 
       <div class="rabbit" id="rabbitHole">
-        <div class="rabbit-kicker">V2.2.5 · THE RABBIT HOLE</div>
+        <div class="rabbit-kicker">V2.2.6 · THE RABBIT HOLE</div>
         <h2>I loved <em style="color:#ff7fa5">___</em>. Give me more of <em style="color:#6fe2ff">that.</em></h2>
         <p class="rabbit-intro">Start with something that already moved you, then tell the engine which part you want to chase. Every result now exposes the bridge, its strongest shared traits, and a gateway song so you can audition the vibe before committing.</p>
         <div class="rabbit-controls">
@@ -312,6 +320,23 @@ function tasteWeights(){
 function tasteWeight(k){return tasteWeights()[k]||1}
 function tasteProfileText(){const w=tasteWeights();const top=[...tasteMetrics].sort((a,b)=>w[b]-w[a]).slice(0,3);return top.map(k=>`${metricLabel(k)} ${w[k].toFixed(2)}×`).join(' · ')}
 function tasteEvidenceCount(){return Object.keys(tasteFeedback).filter(id=>{const f=feedbackFor(id);return f.more.length||f.less.length}).length}
+
+function explainMatch(x,base){
+  const w=tasteWeights();
+  const ranked=tasteMetrics.map(k=>({k,impact:(x.scores[k]||0)*w[k],score:x.scores[k]||0,weight:w[k]})).sort((a,b)=>b.impact-a.impact);
+  const strong=ranked.filter(v=>v.score>=4 && v.weight>=1.02).slice(0,2);
+  const fallback=ranked.slice(0,2);
+  const wins=(strong.length?strong:fallback).map(v=>metricLabel(v.k));
+  const friction=[...ranked].reverse().find(v=>v.score<=3 && v.weight>=1.05);
+  const evidence=tasteEvidenceCount();
+  const confidence=evidence>=5?'High':evidence>=2?'Growing':'Early';
+  const learned=evidence?`${evidence} explicit calibration${evidence===1?'':'s'} + library reactions`:'your library reactions';
+  return {wins,friction:friction?metricLabel(friction.k):'',confidence,learned,score:base};
+}
+function matchExplanationMarkup(x,base){
+  const e=explainMatch(x,base);
+  return `<div class="match-explain"><b>Why this for you</b><br><strong>${e.wins.join(' + ')}</strong> align with what your taste model currently values.${e.friction?` <span class="friction">Possible friction: ${e.friction}.</span>`:''}<br><span class="confidence">${e.confidence} confidence</span> · Learned from ${e.learned}.</div>`;
+}
 function calibrationMarkup(x){
   const f=feedbackFor(x.id);
   const chips=(dir)=>tasteMetrics.map(k=>`<button type="button" class="taste-chip ${dir} ${f[dir].includes(k)?'active':''}" data-taste-id="${x.id}" data-taste-dir="${dir}" data-taste-metric="${k}">${metricLabel(k)}</button>`).join('');
@@ -441,7 +466,7 @@ function renderFeature(){const x=byId[selected]; const keys=['propulsion','belt'
 <div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Tell it both <em>how</em> this landed and <em>why</em>. Your answers change Rabbit Hole, Connections, and Tonight immediately.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select>${calibrationMarkup(x)}</div><div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="gateway-song" target="_blank" href="${searchUrl('spotify',x.title+' '+x.songs[0])}">♫ GATEWAY SONG: ${x.songs[0]}</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ FULL SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div></div></div>`;
 }
 function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0,weightSum=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>{const w=tasteWeight(k);diff+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w});diff*=7/Math.max(1,weightSum);return Math.round(Math.max(52,96-diff*3+shared*2));}
-function renderConnections(){const x=byId[selected];const rel=(x.links||[]).map(id=>byId[id]).filter(Boolean).slice(0,5);document.getElementById('connectionsPanel').innerHTML=`<h3>If this moved you, you might also love…</h3>${rel.map((r,i)=>`<div class="connection" data-id="${r.id}"><div class="thumb has-media" style="background:${palettes[(D.indexOf(r))%palettes.length]}">${posterMarkup(r)}<span>${r.title}</span></div><div><b>${r.title.toUpperCase()}</b><small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,'all')}</small></div><div class="match">${sim(x,r)}%</div></div>`).join('')}<div class="gateway"><h4>Gateway Songs — press one</h4>${x.songs.map(s=>`<div class="song" data-song="${s}"><span>♫ ${s}</span><span>▶</span></div>`).join('')}</div>`}
+function renderConnections(){const x=byId[selected];const rel=(x.links||[]).map(id=>byId[id]).filter(Boolean).slice(0,5);document.getElementById('connectionsPanel').innerHTML=`<h3>If this moved you, you might also love…</h3>${rel.map((r,i)=>`<div class="connection" data-id="${r.id}"><div class="thumb has-media" style="background:${palettes[(D.indexOf(r))%palettes.length]}">${posterMarkup(r)}<span>${r.title}</span></div><div><b>${r.title.toUpperCase()}</b><small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,'all')}</small>${matchExplanationMarkup(r,sim(x,r))}</div><div class="match">${sim(x,r)}%</div></div>`).join('')}<div class="gateway"><h4>Gateway Songs — press one</h4>${x.songs.map(s=>`<div class="song" data-song="${s}"><span>♫ ${s}</span><span>▶</span></div>`).join('')}</div>`}
 function filtered(){let arr=[...D];const q=document.getElementById('searchInput').value.trim().toLowerCase();if(q)arr=arr.filter(x=>[x.title,...x.vibe,...x.dna,...x.songs].join(' ').toLowerCase().includes(q));if(activeTab!=='all')arr=arr.filter(x=>stat(x)===activeTab);if(activeMode && activeMode!=='surprise'){const m=modes.find(z=>z.id===activeMode);arr.sort((a,b)=>(b.scores[m.metric]||0)-(a.scores[m.metric]||0));} if(activeMode==='surprise')arr=arr.filter(x=>stat(x)==='unseen').sort(()=>Math.random()-.5);return arr;}
 function renderTabs(){const tabs=[['all','ALL'],['moved','MOVED ME'],['liked','LIKED / OTHER MOOD'],['later','NOT RIGHT NOW'],['miss','DIDN’T IGNITE'],['revisit','REVISIT'],['unseen','HAVEN’T SEEN']];document.getElementById('tabs').innerHTML=tabs.map(([id,n])=>`<button class="tab ${activeTab===id?'active':''}" data-tab="${id}">${n}</button>`).join('')}
 function renderCards(){const arr=filtered().slice(0,24);document.getElementById('cards').innerHTML=arr.length?arr.map((x)=>`<div class="card" data-id="${x.id}"><div class="card-poster has-media" style="background:${palettes[D.indexOf(x)%palettes.length]}">${posterMarkup(x)}<span class="statusdot">${statusEmoji[stat(x)]}</span><b>${x.title}</b></div><div class="card-name">${x.title.toUpperCase()}</div></div>`).join(''):`<div class="empty">No titles match that combination.</div>`}
