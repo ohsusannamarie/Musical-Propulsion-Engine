@@ -15,17 +15,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build relationship architecture
         run: python3 .github/scripts/build_relationship_architecture.py
-      - name: Validate architecture
+      - name: Validate architecture v3
         run: |
           python3 - <<'PY'
           import json
           t=json.load(open('data/titles.json'))
           r=json.load(open('data/relationships.json'))
           ids={x['id'] for x in t}
-          assert r['version']==2
+          assert r['version']==3
           assert r['summary']['titleCount']==len(t)==81
           assert r['summary']['edgeCount']==len(r['relationships'])
           assert r['summary']['oneWayEdges']>0
+          assert sum(r['summary']['qualityTiers'].values())==r['summary']['edgeCount']
+          assert r['summary']['reciprocalCandidates']>=0
           for e in r['relationships']:
             assert len(e['titles'])==2
             assert set(e['titles'])<=ids
@@ -33,12 +35,15 @@ jobs:
             assert e['relationshipClass']=='catalog-link'
             assert 'scoreDistance' in e['evidence']
             assert 'provenance' in e
+            assert e['qualityTier'] in {'A','B','C','D'}
+            assert isinstance(e['qualityScore'],int)
+            assert isinstance(e['reciprocalCandidate'],bool)
           print(r['summary'])
           PY
-      - name: Commit architecture
+      - name: Commit architecture v3
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/relationships.json data/RELATIONSHIP_ARCHITECTURE.md
-          git commit -m 'Build relationship architecture v2' || exit 0
+          git commit -m 'Build relationship architecture v3' || exit 0
           git push
