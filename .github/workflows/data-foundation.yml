@@ -1,0 +1,46 @@
+name: Data Foundation v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/data_foundation.js'
+      - '.github/workflows/data-foundation.yml'
+      - 'data/titles.json'
+      - 'data/relationships.json'
+      - 'data/sources.json'
+      - 'data/schema.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract, validate, and bake structured catalog
+        run: node .github/scripts/data_foundation.js
+
+      - name: Verify Data Foundation
+        shell: bash
+        run: |
+          test -s data/titles.json
+          test -s data/schema.json
+          test -s data/relationships.json
+          test -s data/sources.json
+          test -s data/README.md
+          node -e "const d=require('./data/titles.json'); if(d.length<30) process.exit(1); console.log('titles',d.length)"
+          grep -q 'const D=' index.html
+          grep -q 'const D=' app.html
+
+      - name: Commit structured catalog
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data index.html app.html
+          git commit -m 'Establish structured catalog data foundation' || exit 0
+          git push
