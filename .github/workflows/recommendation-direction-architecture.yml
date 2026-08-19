@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/scripts/build_recommendation_direction_architecture.py'
+      - '.github/workflows/recommendation-direction-architecture.yml'
       - 'data/titles.json'
 permissions:
   contents: write
@@ -15,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build recommendation directions
         run: python3 .github/scripts/build_recommendation_direction_architecture.py
-      - name: Validate direction architecture
+      - name: Validate direction architecture v2
         run: |
           python3 - <<'PY'
           import json
@@ -24,17 +25,23 @@ jobs:
           ids={x['id'] for x in t}
           expected=sum(len(x.get('links',[])) for x in t)
           assert len(t)==81
-          assert r['version']==1
+          assert r['version']==2
           assert r['summary']['titleCount']==81
           assert r['summary']['directionCount']==expected==len(r['directions'])
           assert sum(r['summary']['routeCounts'].values())==expected
           assert sum(r['summary']['confidenceCounts'].values())==expected
           valid={'safe-next-step','adjacent-style','higher-intensity','lower-friction','more-emotional','more-belt-forward','more-movement-driven','more-narrative-driven','hookier','wild-card-bridge','catalog-authored'}
+          # Quality-pass guardrails against the v1 classifier pathologies.
+          assert r['summary']['routeCounts']['higher-intensity'] < 101,r['summary']['routeCounts']
+          assert r['summary']['routeCounts']['hookier'] > 3,r['summary']['routeCounts']
+          assert r['summary']['confidenceCounts']['medium'] < 279,r['summary']['confidenceCounts']
           for d in r['directions']:
             assert d['source'] in ids and d['target'] in ids
             assert d['target'] in next(x for x in t if x['id']==d['source']).get('links',[])
             assert d['primaryRoute'] in valid
             assert d['confidence'] in {'high','medium','low'}
+            assert isinstance(d['primaryStrength'],(int,float))
+            assert isinstance(d['routeEvidence'],list)
             assert set(d['scoreDeltas'])=={'propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks','afterglow','replay'}
           print(r['summary'])
           PY
@@ -43,5 +50,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/recommendation-directions.json data/RECOMMENDATION_DIRECTIONS.md
-          git commit -m 'Build recommendation direction architecture' || exit 0
+          git commit -m 'Calibrate recommendation direction architecture v2' || exit 0
           git push
