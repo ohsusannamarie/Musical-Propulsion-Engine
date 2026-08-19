@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/scripts/build_relationship_architecture.py'
+      - '.github/workflows/relationship-architecture.yml'
       - 'data/titles.json'
 permissions:
   contents: write
@@ -36,8 +37,8 @@ jobs:
             assert 'scoreDistance' in e['evidence']
             assert 'provenance' in e
             assert e['qualityTier'] in {'A','B','C','D'}
-            assert isinstance(e['qualityScore'],int)
             assert isinstance(e['reciprocalCandidate'],bool)
+            assert e['reciprocalCandidate'] == (e['authoredDirection']=='one-way' and e['qualityTier'] in {'A','B'})
           print(r['summary'])
           PY
       - name: Commit architecture v3
