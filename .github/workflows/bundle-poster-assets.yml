@@ -16,119 +16,105 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download poster art and localize media sources
-        shell: python
+      - name: Download existing poster sources and localize them
+        shell: bash
         run: |
-          import json, os, pathlib, re, sys, urllib.parse, urllib.request
+          python3 <<'PY'
+          import json, pathlib, re, sys, urllib.parse, urllib.request
 
-          pages = {
-            'heights':'In_the_Heights_(film)',
-            'inside':'Bo_Burnham:_Inside',
-            'moulin':'Moulin_Rouge!',
-            'moana':'Moana_(2016_film)',
-            'hamilton':'Hamilton_(2020_film)',
-            'ticktick':'Tick,_Tick..._Boom!_(film)',
-            'greatest':'The_Greatest_Showman',
-            'wicked':'Wicked_(2024_film)',
-            'phantom':'The_Phantom_of_the_Opera_(2004_film)',
-            'deh':'Dear_Evan_Hansen_(film)',
-            'across':'Across_the_Universe_(film)',
-            'annie':'Annie_(1982_film)',
-            'kpop':'KPop_Demon_Hunters',
-            'odessa':"O'Dessa",
-            'walkline':'Walk_the_Line',
-            'drhorrible':"Dr._Horrible's_Sing-Along_Blog",
-            'once':'Once_(film)',
-            'beginagain':'Begin_Again_(film)',
-            'lalaland':'La_La_Land',
-            'dreamgirls':'Dreamgirls_(film)',
-            'rocketman':'Rocketman_(film)',
-            'bohemian':'Bohemian_Rhapsody_(film)',
-            'jamie':"Everybody's_Talking_About_Jamie_(film)",
-            'hedwig':'Hedwig_and_the_Angry_Inch_(film)',
-            'rent':'Rent_(film)',
-            'jcs':'Jesus_Christ_Superstar_(film)',
-            'sister2':'Sister_Act_2:_Back_in_the_Habit',
-            'colorpurple':'The_Color_Purple_(2023_film)',
-            'hairspray':'Hairspray_(2007_film)',
-            'encanto':'Encanto',
-            'singstreet':'Sing_Street',
-            'westside':'West_Side_Story_(2021_film)',
-            'littleShop':'Little_Shop_of_Horrors_(film)',
-            'rocky':'The_Rocky_Horror_Picture_Show',
-            'sweeney':'Sweeney_Todd:_The_Demon_Barber_of_Fleet_Street_(2007_film)',
-            'lastfive':'The_Last_Five_Years_(film)'
-          }
+          html_path = pathlib.Path('index.html')
+          html = html_path.read_text(encoding='utf-8')
+
+          m = re.search(r'const posterSources=(\{.*?\});', html, flags=re.S)
+          if not m:
+              raise RuntimeError('Could not find posterSources object in index.html')
+
+          remote = json.loads(m.group(1))
+          print(f'Found {len(remote)} configured poster sources.')
 
           out = pathlib.Path('assets/posters')
           out.mkdir(parents=True, exist_ok=True)
-          headers={'User-Agent':'MusicalPropulsionEngine/2.2.2 (https://github.com/ohsusannamarie/Musical-Propulsion-Engine)'}
           local = {}
-          failures=[]
+          failures = []
 
-          def fetch(url):
-            req=urllib.request.Request(url,headers=headers)
-            with urllib.request.urlopen(req,timeout=30) as r:
-              return r.read(), r.headers.get_content_type()
-
-          for key,title in pages.items():
-            try:
-              params=urllib.parse.urlencode({
-                'action':'query','prop':'pageimages','piprop':'original|thumbnail','pithumbsize':'900',
-                'format':'json','formatversion':'2','redirects':'1','titles':title
-              })
-              data,_=fetch('https://en.wikipedia.org/w/api.php?'+params)
-              js=json.loads(data.decode('utf-8'))
-              page=js['query']['pages'][0]
-              src=(page.get('original') or page.get('thumbnail') or {}).get('source')
-              if not src:
-                raise RuntimeError('no page image')
-              img,ctype=fetch(src)
-              if not ctype.startswith('image/') or len(img)<3000:
-                raise RuntimeError(f'bad image response {ctype} {len(img)} bytes')
-              ext={
-                'image/jpeg':'.jpg','image/png':'.png','image/webp':'.webp','image/gif':'.gif'
-              }.get(ctype,'.jpg')
-              dest=out/(key+ext)
-              dest.write_bytes(img)
-              local[key]='./assets/posters/'+dest.name
-              print(f'{key}: {src} -> {dest} ({len(img):,} bytes)')
-            except Exception as e:
-              failures.append((key,str(e)))
-              print(f'WARNING {key}: {e}',file=sys.stderr)
-
-          # Hard fallbacks for titles whose Wikipedia page image is unavailable.
-          fallback={
-            'moulin':'https://pics.filmaffinity.com/moulin_rouge-492344022-large.jpg',
-            'sister2':'https://stat.ameba.jp/user_images/20200503/02/cinefil-club/80/ea/j/o0580085314752687020.jpg',
-            'hairspray':'https://media.themoviedb.org/t/p/w500/fgMka3HtFvI5OgW1eYdR9XpySxH.jpg'
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+              'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+              'Referer': 'https://www.impawards.com/'
           }
-          for key,url in fallback.items():
-            if key in local: continue
-            try:
-              img,ctype=fetch(url)
-              if not ctype.startswith('image/') or len(img)<3000: raise RuntimeError('bad fallback image')
-              ext='.png' if ctype=='image/png' else '.jpg'
-              dest=out/(key+ext); dest.write_bytes(img); local[key]='./assets/posters/'+dest.name
-              print(f'fallback {key}: {url} -> {dest}')
-            except Exception as e:
-              print(f'WARNING fallback {key}: {e}',file=sys.stderr)
 
-          html=pathlib.Path('index.html').read_text(encoding='utf-8')
-          new_obj='const posterSources='+json.dumps(local,separators=(',',':'))+';'
-          html,n=re.subn(r'const posterSources=\{.*?\};',new_obj,html,count=1,flags=re.S)
-          if n!=1:
-            raise RuntimeError('Could not replace posterSources in index.html')
-          html=html.replace('Poster artwork is loaded remotely from public movie-poster pages and gracefully falls back to the original Propulsion artwork if an image host blocks or removes a file.',
-                            'Poster artwork is bundled with this site so the media layer stays reliable across mobile browsers and GitHub Pages. If an asset is ever missing, the original Propulsion artwork remains as a graceful fallback.')
-          html=html.replace('V2.2.1 · THE RABBIT HOLE','V2.2.2 · THE RABBIT HOLE')
-          pathlib.Path('index.html').write_text(html,encoding='utf-8')
-          pathlib.Path('app.html').write_text(html,encoding='utf-8')
-          pathlib.Path('assets/posters/manifest.json').write_text(json.dumps(local,indent=2),encoding='utf-8')
-          pathlib.Path('assets/posters/failures.txt').write_text('\n'.join(f'{k}: {v}' for k,v in failures),encoding='utf-8')
-          print(f'Bundled {len(local)}/{len(pages)} poster assets.')
-          if len(local)<30:
-            raise RuntimeError(f'Only {len(local)} poster assets were bundled; refusing partial media build.')
+          def get(url, referer=True):
+              h = dict(headers)
+              if not referer:
+                  h.pop('Referer', None)
+              req = urllib.request.Request(url, headers=h)
+              with urllib.request.urlopen(req, timeout=35) as r:
+                  return r.read(), (r.headers.get_content_type() or '').lower()
+
+          def valid_image(data, ctype):
+              if len(data) < 4000:
+                  return False
+              if ctype.startswith('image/'):
+                  return True
+              return data.startswith(b'\xff\xd8\xff') or data.startswith(b'\x89PNG') or data.startswith(b'RIFF')
+
+          for key, src in remote.items():
+              attempts = [
+                  ('direct', src, True),
+                  ('direct-no-referrer', src, False),
+                  ('weserv-proxy', 'https://images.weserv.nl/?url=' + urllib.parse.quote(src, safe='') + '&w=900&output=jpg', False),
+              ]
+              last = None
+              for label, url, use_ref in attempts:
+                  try:
+                      data, ctype = get(url, use_ref)
+                      if not valid_image(data, ctype):
+                          raise RuntimeError(f'not a valid image: {ctype}, {len(data)} bytes')
+                      ext = '.png' if (ctype == 'image/png' or data.startswith(b'\x89PNG')) else '.webp' if ctype == 'image/webp' else '.jpg'
+                      dest = out / f'{key}{ext}'
+                      dest.write_bytes(data)
+                      local[key] = './assets/posters/' + dest.name
+                      print(f'OK {key}: {label} -> {dest} ({len(data):,} bytes, {ctype})')
+                      break
+                  except Exception as e:
+                      last = f'{label}: {e}'
+                      print(f'WARN {key} {last}', file=sys.stderr)
+              if key not in local:
+                  failures.append((key, last or 'unknown failure'))
+
+          print(f'Bundled {len(local)}/{len(remote)} poster assets.')
+          if failures:
+              print('Failures:', file=sys.stderr)
+              for key, err in failures:
+                  print(f'  {key}: {err}', file=sys.stderr)
+
+          if len(local) < 28:
+              raise RuntimeError(f'Only {len(local)} poster assets were bundled; refusing incomplete media build.')
+
+          new_obj = 'const posterSources=' + json.dumps(local, separators=(',', ':')) + ';'
+          html, n = re.subn(r'const posterSources=\{.*?\};', new_obj, html, count=1, flags=re.S)
+          if n != 1:
+              raise RuntimeError('Could not replace posterSources in index.html')
+
+          html = html.replace('V2.2.1 · THE RABBIT HOLE', 'V2.2.2 · THE RABBIT HOLE')
+          html = html.replace(
+              'Poster artwork is loaded remotely from public movie-poster pages and gracefully falls back to the original Propulsion artwork if an image host blocks or removes a file.',
+              'Poster artwork is bundled with this site so the media layer stays reliable across mobile browsers and GitHub Pages. If an asset is ever missing, the original Propulsion artwork remains as a graceful fallback.'
+          )
+
+          html_path.write_text(html, encoding='utf-8')
+          pathlib.Path('app.html').write_text(html, encoding='utf-8')
+          pathlib.Path('assets/posters/manifest.json').write_text(json.dumps(local, indent=2), encoding='utf-8')
+          pathlib.Path('assets/posters/failures.txt').write_text('\n'.join(f'{k}: {v}' for k, v in failures), encoding='utf-8')
+          PY
+
+      - name: Verify media build
+        shell: bash
+        run: |
+          echo "Poster files: $(find assets/posters -type f | wc -l)"
+          test -s app.html
+          grep -q "V2.2.2 · THE RABBIT HOLE" app.html
+          grep -q "./assets/posters/" app.html
 
       - name: Commit bundled poster build
         shell: bash
