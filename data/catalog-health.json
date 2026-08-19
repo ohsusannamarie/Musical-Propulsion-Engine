@@ -1,0 +1,771 @@
+{
+  "catalogSize": 81,
+  "healthScore": 64.8,
+  "connectivity": {
+    "orphans": [],
+    "weakUnder3Links": [
+      "legallyblonde",
+      "velvetgoldmine",
+      "onceisland"
+    ],
+    "brokenLinks": [
+      {
+        "from": "legallyblonde",
+        "to": "meanGirls"
+      },
+      {
+        "from": "velvetgoldmine",
+        "to": "purpleRain"
+      },
+      {
+        "from": "onceisland",
+        "to": "comeFromAway"
+      }
+    ],
+    "oneWayLinksCount": 171,
+    "oneWayExamples": [
+      {
+        "from": "heights",
+        "to": "ticktick"
+      },
+      {
+        "from": "heights",
+        "to": "kpop"
+      },
+      {
+        "from": "moana",
+        "to": "greatest"
+      },
+      {
+        "from": "ticktick",
+        "to": "greatest"
+      },
+      {
+        "from": "phantom",
+        "to": "greatest"
+      },
+      {
+        "from": "across",
+        "to": "hedwig"
+      },
+      {
+        "from": "across",
+        "to": "odessa"
+      },
+      {
+        "from": "annie",
+        "to": "greatest"
+      },
+      {
+        "from": "drhorrible",
+        "to": "ticktick"
+      },
+      {
+        "from": "lalaland",
+        "to": "once"
+      },
+      {
+        "from": "lalaland",
+        "to": "singstreet"
+      },
+      {
+        "from": "dreamgirls",
+        "to": "hairspray"
+      },
+      {
+        "from": "bohemian",
+        "to": "across"
+      },
+      {
+        "from": "jamie",
+        "to": "heights"
+      },
+      {
+        "from": "rent",
+        "to": "hedwig"
+      },
+      {
+        "from": "rent",
+        "to": "colorpurple"
+      },
+      {
+        "from": "jcs",
+        "to": "hedwig"
+      },
+      {
+        "from": "jcs",
+        "to": "phantom"
+      },
+      {
+        "from": "jcs",
+        "to": "rent"
+      },
+      {
+        "from": "encanto",
+        "to": "heights"
+      },
+      {
+        "from": "singstreet",
+        "to": "across"
+      },
+      {
+        "from": "westside",
+        "to": "wicked"
+      },
+      {
+        "from": "westside",
+        "to": "hairspray"
+      },
+      {
+        "from": "littleShop",
+        "to": "hairspray"
+      },
+      {
+        "from": "littleShop",
+        "to": "annie"
+      },
+      {
+        "from": "rocky",
+        "to": "hedwig"
+      },
+      {
+        "from": "sweeney",
+        "to": "jcs"
+      },
+      {
+        "from": "sweeney",
+        "to": "hedwig"
+      },
+      {
+        "from": "lastfive",
+        "to": "deh"
+      },
+      {
+        "from": "lastfive",
+        "to": "ticktick"
+      }
+    ],
+    "topHubs": [
+      {
+        "id": "hedwig",
+        "combinedDegree": 23
+      },
+      {
+        "id": "hairspray",
+        "combinedDegree": 23
+      },
+      {
+        "id": "rocky",
+        "combinedDegree": 18
+      },
+      {
+        "id": "moana",
+        "combinedDegree": 18
+      },
+      {
+        "id": "moulin",
+        "combinedDegree": 17
+      },
+      {
+        "id": "greatest",
+        "combinedDegree": 16
+      },
+      {
+        "id": "kpop",
+        "combinedDegree": 15
+      },
+      {
+        "id": "heights",
+        "combinedDegree": 15
+      },
+      {
+        "id": "ticktick",
+        "combinedDegree": 14
+      },
+      {
+        "id": "annie",
+        "combinedDegree": 14
+      },
+      {
+        "id": "encanto",
+        "combinedDegree": 13
+      },
+      {
+        "id": "rocketman",
+        "combinedDegree": 13
+      },
+      {
+        "id": "across",
+        "combinedDegree": 13
+      },
+      {
+        "id": "inside",
+        "combinedDegree": 12
+      },
+      {
+        "id": "jamie",
+        "combinedDegree": 12
+      }
+    ]
+  },
+  "coverage": {
+    "formats": {
+      "film": 56,
+      "other": 1,
+      "animated": 7,
+      "stage-capture": 13,
+      "biopic": 3,
+      "musical-adjacent": 1
+    },
+    "musicalTypes": {
+      "adaptation": 27,
+      "original": 25,
+      "jukebox": 5,
+      "filmed-stage": 12,
+      "biographical": 3,
+      "hybrid": 1,
+      "music-drama": 4,
+      "rock-opera": 2,
+      "music-performance": 1,
+      "jukebox-adjacent": 1
+    },
+    "statuses": {
+      "unseen": 60,
+      "moved": 15,
+      "liked": 3,
+      "miss": 1,
+      "later": 1,
+      "revisit": 1
+    },
+    "topDNA": [
+      {
+        "tag": "Pop",
+        "count": 24
+      },
+      {
+        "tag": "Broadway",
+        "count": 18
+      },
+      {
+        "tag": "Rock",
+        "count": 15
+      },
+      {
+        "tag": "Jukebox",
+        "count": 9
+      },
+      {
+        "tag": "Orchestral",
+        "count": 9
+      },
+      {
+        "tag": "Contemporary Musical Theater",
+        "count": 8
+      },
+      {
+        "tag": "Power Ballad",
+        "count": 7
+      },
+      {
+        "tag": "Dance",
+        "count": 7
+      },
+      {
+        "tag": "R&B",
+        "count": 6
+      },
+      {
+        "tag": "Musical Theater",
+        "count": 6
+      },
+      {
+        "tag": "Pop Rock",
+        "count": 6
+      },
+      {
+        "tag": "Jazz",
+        "count": 6
+      }
+    ],
+    "underrepresentedDNA": [
+      {
+        "tag": "60s Pop",
+        "count": 1
+      },
+      {
+        "tag": "70s Rock",
+        "count": 1
+      },
+      {
+        "tag": "80s New Wave",
+        "count": 1
+      },
+      {
+        "tag": "A cappella",
+        "count": 1
+      },
+      {
+        "tag": "ABBA",
+        "count": 1
+      },
+      {
+        "tag": "Acoustic",
+        "count": 1
+      },
+      {
+        "tag": "Acoustic Pop",
+        "count": 1
+      },
+      {
+        "tag": "Animation",
+        "count": 1
+      },
+      {
+        "tag": "Ballad",
+        "count": 1
+      },
+      {
+        "tag": "Blues",
+        "count": 1
+      },
+      {
+        "tag": "Burlesque",
+        "count": 1
+      },
+      {
+        "tag": "Caribbean Influence",
+        "count": 1
+      },
+      {
+        "tag": "Celtic",
+        "count": 1
+      },
+      {
+        "tag": "Chamber Pop",
+        "count": 1
+      },
+      {
+        "tag": "Children’s Chorus",
+        "count": 1
+      },
+      {
+        "tag": "Christmas",
+        "count": 1
+      },
+      {
+        "tag": "Classic Hollywood Musical",
+        "count": 1
+      },
+      {
+        "tag": "Classic Musical",
+        "count": 1
+      },
+      {
+        "tag": "Classic Rock",
+        "count": 1
+      },
+      {
+        "tag": "Colombian Influence",
+        "count": 1
+      },
+      {
+        "tag": "Coming-of-Age",
+        "count": 1
+      },
+      {
+        "tag": "Concept Album",
+        "count": 1
+      },
+      {
+        "tag": "Contemporary Pop Musical",
+        "count": 1
+      },
+      {
+        "tag": "Counterculture",
+        "count": 1
+      },
+      {
+        "tag": "Country",
+        "count": 1
+      },
+      {
+        "tag": "Dark Comedy",
+        "count": 1
+      },
+      {
+        "tag": "Disco",
+        "count": 1
+      },
+      {
+        "tag": "Doo-wop",
+        "count": 1
+      },
+      {
+        "tag": "Drag",
+        "count": 1
+      },
+      {
+        "tag": "Electronic",
+        "count": 1
+      },
+      {
+        "tag": "Electropop",
+        "count": 1
+      },
+      {
+        "tag": "Elton John",
+        "count": 1
+      },
+      {
+        "tag": "Fantasy Musical",
+        "count": 1
+      },
+      {
+        "tag": "Folk Rock",
+        "count": 1
+      },
+      {
+        "tag": "Golden Age Revival",
+        "count": 1
+      },
+      {
+        "tag": "Goth",
+        "count": 1
+      },
+      {
+        "tag": "Hair Metal",
+        "count": 1
+      },
+      {
+        "tag": "Holiday",
+        "count": 1
+      },
+      {
+        "tag": "Horror",
+        "count": 1
+      },
+      {
+        "tag": "Indie Folk",
+        "count": 1
+      }
+    ],
+    "underrepresentedVibes": [
+      {
+        "tag": "Absurd",
+        "count": 1
+      },
+      {
+        "tag": "Adventurous",
+        "count": 1
+      },
+      {
+        "tag": "Angry",
+        "count": 1
+      },
+      {
+        "tag": "Anthemic",
+        "count": 1
+      },
+      {
+        "tag": "Big-hearted",
+        "count": 1
+      },
+      {
+        "tag": "Biographical",
+        "count": 1
+      },
+      {
+        "tag": "Biting",
+        "count": 1
+      },
+      {
+        "tag": "Bleak",
+        "count": 1
+      },
+      {
+        "tag": "Bohemian",
+        "count": 1
+      },
+      {
+        "tag": "Brooding",
+        "count": 1
+      },
+      {
+        "tag": "Camp",
+        "count": 1
+      },
+      {
+        "tag": "Catchy",
+        "count": 1
+      },
+      {
+        "tag": "Claustrophobic",
+        "count": 1
+      },
+      {
+        "tag": "Competitive",
+        "count": 1
+      },
+      {
+        "tag": "Creative",
+        "count": 1
+      },
+      {
+        "tag": "Cynical",
+        "count": 1
+      },
+      {
+        "tag": "Decadent",
+        "count": 1
+      },
+      {
+        "tag": "Dense",
+        "count": 1
+      },
+      {
+        "tag": "Dreamy",
+        "count": 1
+      },
+      {
+        "tag": "Euphoric",
+        "count": 1
+      },
+      {
+        "tag": "Exhilarating",
+        "count": 1
+      },
+      {
+        "tag": "Expansive",
+        "count": 1
+      },
+      {
+        "tag": "Experimental",
+        "count": 1
+      },
+      {
+        "tag": "Familial",
+        "count": 1
+      },
+      {
+        "tag": "Fantastical",
+        "count": 1
+      },
+      {
+        "tag": "Flirty",
+        "count": 1
+      },
+      {
+        "tag": "Freewheeling",
+        "count": 1
+      },
+      {
+        "tag": "Frenetic",
+        "count": 1
+      },
+      {
+        "tag": "Gentle",
+        "count": 1
+      },
+      {
+        "tag": "Glam",
+        "count": 1
+      },
+      {
+        "tag": "Gory",
+        "count": 1
+      },
+      {
+        "tag": "Gospel",
+        "count": 1
+      },
+      {
+        "tag": "Grand",
+        "count": 1
+      },
+      {
+        "tag": "Grieving",
+        "count": 1
+      },
+      {
+        "tag": "Healing",
+        "count": 1
+      },
+      {
+        "tag": "Heartbroken",
+        "count": 1
+      },
+      {
+        "tag": "Huge",
+        "count": 1
+      },
+      {
+        "tag": "Humane",
+        "count": 1
+      },
+      {
+        "tag": "Intense",
+        "count": 1
+      },
+      {
+        "tag": "Kinetic",
+        "count": 1
+      }
+    ],
+    "duplicateDNAGroups": []
+  },
+  "enrichment": {
+    "missingFields": {},
+    "noGatewaySongs": [],
+    "thinGatewaySongs": []
+  },
+  "scores": {
+    "propulsion": {
+      "mean": 4.42,
+      "median": 4.5,
+      "stdev": 0.47,
+      "min": 2.8,
+      "max": 5.0,
+      "high_4_5_plus": 47,
+      "low_3_or_less": 2
+    },
+    "belt": {
+      "mean": 4.55,
+      "median": 4.7,
+      "stdev": 0.45,
+      "min": 3.1,
+      "max": 5.0,
+      "high_4_5_plus": 58,
+      "low_3_or_less": 0
+    },
+    "movement": {
+      "mean": 4.3,
+      "median": 4.4,
+      "stdev": 0.6,
+      "min": 2.1,
+      "max": 5.0,
+      "high_4_5_plus": 37,
+      "low_3_or_less": 3
+    },
+    "emotion": {
+      "mean": 4.47,
+      "median": 4.6,
+      "stdev": 0.52,
+      "min": 3.0,
+      "max": 5.0,
+      "high_4_5_plus": 46,
+      "low_3_or_less": 1
+    },
+    "comfort": {
+      "mean": 3.79,
+      "median": 4.2,
+      "stdev": 1.0,
+      "min": 0.8,
+      "max": 5.0,
+      "high_4_5_plus": 26,
+      "low_3_or_less": 19
+    },
+    "maximalism": {
+      "mean": 4.4,
+      "median": 4.6,
+      "stdev": 0.64,
+      "min": 1.8,
+      "max": 5.0,
+      "high_4_5_plus": 51,
+      "low_3_or_less": 2
+    },
+    "narrative": {
+      "mean": 4.51,
+      "median": 4.7,
+      "stdev": 0.51,
+      "min": 3.2,
+      "max": 5.0,
+      "high_4_5_plus": 52,
+      "low_3_or_less": 0
+    },
+    "hooks": {
+      "mean": 4.68,
+      "median": 4.8,
+      "stdev": 0.33,
+      "min": 3.4,
+      "max": 5.0,
+      "high_4_5_plus": 63,
+      "low_3_or_less": 0
+    },
+    "afterglow": {
+      "mean": 4.69,
+      "median": 4.8,
+      "stdev": 0.3,
+      "min": 3.5,
+      "max": 5.0,
+      "high_4_5_plus": 65,
+      "low_3_or_less": 0
+    },
+    "replay": {
+      "mean": 4.59,
+      "median": 4.7,
+      "stdev": 0.43,
+      "min": 2.8,
+      "max": 5.0,
+      "high_4_5_plus": 56,
+      "low_3_or_less": 1
+    }
+  },
+  "media": {
+    "posterGapCount": 45,
+    "posterGaps": [
+      "annaapocalypse",
+      "batboy",
+      "billyelliot",
+      "blinded",
+      "burlesque",
+      "cabaret",
+      "chicago",
+      "coco",
+      "comefromaway",
+      "cyrano",
+      "dancerinthedark",
+      "falsettos",
+      "frozen",
+      "grease",
+      "hair",
+      "hedwigstage",
+      "legallyblonde",
+      "mammamia",
+      "marypoppins",
+      "matilda",
+      "meangirls",
+      "newsies",
+      "onceisland",
+      "pitchperfect",
+      "princessfrog",
+      "priscilla",
+      "prom",
+      "purplerain",
+      "reefer",
+      "repo",
+      "rockofages",
+      "rockyhorrorlive",
+      "shocktreatment",
+      "shrek",
+      "singininrain",
+      "soundmusic",
+      "spirited",
+      "starsborn",
+      "tangled",
+      "tickstage",
+      "tommy",
+      "velvetgoldmine",
+      "waitress",
+      "wonka",
+      "yesterday"
+    ]
+  },
+  "recommendationReadiness": {
+    "note": "Proxy audit only. Safe Bet / Smart Stretch / Wild Card diversity depends on live user taste weights in localStorage and cannot be fully evaluated in CI.",
+    "candidateConcerns": [
+      "High score means cluster tightly around 4.5 to 5.0 on several dimensions, which can compress ranking separation.",
+      "3 titles have fewer than three explicit links.",
+      "45 titles lack bundled poster assets."
+    ]
+  }
+}
