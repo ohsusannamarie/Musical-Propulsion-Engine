@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Musical Propulsion Engine · v2.2.4</title>
+<title>The Musical Propulsion Engine · v2.2.5</title>
 <meta name="theme-color" content="#07080d" />
 <meta name="description" content="The Musical Propulsion Engine v2.2: an explainable, personalized musical discovery app built around propulsion, feeling, and musical DNA." />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -104,6 +104,27 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
   .profile-status{width:100%;min-width:0}
   .actions a,.actions button{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
 }
+</style><style>
+/* v2.2.5 adaptive taste learning */
+.calibration-reasons{width:100%;border-top:1px solid rgba(255,255,255,.07);padding-top:10px;margin-top:2px}
+.cal-row{display:grid;grid-template-columns:94px minmax(0,1fr);gap:8px;align-items:start;margin:7px 0}
+.cal-row>span{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#aeb7c5;padding-top:7px;font-weight:800}
+.cal-chips{display:flex;gap:6px;flex-wrap:wrap}
+.taste-chip{border:1px solid #344057;background:#111724;color:#b8c0ce;border-radius:999px;padding:6px 8px;font-size:9px;cursor:pointer;transition:.15s ease}
+.taste-chip:hover{border-color:#65728a;color:#fff}
+.taste-chip.more.active{background:rgba(114,224,155,.15);border-color:rgba(114,224,155,.62);color:#8ef0ad}
+.taste-chip.less.active{background:rgba(255,95,143,.14);border-color:rgba(255,95,143,.60);color:#ff8dad}
+.taste-model-readout{margin-top:9px;padding:9px 10px;border-radius:8px;background:rgba(7,8,13,.44);color:#aeb8c7;font-size:10px;line-height:1.45;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.taste-model-readout strong{color:var(--gold)}
+.taste-reset{border:0;background:transparent;color:#7f8999;font-size:9px;text-decoration:underline;cursor:pointer;padding:3px}
+.taste-reset:hover{color:#d6dce5}
+.learn-badge{display:inline-flex;align-items:center;gap:5px;color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+@media (max-width:700px){
+  .cal-row{grid-template-columns:1fr;gap:4px}
+  .cal-row>span{padding-top:0}
+  .taste-chip{padding:7px 9px;font-size:9px}
+  .taste-model-readout{align-items:flex-start}
+}
 </style></head>
 <body>
 <div class="app">
@@ -140,7 +161,7 @@ button,input{font:inherit}.app{display:grid;grid-template-columns:235px minmax(0
     <section id="discover" class="section active">
 
       <div class="rabbit" id="rabbitHole">
-        <div class="rabbit-kicker">V2.2.4 · THE RABBIT HOLE</div>
+        <div class="rabbit-kicker">V2.2.5 · THE RABBIT HOLE</div>
         <h2>I loved <em style="color:#ff7fa5">___</em>. Give me more of <em style="color:#6fe2ff">that.</em></h2>
         <p class="rabbit-intro">Start with something that already moved you, then tell the engine which part you want to chase. Every result now exposes the bridge, its strongest shared traits, and a gateway song so you can audition the vibe before committing.</p>
         <div class="rabbit-controls">
@@ -273,6 +294,30 @@ function posterMarkup(x,cls="media-poster"){const src=posterSources[x.id];return
 let selected='heights',activeMode=null,activeTab='all';
 let rabbitAnchor='moulin',rabbitTrait='all';
 let customStatuses={}; try{customStatuses=JSON.parse(localStorage.getItem('mpe-statuses')||'{}')}catch(e){customStatuses={}}
+const tasteMetrics=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks'];
+let tasteFeedback={}; try{tasteFeedback=JSON.parse(localStorage.getItem('mpe-taste-feedback-v1')||'{}')}catch(e){tasteFeedback={}}
+function feedbackFor(id){const f=tasteFeedback[id]||{};return {more:Array.isArray(f.more)?f.more:[],less:Array.isArray(f.less)?f.less:[]}}
+function saveTasteFeedback(){try{localStorage.setItem('mpe-taste-feedback-v1',JSON.stringify(tasteFeedback))}catch(e){}}
+function tasteWeights(){
+  const w=Object.fromEntries(tasteMetrics.map(k=>[k,1]));
+  const statusSignal={moved:.075,liked:.035,revisit:.025,miss:-.055};
+  D.forEach(x=>{const s=statusSignal[stat(x)]||0;if(!s)return;tasteMetrics.forEach(k=>{w[k]+=s*((x.scores[k]-3)/2)})});
+  Object.values(tasteFeedback).forEach(f=>{
+    (Array.isArray(f.more)?f.more:[]).forEach(k=>{if(k in w)w[k]+=.18});
+    (Array.isArray(f.less)?f.less:[]).forEach(k=>{if(k in w)w[k]-=.16});
+  });
+  tasteMetrics.forEach(k=>w[k]=Math.max(.58,Math.min(1.75,w[k])));
+  return w;
+}
+function tasteWeight(k){return tasteWeights()[k]||1}
+function tasteProfileText(){const w=tasteWeights();const top=[...tasteMetrics].sort((a,b)=>w[b]-w[a]).slice(0,3);return top.map(k=>`${metricLabel(k)} ${w[k].toFixed(2)}×`).join(' · ')}
+function tasteEvidenceCount(){return Object.keys(tasteFeedback).filter(id=>{const f=feedbackFor(id);return f.more.length||f.less.length}).length}
+function calibrationMarkup(x){
+  const f=feedbackFor(x.id);
+  const chips=(dir)=>tasteMetrics.map(k=>`<button type="button" class="taste-chip ${dir} ${f[dir].includes(k)?'active':''}" data-taste-id="${x.id}" data-taste-dir="${dir}" data-taste-metric="${k}">${metricLabel(k)}</button>`).join('');
+  return `<div class="calibration-reasons"><div class="cal-row"><span>More of this</span><div class="cal-chips">${chips('more')}</div></div><div class="cal-row"><span>Less of this</span><div class="cal-chips">${chips('less')}</div></div><div class="taste-model-readout"><span><span class="learn-badge">🧠 Live taste model</span><br><strong>${tasteProfileText()}</strong><br>${tasteEvidenceCount()} title${tasteEvidenceCount()===1?'':'s'} explicitly calibrated, plus your library reactions.</span><button type="button" class="taste-reset" data-taste-reset="${x.id}">Reset this title</button></div></div>`;
+}
+
 function stat(x){return customStatuses[x.id]||x.status}
 function metricLabel(k){return {propulsion:'Propulsion',belt:'Belt Instinct',movement:'Body Movement',emotion:'Emotional Amplitude',comfort:'Comfort',maximalism:'Maximalism',narrative:'Narrative Integration',hooks:'Hook Density',afterglow:'Afterglow',replay:'Replay Value'}[k]||k}
 function scoreDots(v){let s='';for(let i=1;i<=5;i++)s+=`<i class="${v>=i-.2?'on':''}"></i>`;return `<span class="dots">${s}</span>`}
@@ -292,7 +337,7 @@ const rabbitTraits=[
 function rabbitSimilarity(a,b,trait){
   const core=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks','afterglow','replay'];
   let distance=0,weightSum=0;
-  core.forEach(k=>{let w=(trait!=='all'&&k===trait)?4:1; distance+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w;});
+  core.forEach(k=>{let w=tasteWeight(k)*((trait!=='all'&&k===trait)?4:1); distance+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w;});
   const dna=a.dna.filter(v=>b.dna.includes(v)).length;
   const vibe=a.vibe.filter(v=>b.vibe.includes(v)).length;
   const avgDistance=distance/weightSum;
@@ -353,13 +398,13 @@ function laneMatch(x,lane){
 function runtimeMinutes(x){const m=(x.runtime||'').match(/(?:(\d+)h)?\s*(?:(\d+)m)?/);return m?((+m[1]||0)*60+(+m[2]||0)):120}
 function tonightScore(x){
   if(['miss','later'].includes(stat(x)))return -999;
-  let s=x.scores.propulsion*9+x.scores.hooks*6+x.scores.narrative*4+x.scores.afterglow*4;
-  if(tonightState.energy==='steady')s+=x.scores.comfort*4-x.scores.maximalism*1;
-  if(tonightState.energy==='high')s+=x.scores.movement*5+x.scores.belt*4;
-  if(tonightState.energy==='feral')s+=x.scores.maximalism*8+x.scores.movement*4+x.scores.belt*3;
-  if(tonightState.emotion==='safe')s+=x.scores.comfort*7-x.scores.emotion*2;
-  if(tonightState.emotion==='balanced')s+=x.scores.emotion*3+x.scores.comfort*2;
-  if(tonightState.emotion==='wreck')s+=x.scores.emotion*9+x.scores.maximalism*2-x.scores.comfort;
+  let s=x.scores.propulsion*9*tasteWeight('propulsion')+x.scores.hooks*6*tasteWeight('hooks')+x.scores.narrative*4*tasteWeight('narrative')+x.scores.afterglow*4;
+  if(tonightState.energy==='steady')s+=x.scores.comfort*4*tasteWeight('comfort')-x.scores.maximalism*1*tasteWeight('maximalism');
+  if(tonightState.energy==='high')s+=x.scores.movement*5*tasteWeight('movement')+x.scores.belt*4*tasteWeight('belt');
+  if(tonightState.energy==='feral')s+=x.scores.maximalism*8*tasteWeight('maximalism')+x.scores.movement*4*tasteWeight('movement')+x.scores.belt*3*tasteWeight('belt');
+  if(tonightState.emotion==='safe')s+=x.scores.comfort*7*tasteWeight('comfort')-x.scores.emotion*2*tasteWeight('emotion');
+  if(tonightState.emotion==='balanced')s+=x.scores.emotion*3*tasteWeight('emotion')+x.scores.comfort*2*tasteWeight('comfort');
+  if(tonightState.emotion==='wreck')s+=x.scores.emotion*9*tasteWeight('emotion')+x.scores.maximalism*2*tasteWeight('maximalism')-x.scores.comfort*tasteWeight('comfort');
   const mins=runtimeMinutes(x); if(tonightState.runtime==='short')s+=mins<120?10:-8; if(tonightState.runtime==='long')s+=mins>=120?5:0;
   s+=laneMatch(x,tonightState.lane);
   if(stat(x)==='unseen')s+=13; else if(stat(x)==='revisit')s+=10; else if(stat(x)==='liked')s+=2; else if(stat(x)==='moved')s-=9;
@@ -393,9 +438,9 @@ function renderModes(){document.getElementById('modes').innerHTML=modes.map(m=>`
 function renderFeature(){const x=byId[selected]; const keys=['propulsion','belt','movement','emotion','comfort','maximalism']; const idx=D.indexOf(x)%palettes.length; document.getElementById('feature').innerHTML=`
 <div class="feature-grid"><div class="poster has-media" style="background:${palettes[idx]}">${posterMarkup(x)}<div class="p-year">${x.year} • ${x.rating}</div><div class="p-title">${x.title}</div><div class="p-tag">${x.tag}</div></div>
 <div class="detail"><h2>${x.title}</h2><div class="meta">${x.year} &nbsp;•&nbsp; ${x.runtime} &nbsp;•&nbsp; ${x.rating}</div><div class="label">Vibe</div><div class="chips">${x.vibe.map(v=>`<span class="chip">${v}</span>`).join('')}</div><div class="label">Musical DNA</div><div class="dna">${x.dna.join(' &nbsp;•&nbsp; ')}</div><div class="divider"></div><div class="scorewhy"><div class="scores">${keys.map(k=>`<div class="score-row"><span>${metricLabel(k)}</span>${scoreDots(x.scores[k])}<b>${x.scores[k].toFixed(1)}</b></div>`).join('')}</div><div class="why"><strong>WHY IT CONNECTS</strong><br>${x.why}<div class="risk"><strong>MOOD NOTE:</strong> ${x.risk}</div></div></div>
-<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Update how this title landed for you. Recommendations react instantly and this choice stays on this device.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select></div><div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="gateway-song" target="_blank" href="${searchUrl('spotify',x.title+' '+x.songs[0])}">♫ GATEWAY SONG: ${x.songs[0]}</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ FULL SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div></div></div>`;
+<div class="profile-feedback"><div class="profile-feedback-copy"><b>Teach the engine</b><span>Tell it both <em>how</em> this landed and <em>why</em>. Your answers change Rabbit Hole, Connections, and Tonight immediately.</span></div><select class="status-select profile-status" data-status-id="${x.id}" aria-label="Update your reaction to ${x.title}">${Object.entries(statuses).map(([k,v])=>`<option value="${k}" ${stat(x)===k?'selected':''}>${v}</option>`).join('')}</select>${calibrationMarkup(x)}</div><div class="actions"><a class="trailer" target="_blank" href="${searchUrl('trailer',x.title)}">▶ WATCH TRAILER</a><a class="gateway-song" target="_blank" href="${searchUrl('spotify',x.title+' '+x.songs[0])}">♫ GATEWAY SONG: ${x.songs[0]}</a><a class="sound" target="_blank" href="${searchUrl('spotify',x.title+' soundtrack')}">♫ FULL SOUNDTRACK</a><a target="_blank" href="${searchUrl('imdb',x.title)}">IMDb</a><a class="rt" target="_blank" href="${searchUrl('rt',x.title)}">🍅 ROTTEN TOMATOES</a><a class="watch" target="_blank" href="${searchUrl('watch',x.title)}">◉ WHERE TO WATCH</a></div></div></div>`;
 }
-function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>diff+=Math.abs(a.scores[k]-b.scores[k]));return Math.round(Math.max(52,96-diff*3+shared*2));}
+function sim(a,b){let shared=a.dna.filter(v=>b.dna.includes(v)).length+a.vibe.filter(v=>b.vibe.includes(v)).length*.8; let diff=0,weightSum=0;['propulsion','belt','movement','emotion','maximalism','narrative','hooks'].forEach(k=>{const w=tasteWeight(k);diff+=Math.abs(a.scores[k]-b.scores[k])*w;weightSum+=w});diff*=7/Math.max(1,weightSum);return Math.round(Math.max(52,96-diff*3+shared*2));}
 function renderConnections(){const x=byId[selected];const rel=(x.links||[]).map(id=>byId[id]).filter(Boolean).slice(0,5);document.getElementById('connectionsPanel').innerHTML=`<h3>If this moved you, you might also love…</h3>${rel.map((r,i)=>`<div class="connection" data-id="${r.id}"><div class="thumb has-media" style="background:${palettes[(D.indexOf(r))%palettes.length]}">${posterMarkup(r)}<span>${r.title}</span></div><div><b>${r.title.toUpperCase()}</b><small class="shared-reason"><b>the bridge →</b> ${rabbitBridge(x,r,'all')}</small></div><div class="match">${sim(x,r)}%</div></div>`).join('')}<div class="gateway"><h4>Gateway Songs — press one</h4>${x.songs.map(s=>`<div class="song" data-song="${s}"><span>♫ ${s}</span><span>▶</span></div>`).join('')}</div>`}
 function filtered(){let arr=[...D];const q=document.getElementById('searchInput').value.trim().toLowerCase();if(q)arr=arr.filter(x=>[x.title,...x.vibe,...x.dna,...x.songs].join(' ').toLowerCase().includes(q));if(activeTab!=='all')arr=arr.filter(x=>stat(x)===activeTab);if(activeMode && activeMode!=='surprise'){const m=modes.find(z=>z.id===activeMode);arr.sort((a,b)=>(b.scores[m.metric]||0)-(a.scores[m.metric]||0));} if(activeMode==='surprise')arr=arr.filter(x=>stat(x)==='unseen').sort(()=>Math.random()-.5);return arr;}
 function renderTabs(){const tabs=[['all','ALL'],['moved','MOVED ME'],['liked','LIKED / OTHER MOOD'],['later','NOT RIGHT NOW'],['miss','DIDN’T IGNITE'],['revisit','REVISIT'],['unseen','HAVEN’T SEEN']];document.getElementById('tabs').innerHTML=tabs.map(([id,n])=>`<button class="tab ${activeTab===id?'active':''}" data-tab="${id}">${n}</button>`).join('')}
@@ -405,7 +450,7 @@ function renderGraph(){const x=byId[selected], rel=(x.links||[]).map(id=>byId[id
 function renderAll(){renderRabbit();renderModes();renderFeature();renderConnections();renderTabs();renderCards();renderLibrary();renderGraph();renderTonight();}
 function selectTitle(id){selected=id;document.getElementById('nowPlaying').textContent=byId[id].title;renderFeature();renderConnections();renderGraph();window.scrollTo({top:0,behavior:'smooth'})}
 function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.section===id));setSidebar(false);if(id==='connections')renderGraph()}
-document.addEventListener('click',e=>{const nav=e.target.closest('[data-section]');if(nav){showSection(nav.dataset.section);return}const go=e.target.closest('[data-goto]');if(go){showSection(go.dataset.goto);return}const mode=e.target.closest('[data-mode]');if(mode){activeMode=activeMode===mode.dataset.mode?null:mode.dataset.mode;if(activeMode==='surprise'){const unseen=D.filter(x=>stat(x)==='unseen');if(unseen.length)selectTitle(unseen[Math.floor(Math.random()*unseen.length)].id)}renderModes();renderCards();return}const tab=e.target.closest('[data-tab]');if(tab){activeTab=tab.dataset.tab;renderTabs();renderCards();return}const rt=e.target.closest('[data-rabbit-trait]');if(rt){rabbitTrait=rt.dataset.rabbitTrait;renderRabbit();return}const ro=e.target.closest('[data-rabbit-open]');if(ro){selectTitle(ro.dataset.rabbitOpen);showSection('discover');document.getElementById('feature')?.scrollIntoView({behavior:'smooth',block:'start'});return}const ts=e.target.closest('[data-tonight-key]');if(ts){tonightState[ts.dataset.tonightKey]=ts.dataset.tonightValue;renderTonight();return}const title=e.target.closest('[data-id]');if(title){selectTitle(title.dataset.id);showSection('discover');return}const song=e.target.closest('[data-song]');if(song){window.open(searchUrl('spotify',byId[selected].title+' '+song.dataset.song),'_blank');return}});
+document.addEventListener('click',e=>{const taste=e.target.closest('[data-taste-metric]');if(taste){const id=taste.dataset.tasteId,dir=taste.dataset.tasteDir,metric=taste.dataset.tasteMetric;const f=feedbackFor(id),other=dir==='more'?'less':'more';f[other]=f[other].filter(k=>k!==metric);f[dir]=f[dir].includes(metric)?f[dir].filter(k=>k!==metric):[...f[dir],metric];tasteFeedback[id]=f;saveTasteFeedback();renderAll();return}const reset=e.target.closest('[data-taste-reset]');if(reset){delete tasteFeedback[reset.dataset.tasteReset];saveTasteFeedback();renderAll();return}const nav=e.target.closest('[data-section]');if(nav){showSection(nav.dataset.section);return}const go=e.target.closest('[data-goto]');if(go){showSection(go.dataset.goto);return}const mode=e.target.closest('[data-mode]');if(mode){activeMode=activeMode===mode.dataset.mode?null:mode.dataset.mode;if(activeMode==='surprise'){const unseen=D.filter(x=>stat(x)==='unseen');if(unseen.length)selectTitle(unseen[Math.floor(Math.random()*unseen.length)].id)}renderModes();renderCards();return}const tab=e.target.closest('[data-tab]');if(tab){activeTab=tab.dataset.tab;renderTabs();renderCards();return}const rt=e.target.closest('[data-rabbit-trait]');if(rt){rabbitTrait=rt.dataset.rabbitTrait;renderRabbit();return}const ro=e.target.closest('[data-rabbit-open]');if(ro){selectTitle(ro.dataset.rabbitOpen);showSection('discover');document.getElementById('feature')?.scrollIntoView({behavior:'smooth',block:'start'});return}const ts=e.target.closest('[data-tonight-key]');if(ts){tonightState[ts.dataset.tonightKey]=ts.dataset.tonightValue;renderTonight();return}const title=e.target.closest('[data-id]');if(title){selectTitle(title.dataset.id);showSection('discover');return}const song=e.target.closest('[data-song]');if(song){window.open(searchUrl('spotify',byId[selected].title+' '+song.dataset.song),'_blank');return}});
 document.getElementById('searchInput').addEventListener('input',()=>{renderCards();if(document.getElementById('searchInput').value.trim())activeTab='all';renderTabs()});
 document.addEventListener('change',e=>{if(e.target.id==='tonightLane'){tonightState.lane=e.target.value;renderTonight();return}if(e.target.id==='rabbitAnchor'){rabbitAnchor=e.target.value;renderRabbit();return}if(e.target.matches('[data-status-id]')){customStatuses[e.target.dataset.statusId]=e.target.value;try{localStorage.setItem('mpe-statuses',JSON.stringify(customStatuses))}catch(err){}renderCards();renderConnections();renderRabbit();renderTonight();if(e.target.dataset.statusId===selected)renderFeature();}});
 document.getElementById('rerollTonight').onclick=()=>{tonightState.salt++;renderTonight()};
