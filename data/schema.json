@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "required": [
+    "id",
+    "title",
+    "scores"
+  ],
+  "scoreDimensions": [
+    "propulsion",
+    "belt",
+    "movement",
+    "emotion",
+    "comfort",
+    "maximalism",
+    "narrative",
+    "hooks"
+  ],
+  "enrichmentFields": {
+    "format": "film | stage-capture | animated | biopic | musical-adjacent | other",
+    "musicalType": "original | jukebox | biographical | adaptation | filmed-stage | hybrid",
+    "vocalStyle": "array of descriptors",
+    "lyricalDensity": "1-5 or null",
+    "musicDrivenPercent": "0-100 or null",
+    "catharsis": "1-5 or null",
+    "rewatchability": "1-5 or null",
+    "familiarityAdvantage": "1-5 or null",
+    "bestMood": "array of mood tags",
+    "friction": "array of potential mismatch notes",
+    "gatewaySongs": "ranked song objects",
+    "notes": "analytical notes",
+    "provenance": "source records for researched facts"
+  }
+}
