@@ -1,4 +1,0 @@
-drhorrible: weserv-proxy: HTTP Error 404: Not Found
-jcs: weserv-proxy: HTTP Error 404: Not Found
-sister2: weserv-proxy: HTTP Error 404: Not Found
-lastfive: weserv-proxy: HTTP Error 404: Not Found
