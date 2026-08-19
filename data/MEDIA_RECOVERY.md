@@ -1,21 +1,15 @@
 # Media Recovery Status
 
 - Catalog titles: **81**
-- Bundled: **66** (81.5%)
+- Bundled: **72** (88.9%)
 - Remote: **0** (0.0%)
 - Fallback: **0** (0.0%)
-- Missing: **15** (18.5%)
+- Missing: **9** (11.1%)
 
 ## Recovery queue
 
-- `repo` — Repo! The Genetic Opera (2008)
-- `velvetgoldmine` — Velvet Goldmine (1998)
-- `priscilla` — The Adventures of Priscilla, Queen of the Desert (1994)
-- `annaapocalypse` — Anna and the Apocalypse (2017)
-- `dancerinthedark` — Dancer in the Dark (2000)
 - `hedwigstage` — Hedwig and the Angry Inch: Broadway (2014)
 - `batboy` — Bat Boy: The Musical (2004)
-- `reefer` — Reefer Madness: The Movie Musical (2005)
 - `singininrain` — Singin’ in the Rain (1952)
 - `cabaret` — Cabaret (1972)
 - `rockyhorrorlive` — The Rocky Horror Picture Show: Let’s Do the Time Warp Again (2016)
