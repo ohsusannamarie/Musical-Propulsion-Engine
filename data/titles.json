@@ -3444,5 +3444,1428 @@
         }
       ]
     }
+  },
+  {
+    "id": "spirited",
+    "title": "Spirited",
+    "year": 2022,
+    "runtime": "2h 7m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Christmas maximalism with teeth",
+    "vibe": [
+      "Joyful",
+      "Feral",
+      "Comic",
+      "Earnest",
+      "Maximalist"
+    ],
+    "dna": [
+      "Pop",
+      "Contemporary Musical Theater",
+      "Comedy",
+      "Holiday"
+    ],
+    "scores": {
+      "propulsion": 4.7,
+      "belt": 4.8,
+      "movement": 5,
+      "emotion": 4.2,
+      "comfort": 4.2,
+      "maximalism": 5,
+      "narrative": 4.2,
+      "hooks": 4.6,
+      "afterglow": 4.5,
+      "replay": 4.6
+    },
+    "why": "Huge choreography, aggressive commitment, comic escalation, and several songs built to become full-body events.",
+    "risk": "Holiday framing and broad comedy may be mood-dependent.",
+    "songs": [
+      "Good Afternoon",
+      "Unredeemable",
+      "Do a Little Good",
+      "That Christmas Morning Feelin’"
+    ],
+    "links": [
+      "greatest",
+      "hairspray",
+      "kpop",
+      "prom"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "pop belt",
+        "ensemble",
+        "comic patter",
+        "contemporary musical theater"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 78,
+      "catharsis": 4.3,
+      "rewatchability": 4.4,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "high energy",
+        "holiday",
+        "movement",
+        "comic maximalism"
+      ],
+      "friction": [
+        "holiday-specific setting",
+        "broad comedy"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Good Afternoon",
+          "purpose": "comic escalation + ensemble propulsion"
+        },
+        {
+          "song": "Unredeemable",
+          "purpose": "belt payoff"
+        },
+        {
+          "song": "Do a Little Good",
+          "purpose": "emotional release"
+        }
+      ],
+      "notes": "A strong maximalist test case where choreography and comic escalation do much of the propulsion work.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "matilda",
+    "title": "Matilda the Musical",
+    "year": 2022,
+    "runtime": "1h 57m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Rebellion has a beat",
+    "vibe": [
+      "Defiant",
+      "Whimsical",
+      "Dark",
+      "Triumphant",
+      "Cathartic"
+    ],
+    "dna": [
+      "Musical Theater",
+      "Pop",
+      "Children’s Chorus",
+      "Dark Comedy"
+    ],
+    "scores": {
+      "propulsion": 4.7,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 4.7,
+      "comfort": 3.8,
+      "maximalism": 4.7,
+      "narrative": 5,
+      "hooks": 4.5,
+      "afterglow": 4.6,
+      "replay": 4.5
+    },
+    "why": "Sharp lyrical storytelling, giant ensemble choreography, emotional cruelty-to-catharsis arcs, and a spectacular release valve in Revolting Children.",
+    "risk": "Its deliberately grotesque adults and child-abuse themes make the comfort level deceptive.",
+    "songs": [
+      "Revolting Children",
+      "Naughty",
+      "School Song",
+      "When I Grow Up"
+    ],
+    "links": [
+      "annie",
+      "hairspray",
+      "encanto",
+      "prom"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "child ensemble",
+        "character belt",
+        "patter",
+        "contemporary musical theater"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 82,
+      "catharsis": 4.8,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "defiant",
+        "cathartic",
+        "clever lyrics",
+        "ensemble energy"
+      ],
+      "friction": [
+        "dark treatment of children",
+        "grotesque comedy"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Revolting Children",
+          "purpose": "maximum ensemble release"
+        },
+        {
+          "song": "Naughty",
+          "purpose": "character + lyrical hook"
+        },
+        {
+          "song": "When I Grow Up",
+          "purpose": "emotional afterglow"
+        }
+      ],
+      "notes": "Excellent bridge between family-musical accessibility and surprisingly dark emotional architecture.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "prom",
+    "title": "The Prom",
+    "year": 2020,
+    "runtime": "2h 10m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Broadway glitter cannon",
+    "vibe": [
+      "Campy",
+      "Joyful",
+      "Earnest",
+      "Maximalist",
+      "Warm"
+    ],
+    "dna": [
+      "Broadway",
+      "Pop",
+      "Dance",
+      "Comedy"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4.8,
+      "movement": 4.8,
+      "emotion": 4.2,
+      "comfort": 4.4,
+      "maximalism": 5,
+      "narrative": 4,
+      "hooks": 4.3,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "why": "Unapologetically theatrical, belt-heavy, bright, campy, and built around large-scale musical release.",
+    "risk": "The celebrity satire and tonal broadness can feel synthetic.",
+    "songs": [
+      "Tonight Belongs to You",
+      "Love Thy Neighbor",
+      "It’s Time to Dance",
+      "You Happened"
+    ],
+    "links": [
+      "hairspray",
+      "greatest",
+      "spirited",
+      "jamie"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "Broadway belt",
+        "pop musical theater",
+        "ensemble",
+        "dance"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 76,
+      "catharsis": 4.3,
+      "rewatchability": 4.2,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "camp",
+        "bright",
+        "belt-along",
+        "comfort"
+      ],
+      "friction": [
+        "broad tonal shifts",
+        "celebrity satire"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Tonight Belongs to You",
+          "purpose": "ensemble maximalism"
+        },
+        {
+          "song": "Love Thy Neighbor",
+          "purpose": "dance propulsion"
+        },
+        {
+          "song": "It’s Time to Dance",
+          "purpose": "communal payoff"
+        }
+      ],
+      "notes": "Useful high-maximalism title that tests whether sheer theatrical commitment can overcome tonal unevenness.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cyrano",
+    "title": "Cyrano",
+    "year": 2021,
+    "runtime": "2h 3m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Yearning dressed in velvet",
+    "vibe": [
+      "Romantic",
+      "Yearning",
+      "Melancholic",
+      "Elegant",
+      "Devastating"
+    ],
+    "dna": [
+      "Indie Rock",
+      "Orchestral",
+      "Musical Theater",
+      "Ballad"
+    ],
+    "scores": {
+      "propulsion": 3.7,
+      "belt": 3.8,
+      "movement": 3.3,
+      "emotion": 5,
+      "comfort": 3.2,
+      "maximalism": 4.1,
+      "narrative": 4.8,
+      "hooks": 4,
+      "afterglow": 4.8,
+      "replay": 4
+    },
+    "why": "Music functions as emotional confession, with aching repetition and a romantic-tragic arc that keeps tightening.",
+    "risk": "Lower movement and a deliberately mournful register make it a mood-specific recommendation.",
+    "songs": [
+      "Someone to Say",
+      "Every Letter",
+      "Wherever I Fall",
+      "Madly"
+    ],
+    "links": [
+      "phantom",
+      "lastfive",
+      "once",
+      "westside"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "intimate vocal",
+        "indie rock",
+        "orchestral ballad",
+        "ensemble lament"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 70,
+      "catharsis": 5,
+      "rewatchability": 3.9,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "yearning",
+        "romantic devastation",
+        "quiet catharsis"
+      ],
+      "friction": [
+        "low movement",
+        "sustained melancholy"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Someone to Say",
+          "purpose": "romantic yearning"
+        },
+        {
+          "song": "Every Letter",
+          "purpose": "narrative intimacy"
+        },
+        {
+          "song": "Wherever I Fall",
+          "purpose": "ensemble devastation"
+        }
+      ],
+      "notes": "Expands the database toward restrained propulsion driven by yearning rather than spectacle.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wonka",
+    "title": "Wonka",
+    "year": 2023,
+    "runtime": "1h 56m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Sugar-rush storybook musical",
+    "vibe": [
+      "Whimsical",
+      "Warm",
+      "Playful",
+      "Hopeful",
+      "Colorful"
+    ],
+    "dna": [
+      "Pop",
+      "Orchestral",
+      "Classic Musical",
+      "Family"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 3.8,
+      "movement": 4.3,
+      "emotion": 3.8,
+      "comfort": 4.8,
+      "maximalism": 4.3,
+      "narrative": 4.3,
+      "hooks": 4.2,
+      "afterglow": 4.5,
+      "replay": 4.2
+    },
+    "why": "Buoyant melody, storybook momentum, visual invention, and a comfort-forward tone with enough musical movement to stay airborne.",
+    "risk": "Lower emotional amplitude and belt intensity than the engine’s strongest anchors.",
+    "songs": [
+      "A Hatful of Dreams",
+      "You’ve Never Had Chocolate Like This",
+      "For a Moment",
+      "Pure Imagination"
+    ],
+    "links": [
+      "moana",
+      "encanto",
+      "annie",
+      "matilda"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "light tenor",
+        "ensemble",
+        "storybook musical theater",
+        "pop"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 62,
+      "catharsis": 3.8,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "comfort",
+        "whimsy",
+        "light movement",
+        "warm reset"
+      ],
+      "friction": [
+        "lower belt intensity",
+        "gentler stakes"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "A Hatful of Dreams",
+          "purpose": "tone + melodic propulsion"
+        },
+        {
+          "song": "You’ve Never Had Chocolate Like This",
+          "purpose": "ensemble play"
+        },
+        {
+          "song": "Pure Imagination",
+          "purpose": "comfort payoff"
+        }
+      ],
+      "notes": "A useful comfort-heavy benchmark where charm matters more than cathartic force.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "meangirls",
+    "title": "Mean Girls",
+    "year": 2024,
+    "runtime": "1h 52m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Pop claws, high-school chaos",
+    "vibe": [
+      "Glossy",
+      "Comic",
+      "Biting",
+      "Energetic",
+      "Campy"
+    ],
+    "dna": [
+      "Pop",
+      "Contemporary Musical Theater",
+      "Dance",
+      "Comedy"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4.6,
+      "movement": 4.7,
+      "emotion": 3.6,
+      "comfort": 3.5,
+      "maximalism": 4.5,
+      "narrative": 4.2,
+      "hooks": 4.4,
+      "afterglow": 4,
+      "replay": 4.3
+    },
+    "why": "Modern pop production, sharp character songs, choreography, and a pace that rarely lets the musical energy fully drop.",
+    "risk": "Some adaptation choices flatten the stage score and emotional peaks.",
+    "songs": [
+      "A Cautionary Tale",
+      "Sexy",
+      "Someone Gets Hurt",
+      "World Burn"
+    ],
+    "links": [
+      "hairspray",
+      "jamie",
+      "prom",
+      "kpop"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "pop belt",
+        "character vocal",
+        "ensemble",
+        "contemporary pop"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 73,
+      "catharsis": 3.8,
+      "rewatchability": 4.1,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "camp",
+        "high energy",
+        "pop hooks",
+        "comic"
+      ],
+      "friction": [
+        "glossy production can mute theatrical bite"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "World Burn",
+          "purpose": "belt + escalation"
+        },
+        {
+          "song": "Sexy",
+          "purpose": "comic hook density"
+        },
+        {
+          "song": "Someone Gets Hurt",
+          "purpose": "dark pop tension"
+        }
+      ],
+      "notes": "Adds contemporary glossy pop-musical texture and a useful mid-emotion/high-movement profile.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "newsies",
+    "title": "Newsies: The Broadway Musical",
+    "year": 2017,
+    "runtime": "2h 14m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Athletic ensemble euphoria",
+    "vibe": [
+      "Triumphant",
+      "Defiant",
+      "Communal",
+      "Earnest",
+      "Electric"
+    ],
+    "dna": [
+      "Broadway",
+      "Dance",
+      "Orchestral Pop",
+      "Ensemble"
+    ],
+    "scores": {
+      "propulsion": 4.9,
+      "belt": 4.8,
+      "movement": 5,
+      "emotion": 4.4,
+      "comfort": 4.3,
+      "maximalism": 4.7,
+      "narrative": 4.8,
+      "hooks": 4.7,
+      "afterglow": 4.8,
+      "replay": 4.7
+    },
+    "why": "Big ensemble vocals, athletic choreography, rally-song architecture, and constant communal forward motion.",
+    "risk": "Stage-capture presentation may feel less cinematic.",
+    "songs": [
+      "Seize the Day",
+      "Santa Fe",
+      "The World Will Know",
+      "King of New York"
+    ],
+    "links": [
+      "hamilton",
+      "hairspray",
+      "heights",
+      "jcs"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "Broadway belt",
+        "male ensemble",
+        "orchestral pop",
+        "character ballad"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 94,
+      "catharsis": 4.6,
+      "rewatchability": 4.7,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "defiant",
+        "movement",
+        "ensemble euphoria",
+        "belt-along"
+      ],
+      "friction": [
+        "stage-capture visual language"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Seize the Day",
+          "purpose": "ensemble propulsion"
+        },
+        {
+          "song": "Santa Fe",
+          "purpose": "yearning belt"
+        },
+        {
+          "song": "The World Will Know",
+          "purpose": "rally-song momentum"
+        }
+      ],
+      "notes": "A high-value stage-capture addition with unusually strong movement and communal propulsion.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "comefromaway",
+    "title": "Come From Away",
+    "year": 2021,
+    "runtime": "1h 46m",
+    "rating": "TV-14",
+    "status": "unseen",
+    "tag": "Humanity at full velocity",
+    "vibe": [
+      "Humane",
+      "Funny",
+      "Urgent",
+      "Communal",
+      "Cathartic"
+    ],
+    "dna": [
+      "Folk",
+      "Celtic",
+      "Musical Theater",
+      "Ensemble"
+    ],
+    "scores": {
+      "propulsion": 4.8,
+      "belt": 4.2,
+      "movement": 4.2,
+      "emotion": 5,
+      "comfort": 4.4,
+      "maximalism": 3.8,
+      "narrative": 5,
+      "hooks": 4.4,
+      "afterglow": 5,
+      "replay": 4.6
+    },
+    "why": "Near-continuous ensemble storytelling turns logistical chaos into rhythmic propulsion, then lands enormous communal catharsis.",
+    "risk": "Subject matter around 9/11 can make the emotional load heavier than the warmth suggests.",
+    "songs": [
+      "Welcome to the Rock",
+      "Me and the Sky",
+      "Screech In",
+      "Somewhere in the Middle of Nowhere"
+    ],
+    "links": [
+      "hamilton",
+      "heights",
+      "newsies",
+      "once"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "ensemble storytelling",
+        "folk",
+        "Celtic",
+        "character belt"
+      ],
+      "lyricalDensity": 5,
+      "musicDrivenPercent": 96,
+      "catharsis": 5,
+      "rewatchability": 4.7,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "communal",
+        "humanity restored",
+        "cathartic",
+        "narrative momentum"
+      ],
+      "friction": [
+        "9/11 context",
+        "emotionally intense real-world subject"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Welcome to the Rock",
+          "purpose": "narrative propulsion"
+        },
+        {
+          "song": "Me and the Sky",
+          "purpose": "character catharsis"
+        },
+        {
+          "song": "Screech In",
+          "purpose": "communal release"
+        }
+      ],
+      "notes": "Crucial evidence that maximalism is not required for extreme propulsion when ensemble narrative density is high.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shrek",
+    "title": "Shrek the Musical",
+    "year": 2013,
+    "runtime": "2h 10m",
+    "rating": "TV-PG",
+    "status": "unseen",
+    "tag": "Fairytale camp with a giant heart",
+    "vibe": [
+      "Campy",
+      "Warm",
+      "Comic",
+      "Defiant",
+      "Earnest"
+    ],
+    "dna": [
+      "Broadway",
+      "Comedy",
+      "Pop Rock",
+      "Family"
+    ],
+    "scores": {
+      "propulsion": 4.2,
+      "belt": 4.6,
+      "movement": 4.2,
+      "emotion": 4.3,
+      "comfort": 4.4,
+      "maximalism": 4.5,
+      "narrative": 4.5,
+      "hooks": 4.3,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "why": "Broad comedy and theatrical excess hide a surprisingly sincere outsider story with strong belt moments and ensemble payoff.",
+    "risk": "Some humor is intentionally juvenile and the filmed-stage aesthetic is broad.",
+    "songs": [
+      "Who I’d Be",
+      "I Know It’s Today",
+      "Freak Flag",
+      "Morning Person"
+    ],
+    "links": [
+      "jamie",
+      "hairspray",
+      "matilda",
+      "annie"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "Broadway belt",
+        "comic character vocal",
+        "ensemble",
+        "pop rock"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 88,
+      "catharsis": 4.5,
+      "rewatchability": 4.3,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "camp",
+        "outsider anthem",
+        "comfort",
+        "belt-along"
+      ],
+      "friction": [
+        "juvenile humor",
+        "broad theatricality"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Who I’d Be",
+          "purpose": "yearning + belt payoff"
+        },
+        {
+          "song": "Freak Flag",
+          "purpose": "communal outsider anthem"
+        },
+        {
+          "song": "I Know It’s Today",
+          "purpose": "character storytelling"
+        }
+      ],
+      "notes": "Adds camp-forward stage musical energy with genuine emotional payoff.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rockofages",
+    "title": "Rock of Ages",
+    "year": 2012,
+    "runtime": "2h 3m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Hair-metal karaoke fever dream",
+    "vibe": [
+      "Feral",
+      "Campy",
+      "Sexy",
+      "Loud",
+      "Nostalgic"
+    ],
+    "dna": [
+      "Jukebox",
+      "Hair Metal",
+      "Rock",
+      "Arena Rock"
+    ],
+    "scores": {
+      "propulsion": 4.5,
+      "belt": 5,
+      "movement": 4.5,
+      "emotion": 3.4,
+      "comfort": 4,
+      "maximalism": 5,
+      "narrative": 3.2,
+      "hooks": 5,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "why": "Familiar arena-rock hooks, huge vocals, shameless mashups, and maximalist commitment make narrative subtlety almost irrelevant.",
+    "risk": "Thin story and deliberately trashy tone.",
+    "songs": [
+      "Paradise City",
+      "Wanted Dead or Alive",
+      "Any Way You Want It",
+      "Don’t Stop Believin’"
+    ],
+    "links": [
+      "moulin",
+      "across",
+      "rocketman",
+      "hedwig"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "jukebox",
+      "vocalStyle": [
+        "rock belt",
+        "arena vocal",
+        "ensemble mashup",
+        "power ballad"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 80,
+      "catharsis": 3.5,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "feral",
+        "karaoke",
+        "maximalist",
+        "rock belt"
+      ],
+      "friction": [
+        "thin narrative",
+        "campy sexual humor"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Don’t Stop Believin’",
+          "purpose": "communal belt payoff"
+        },
+        {
+          "song": "Wanted Dead or Alive",
+          "purpose": "rock vocal test"
+        },
+        {
+          "song": "Any Way You Want It",
+          "purpose": "jukebox propulsion"
+        }
+      ],
+      "notes": "A useful stress test for how far hook familiarity and belt energy can carry a weak narrative.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "purplerain",
+    "title": "Purple Rain",
+    "year": 1984,
+    "runtime": "1h 51m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Concert electricity as cinema",
+    "vibe": [
+      "Electric",
+      "Sensual",
+      "Brooding",
+      "Triumphant",
+      "Raw"
+    ],
+    "dna": [
+      "Rock",
+      "Funk",
+      "Pop",
+      "R&B",
+      "Music Drama"
+    ],
+    "scores": {
+      "propulsion": 4.3,
+      "belt": 4.6,
+      "movement": 4.7,
+      "emotion": 4.6,
+      "comfort": 3,
+      "maximalism": 4.5,
+      "narrative": 3.5,
+      "hooks": 5,
+      "afterglow": 5,
+      "replay": 5
+    },
+    "why": "The performance sequences are overwhelming musical events, with hooks and charisma doing more propulsion work than the dramatic connective tissue.",
+    "risk": "The offstage relationship material is darker and rougher than the concert highs.",
+    "songs": [
+      "Let’s Go Crazy",
+      "When Doves Cry",
+      "The Beautiful Ones",
+      "Purple Rain"
+    ],
+    "links": [
+      "walkline",
+      "rocketman",
+      "bohemian",
+      "hedwig"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "music-drama",
+      "vocalStyle": [
+        "rock",
+        "funk falsetto",
+        "power ballad",
+        "live performance"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 60,
+      "catharsis": 5,
+      "rewatchability": 4.8,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "concert high",
+        "raw emotion",
+        "hooks",
+        "movement"
+      ],
+      "friction": [
+        "dated relationship dynamics",
+        "uneven dramatic passages"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Let’s Go Crazy",
+          "purpose": "instant propulsion"
+        },
+        {
+          "song": "The Beautiful Ones",
+          "purpose": "vocal catharsis"
+        },
+        {
+          "song": "Purple Rain",
+          "purpose": "maximum afterglow"
+        }
+      ],
+      "notes": "Expands the musical-adjacent category where performance sequences create the propulsion rather than integrated song dialogue.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hair",
+    "title": "Hair",
+    "year": 1979,
+    "runtime": "2h 1m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Counterculture chorus in motion",
+    "vibe": [
+      "Freewheeling",
+      "Rebellious",
+      "Communal",
+      "Surreal",
+      "Bittersweet"
+    ],
+    "dna": [
+      "Rock",
+      "Folk Rock",
+      "Counterculture",
+      "Ensemble"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4.1,
+      "movement": 4.5,
+      "emotion": 4.2,
+      "comfort": 3.4,
+      "maximalism": 4.2,
+      "narrative": 3.8,
+      "hooks": 4.6,
+      "afterglow": 4.5,
+      "replay": 4.3
+    },
+    "why": "Communal rock hooks, physical movement, and counterculture energy create a loose but infectious musical current.",
+    "risk": "Loose episodic structure and period politics may create distance.",
+    "songs": [
+      "Aquarius",
+      "Hair",
+      "Easy to Be Hard",
+      "Let the Sunshine In"
+    ],
+    "links": [
+      "jcs",
+      "rocky",
+      "across",
+      "tommy"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "rock ensemble",
+        "folk rock",
+        "soul belt",
+        "choral"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 72,
+      "catharsis": 4.4,
+      "rewatchability": 4.2,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "communal",
+        "rebellious",
+        "retro",
+        "movement"
+      ],
+      "friction": [
+        "episodic narrative",
+        "period-specific framing"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Aquarius",
+          "purpose": "immediate vibe lock"
+        },
+        {
+          "song": "Hair",
+          "purpose": "communal movement"
+        },
+        {
+          "song": "Let the Sunshine In",
+          "purpose": "cathartic finale"
+        }
+      ],
+      "notes": "Adds a looser counterculture-rock form with high communal energy but less narrative integration.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tommy",
+    "title": "Tommy",
+    "year": 1975,
+    "runtime": "1h 51m",
+    "rating": "PG",
+    "status": "unseen",
+    "tag": "Rock opera hallucination",
+    "vibe": [
+      "Surreal",
+      "Feral",
+      "Dark",
+      "Maximalist",
+      "Operatic"
+    ],
+    "dna": [
+      "Rock Opera",
+      "Classic Rock",
+      "Psychedelic",
+      "Concept Album"
+    ],
+    "scores": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.3,
+      "emotion": 4.3,
+      "comfort": 2,
+      "maximalism": 5,
+      "narrative": 4.3,
+      "hooks": 4.8,
+      "afterglow": 4.6,
+      "replay": 4.3
+    },
+    "why": "Almost continuous rock storytelling, iconic hooks, visual insanity, and total commitment to a concept-album universe.",
+    "risk": "Disturbing material, grotesque imagery, and aggressively strange filmmaking.",
+    "songs": [
+      "Pinball Wizard",
+      "See Me, Feel Me",
+      "I’m Free",
+      "Acid Queen"
+    ],
+    "links": [
+      "jcs",
+      "rocky",
+      "hedwig",
+      "hair"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "rock-opera",
+      "vocalStyle": [
+        "classic rock",
+        "power vocal",
+        "ensemble rock",
+        "operatic rock"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 95,
+      "catharsis": 4.5,
+      "rewatchability": 4.1,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "weird",
+        "maximalist",
+        "rock opera",
+        "wild card"
+      ],
+      "friction": [
+        "disturbing themes",
+        "grotesque imagery",
+        "extreme 1970s surrealism"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Pinball Wizard",
+          "purpose": "hook + maximalism"
+        },
+        {
+          "song": "See Me, Feel Me",
+          "purpose": "rock catharsis"
+        },
+        {
+          "song": "Acid Queen",
+          "purpose": "feral vocal energy"
+        }
+      ],
+      "notes": "A deliberate wild-card anchor for maximalism, rock-opera continuity, and high-strangeness tolerance.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "blinded",
+    "title": "Blinded by the Light",
+    "year": 2019,
+    "runtime": "1h 58m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Springsteen as emotional oxygen",
+    "vibe": [
+      "Yearning",
+      "Triumphant",
+      "Warm",
+      "Earnest",
+      "Nostalgic"
+    ],
+    "dna": [
+      "Jukebox",
+      "Rock",
+      "Springsteen",
+      "Coming-of-Age"
+    ],
+    "scores": {
+      "propulsion": 4,
+      "belt": 3.7,
+      "movement": 3.8,
+      "emotion": 4.7,
+      "comfort": 4.5,
+      "maximalism": 3.6,
+      "narrative": 4.5,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 4.4
+    },
+    "why": "Songs become identity language and emotional release, with familiar rock lyrics externalizing what the protagonist cannot yet say.",
+    "risk": "Less fully musical than the core catalog and more dependent on connection to Springsteen’s songs.",
+    "songs": [
+      "Born to Run",
+      "Thunder Road",
+      "The Promised Land",
+      "Blinded by the Light"
+    ],
+    "links": [
+      "walkline",
+      "beginagain",
+      "singstreet",
+      "yesterday"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "jukebox",
+      "vocalStyle": [
+        "rock playback",
+        "sing-along",
+        "dramatic song integration"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 48,
+      "catharsis": 4.7,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "yearning",
+        "coming of age",
+        "comfort",
+        "rock nostalgia"
+      ],
+      "friction": [
+        "not a continuous musical",
+        "artist familiarity helps"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Born to Run",
+          "purpose": "release + movement"
+        },
+        {
+          "song": "Thunder Road",
+          "purpose": "yearning"
+        },
+        {
+          "song": "The Promised Land",
+          "purpose": "identity propulsion"
+        }
+      ],
+      "notes": "Useful musical-adjacent case where preexisting songs become explicit narrative and identity machinery.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "yesterday",
+    "title": "Yesterday",
+    "year": 2019,
+    "runtime": "1h 56m",
+    "rating": "PG-13",
+    "status": "unseen",
+    "tag": "Beatles hooks, romantic reset",
+    "vibe": [
+      "Warm",
+      "Romantic",
+      "Playful",
+      "Nostalgic",
+      "Bittersweet"
+    ],
+    "dna": [
+      "Beatles",
+      "Jukebox",
+      "Pop Rock",
+      "Music Drama"
+    ],
+    "scores": {
+      "propulsion": 3.7,
+      "belt": 3.4,
+      "movement": 3.4,
+      "emotion": 4,
+      "comfort": 4.6,
+      "maximalism": 3.1,
+      "narrative": 4,
+      "hooks": 5,
+      "afterglow": 4.4,
+      "replay": 4.3
+    },
+    "why": "An absurdly strong songbook supplies instant hooks and comfort while the story uses musical recognition as its central emotional engine.",
+    "risk": "More rom-com with performances than integrated musical.",
+    "songs": [
+      "Help!",
+      "Let It Be",
+      "Hey Jude",
+      "Yesterday"
+    ],
+    "links": [
+      "across",
+      "beginagain",
+      "blinded",
+      "singstreet"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "music-drama",
+      "vocalStyle": [
+        "pop rock",
+        "acoustic",
+        "sing-along",
+        "performance vocal"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 42,
+      "catharsis": 4,
+      "rewatchability": 4.3,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "comfort",
+        "Beatles",
+        "romantic",
+        "easy watch"
+      ],
+      "friction": [
+        "low musical integration",
+        "gentle dramatic stakes"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Help!",
+          "purpose": "performance propulsion"
+        },
+        {
+          "song": "Let It Be",
+          "purpose": "emotional familiarity"
+        },
+        {
+          "song": "Hey Jude",
+          "purpose": "communal hook payoff"
+        }
+      ],
+      "notes": "Provides a low-integration/high-hook benchmark and a direct contrast with Across the Universe’s transformation of the same songbook.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 1",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
   }
 ]
