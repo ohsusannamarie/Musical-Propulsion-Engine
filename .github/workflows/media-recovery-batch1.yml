@@ -1,0 +1,45 @@
+name: Media Recovery Batch 1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/recover_media_batch1.py'
+      - '.github/workflows/media-recovery-batch1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Recover first poster batch
+        run: python3 .github/scripts/recover_media_batch1.py
+
+      - name: Verify recovery did not regress media
+        run: |
+          python3 - <<'PY'
+          import json
+          m=json.load(open('data/media-manifest.json'))
+          assert m['catalogSize'] >= 81, m['catalogSize']
+          assert m['counts']['bundled'] >= 36, m['counts']
+          assert m['counts']['missing'] <= 45, m['counts']
+          r=m.get('lastRecovery',{})
+          assert r.get('batch') == 1
+          print('media counts',m['counts'])
+          print('recovered',len(r.get('recovered',[])),'failed',len(r.get('failed',[])))
+          PY
+          grep -q 'const posterSources=' index.html
+          grep -q 'const posterSources=' app.html
+
+      - name: Commit recovered media
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/posters data/media-manifest.json index.html app.html
+          git commit -m 'Recover first missing poster batch' || exit 0
+          git push
