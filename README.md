@@ -1,5 +1,7 @@
 # The Musical Propulsion Engine
 
+https://ohsusannamarie.github.io/Musical-Propulsion-Engine/
+
 A mobile-first musical discovery app built around **propulsion**, **belt instinct**, **body movement**, **emotional amplitude**, **musical DNA**, and the exact thing you want more of.
 
 ## Current build
