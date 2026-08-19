@@ -1,0 +1,35 @@
+name: Catalog Expansion Batch 3 Cult and Experimental
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/scripts/expand_catalog_batch3.py']
+permissions:
+  contents: write
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/expand_catalog_batch3.py
+      - name: Validate
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/titles.json')); ids={x['id'] for x in d}
+          expected={'repo','velvetgoldmine','priscilla','annaapocalypse','dancerinthedark','hedwigstage','batboy','reefer','singininrain','cabaret','rockyhorrorlive','billyelliot','tickstage','onceisland','shocktreatment'}
+          assert expected<=ids,expected-ids
+          assert len(d)>=81,len(d)
+          for x in d:
+            if x['id'] in expected:
+              assert len(x['scores'])==10
+              assert len(x['enrichment']['gatewaySongs'])>=2
+          print('validated',len(d),'titles')
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Expand catalog into cult and experimental territory' || exit 0
+          git push
