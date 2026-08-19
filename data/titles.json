@@ -6130,5 +6130,1262 @@
         }
       ]
     }
+  },
+  {
+    "id": "repo",
+    "title": "Repo! The Genetic Opera",
+    "year": 2008,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Goth opera with organs, literally",
+    "vibe": [
+      "Gothic",
+      "Campy",
+      "Violent",
+      "Maximalist"
+    ],
+    "dna": [
+      "Rock Opera",
+      "Industrial",
+      "Goth"
+    ],
+    "scores": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 4.2,
+      "emotion": 4.1,
+      "comfort": 1.5,
+      "maximalism": 5,
+      "narrative": 4.4,
+      "hooks": 4.1,
+      "afterglow": 4.4,
+      "replay": 4.2
+    },
+    "why": "A fully committed cult rock opera where excess is the organizing principle.",
+    "risk": "Graphic violence and intentionally abrasive camp.",
+    "songs": [
+      "Zydrate Anatomy",
+      "Legal Assassin",
+      "Chase the Morning"
+    ],
+    "links": [
+      "rocky",
+      "sweeney",
+      "hedwig"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "rock-opera",
+      "vocalStyle": [
+        "rock belt",
+        "goth",
+        "ensemble"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 95,
+      "catharsis": 4.2,
+      "rewatchability": 4.1,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "feral",
+        "goth",
+        "cult"
+      ],
+      "friction": [
+        "graphic violence",
+        "abrasive aesthetic"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Zydrate Anatomy",
+          "purpose": "cult hook test"
+        },
+        {
+          "song": "Legal Assassin",
+          "purpose": "rock-opera thesis"
+        }
+      ],
+      "notes": "A high-value Wild Card boundary test.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "velvetgoldmine",
+    "title": "Velvet Goldmine",
+    "year": 1998,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Glam rock fever dream",
+    "vibe": [
+      "Glam",
+      "Queer",
+      "Sensual",
+      "Dreamlike"
+    ],
+    "dna": [
+      "Glam Rock",
+      "Jukebox",
+      "Queer Cinema"
+    ],
+    "scores": {
+      "propulsion": 3.8,
+      "belt": 3.8,
+      "movement": 3.7,
+      "emotion": 4.3,
+      "comfort": 2.4,
+      "maximalism": 4.6,
+      "narrative": 4.1,
+      "hooks": 4.5,
+      "afterglow": 4.7,
+      "replay": 4.3
+    },
+    "why": "Music, identity, desire, and performance collapse into one glitter-soaked mythology.",
+    "risk": "More music drama than conventional musical.",
+    "songs": [
+      "Needle in the Camel’s Eye",
+      "20th Century Boy",
+      "The Whole Shebang"
+    ],
+    "links": [
+      "hedwig",
+      "rocky",
+      "purpleRain"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "music-drama",
+      "vocalStyle": [
+        "glam rock",
+        "performance vocal"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 55,
+      "catharsis": 4.4,
+      "rewatchability": 4.2,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "glam",
+        "queer",
+        "dreamy"
+      ],
+      "friction": [
+        "nonlinear storytelling"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "20th Century Boy",
+          "purpose": "glam propulsion"
+        },
+        {
+          "song": "The Whole Shebang",
+          "purpose": "camp hook"
+        }
+      ],
+      "notes": "Expands queer glam and musical-adjacent territory.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "priscilla",
+    "title": "The Adventures of Priscilla, Queen of the Desert",
+    "year": 1994,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Disco, drag, desert",
+    "vibe": [
+      "Campy",
+      "Queer",
+      "Joyful",
+      "Bittersweet"
+    ],
+    "dna": [
+      "Disco",
+      "Jukebox",
+      "Drag"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4,
+      "movement": 4.6,
+      "emotion": 4.1,
+      "comfort": 4.2,
+      "maximalism": 4.8,
+      "narrative": 3.6,
+      "hooks": 4.8,
+      "afterglow": 4.7,
+      "replay": 4.7
+    },
+    "why": "Familiar songs become vehicles for performance, identity, friendship, and spectacular camp.",
+    "risk": "Not structured as a traditional musical.",
+    "songs": [
+      "I Will Survive",
+      "Finally",
+      "Mamma Mia"
+    ],
+    "links": [
+      "mammamia",
+      "rocky",
+      "hedwig"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "jukebox-adjacent",
+      "vocalStyle": [
+        "disco",
+        "lip-sync",
+        "performance"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 48,
+      "catharsis": 4.3,
+      "rewatchability": 4.7,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "camp",
+        "joy",
+        "queer"
+      ],
+      "friction": [
+        "dated language in places"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "I Will Survive",
+          "purpose": "communal survival anthem"
+        },
+        {
+          "song": "Finally",
+          "purpose": "dance release"
+        }
+      ],
+      "notes": "Adds drag, disco, and queer communal performance.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "annaapocalypse",
+    "title": "Anna and the Apocalypse",
+    "year": 2017,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Christmas musical. Zombies. Obviously.",
+    "vibe": [
+      "Funny",
+      "Gory",
+      "Hooky",
+      "Absurd"
+    ],
+    "dna": [
+      "Pop",
+      "Horror",
+      "Christmas"
+    ],
+    "scores": {
+      "propulsion": 4.7,
+      "belt": 4.4,
+      "movement": 4.5,
+      "emotion": 3.8,
+      "comfort": 2.8,
+      "maximalism": 4.7,
+      "narrative": 4.4,
+      "hooks": 4.8,
+      "afterglow": 4.4,
+      "replay": 4.5
+    },
+    "why": "A genuine contemporary musical that happens to stage its hooks inside a zombie apocalypse.",
+    "risk": "Gore and tonal whiplash.",
+    "songs": [
+      "Hollywood Ending",
+      "Soldier at War",
+      "Turning My Life Around"
+    ],
+    "links": [
+      "littleShop",
+      "rocky",
+      "drhorrible"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "pop belt",
+        "ensemble"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 78,
+      "catharsis": 4.1,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "weird",
+        "holiday",
+        "high energy"
+      ],
+      "friction": [
+        "gore",
+        "tonal whiplash"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Hollywood Ending",
+          "purpose": "hook-density proof"
+        },
+        {
+          "song": "Turning My Life Around",
+          "purpose": "comic choreography"
+        }
+      ],
+      "notes": "Excellent test of genre collision without sacrificing musical structure.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dancerinthedark",
+    "title": "Dancer in the Dark",
+    "year": 2000,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Musical catharsis as emotional warfare",
+    "vibe": [
+      "Bleak",
+      "Dreamlike",
+      "Devastating",
+      "Experimental"
+    ],
+    "dna": [
+      "Experimental",
+      "Industrial",
+      "Musical Drama"
+    ],
+    "scores": {
+      "propulsion": 3.1,
+      "belt": 3.7,
+      "movement": 3.2,
+      "emotion": 5,
+      "comfort": 0.8,
+      "maximalism": 3.8,
+      "narrative": 5,
+      "hooks": 3.4,
+      "afterglow": 5,
+      "replay": 2.8
+    },
+    "why": "Uses musical fantasy as escape from an increasingly unbearable reality.",
+    "risk": "Extremely bleak and emotionally punishing.",
+    "songs": [
+      "I’ve Seen It All",
+      "Cvalda",
+      "New World"
+    ],
+    "links": [
+      "lastfive",
+      "sweeney",
+      "inside"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "art-pop",
+        "intimate",
+        "experimental"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 52,
+      "catharsis": 5,
+      "rewatchability": 2.8,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "emotionally brave",
+        "experimental"
+      ],
+      "friction": [
+        "extreme bleakness"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "I’ve Seen It All",
+          "purpose": "tender experimental duet"
+        },
+        {
+          "song": "Cvalda",
+          "purpose": "industrial movement"
+        }
+      ],
+      "notes": "Critical low-comfort, high-emotion boundary case.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hedwigstage",
+    "title": "Hedwig and the Angry Inch: Broadway",
+    "year": 2014,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Rock concert meets identity autopsy",
+    "vibe": [
+      "Queer",
+      "Raw",
+      "Funny",
+      "Cathartic"
+    ],
+    "dna": [
+      "Glam Rock",
+      "Punk",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.7,
+      "belt": 5,
+      "movement": 4.2,
+      "emotion": 5,
+      "comfort": 2.6,
+      "maximalism": 4.7,
+      "narrative": 5,
+      "hooks": 4.8,
+      "afterglow": 5,
+      "replay": 4.8
+    },
+    "why": "A stage-side complement to the film: direct-address rock performance turns identity into propulsion.",
+    "risk": "Concert-like staging and abrasive emotional edges.",
+    "songs": [
+      "Wig in a Box",
+      "Origin of Love",
+      "Midnight Radio"
+    ],
+    "links": [
+      "hedwig",
+      "rent",
+      "rocky"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "rock belt",
+        "glam",
+        "direct address"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 94,
+      "catharsis": 5,
+      "rewatchability": 4.8,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "rock",
+        "queer",
+        "catharsis"
+      ],
+      "friction": [
+        "abrasive edges"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Midnight Radio",
+          "purpose": "maximum cathartic belt"
+        },
+        {
+          "song": "Wig in a Box",
+          "purpose": "transformation anthem"
+        }
+      ],
+      "notes": "Adds a performance-form comparison for an existing anchor.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "batboy",
+    "title": "Bat Boy: The Musical",
+    "year": 2004,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Tabloid insanity with feelings",
+    "vibe": [
+      "Campy",
+      "Dark",
+      "Funny",
+      "Feral"
+    ],
+    "dna": [
+      "Rock",
+      "Camp",
+      "Off-Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.5,
+      "belt": 4.7,
+      "movement": 4.1,
+      "emotion": 4.3,
+      "comfort": 2,
+      "maximalism": 4.8,
+      "narrative": 4.6,
+      "hooks": 4.4,
+      "afterglow": 4.5,
+      "replay": 4.3
+    },
+    "why": "Cult musical escalation: ridiculous premise, committed score, surprisingly sincere emotional stakes.",
+    "risk": "Dark humor and intentionally bizarre material.",
+    "songs": [
+      "Hold Me Bat Boy",
+      "Comfort and Joy",
+      "Apology to a Cow"
+    ],
+    "links": [
+      "littleShop",
+      "repo",
+      "rocky"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "rock belt",
+        "ensemble",
+        "camp"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 90,
+      "catharsis": 4.3,
+      "rewatchability": 4.2,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "cult",
+        "feral",
+        "dark comedy"
+      ],
+      "friction": [
+        "bizarre premise"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Comfort and Joy",
+          "purpose": "ensemble escalation"
+        },
+        {
+          "song": "Hold Me Bat Boy",
+          "purpose": "camp sincerity"
+        }
+      ],
+      "notes": "Useful cult-theater benchmark.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "reefer",
+    "title": "Reefer Madness: The Movie Musical",
+    "year": 2005,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Propaganda parody at full volume",
+    "vibe": [
+      "Campy",
+      "Frenetic",
+      "Satirical",
+      "Maximalist"
+    ],
+    "dna": [
+      "Rock",
+      "Satire",
+      "Camp"
+    ],
+    "scores": {
+      "propulsion": 4.8,
+      "belt": 4.7,
+      "movement": 4.8,
+      "emotion": 3.6,
+      "comfort": 2.8,
+      "maximalism": 5,
+      "narrative": 4.5,
+      "hooks": 4.7,
+      "afterglow": 4.5,
+      "replay": 4.7
+    },
+    "why": "A deliberately ridiculous musical that understands escalation, hooks, choreography, and commitment.",
+    "risk": "Broad satire and deliberately tasteless humor.",
+    "songs": [
+      "Reefer Madness",
+      "Mary Jane/Mary Lane",
+      "The Stuff"
+    ],
+    "links": [
+      "rocky",
+      "drhorrible",
+      "littleShop"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "rock belt",
+        "ensemble",
+        "comedy"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 90,
+      "catharsis": 4,
+      "rewatchability": 4.7,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "camp",
+        "feral",
+        "comedy"
+      ],
+      "friction": [
+        "broad satire"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Reefer Madness",
+          "purpose": "maximalist thesis"
+        },
+        {
+          "song": "The Stuff",
+          "purpose": "comic hook test"
+        }
+      ],
+      "notes": "Strong cult maximalism benchmark.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "singininrain",
+    "title": "Singin’ in the Rain",
+    "year": 1952,
+    "runtime": "1h 43m",
+    "rating": "G",
+    "status": "unseen",
+    "tag": "Joy engineered with impossible precision",
+    "vibe": [
+      "Joyful",
+      "Romantic",
+      "Playful",
+      "Elegant"
+    ],
+    "dna": [
+      "Golden Age",
+      "Jazz",
+      "Dance"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4,
+      "movement": 5,
+      "emotion": 3.9,
+      "comfort": 4.8,
+      "maximalism": 4.4,
+      "narrative": 4.6,
+      "hooks": 4.8,
+      "afterglow": 4.8,
+      "replay": 5
+    },
+    "why": "A foundational demonstration that movement itself can be musical propulsion.",
+    "risk": "Older pacing and performance conventions.",
+    "songs": [
+      "Singin’ in the Rain",
+      "Good Morning",
+      "Make ’Em Laugh"
+    ],
+    "links": [
+      "soundmusic",
+      "westside",
+      "chicago"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "classic Broadway",
+        "ensemble"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 74,
+      "catharsis": 4.4,
+      "rewatchability": 5,
+      "familiarityAdvantage": 4,
+      "bestMood": [
+        "joy",
+        "dance",
+        "comfort"
+      ],
+      "friction": [
+        "older conventions"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Good Morning",
+          "purpose": "ensemble movement"
+        },
+        {
+          "song": "Singin’ in the Rain",
+          "purpose": "pure joy"
+        }
+      ],
+      "notes": "Adds essential dance-driven historical baseline.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cabaret",
+    "title": "Cabaret",
+    "year": 1972,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "The party knows the world is ending",
+    "vibe": [
+      "Dark",
+      "Sexy",
+      "Political",
+      "Decadent"
+    ],
+    "dna": [
+      "Cabaret",
+      "Jazz",
+      "Broadway"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4.5,
+      "movement": 4.2,
+      "emotion": 4.8,
+      "comfort": 1.7,
+      "maximalism": 4.7,
+      "narrative": 5,
+      "hooks": 4.4,
+      "afterglow": 5,
+      "replay": 4.5
+    },
+    "why": "Performance numbers function as commentary while the surrounding world grows increasingly dangerous.",
+    "risk": "Dark historical material and intentionally uneasy tone.",
+    "songs": [
+      "Maybe This Time",
+      "Mein Herr",
+      "Cabaret"
+    ],
+    "links": [
+      "chicago",
+      "moulin",
+      "hedwig"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "cabaret belt",
+        "jazz",
+        "character vocal"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 64,
+      "catharsis": 4.8,
+      "rewatchability": 4.5,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "dark",
+        "political",
+        "performance"
+      ],
+      "friction": [
+        "low comfort",
+        "historical menace"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Maybe This Time",
+          "purpose": "yearning belt"
+        },
+        {
+          "song": "Cabaret",
+          "purpose": "denial as spectacle"
+        }
+      ],
+      "notes": "Adds sophisticated low-comfort cabaret benchmark.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rockyhorrorlive",
+    "title": "The Rocky Horror Picture Show: Let’s Do the Time Warp Again",
+    "year": 2016,
+    "runtime": "1h 28m",
+    "rating": "TV-14",
+    "status": "unseen",
+    "tag": "Cult camp remixed",
+    "vibe": [
+      "Campy",
+      "Queer",
+      "Playful",
+      "Maximalist"
+    ],
+    "dna": [
+      "Rock",
+      "Camp",
+      "Cult"
+    ],
+    "scores": {
+      "propulsion": 4.5,
+      "belt": 4.5,
+      "movement": 4.8,
+      "emotion": 3.2,
+      "comfort": 3.6,
+      "maximalism": 5,
+      "narrative": 3.5,
+      "hooks": 5,
+      "afterglow": 4.2,
+      "replay": 4.6
+    },
+    "why": "A useful remake/remix comparison for how familiarity and performance style alter propulsion.",
+    "risk": "Less singular than the original.",
+    "songs": [
+      "Time Warp",
+      "Sweet Transvestite",
+      "Science Fiction/Double Feature"
+    ],
+    "links": [
+      "rocky",
+      "repo",
+      "priscilla"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "adaptation",
+      "vocalStyle": [
+        "rock belt",
+        "ensemble",
+        "camp"
+      ],
+      "lyricalDensity": 2,
+      "musicDrivenPercent": 88,
+      "catharsis": 3.8,
+      "rewatchability": 4.4,
+      "familiarityAdvantage": 5,
+      "bestMood": [
+        "camp",
+        "party",
+        "familiar"
+      ],
+      "friction": [
+        "comparison to iconic original"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Time Warp",
+          "purpose": "movement benchmark"
+        },
+        {
+          "song": "Sweet Transvestite",
+          "purpose": "performance charisma"
+        }
+      ],
+      "notes": "Adds controlled comparison against an existing cult anchor.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "billyelliot",
+    "title": "Billy Elliot the Musical Live",
+    "year": 2014,
+    "runtime": "2h 49m",
+    "rating": "Not Rated",
+    "status": "unseen",
+    "tag": "Movement becomes escape velocity",
+    "vibe": [
+      "Triumphant",
+      "Political",
+      "Tender",
+      "Energetic"
+    ],
+    "dna": [
+      "Broadway",
+      "Pop-Rock",
+      "Dance"
+    ],
+    "scores": {
+      "propulsion": 4.6,
+      "belt": 4.5,
+      "movement": 5,
+      "emotion": 4.8,
+      "comfort": 3.7,
+      "maximalism": 4.4,
+      "narrative": 5,
+      "hooks": 4.5,
+      "afterglow": 5,
+      "replay": 4.7
+    },
+    "why": "Dance, class conflict, family, and huge ensemble staging create propulsion through both body and score.",
+    "risk": "Long stage-capture runtime.",
+    "songs": [
+      "Electricity",
+      "Solidarity",
+      "Expressing Yourself"
+    ],
+    "links": [
+      "newsies",
+      "waitress",
+      "legallyblonde"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "pop-rock belt",
+        "ensemble"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 94,
+      "catharsis": 5,
+      "rewatchability": 4.7,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "movement",
+        "catharsis",
+        "triumph"
+      ],
+      "friction": [
+        "long runtime"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Electricity",
+          "purpose": "movement as catharsis"
+        },
+        {
+          "song": "Solidarity",
+          "purpose": "ensemble narrative integration"
+        }
+      ],
+      "notes": "Strengthens movement-heavy stage capture coverage.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tickstage",
+    "title": "tick, tick... BOOM! Off-Broadway Recording",
+    "year": 2001,
+    "runtime": "1h 30m",
+    "rating": "Not Rated",
+    "status": "unseen",
+    "tag": "Jonathan Larson before the movie lens",
+    "vibe": [
+      "Urgent",
+      "Intimate",
+      "Anxious",
+      "Cathartic"
+    ],
+    "dna": [
+      "Rock",
+      "Broadway",
+      "Singer-Songwriter"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4.8,
+      "movement": 3.5,
+      "emotion": 5,
+      "comfort": 3.1,
+      "maximalism": 3.8,
+      "narrative": 5,
+      "hooks": 4.7,
+      "afterglow": 5,
+      "replay": 4.7
+    },
+    "why": "A useful form comparison: the same core material with less cinematic propulsion and more direct theatrical intimacy.",
+    "risk": "Harder to access visually than the film adaptation.",
+    "songs": [
+      "30/90",
+      "Come to Your Senses",
+      "Louder Than Words"
+    ],
+    "links": [
+      "ticktick",
+      "rent",
+      "waitress"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "rock belt",
+        "intimate"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 92,
+      "catharsis": 5,
+      "rewatchability": 4.6,
+      "familiarityAdvantage": 3,
+      "bestMood": [
+        "lyrics",
+        "yearning",
+        "creative panic"
+      ],
+      "friction": [
+        "less cinematic"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "30/90",
+          "purpose": "urgency benchmark"
+        },
+        {
+          "song": "Come to Your Senses",
+          "purpose": "belt payoff"
+        }
+      ],
+      "notes": "Creates a controlled adaptation comparison.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "onceisland",
+    "title": "Once on This Island",
+    "year": 2018,
+    "runtime": "1h 35m",
+    "rating": "Not Rated",
+    "status": "unseen",
+    "tag": "Myth, percussion, communal storytelling",
+    "vibe": [
+      "Warm",
+      "Rhythmic",
+      "Mythic",
+      "Cathartic"
+    ],
+    "dna": [
+      "Caribbean Influence",
+      "Broadway",
+      "Folk"
+    ],
+    "scores": {
+      "propulsion": 4.4,
+      "belt": 4.7,
+      "movement": 4.7,
+      "emotion": 4.8,
+      "comfort": 4.2,
+      "maximalism": 4.2,
+      "narrative": 5,
+      "hooks": 4.5,
+      "afterglow": 5,
+      "replay": 4.7
+    },
+    "why": "Rhythmic ensemble storytelling turns myth and community into near-continuous forward motion.",
+    "risk": "Stage capture availability and theatrical abstraction.",
+    "songs": [
+      "Waiting for Life",
+      "Mama Will Provide",
+      "Why We Tell the Story"
+    ],
+    "links": [
+      "heights",
+      "colorpurple",
+      "comeFromAway"
+    ],
+    "enrichment": {
+      "format": "stage-capture",
+      "musicalType": "filmed-stage",
+      "vocalStyle": [
+        "ensemble belt",
+        "folk",
+        "rhythmic"
+      ],
+      "lyricalDensity": 4,
+      "musicDrivenPercent": 96,
+      "catharsis": 5,
+      "rewatchability": 4.6,
+      "familiarityAdvantage": 2,
+      "bestMood": [
+        "communal",
+        "mythic",
+        "rhythmic"
+      ],
+      "friction": [
+        "theatrical abstraction"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Waiting for Life",
+          "purpose": "yearning plus rhythm"
+        },
+        {
+          "song": "Why We Tell the Story",
+          "purpose": "communal catharsis"
+        }
+      ],
+      "notes": "Adds percussion-forward communal stage storytelling.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shocktreatment",
+    "title": "Shock Treatment",
+    "year": 1981,
+    "runtime": "1h 45m",
+    "rating": "R",
+    "status": "unseen",
+    "tag": "Rocky Horror’s stranger cousin",
+    "vibe": [
+      "Campy",
+      "Synthetic",
+      "Satirical",
+      "Weird"
+    ],
+    "dna": [
+      "New Wave",
+      "Rock",
+      "Cult"
+    ],
+    "scores": {
+      "propulsion": 4.1,
+      "belt": 4.1,
+      "movement": 4.2,
+      "emotion": 3,
+      "comfort": 2.2,
+      "maximalism": 4.8,
+      "narrative": 3.4,
+      "hooks": 4.3,
+      "afterglow": 4,
+      "replay": 4.1
+    },
+    "why": "A cult musical experiment built from television satire, new-wave hooks, and aggressive artificiality.",
+    "risk": "Plot and tone are intentionally alienating.",
+    "songs": [
+      "Shock Treatment",
+      "Bitchin’ in the Kitchen",
+      "Duel Duet"
+    ],
+    "links": [
+      "rocky",
+      "reefer",
+      "inside"
+    ],
+    "enrichment": {
+      "format": "film",
+      "musicalType": "original",
+      "vocalStyle": [
+        "new wave",
+        "rock",
+        "camp"
+      ],
+      "lyricalDensity": 3,
+      "musicDrivenPercent": 82,
+      "catharsis": 3.5,
+      "rewatchability": 4,
+      "familiarityAdvantage": 1,
+      "bestMood": [
+        "weird",
+        "cult",
+        "new wave"
+      ],
+      "friction": [
+        "alienating tone"
+      ],
+      "gatewaySongs": [
+        {
+          "song": "Shock Treatment",
+          "purpose": "new-wave hook test"
+        },
+        {
+          "song": "Bitchin’ in the Kitchen",
+          "purpose": "camp absurdity"
+        }
+      ],
+      "notes": "A genuine Wild Card calibration title.",
+      "provenance": [
+        {
+          "type": "editorial-analysis",
+          "source": "Musical Propulsion Engine expansion batch 3",
+          "scope": "interpretive scoring and fit analysis"
+        }
+      ]
+    }
   }
 ]
