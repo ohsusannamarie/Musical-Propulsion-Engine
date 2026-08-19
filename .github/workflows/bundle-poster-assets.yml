@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download existing poster sources and localize them
+      - name: Download poster art and localize media sources
         shell: bash
         run: |
           python3 <<'PY'
@@ -32,6 +32,15 @@ jobs:
           remote = json.loads(m.group(1))
           print(f'Found {len(remote)} configured poster sources.')
 
+          # Known reliable fallbacks for the four titles that failed the bulk pass.
+          hard_fallbacks = {
+              'drhorrible': 'https://m.media-amazon.com/images/S/pv-target-images/2c1dca953219ecaa41ce5b89a1c0e0bdcabbafa95beb445a0209ae0a79136662.jpg',
+              'jcs': 'https://filmartgallery.com/cdn/shop/products/Jesus-Christ-Superstar-Vintage-Movie-Poster-Original_4c9ca9c4_5000x.jpg?v=1771788743',
+              'sister2': 'https://image.tmdb.org/t/p/original/2jmPYqep3r2eumauyTauNIhSmR7.jpg',
+              'lastfive': 'https://www.metacritic.com/a/img/catalog/provider/2/2/2-4797b07c7449f793841d94c9dbacdd55.jpg'
+          }
+          remote.update(hard_fallbacks)
+
           out = pathlib.Path('assets/posters')
           out.mkdir(parents=True, exist_ok=True)
           local = {}
@@ -39,14 +48,13 @@ jobs:
 
           headers = {
               'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36',
-              'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-              'Referer': 'https://www.impawards.com/'
+              'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
           }
 
-          def get(url, referer=True):
+          def get(url, referer=None):
               h = dict(headers)
-              if not referer:
-                  h.pop('Referer', None)
+              if referer:
+                  h['Referer'] = referer
               req = urllib.request.Request(url, headers=h)
               with urllib.request.urlopen(req, timeout=35) as r:
                   return r.read(), (r.headers.get_content_type() or '').lower()
@@ -60,14 +68,14 @@ jobs:
 
           for key, src in remote.items():
               attempts = [
-                  ('direct', src, True),
-                  ('direct-no-referrer', src, False),
-                  ('weserv-proxy', 'https://images.weserv.nl/?url=' + urllib.parse.quote(src, safe='') + '&w=900&output=jpg', False),
+                  ('direct', src, None),
+                  ('impawards-referrer', src, 'https://www.impawards.com/'),
+                  ('weserv-proxy', 'https://images.weserv.nl/?url=' + urllib.parse.quote(src, safe='') + '&w=900&output=jpg', None),
               ]
               last = None
-              for label, url, use_ref in attempts:
+              for label, url, referer in attempts:
                   try:
-                      data, ctype = get(url, use_ref)
+                      data, ctype = get(url, referer)
                       if not valid_image(data, ctype):
                           raise RuntimeError(f'not a valid image: {ctype}, {len(data)} bytes')
                       ext = '.png' if (ctype == 'image/png' or data.startswith(b'\x89PNG')) else '.webp' if ctype == 'image/webp' else '.jpg'
@@ -88,7 +96,7 @@ jobs:
               for key, err in failures:
                   print(f'  {key}: {err}', file=sys.stderr)
 
-          if len(local) < 28:
+          if len(local) < 34:
               raise RuntimeError(f'Only {len(local)} poster assets were bundled; refusing incomplete media build.')
 
           new_obj = 'const posterSources=' + json.dumps(local, separators=(',', ':')) + ';'
@@ -96,11 +104,33 @@ jobs:
           if n != 1:
               raise RuntimeError('Could not replace posterSources in index.html')
 
-          html = html.replace('V2.2.1 · THE RABBIT HOLE', 'V2.2.2 · THE RABBIT HOLE')
-          html = html.replace(
-              'Poster artwork is loaded remotely from public movie-poster pages and gracefully falls back to the original Propulsion artwork if an image host blocks or removes a file.',
-              'Poster artwork is bundled with this site so the media layer stays reliable across mobile browsers and GitHub Pages. If an asset is ever missing, the original Propulsion artwork remains as a graceful fallback.'
-          )
+          html = html.replace('V2.2.2 · THE RABBIT HOLE', 'V2.2.3 · THE RABBIT HOLE')
+          html = html.replace('V2.2.1 · THE RABBIT HOLE', 'V2.2.3 · THE RABBIT HOLE')
+
+          # Mobile media polish. Keep cards swipeable, but show one substantial card at a time
+          # with a real poster aspect ratio instead of a narrow cropped strip.
+          marker = '/* v2.2.3 mobile media polish */'
+          if marker not in html:
+              css = r'''
+<style>
+/* v2.2.3 mobile media polish */
+.media-poster{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.rabbit-card-media{aspect-ratio:2/3;height:auto;min-height:0;background:#090b10;overflow:hidden}
+.rabbit-card-media.has-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(5,7,12,.78) 100%);pointer-events:none}
+.rabbit-media-label{z-index:2}
+@media (max-width:700px){
+  .main{padding-left:14px;padding-right:14px}
+  .rabbit-results{display:grid!important;grid-auto-flow:column;grid-auto-columns:min(82vw,330px)!important;grid-template-columns:none!important;overflow-x:auto;overflow-y:hidden;gap:14px;padding:4px 2px 14px;scroll-snap-type:x mandatory;scroll-padding-left:2px;-webkit-overflow-scrolling:touch}
+  .rabbit-card{scroll-snap-align:start;min-width:0}
+  .rabbit-card-media{width:100%;aspect-ratio:2/3;max-height:none;border-radius:14px 14px 0 0}
+  .rabbit-card-top{align-items:flex-start;gap:10px}
+  .rabbit-card-top h3{font-size:24px;line-height:1.02}
+  .rabbit-card-actions{gap:7px}
+  .rabbit-card-actions a,.rabbit-card-actions button{padding:9px 10px;font-size:10px}
+}
+</style>
+'''
+              html = html.replace('</head>', css + '</head>')
 
           html_path.write_text(html, encoding='utf-8')
           pathlib.Path('app.html').write_text(html, encoding='utf-8')
@@ -113,8 +143,9 @@ jobs:
         run: |
           echo "Poster files: $(find assets/posters -type f | wc -l)"
           test -s app.html
-          grep -q "V2.2.2 · THE RABBIT HOLE" app.html
+          grep -q "V2.2.3 · THE RABBIT HOLE" app.html
           grep -q "./assets/posters/" app.html
+          grep -q "v2.2.3 mobile media polish" app.html
 
       - name: Commit bundled poster build
         shell: bash
@@ -122,5 +153,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html app.html assets/posters
-          git commit -m 'Bundle poster assets for v2.2.2' || exit 0
+          git commit -m 'Complete poster media and mobile card polish for v2.2.3' || exit 0
           git push
