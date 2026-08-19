@@ -1,0 +1,45 @@
+name: Taste Intelligence v2.3.0
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/taste-profile.yml'
+      - '.github/scripts/build_taste_profile.py'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Taste Profile foundation
+        run: python3 .github/scripts/build_taste_profile.py
+
+      - name: Verify v2.3.0 Taste Intelligence
+        shell: bash
+        run: |
+          test -s index.html
+          test -s app.html
+          grep -q "The Musical Propulsion Engine · v2.3.0" app.html
+          grep -q 'data-section="taste"' app.html
+          grep -q '<section id="taste" class="section">' app.html
+          grep -q "function tasteProfileData()" app.html
+          grep -q "function renderTasteProfile()" app.html
+          grep -q "mpe-taste-history-v1" app.html
+          grep -q "What taught the engine" app.html
+          grep -q "Exceptions & context" app.html
+          grep -q "v2.2.6 connection map detail" app.html
+
+      - name: Commit v2.3.0
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Add Taste Intelligence foundation for v2.3.0' || exit 0
+          git push
