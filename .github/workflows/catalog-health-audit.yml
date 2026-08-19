@@ -21,8 +21,10 @@ jobs:
           test -s data/CATALOG_HEALTH.md
           python3 - <<'PY'
           import json
+          titles=json.load(open('data/titles.json'))
           r=json.load(open('data/catalog-health.json'))
-          assert r['catalogSize'] >= 81, r['catalogSize']
+          assert r['catalogSize'] == len(titles), (r['catalogSize'], len(titles))
+          assert r['catalogSize'] > 0, r['catalogSize']
           assert 0 <= r['healthScore'] <= 100
           assert 'connectivity' in r and 'coverage' in r and 'enrichment' in r and 'media' in r
           print('health',r['healthScore'],'titles',r['catalogSize'])
