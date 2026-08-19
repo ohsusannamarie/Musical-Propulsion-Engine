@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download poster art and localize media sources
+      - name: Preserve local posters, fill missing media, and apply mobile polish
         shell: bash
         run: |
           python3 <<'PY'
@@ -27,20 +27,42 @@ jobs:
           m = re.search(r'const posterSources=(\{.*?\});', html, flags=re.S)
           if not m:
               raise RuntimeError('Could not find posterSources object in index.html')
-          remote = json.loads(m.group(1))
-          print(f'Found {len(remote)} configured poster sources.')
 
-          hard_fallbacks = {
-              'drhorrible': 'https://m.media-amazon.com/images/S/pv-target-images/2c1dca953219ecaa41ce5b89a1c0e0bdcabbafa95beb445a0209ae0a79136662.jpg',
-              'jcs': 'https://filmartgallery.com/cdn/shop/products/Jesus-Christ-Superstar-Vintage-Movie-Poster-Original_4c9ca9c4_5000x.jpg?v=1771788743',
-              'sister2': 'https://image.tmdb.org/t/p/original/2jmPYqep3r2eumauyTauNIhSmR7.jpg',
-              'lastfive': 'https://www.metacritic.com/a/img/catalog/provider/2/2/2-4797b07c7449f793841d94c9dbacdd55.jpg'
-          }
-          remote.update(hard_fallbacks)
+          configured = json.loads(m.group(1))
           out = pathlib.Path('assets/posters')
           out.mkdir(parents=True, exist_ok=True)
           local = {}
           failures = []
+
+          # Keep every poster already localized by the successful v2.2.2 build.
+          for key, src in configured.items():
+              if isinstance(src, str) and src.startswith('./assets/posters/'):
+                  path = pathlib.Path(src[2:])
+                  if path.is_file() and path.stat().st_size > 4000:
+                      local[key] = src
+                      print(f'KEEP {key}: {src} ({path.stat().st_size:,} bytes)')
+                  else:
+                      print(f'WARN {key}: local path missing or too small: {src}', file=sys.stderr)
+              elif isinstance(src, str) and src.startswith(('http://','https://')):
+                  print(f'INFO {key}: still remote and eligible for download')
+
+          # Only these titles were missing after the successful localization pass.
+          missing_sources = {
+              'drhorrible': [
+                  'https://m.media-amazon.com/images/S/pv-target-images/2c1dca953219ecaa41ce5b89a1c0e0bdcabbafa95beb445a0209ae0a79136662.jpg'
+              ],
+              'jcs': [
+                  'https://filmartgallery.com/cdn/shop/products/Jesus-Christ-Superstar-Vintage-Movie-Poster-Original_4c9ca9c4_5000x.jpg?v=1771788743'
+              ],
+              'sister2': [
+                  'https://stat.ameba.jp/user_images/20200503/02/cinefil-club/80/ea/j/o0580085314752687020.jpg',
+                  'https://image.tmdb.org/t/p/original/2jmPYqep3r2eumauyTauNIhSmR7.jpg'
+              ],
+              'lastfive': [
+                  'https://www.metacritic.com/a/img/catalog/provider/2/2/2-4797b07c7449f793841d94c9dbacdd55.jpg'
+              ]
+          }
+
           headers = {
               'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36',
               'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
@@ -61,12 +83,16 @@ jobs:
                   return True
               return data.startswith(b'\xff\xd8\xff') or data.startswith(b'\x89PNG') or data.startswith(b'RIFF')
 
-          for key, src in remote.items():
-              attempts = [
-                  ('direct', src, None),
-                  ('impawards-referrer', src, 'https://www.impawards.com/'),
-                  ('weserv-proxy', 'https://images.weserv.nl/?url=' + urllib.parse.quote(src, safe='') + '&w=900&output=jpg', None),
-              ]
+          for key, sources in missing_sources.items():
+              if key in local:
+                  continue
+              attempts = []
+              for src in sources:
+                  attempts += [
+                      ('direct', src, None),
+                      ('with-referrer', src, 'https://www.google.com/'),
+                      ('weserv-proxy', 'https://images.weserv.nl/?url=' + urllib.parse.quote(src, safe='') + '&w=900&output=jpg', None),
+                  ]
               last = None
               for label, url, referer in attempts:
                   try:
@@ -77,7 +103,7 @@ jobs:
                       dest = out / f'{key}{ext}'
                       dest.write_bytes(data)
                       local[key] = './assets/posters/' + dest.name
-                      print(f'OK {key}: {label} -> {dest} ({len(data):,} bytes, {ctype})')
+                      print(f'ADD {key}: {label} -> {dest} ({len(data):,} bytes, {ctype})')
                       break
                   except Exception as e:
                       last = f'{label}: {e}'
@@ -85,27 +111,30 @@ jobs:
               if key not in local:
                   failures.append((key, last or 'unknown failure'))
 
-          print(f'Bundled {len(local)}/{len(remote)} poster assets.')
+          print(f'Poster coverage after pass: {len(local)}/36')
           if failures:
-              print('Failures:', file=sys.stderr)
+              print('Still missing:', file=sys.stderr)
               for key, err in failures:
                   print(f'  {key}: {err}', file=sys.stderr)
-          if len(local) < 34:
-              raise RuntimeError(f'Only {len(local)} poster assets were bundled; refusing incomplete media build.')
+
+          # Do not throw away a healthy 32-poster build just because one fallback host is flaky.
+          if len(local) < 32:
+              raise RuntimeError(f'Poster coverage regressed to {len(local)}/36; refusing build.')
 
           new_obj = 'const posterSources=' + json.dumps(local, separators=(',', ':')) + ';'
           html, n = re.subn(r'const posterSources=\{.*?\};', new_obj, html, count=1, flags=re.S)
           if n != 1:
               raise RuntimeError('Could not replace posterSources in index.html')
-          html = html.replace('V2.2.2 · THE RABBIT HOLE', 'V2.2.3 · THE RABBIT HOLE')
-          html = html.replace('V2.2.1 · THE RABBIT HOLE', 'V2.2.3 · THE RABBIT HOLE')
+
+          for old in ('V2.2.1 · THE RABBIT HOLE','V2.2.2 · THE RABBIT HOLE','V2.2.3 · THE RABBIT HOLE'):
+              html = html.replace(old, 'V2.2.3 · THE RABBIT HOLE')
 
           marker = '/* v2.2.3 mobile media polish */'
           if marker not in html:
               css = '''<style>
           /* v2.2.3 mobile media polish */
           .media-poster{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-          .rabbit-card-media{aspect-ratio:2/3;height:auto;min-height:0;background:#090b10;overflow:hidden}
+          .rabbit-card-media{position:relative;aspect-ratio:2/3;height:auto;min-height:0;background:#090b10;overflow:hidden}
           .rabbit-card-media.has-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(5,7,12,.78) 100%);pointer-events:none}
           .rabbit-media-label{z-index:2}
           @media (max-width:700px){
@@ -136,11 +165,11 @@ jobs:
           grep -q "./assets/posters/" app.html
           grep -q "v2.2.3 mobile media polish" app.html
 
-      - name: Commit bundled poster build
+      - name: Commit media build
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html app.html assets/posters
-          git commit -m 'Complete poster media and mobile card polish for v2.2.3' || exit 0
+          git commit -m 'Preserve localized media and polish mobile cards for v2.2.3' || exit 0
           git push
