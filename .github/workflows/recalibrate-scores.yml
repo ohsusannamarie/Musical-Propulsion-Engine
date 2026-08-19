@@ -1,0 +1,43 @@
+name: Catalog Quality Pass 2 Score Recalibration
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/recalibrate_scores.py'
+permissions:
+  contents: write
+jobs:
+  recalibrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recalibrate catalog scores
+        run: python3 .github/scripts/recalibrate_scores.py
+      - name: Verify calibration
+        run: |
+          python3 - <<'PY'
+          import json, statistics
+          d=json.load(open('data/titles.json'))
+          r=json.load(open('data/score-calibration.json'))
+          assert len(d)>=81
+          assert r['catalogSize']==len(d)
+          dims=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks','afterglow','replay']
+          for x in d:
+            assert 'scoresRaw' in x and 'scoreCalibration' in x
+            for k in dims:
+              assert 2.0 <= x['scores'][k] <= 5.0
+          # Require materially better spread for the previously compressed dimensions.
+          for k in ['belt','narrative','hooks','afterglow']:
+            assert r['after'][k]['stdev'] > r['before'][k]['stdev'], (k,r['before'][k],r['after'][k])
+            assert r['after'][k]['high_4_5_plus'] < r['before'][k]['high_4_5_plus'], (k,r['before'][k],r['after'][k])
+          print('score calibration verified for',len(d),'titles')
+          PY
+          test -s data/SCORE_CALIBRATION.md
+      - name: Commit calibrated catalog
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json data/score-calibration.json data/SCORE_CALIBRATION.md
+          git commit -m 'Recalibrate catalog scores for stronger ranking separation' || exit 0
+          git push
