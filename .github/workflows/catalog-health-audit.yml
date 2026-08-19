@@ -1,0 +1,36 @@
+name: Catalog Health Audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/titles.json'
+      - '.github/scripts/catalog_health_audit.py'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run catalog health audit
+        run: python3 .github/scripts/catalog_health_audit.py
+      - name: Verify audit outputs
+        run: |
+          test -s data/catalog-health.json
+          test -s data/CATALOG_HEALTH.md
+          python3 - <<'PY'
+          import json
+          r=json.load(open('data/catalog-health.json'))
+          assert r['catalogSize'] >= 81, r['catalogSize']
+          assert 0 <= r['healthScore'] <= 100
+          assert 'connectivity' in r and 'coverage' in r and 'enrichment' in r and 'media' in r
+          print('health',r['healthScore'],'titles',r['catalogSize'])
+          PY
+      - name: Commit audit report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog-health.json data/CATALOG_HEALTH.md
+          git commit -m 'Audit catalog health and coverage gaps' || exit 0
+          git push
