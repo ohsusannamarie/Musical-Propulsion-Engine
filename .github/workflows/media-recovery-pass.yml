@@ -1,0 +1,39 @@
+name: Media Recovery Pass
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/build_media_manifest.py'
+      - 'data/titles.json'
+      - 'assets/posters/**'
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build media manifest
+        run: python3 .github/scripts/build_media_manifest.py
+      - name: Verify media inventory
+        run: |
+          python3 - <<'PY'
+          import json
+          titles=json.load(open('data/titles.json'))
+          m=json.load(open('data/media-manifest.json'))
+          assert len(titles) >= 81, len(titles)
+          assert m['catalogSize']==len(titles)
+          assert sum(m['counts'].values())==len(titles)
+          assert set(m['counts'])=={'bundled','remote','fallback','missing'}
+          assert len(m['entries'])==len(titles)
+          print('media states',m['counts'])
+          PY
+          test -s data/MEDIA_RECOVERY.md
+      - name: Commit manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/media-manifest.json data/MEDIA_RECOVERY.md
+          git commit -m 'Inventory poster media and recovery queue' || exit 0
+          git push
