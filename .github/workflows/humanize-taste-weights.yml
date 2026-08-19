@@ -1,0 +1,33 @@
+name: Humanize Taste Weights
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/humanize_taste_weights.py'
+      - '.github/workflows/humanize-taste-weights.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Humanize taste weights
+        run: python3 .github/scripts/humanize_taste_weights.py
+      - name: Verify
+        run: |
+          grep -q 'function tasteStrengthLabel' index.html
+          grep -q 'VERY STRONG' index.html
+          grep -q 'recommendation weighting' index.html
+          grep -q 'function tasteStrengthLabel' app.html
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Separate taste strength from recommendation weighting' || exit 0
+          git push
