@@ -1,0 +1,41 @@
+name: Discovery Mix v2.3.2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/build_discovery_mix.py'
+      - '.github/workflows/discovery-mix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Discovery Mix
+        run: python3 .github/scripts/build_discovery_mix.py
+      - name: Verify v2.3.2
+        shell: bash
+        run: |
+          test -s index.html
+          test -s app.html
+          grep -q 'The Musical Propulsion Engine · v2.3.2' index.html
+          grep -q 'v2.3.2 discovery mix' index.html
+          grep -q 'function renderDiscoveryMix()' index.html
+          grep -q 'function discoveryMixPicks()' index.html
+          grep -q 'Your discovery mix' index.html
+          grep -q 'Safe bet' index.html
+          grep -q 'Smart stretch' index.html
+          grep -q 'Wild card' index.html
+      - name: Commit v2.3.2
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Add Discovery Mix for v2.3.2' || exit 0
+          git push
