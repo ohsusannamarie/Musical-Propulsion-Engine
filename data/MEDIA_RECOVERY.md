@@ -1,31 +1,16 @@
 # Media Recovery Status
 
 - Catalog titles: **81**
-- Bundled: **36** (44.4%)
+- Bundled: **51** (63.0%)
 - Remote: **0** (0.0%)
 - Fallback: **0** (0.0%)
-- Missing: **45** (55.6%)
+- Missing: **30** (37.0%)
 
 ## Recovery queue
 
-- `spirited` — Spirited (2022)
-- `matilda` — Matilda the Musical (2022)
-- `prom` — The Prom (2020)
-- `cyrano` — Cyrano (2021)
-- `wonka` — Wonka (2023)
-- `meangirls` — Mean Girls (2024)
 - `newsies` — Newsies: The Broadway Musical (2017)
 - `comefromaway` — Come From Away (2021)
 - `shrek` — Shrek the Musical (2013)
-- `rockofages` — Rock of Ages (2012)
-- `purplerain` — Purple Rain (1984)
-- `hair` — Hair (1979)
-- `tommy` — Tommy (1975)
-- `blinded` — Blinded by the Light (2019)
-- `yesterday` — Yesterday (2019)
-- `chicago` — Chicago (2002)
-- `mammamia` — Mamma Mia! (2008)
-- `soundmusic` — The Sound of Music (1965)
 - `grease` — Grease (1978)
 - `burlesque` — Burlesque (2010)
 - `pitchperfect` — Pitch Perfect (2012)
