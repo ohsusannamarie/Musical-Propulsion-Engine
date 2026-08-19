@@ -1,0 +1,44 @@
+name: Relationship Architecture Pass
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/build_relationship_architecture.py'
+      - 'data/titles.json'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build relationship architecture
+        run: python3 .github/scripts/build_relationship_architecture.py
+      - name: Validate architecture
+        run: |
+          python3 - <<'PY'
+          import json
+          t=json.load(open('data/titles.json'))
+          r=json.load(open('data/relationships.json'))
+          ids={x['id'] for x in t}
+          assert r['version']==2
+          assert r['summary']['titleCount']==len(t)==81
+          assert r['summary']['edgeCount']==len(r['relationships'])
+          assert r['summary']['oneWayEdges']>0
+          for e in r['relationships']:
+            assert len(e['titles'])==2
+            assert set(e['titles'])<=ids
+            assert e['authoredDirection'] in {'reciprocal','one-way'}
+            assert e['relationshipClass']=='catalog-link'
+            assert 'scoreDistance' in e['evidence']
+            assert 'provenance' in e
+          print(r['summary'])
+          PY
+      - name: Commit architecture
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/relationships.json data/RELATIONSHIP_ARCHITECTURE.md
+          git commit -m 'Build relationship architecture v2' || exit 0
+          git push
