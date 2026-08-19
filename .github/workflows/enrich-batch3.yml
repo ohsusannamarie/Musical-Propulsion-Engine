@@ -1,0 +1,43 @@
+name: Enrichment Batch 3
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/enrich_batch3.js'
+      - '.github/workflows/enrich-batch3.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply batch 3 enrichment
+        run: node .github/scripts/enrich_batch3.js
+      - name: Validate enriched titles
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const d=require('./data/titles.json');
+          const ids=['jamie','hedwig','dreamgirls','lalaland','colorpurple','encanto','singstreet','westside','littleShop','rocky','sweeney','lastfive'];
+          for(const id of ids){
+            const x=d.find(t=>t.id===id);
+            if(!x) throw new Error('missing '+id);
+            const e=x.enrichment||{};
+            for(const k of ['format','musicalType','vocalStyle','lyricalDensity','musicDrivenPercent','catharsis','rewatchability','familiarityAdvantage','bestMood','friction','gatewaySongs','notes','provenance']) if(e[k]==null) throw new Error(`${id} missing ${k}`);
+            if(!Array.isArray(e.gatewaySongs)||e.gatewaySongs.length<2) throw new Error(`${id} gatewaySongs incomplete`);
+          }
+          console.log('validated',ids.length,'batch 3 titles');
+          NODE
+      - name: Commit batch 3
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json
+          git commit -m 'Enrich remaining core catalog titles batch 3' || exit 0
+          git push
