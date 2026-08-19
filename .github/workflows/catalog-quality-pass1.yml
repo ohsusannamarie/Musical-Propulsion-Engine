@@ -1,0 +1,46 @@
+name: Catalog Quality Pass 1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/catalog_quality_pass1.py'
+      - '.github/workflows/catalog-quality-pass1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Repair links and normalize DNA taxonomy
+        run: python3 .github/scripts/catalog_quality_pass1.py
+
+      - name: Verify quality pass
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/titles.json'))
+          ids={x['id'] for x in d}
+          assert len(d) >= 81
+          assert all(x.get('dnaNormalized') for x in d)
+          broken=[]
+          for x in d:
+            for y in x.get('links',[]):
+              if y not in ids: broken.append((x['id'],y))
+          assert not broken, broken
+          assert json.load(open('data/dna-taxonomy.json'))['version'] == 1
+          print('validated',len(d),'titles, 0 broken links')
+          PY
+
+      - name: Commit quality pass
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/titles.json data/dna-taxonomy.json
+          git commit -m 'Repair catalog links and normalize DNA taxonomy' || exit 0
+          git push
