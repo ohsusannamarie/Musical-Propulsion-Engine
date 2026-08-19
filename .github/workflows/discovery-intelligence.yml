@@ -1,0 +1,91 @@
+name: Discovery Intelligence v2.3.1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build v2.3.1 Discovery Intelligence
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          html=p.read_text(encoding='utf-8')
+          html=html.replace('The Musical Propulsion Engine · v2.3.0','The Musical Propulsion Engine · v2.3.1')
+
+          marker='/* v2.3.1 discovery intelligence */'
+          if marker not in html:
+              css='''<style>
+          /* v2.3.1 discovery intelligence */
+          .discovery-lens{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+          .discovery-pill{font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:5px 8px;border:1px solid #344057;background:#111724;color:#c1c9d5}
+          .discovery-pill.safe{border-color:rgba(114,224,155,.5);color:#8ef0ad;background:rgba(114,224,155,.08)}
+          .discovery-pill.stretch{border-color:rgba(246,195,91,.55);color:#f6c35b;background:rgba(246,195,91,.08)}
+          .discovery-pill.wild{border-color:rgba(173,125,255,.55);color:#c8a8ff;background:rgba(173,125,255,.08)}
+          .discovery-explain{margin-top:6px;color:#9da8b8;font-size:9px;line-height:1.4}
+          </style>'''
+              html=html.replace('</head>',css+'</head>',1)
+
+          anchor="function tasteEvidenceCount(){return Object.keys(tasteFeedback).filter(id=>{const f=feedbackFor(id);return f.more.length||f.less.length}).length}"
+          if 'function discoveryScore(' not in html:
+              if anchor not in html: raise RuntimeError('taste learning anchor not found')
+              js=r'''
+          function discoveryConfidence(){const explicit=tasteEvidenceCount(), reactions=D.filter(x=>['moved','liked','revisit','miss'].includes(stat(x))).length;return Math.max(.35,Math.min(1,.35+explicit*.07+reactions*.012))}
+          function rawTraitMatch(a,b){const keys=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks'];let d=0;keys.forEach(k=>d+=Math.abs(a.scores[k]-b.scores[k]));return Math.max(0,100-(d/keys.length)*20)}
+          function personalFit(x){const w=tasteWeights(),keys=['propulsion','belt','movement','emotion','comfort','maximalism','narrative','hooks'];let n=0,d=0;keys.forEach(k=>{n+=(x.scores[k]/5)*w[k];d+=w[k]});return 100*n/Math.max(1,d)}
+          function discoveryValue(a,b){const dna=new Set(a.dna||[]), vibe=new Set(a.vibe||[]);const shared=(b.dna||[]).filter(v=>dna.has(v)).length+(b.vibe||[]).filter(v=>vibe.has(v)).length*.6;const novelty=Math.max(0,6-shared);const bridge=Math.min(1,shared/3);return Math.max(0,Math.min(100,35+novelty*9+bridge*18))}
+          function discoveryScore(a,b){const raw=rawTraitMatch(a,b),fit=personalFit(b),novel=discoveryValue(a,b),conf=discoveryConfidence();const personalized=raw*.50+fit*.35+novel*.15;return Math.round(raw*(1-conf)+personalized*conf)}
+          function discoveryClass(a,b){const raw=rawTraitMatch(a,b),novel=discoveryValue(a,b),fit=personalFit(b);if(raw>=78&&fit>=72)return 'safe';if(raw>=62&&fit>=62&&novel>=55)return 'stretch';return 'wild'}
+          function discoveryLabel(a,b){const c=discoveryClass(a,b);return c==='safe'?'Safe bet':c==='stretch'?'Smart stretch':'Wild card'}
+          function discoveryReason(a,b){const c=discoveryClass(a,b),fit=Math.round(personalFit(b)),nov=Math.round(discoveryValue(a,b));if(c==='safe')return `Strong musical-DNA bridge with ${fit}% personal fit.`;if(c==='stretch')return `Enough familiar DNA to trust the bridge, plus ${nov}% discovery value.`;return `Higher uncertainty, but useful new evidence for the taste model.`}
+          '''
+              html=html.replace(anchor,anchor+js,1)
+
+          # Upgrade similarity to include the discovery reranker while preserving existing UI percentages.
+          old="return Math.round(Math.max(52,96-diff*3+shared*2));}"
+          new="const base=Math.round(Math.max(52,96-diff*3+shared*2));const learned=discoveryScore(a,b);return Math.round(base*.58+learned*.42);}"
+          if old in html:
+              html=html.replace(old,new,1)
+          elif 'const learned=discoveryScore(a,b)' not in html:
+              raise RuntimeError('similarity return anchor not found')
+
+          # Add discovery context anywhere the existing connection bridge copy is rendered.
+          needle='${bridge(a,b)}'
+          if 'discoveryLabel(a,b)' not in html:
+              if needle not in html: raise RuntimeError('bridge rendering anchor not found')
+              repl="${bridge(a,b)}<div class=\"discovery-lens\"><span class=\"discovery-pill ${discoveryClass(a,b)}\">${discoveryLabel(a,b)}</span></div><div class=\"discovery-explain\">${discoveryReason(a,b)}</div>"
+              html=html.replace(needle,repl,1)
+
+          p.write_text(html,encoding='utf-8')
+          Path('app.html').write_text(html,encoding='utf-8')
+          PY
+
+      - name: Verify v2.3.1
+        shell: bash
+        run: |
+          test -s index.html
+          test -s app.html
+          grep -q 'v2.3.1 discovery intelligence' index.html
+          grep -q 'function discoveryScore(' index.html
+          grep -q 'function discoveryClass(' index.html
+          grep -q 'Safe bet' index.html
+          grep -q 'Smart stretch' index.html
+          grep -q 'Wild card' index.html
+          grep -q 'const learned=discoveryScore(a,b)' index.html
+
+      - name: Commit v2.3.1
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.html
+          git commit -m 'Build Discovery Intelligence v2.3.1' || exit 0
+          git push
